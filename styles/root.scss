@@ -1,0 +1,368 @@
+:root {
+	/*	Manual collapsible fold:
+	 *		Ctrl+K Ctrl+,
+	 *	To remove:
+	 *		Ctrl+K Ctrl+.
+	*/
+
+	/*  Lynette Colors */
+	--lyt-white1: #D8D9E2;	// slight purple tint
+	--lyt-white2: #F2ECE7; // slight tan tint
+
+	--lyt-brown1: #C6BBB6;
+	--lyt-brown2: #B39A8C;
+	--lyt-brown3: #B88F63;
+	--lyt-brown4: #885F37;
+	--lyt-brown5: #5A3619;
+	--lyt-brown6: #381508;
+
+	--lyt-gold1: #9D9286;
+
+	--lyt-blue1: #22374D;
+	--lyt-blue2: #426476;
+	--lyt-blue3: #375468;
+	--lyt-blue4: #032C34;
+	--lyt-blue5: #075969;
+	--lyt-blue6: #096F83;
+	--lyt-blue7: #064D5B;
+
+	--lyt-violet1: #A5A5BD;
+	--lyt-violet2: #DBB1EF;
+	--lyt-violet3: #362265;
+
+	--lyt-teal1: #3CA9A8;
+	--lyt-teal2: #08A8B1;
+	--lyt-teal3: #25C9CC;
+	
+	/*	Lynette Theme */
+
+	// Top Navigation Bar
+	--lyt-nav: var(--lyt-blue1);
+	--lyt-nav-h: var(--lyt-blue2);
+
+	--lyt-nav-a: var(--lyt-white1);
+	--lyt-nav-a-h: white;
+	--lyt-nav-a-a: var(--lyt-violet1);
+
+	--lyt-indic: var(--lyt-blue2);
+
+	// Footer
+	--lyt-foot: var(--lyt-blue3);
+	--lyt-foot-txt: var(--lyt-white2);
+
+	// Main Content
+	--lyt-main: var(--lyt-white1);
+	--lyt-txt: var(--lyt-blue4);
+	--lyt-header: var(--lyt-blue5);
+
+	--lyt-a: var(--lyt-teal2);
+	--lyt-a-h: var(--lyt-teal3);
+	--lyt-a-a: var(--lyt-blue6);
+
+	// Scrollbar Thumb
+	// --lyt-blue4, #032C34;
+	--lyt-scroll: rgba(3,44,52,0.7); // blue4 w/ a = 0.7	
+	--lyt-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
+	
+	// Navigation Tables
+	--lyt-tbl: var(--lyt-blue7);
+	--lyt-tbl-h: var(--lyt-blue4);
+	--lyt-tbl-b: var(--lyt-teal2);	//border
+	--lyt-tbl-a: var(--lyt-brown1);
+	--lyt-tbl-a-h: var(--lyt-white2);
+	--lyt-tbl-a-a: var(--lyt-brown2);
+	
+	// Sidebar Navigation
+	--lyt-sd: var(--lyt-white1);
+	--lyt-sd-hdr:var(--lyt-blue5);
+	--lyt-sd-hdr-h: var(--lyt-blue6);
+	--lyt-sd-hdr-a: var(--lyt-blue4);
+
+	--lyt-sd-itm: var(--lyt-blue6);
+	--lyt-sd-itm-h: var(--lyt-teal2);
+	--lyt-sd-itm-brdr: var(--lyt-gold1);
+
+	--lyt-sd-a: var(--lyt-white1);
+	--lyt-sd-a-h: white;
+	--lyt-sd-a-a: var(--lyt-violet1);
+
+	// #161616
+	--lyt-sd-scroll: rgba(22,22,22,0.7);				//out of order
+	--lyt-sd-scroll-h: rgba(22,22,22,0.9);
+	
+	// Dialogue Bubbles
+	--lyt-bub-L: var(--lyt-violet3);
+	--lyt-bub-L-txt: var(--lyt-white1);
+	--lyt-bub-R: var(--lyt-violet2);
+	--lyt-bub-R-txt: var(--lyt-violet3);
+
+
+	/* Rhodes Island Colors */
+	--ri-black1: #1D242D;	// blue tint
+	--ri-black2: #15151E;	// blue tint
+
+	--ri-gray1: #373F48;
+	--ri-gray2: #B5BCD3;
+	--ri-gray3: #37455E;	// more blue than gray1
+	--ri-gray4: #254958;
+	--ri-gray5: #323232;
+	--ri-gray6: #BFC0C1;
+
+	--ri-white1: #EEEEEE;
+
+	--ri-blue1: #41D2E5;
+	--ri-blue2: #1A44B0;
+	--ri-blue3: #05A8DE;
+	--ri-blue4: #096F83;
+	--ri-blue5: #0b88b1;
+	--ri-blue6: #4ABEE6;
+	--ri-blue7: #42AAC6;
+	--ri-blue8: #1E2F89;
+	
+	--ri-orange1: #E0790D;
+	--ri-yellow1: #ECC953;
+
+	--ri-teal1: #163636;
+	--ri-teal2: #46B6B0;
+
+	/* Rhodes Island Theme */
+
+	// Top Navigation Bar
+	--ri-nav: var(--ri-black1);
+	--ri-nav-h: var(--ri-gray1);
+
+	--ri-nav-a: white;
+	--ri-nav-a-h: var(--ri-blue1);
+	--ri-nav-a-a: var(--ri-blue2);
+
+	--ri-indic: var(--ri-gray2);
+
+	// Footer
+	--ri-foot: var(--ri-black1);
+	--ri-foot-txt: white;
+
+	// Main Content
+	--ri-main: var(--ri-white1);
+	--ri-txt: var(--ri-black2);
+	--ri-header: var(--ri-blue8);
+
+	--ri-a: var(--ri-orange1);
+	--ri-a-h: var(--ri-yellow1);
+	--ri-a-a: var(--ri-blue4);
+
+	// Scrollbar Thumb
+	// #0b88b1
+	--ri-scroll: rgba(11, 136, 177,0.7); // blue5 w/ a = 0.7	
+	--ri-scroll-h: rgba(11, 136, 177,0.9);// blue5 w/ a = 0.9
+	
+	// Navigation Tables
+	--ri-tbl: var(--ri-blue6);
+	--ri-tbl-h: var(--ri-blue5);
+	--ri-tbl-av: var(--ri-teal1); // active
+	--ri-tbl-a: white;
+	--ri-tbl-a-h: var(--ri-yellow1);
+	--ri-tbl-a-a: var(--ri-orange1);
+	
+	// Sidebar Navigation
+	--ri-sd: white;
+	--ri-sd-hdr:var(--ri-gray5);
+	--ri-sd-hdr-h: var(--ri-blue1);
+	--ri-sd-hdr-a: var(--ri-blue2);
+
+	--ri-sd-itm: white;
+	--ri-sd-itm-h: var(--ri-gray6);
+	--ri-sd-itm-brdr: var(--ri-gold1);
+
+	--ri-sd-a: var(--ri-gray5);
+	--ri-sd-a-h: white;
+	--ri-sd-a-a: var(--ri-orange1);
+
+	// --ri-gray5, #323232
+	--ri-sd-scroll: rgba(50, 50, 50,0.7);				//out of order
+	--ri-sd-scroll-h: rgba(50, 50, 50,0.7);
+	
+	// Dialogue Bubbles
+	// --ri-bub-L: var(--ri-violet3);
+	// --ri-bub-L-txt: var(--ri-white1);
+	// --ri-bub-R: var(--ri-violet2);
+	// --ri-bub-R-txt: var(--ri-violet3);
+
+
+	/* Mondstadt Colors */
+	--mon-teal1: #11666F;
+	--mon-teal2: #389F98;
+	--mon-teal3: #42B69C;
+	--mon-teal4: #69C8B3;
+	--mon-teal5: #5AB5B3;
+	--mon-teal6: #a1ffeb;
+
+	--mon-green1: #84CA9A;
+	--mon-green2: #91CF99;
+	--mon-green3: #3AA789;
+	--mon-green4: #2A8479;
+	--mon-green5: #c3ffcb;
+	--mon-green6: #dcffe1;
+	--mon-green7: #b1ffbb;
+
+	--mon-blue1: #549FDE;
+	--mon-blue2: #3F4354;
+	--mon-blue3: #12222E;
+	--mon-blue4: #336FA2;
+	--mon-blue5: #194971;
+	--mon-blue6: #3E768A;
+	--mon-blue7: #1C3E4E;
+
+	--mon-red1: #EF9572;
+	--mon-red2: #D04C3E;
+
+	--mon-gold1: #D5B784;
+	--mon-gold2: #CEBF8B;
+	--mon-gold3: #9D896B;
+
+	--mon-yellow1: #FFDD5F;
+
+	/* Mondstadt Theme */
+
+	// Top Navigation Bar
+	--mon-nav: var(--mon-blue7);
+	--mon-nav-h: var(--mon-blue6);
+
+	--mon-nav-a: var(--mon-gold2);
+	--mon-nav-a-h: var(--mon-green5);
+	--mon-nav-a-a: var(--mon-gold3);
+
+	--mon-indic: var(--mon-teal1);
+
+	// Footer
+	--mon-foot: var(--mon-blue7);
+	--mon-foot-txt: white;
+
+	// Main Content
+	--mon-main: white;
+	--mon-txt: var(--mon-blue3);
+	--mon-header: var(--mon-teal1);
+
+	--mon-a: var(--mon-green7);
+	--mon-a-h: var(--mon-yellow1);
+	--mon-a-a: var(--mon-blue1);
+
+	// Scrollbar (for firefox)
+	// #1C3E4E
+	--mon-scroll: rgba(28, 62, 78,0.9); // blue5 w/ a = 0.7	
+	--mon-scroll-h: rgba(28, 62, 78,0.7);// blue5 w/ a = 0.9
+
+	// Navigation Tables
+	--mon-tbl: var(--mon-blue5);
+	--mon-tbl-h: var(--mon-blue4);
+	--mon-tbl-b: var(--mon-gold1);	//border
+	--mon-tbl-a: var(--mon-gold2);
+	--mon-tbl-a-h: var(--mon-gold1);
+	--mon-tbl-a-a: var(--mon-green3);
+	
+	// Sidebar Navigation
+	--mon-sd: var(--mon-blue1);
+	--mon-sd-hdr: white;
+	--mon-sd-hdr-h: var(--mon-green2);
+	--mon-sd-hdr-a: var(--mon-red1);
+
+	--mon-sd-itm: white;
+	--mon-sd-itm-h: var(--mon-green2);
+
+	--mon-sd-a: var(--mon-teal2);
+	--mon-sd-a-h: white;
+	--mon-sd-a-a: var(--mon-red2);
+
+	// --mon-gray5, #FFFFFF
+	--mon-sd-scroll: rgba(255, 255, 255,0.7);
+	--mon-sd-scroll-h: rgba(255, 255, 255,0.9);
+
+	// Dialogue Bubbles
+	--mon-bub-L: var(--mon-teal1);
+	--mon-bub-L-txt: var(--mon-green6);
+	--mon-bub-R: white;
+	--mon-bub-R-txt: var(--mon-teal2);
+
+
+	/* Furina Colors */
+	--fra-blue1: #5E7FD7;
+	--fra-blue7: #85DBFF;
+	--fra-blue8: #2D3E79;
+
+	--fra-blue2: #1A1F3F;
+	--fra-blue3: #171D50;
+	--fra-blue5: #2C468E;
+	--fra-blue6: #324076;
+	--fra-blue10: #A8EFFA;
+	
+	--fra-blue4: #9EDEFA;
+	--fra-blue9: #3566AB;
+
+	--fra-violet1: #C2B1E9;
+	--fra-violet2: #708CDD;
+	--fra-violet3: #5971CB;
+	--fra-white1: #E0E0E0;
+
+	--fra-black1: #171D2A;
+
+	--fra-gold1: #D4CEC5;
+	--fra-gold2: #BFAD96;
+	--fra-gold3: #E8D9C8;
+	--fra-gold4: #BBB3B6;
+	--fra-gold5: #AE946E;
+
+	/* Furina Theme */
+	
+	// Top Navigation Bar
+	--fra-nav: var(--fra-black1);
+	--fra-nav-h: var(--fra-blue3);
+
+	--fra-nav-a: var(--fra-gold2);
+	--fra-nav-a-h: var(--fra-blue4);
+	--fra-nav-a-a: var(--fra-gold2);
+
+	--fra-indic: var(--fra-blue5);
+
+	// Footer
+	--fra-foot: var(--fra-blue6);
+	--fra-foot-txt: var(--fra-white1);
+
+	// Main Content
+	--fra-main: var(--fra-white1);
+	--fra-txt: var(--fra-blue3);
+	--fra-header: var(--fra-blue5);
+
+	--fra-a: var(--fra-blue1);
+	--fra-a-h: var(--fra-blue8);
+	--fra-a-a: var(--fra-blue7);
+
+	// Scrollbar (for firefox)
+	// #9EDEFA
+	--fra-scroll: rgba(158, 222, 250,0.7); // blue4 w/ a = 0.7	
+	--fra-scroll-h: rgba(158, 222, 250,0.9);// blue4 w/ a = 0.9
+
+	// Navigation Tables
+	// --fra-tbl: var(--fra-blue5);
+	// --fra-tbl-h: var(--fra-blue4);
+	// --fra-tbl-b: var(--fra-gold1);	//border
+	// --fra-tbl-a: var(--fra-gold2);
+	// --fra-tbl-a-h: var(--fra-gold1);
+	// --fra-tbl-a-a: var(--fra-green3);
+	
+	// Sidebar Navigation
+	--fra-sd: var(--fra-blue1);
+	--fra-sd-hdr: var(--fra-gold2);
+	--fra-sd-hdr-h: var(--fra-gold5);
+	--fra-sd-hdr-a: var(--fra-blue10);
+
+	--fra-sd-itm: var(--fra-violet3);
+	--fra-sd-itm-h: var(--fra-violet2);
+
+	--fra-sd-a: var(--fra-white1);
+	--fra-sd-a-h: var(--fra-blue10);
+	--fra-sd-a-a: var(--fra-gold2);
+
+	// --fra-gray5, #323232
+	--fra-sd-scroll: rgba(255, 255, 255,0.7);
+	--fra-sd-scroll-h: rgba(255, 255, 255,0.9);
+
+}
