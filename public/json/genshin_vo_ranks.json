@@ -1,0 +1,94 @@
+{
+	"format":"tierlist",
+	"type":"vo",
+	"tiers":[
+		{
+			"tier":"S",
+			"content":[
+				{
+					"attributes": {
+						"character":"Cyno",
+						"lang":"EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Wriothesley",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Albedo",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Kazuha",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Ayaka",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "CN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "KR"
+					}
+				}
+			]
+		},
+		{
+			"tier":"A",
+			"content":[
+				{
+					"attributes": {
+						"character":"Lumine",
+						"lang":"JP"
+					}
+				}
+			]
+		},
+		{
+			"tier":"B",
+			"content":[
+
+			]
+		},
+		{
+			"tier":"C",
+			"content":[
+				
+			]
+		},
+		{
+			"tier":"D",
+			"content":[
+				
+			]
+		}
+	]
+}

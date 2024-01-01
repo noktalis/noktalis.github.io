@@ -1,0 +1,46 @@
+{
+	"buttons":[
+		{
+			"title": "Friend ID",
+			"text": "Friend ID",
+			"href": "/ak/friend_id/",
+			"key":"ak-nav-1"
+		},
+		{
+			"title": "Arknights Skins Tier List",
+			"text": "Skins Tier List",
+			"href": "/ak/skins/",
+			"key":"ak-nav-2"
+		},
+		{
+			"title": "Operator Wishlist",
+			"text": "Wishlist",
+			"href": "/ak/wish/",
+			"key":"ak-nav-3"
+		},
+		{
+			"title": "Arknights Ships",
+			"text": "Ships",
+			"href": "/ak/ships/",
+			"key":"ak-nav-4"
+		},
+		{
+			"title": "Waifus",
+			"text": "Waifus",
+			"href": "/ak/waifu/",
+			"key":"ak-nav-5"
+		},
+		{
+			"title": "Xue's Vigna Shrine",
+			"text": "Xue's Vigna Shrine",
+			"href": "/ak/vigna/",
+			"key":"ak-nav-6"
+		},
+		{
+			"title": "Story Highlights",
+			"text": "Story Highlights",
+			"href": "/ak/story/",
+			"key":"ak-nav-7"
+		}
+	]
+}
