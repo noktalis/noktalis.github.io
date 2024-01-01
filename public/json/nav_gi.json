@@ -1,0 +1,52 @@
+{
+	"buttons":[
+		{
+			"title": "Genshin Blorbos",
+			"text": "Blorbos",
+			"href": "/genshin/blorbos/",
+			"key":"gi-nav-1"
+		},
+		{
+			"title":"Genshin Ships",
+			"text":"Ship List",
+			"href":"/genshin/ships/",
+			"key":"gi-nav-2"
+		},
+		{
+			"title":"My Primogem Savings",
+			"text":"Wishlist",
+			"href":"/genshin/wish/",
+			"key":"gi-nav-3"
+		},
+		{
+			"title":"Genshin Haterisms",
+			"text":"Shit List",
+			"href":"/genshin/haterism/",
+			"key":"gi-nav-4"
+		},
+		{
+			"title":"Genshin Voiceover Rankings",
+			"text":"VO Rankings",
+			"href":"/genshin/vo_rank/",
+			"key":"gi-nav-5"
+		},
+		{
+			"title":"Genshin AU Ideas",
+			"text":"AUs",
+			"href":"/genshin/au/",
+			"key":"gi-nav-6"
+		},
+		{
+			"title":"Genshin Coop Stories",
+			"text":"Coop Stories",
+			"href":"/genshin/coop/",
+			"key":"gi-nav-7"
+		},
+		{
+			"title":"Genshin Cold Takes",
+			"text":"Hot (Cold) Takes",
+			"href":"/genshin/takes/",
+			"key":"gi-nav-8"
+		}
+	]
+}

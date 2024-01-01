@@ -1,0 +1,37 @@
+
+
+/* Contains and centers .main */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* Displays the blockquote and the speaker */
+.main {
+	border-left: 5px solid;
+	max-width: 550px;
+
+	blockquote {
+		margin: 0;
+		padding: 10px;
+		font-family: Handlee;
+		font-style: italic;
+	}
+
+	p {
+		text-align: right;
+		width: 80%;
+	}
+}
+
+
+
+/* Theming */
+
+/* Rhodes Island */
+.ri {
+	border-color: var(--ri-blue6);
+}
+
