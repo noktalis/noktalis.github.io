@@ -6,6 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    basePath: "/noktalis.github.io",
+  }
 }
 
 module.exports = nextConfig
