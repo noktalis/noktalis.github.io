@@ -1,0 +1,41 @@
+
+
+@mixin colors($bg, $text){
+	background-color: $bg;
+	color: $text;
+}
+
+@mixin btn-colors($bg, $text, $bg-hover, $text-hover, $bg-active, $text-active){
+	@include colors($bg, $text);
+	&:hover {
+		@include colors($bg-hover, $text-hover);
+	}
+	&:active{
+		@include colors($bg-active, $text-active);
+	}
+}
+
+@mixin link-colors($default, $hover, $active){
+	color: $default;
+	&:hover {
+		color: $hover;
+	}
+	&:active {
+		color: $active;
+	}
+}
+
+@mixin scrollbarColorsFF($thumb, $track){
+	scrollbar-color: var($thumb) var($track);
+	
+}
+
+@mixin scrollbarColor($color){
+	$scroll: $color;
+	&::-webkit-scrollbar-thumb {
+		background-color: transparentize($scroll, 0.3);
+		&:hover {
+			background-color: transparentize($scroll, 0.1);
+		}
+	}
+}
