@@ -1,0 +1,68 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts" as *;
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.bubble {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 7px;
+	margin: 3px!important;
+	max-width: 55%;
+	width: fit-content;
+}
+
+.right {
+	align-self: flex-end;
+	text-align: right;
+}
+
+/* Speaker Fonts */
+.nat {
+	@include nat-voice;
+	font-size: 85%;
+}
+.xue {
+	@include xue-voice;
+}
+
+
+
+/* Mobile Formatting */
+@media (max-width:1000px) {
+	.container {
+		font-size: 18px;
+	}
+}
+@media (max-width:500px) {
+	.container {
+		font-size: 14px;
+	}
+}
+
+/* Theming 
+ *		Applied alongside .container
+ */
+
+ /* Lynette */
+ .lyt {
+	.left {
+		@include colors(var(--lyt-bub-L), var(--lyt-bub-L-txt));
+	}
+	.right {
+		@include colors(var(--lyt-bub-R), var(--lyt-bub-R-txt));
+	}
+ }
+
+ /* Mondstadt */
+ .mond {
+	.left {
+		@include colors(var(--mon-bub-L), var(--mon-bub-L-txt));
+	}
+	.right {
+		@include colors(var(--mon-bub-R), var(--mon-bub-R-txt));
+	}
+ }

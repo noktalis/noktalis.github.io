@@ -1,0 +1,541 @@
+@use "../components/fonts";
+@use "../components/color-mixins" as *;
+
+
+/*	Styles the container that holds the entire navigation menu */
+.nav {
+	// Positioning
+	grid-area: left;
+	justify-self: end;
+	margin-right: 3vh;
+	margin-top: 3vh;
+
+	// Shape
+	height: 70vh;
+	// width: 65%;
+	width: 225px;
+	min-width: 225px;
+	max-width: 225px;
+	
+	// Appearance
+	display: flex;
+	flex-direction: column;
+}
+
+/*	Content container within .nav */
+// .container {
+// 	padding: 2vh;
+// }
+
+/*	Styling for the top container within the side navigation menu
+ *		Styles the link and h1 element */
+.top {
+	display: flex;
+	min-height: 8vh;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		text-align: center;
+		font-size: 28px;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/*	Styling for the custom divider using an image
+ *		Setting the image done where since it wouldn't appear on sidenav.js */
+.divider {
+	height: 2vh;
+	img{
+		width: 100%;
+	}
+}
+
+/*	Styling for the bottom container within the side navigation menu */
+.bottom {
+	height: 100%;
+}
+
+/* Styling for the side navigation menu's buttons
+ *		Adds a scrollbar to the side nav */
+.menu {
+	width: 100%;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	a {
+		text-decoration: none;
+	}
+
+	button {
+		padding: 1vh;
+		margin-bottom: 15px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	// scroll settings
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+        background-color: transparent;
+		width: 8px;
+    }
+	&::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+    }
+	scrollbar-width: thin;	// for firefox
+}
+
+
+/*	Mobile formatting */
+@media (max-width: 650px) {
+	.nav {
+		display: none;
+	}
+}
+
+
+/*	Theming
+ *		Applied alongside .nav */
+
+/* Lynette*/
+.lyt {
+	--gray: #333333;
+
+	// .nav
+	border: var(--lyt-gold1) solid 5px;
+	border-radius: 30px 5px 5px 30px;
+	
+	.top {
+		background-color: var(--lyt-main);
+		border-bottom: var(--lyt-gold1) solid 5px;
+		border-radius: 25px 0 0 0;
+
+		h1 {
+			font-family: SaltyCheese,sans-serif;
+			letter-spacing: 0.095em;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--lyt-sd-hdr),var(--lyt-sd-hdr-h),var(--lyt-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		position: absolute;
+		z-index: 60;		
+	}
+
+	.bottom {
+		position: relative;
+		background-color: var(--gray);
+		border-radius: 0 0px 0px 25px;
+	}
+
+	.menu {
+		$scroll: #161616;
+		position: absolute;
+
+		// scroll settings
+		@include scrollbarColorsFF(--lyt-sd-scroll, --lyt-sd-scroll-h);
+		@include scrollbarColor($scroll);
+		padding-top: 5.25vh;
+
+		a {
+			display: flex;
+		}
+
+		button {
+			width: 100%;
+			border: var(--lyt-sd-itm-brdr) solid 4px;
+			border-radius: 10px;
+
+			font-family: Mattilda, ComicSans, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+
+			@include btn-colors(var(--lyt-sd-itm),var(--lyt-sd-a),
+				var(--lyt-sd-itm-h),var(--lyt-sd-a-h),
+				var(--lyt-sd-itm-h),var(--lyt-sd-a-a));
+		}
+
+		hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/lynette_teacup.png") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 18px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: white;
+				height: 2px;
+				top: 8px;
+			}
+			&:before {
+				left: 0;
+				right: 55%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 55%;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+/* Rhodes Island */
+.ri {
+	background-color: rgba(22,22,22,0.3);
+	padding: 3px;
+
+	.top {
+		background-color: var(--ri-sd);
+		justify-content: left;
+		padding: 8px;
+
+		h1 {
+			font-family: RobotoCondensed,sans-serif;
+			font-size: 32px;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--ri-sd-hdr),var(--ri-sd-hdr-h),var(--ri-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		display: none;	
+	}
+
+	.bottom {
+		margin-top: 16px;
+		height: 81%;
+	}
+
+	.menu {
+		text-align: center;
+		$scroll: #323232;	// --ri-gray5
+
+		// scroll settings
+		@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);
+		@include scrollbarColor($scroll);
+		
+		padding-left: 0;
+		padding-right: 0;
+
+		button {
+			border: none;
+			margin-bottom: 10px;
+			margin-right: 8px;
+
+			font-family: RobotoCondensed, sans-serif;
+			font-size: 24px;
+			font-weight: bold;
+
+			@include btn-colors(var(--ri-sd-itm),var(--ri-sd-a),
+				var(--ri-sd-itm-h),var(--ri-sd-a-h),
+				var(--ri-sd-itm-h),var(--ri-sd-a-a));
+		}
+
+		a {
+			display: inline-block;
+
+			&:nth-last-child(3) > button {
+				@include btn-colors(var(--ri-blue6),var(--ri-sd),
+				var(--ri-blue5),var(--ri-yellow1),
+				var(--ri-blue5),var(--ri-orange1));
+			}
+			&:nth-last-child(1) > button, &:nth-last-child(2) > button {
+				@include btn-colors(var(--ri-gray5),var(--ri-sd),
+				var(--ri-gray5),var(--ri-yellow1),
+				var(--ri-gray5),var(--ri-orange1));
+			}
+		}
+	}
+}
+
+/* Mondstadt */
+.mond {
+	// .nav
+	background-color: rgba(84,159,222,0.5);
+	border-radius: 50px;
+
+	.top {
+		justify-content: center;
+		padding: 8px;
+
+		h1 {
+			font-family: BalsamiqSans,sans-serif;
+			font-size: 30px;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--mon-sd-hdr),var(--mon-sd-hdr-h),var(--mon-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		position: absolute;
+		z-index: 60;
+		width: 100%;
+		height: 25px;
+		background-image: url("../../public/images/genshin/mond_flags.svg");
+		background-repeat: repeat-x;
+		background-size: 20%;
+	}
+
+	.bottom {
+		position: relative;
+		margin-top: 4px;
+		height: 83%;
+
+		.bottom_extra {
+			position: absolute;
+			border-radius: 50px;
+			bottom: -7%;
+			width: 100%;
+		}
+	}
+
+	.menu {
+		$scroll: white;
+
+		// scroll settings
+		@include scrollbarColorsFF(--mon-sd-scroll, --mon-sd-scroll-h);
+		@include scrollbarColor($scroll);
+
+		margin-top: 2px;
+		padding-top: 3vh;
+		padding-bottom: 80px;
+
+		button {
+			border: none;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			width: 100%;
+
+			font-family: 'Comic Nue', sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+
+			@include btn-colors(var(--mon-sd-itm),var(--mon-sd-a),
+				var(--mon-sd-itm-h),var(--mon-sd-a-h),
+				var(--mon-sd-itm-h),var(--mon-sd-a-a));
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+		}
+
+		hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/windblumeWindwheel.svg") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 18px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: white;
+				height: 2px;
+				top: 8px;
+			}
+			&:before {
+				left: 0;
+				right: 50%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 50%;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+/* Furina */
+.fra {
+	// .nav
+	background-color: #435399;
+	background-image: url("/images/genshin/furina_scale_pattern.svg");
+	background-size: 48%;
+	background-position: center;
+
+	border: solid 6px var(--fra-blue8);	// inner border
+	border-radius: 30px 0px;
+	outline: solid 8px var(--fra-blue7); // outer border
+	outline-offset: 0px;
+
+	.top {
+		justify-content: center;
+		padding: 8px;
+
+		h1 {
+			font-family: EdwardianScript ,sans-serif;
+			font-size: 36px;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--fra-sd-hdr),var(--fra-sd-hdr-h),var(--fra-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		position: absolute;
+		z-index: 60;
+		width: 100%;
+		height: 22px;
+		background-image: url("../../public/images/genshin/furina_gilded_trim.svg");
+		background-repeat: repeat-x;
+		background-size: 15%;
+		background-position: center;
+	}
+
+	.bottom {
+		position: relative;
+		height: 83%;
+	}
+
+	.menu {
+		$scroll: #E8D9C8; // --fra-gold3
+
+		// scroll settings
+		@include scrollbarColorsFF(--fra-sd-scroll, --fra-sd-scroll-h);
+		@include scrollbarColor($scroll);
+
+		margin-top: 13px;
+		padding-top: 3vh;
+
+		button {
+			border: 4px solid var(--fra-white1);
+			border-left: 0;
+			border-right: 0;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			width: 100%;
+
+			font-family: Arinda, sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+
+			@include btn-colors(var(--fra-sd-itm),var(--fra-sd-a),
+				var(--fra-sd-itm-h),var(--fra-sd-a-h),
+				var(--fra-sd-itm-h),var(--fra-sd-a-a));
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+		}
+
+		hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/furina_skirt_symbol.svg") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 30px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background-color: var(--fra-gold1);
+				height: 2px;
+				top: 52%;
+			}
+			&:before {
+				left: 0;
+				right: 52%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 52%;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+/* Template/Test */
+.test {
+	//.nav
+	background-color: transparent;
+
+	.divider {
+		height: 55px;
+		width: 100%;
+		background-color: transparent;
+	}
+
+	.bottom {
+		background-color: transparent;
+
+		//scroll settings
+		$scroll: black;
+		@include scrollbarColorsFF($scroll, $scroll);
+		@include scrollbarColor($scroll);
+
+		button {
+			background-color: white;
+		}
+	}
+}
+
+
+
+
+
+/* References 
+ * 	https://stackoverflow.com/questions/35610251/style-hr-with-image
+*/
+
+
+
+
+
+

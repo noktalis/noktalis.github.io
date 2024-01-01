@@ -1,0 +1,192 @@
+@use "../components/fonts";
+@use "../components/color-mixins" as *;
+
+/*	Styles the navigation bar at the top of the screen
+ *	Splits the bar into three parts
+ *		left 	- for the indicator
+ *		buttons - in the center, for navigation buttons
+ *		right	- empty space
+*/
+.nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	display: grid;
+	grid: 'left buttons right';
+	grid-template-columns: 1fr auto 1fr;
+	gap: 2vh;
+}
+
+
+/*	Styling of container that holds navigation buttons at center of top navigation bar */
+.buttons {
+	// Positioning (self)
+	grid-area: buttons;
+
+	// Positioning (contents)
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	gap: 2vh;
+}
+
+/* 	Styling of button's links */
+.buttons a {
+	display: flex;
+	text-decoration: none;
+}
+
+/*	Styling of buttons in navigation bar */
+.buttons button {
+	// Align self in center of grid section
+	align-self: center;
+	justify-self: center;
+
+	// Dimensions
+	padding:  0 2vh 0 2vh;
+	margin: 0 auto;
+	height: 65%;
+
+	// Appearance
+	border: 0px;
+}
+
+/*	Styling of image in left corner of navigation bar */
+.indicator {
+	justify-self: start;	// Keep left
+
+	$size: 64px;
+	width: $size;
+	height: $size;
+
+	// Spacing
+	margin: 6px;
+    padding: 2px;
+
+    border-radius: 99px;	// Become a circle
+    opacity: 50%;			// Half transparent by default
+
+	// Becomes opaque when mouse hovers over
+	&:hover {
+		transition: opacity 0.1s;
+		opacity: 100%;
+	}
+}
+
+
+/* Mobile Formatting */
+@media (max-width: 950px) {
+	.buttons button {
+		font-size: 18px;
+	}
+}
+@media (max-width: 920px) {
+	.nav {
+		grid: 'top' 'buttons';
+		gap: 0vh;
+	}
+	.indicator {
+		justify-self: center;
+	}
+	.buttons {
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(2, auto);
+		gap: 1vh;
+		padding-bottom: 2vh;
+		display: none;
+	}
+	.buttons button {
+		height: 100%;
+		padding: 2vh 1.5vh 2vh 1.5vh;
+		width: 95%;
+		font-size: 18px;
+	}
+}
+@media (max-width: 450px) {
+	.buttons {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(6, auto);
+	}
+	.indicator {
+		$size: 48px;
+		height: $size;
+		width: $size;
+	}
+}
+
+
+/* 	Theming 
+ *		Applied alongside .nav
+*/
+
+/* Lynette */
+.lyt {
+	background-color: var(--lyt-nav);
+
+	.buttons button {
+		border-radius: 15px;
+		@include btn-colors(var(--lyt-nav), var(--lyt-nav-a),
+								var(--lyt-nav-h), var(--lyt-nav-a-h),
+								var(--lyt-nav-h), var(--lyt-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--lyt-indic);
+	}
+}
+
+/* Rhodes Island */
+.ri {
+	background-color: var(--ri-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--ri-nav), var(--ri-nav-a),
+								var(--ri-nav-h), var(--ri-nav-a-h),
+								var(--ri-nav-h), var(--ri-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--ri-indic);
+	}
+}
+
+/* Mondstadt */
+.mond {
+	background-color: var(--mon-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--mon-nav), var(--mon-nav-a),
+								var(--mon-nav-h), var(--mon-nav-a-h),
+								var(--mon-nav-h), var(--mon-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--mon-indic);
+	}
+}
+
+/* Furina */
+.fra {
+	background-color: var(--fra-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--fra-nav), var(--fra-nav-a),
+								var(--fra-nav-h), var(--fra-nav-a-h),
+								var(--fra-nav-h), var(--fra-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--fra-indic);
+	}
+}

@@ -1,0 +1,60 @@
+@use "../components/fonts" as *;
+
+.container {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1.5fr;
+	grid-template-areas: "prev home next" ;
+	margin-top: 10px;
+	column-gap: 5vh;
+}
+
+.prev, .home, .next {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.link {
+	font-size: 30px;
+}
+
+.prev {
+	grid-area: prev;
+}
+.home {
+	grid-area: home;
+}
+.next {
+	grid-area: next;
+}
+
+.imgContainer {
+	img {
+		border-radius: 50px;
+		border: var(--lyt-blue5) solid 6px;
+		object-fit: cover;
+		width: 100%;
+		max-height: 100%;
+	}
+}
+
+.desc {
+	grid-row: 2;
+	h1,h2,h3,h4,h5,h6 {
+		text-align: center;
+	}
+}
+
+/* Mobile Formatting */
+@media (max-width:600px) {
+	.container {
+		grid-template-areas:
+			"prev next"
+			"home home";
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+	}
+}

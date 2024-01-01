@@ -1,0 +1,298 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts" as *;
+
+/* Styling for the main container of content and content within */
+
+/* Contains main container and footer in center of page
+ * 	Scrollbar applied here
+*/
+.container {
+	// Center of page
+	grid-area: center;
+
+	// Removes awkward gap between main and footer
+	display: flex;
+	flex-direction: column;
+
+	/* Styles scrollbar on the side of main and footer */
+	// Scroll the container rather than the page
+	height: 89.75vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	/* Scrollbar settings */
+	&::-webkit-scrollbar {
+        background-color: transparent;
+		width: 1.5vh;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+    }
+	scrollbar-width: thin;	// for firefox
+
+	font-size: 20px;
+	min-width: 900px;
+}
+
+/* Contains contents of the page that the user is looking for */
+.main {
+	padding: 2vh;
+	font-family: Mattilda, serif;
+	h1,h2,h3,h4,h5,h6 {
+		margin: 1vh 0 auto;
+		margin-bottom: 15px;
+		font-family:Handlee, 'Handlee', cursive;
+	}
+	p {
+		margin: 10px 0 10px 0;
+	}
+	hr {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+/* An image that may take up an entire section of the page */
+.headerImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		width: 100%
+	}
+}
+
+/* Voices that may appear in content */
+.nat {
+	@include nat-voice;
+}
+.xue {
+	@include xue-voice;
+}
+
+/* Footer at the bottom of the page below the main container */
+.footer {
+	// min-height: 60px;	// maintains that the footer exists on the page w/o content
+	padding: 15px;
+	text-align: center;
+	font-family: Mattilda, serif;
+	p {
+		margin: 0;
+	}
+}
+
+/* Mobile formatting */
+@media (max-width:1250px) {
+	.container {
+		min-width: 100%;
+	}
+}
+@media (max-width:450px) {
+	.container {
+		font-size: 18px;
+	}
+}
+
+
+
+/*	Theming
+ * 		Applied alongside .container
+*/
+
+/* Lynette */
+.lyt {
+	/* 	Note about $scroll: update with --lyt-scroll manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #032C34;
+
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(var(--lyt-main), var(--lyt-txt));
+
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			color: var(--lyt-header);
+		}
+
+		a {
+			@include link-colors(var(--lyt-a),var(--lyt-a-h),var(--lyt-a-a));
+		}
+	}
+
+	.footer {
+		@include colors(var(--lyt-foot), var(--lyt-foot-txt));
+		a {
+			@include link-colors(var(--lyt-a),var(--lyt-a-h),var(--lyt-a-a));
+		}
+	}
+}
+
+/* Rhodes Island */
+.ri {
+	/* 	Note about $scroll: update with variable manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #0b88b1;
+
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--ri-sd-scroll, --ri-sd-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(var(--ri-main), var(--ri-txt));
+
+		a {
+			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
+		}
+	}
+
+	.main > div {
+		// Header colors
+		> h1, > h2, > h3, > h4, > h5, > h6 {
+			color: var(--ri-header);
+		}
+	}
+
+	.footer {
+		@include colors(var(--ri-foot), var(--ri-foot-txt));
+		a {
+			@include link-colors(var(--ri-yellow1),var(--ri-orange1),var(--ri-blue1));
+		}
+	}
+}
+
+/* Mondstadt */
+.mond {
+	/* 	Note about $scroll: update with variable manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #1C3E4E;
+
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(rgba(255,255,255,0.3), var(--mon-txt));
+
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			color: var(--mon-header);
+		}
+
+		a {
+			@include link-colors(var(--mon-a), var(--mon-a-h), var(--mon-a-a));
+		}
+
+		> div > hr {
+			border: none;
+			border-top: var(--mon-green3) double 3px;
+			color: var(--mon-green4);
+			overflow: visible;
+			text-align: center;
+			height: 5px;
+			&:after {
+				background: transparent;
+				content: '✽';
+				padding: 0 4px;
+				position: relative;
+				top: -16px;
+				border-radius: 20px
+			}
+		}
+	}
+
+	.footer {
+		@include colors(var(--mon-foot), var(--mon-foot-txt));
+		a {
+			@include link-colors(var(--mon-yellow1),var(--mon-red1),var(--mon-red2));
+		}
+	}
+}
+
+/* Furina */
+.fra {
+	/* 	Note about $scroll: update with variable manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #9EDEFA; // --fra-blue4
+
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--fra-scroll, --fra-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(var(--fra-main), var(--fra-txt));
+		font-family: SweetIcedCoffee, 'Sweet Iced Coffee', serif;
+		font-size: 22px;
+
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			color: var(--fra-header);
+			font-family: GreatVibes, 'Great Vibes', serif;
+		}
+
+		a {
+			@include link-colors(var(--fra-a), var(--fra-a-h), var(--fra-a-a));
+		}
+
+		> div > hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/furina_teardrop.png") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 45px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: var(--fra-gold1);
+				height: 3px;
+				top: 50%;
+			}
+			&:before {
+				left: 0;
+				right: 52%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 52%;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.footer {
+		@include colors(var(--fra-foot), var(--fra-foot-txt));
+		a {
+			@include link-colors(var(--fra-violet1),var(--fra-gold2),var(--fra-blue4));
+		}
+	}
+}

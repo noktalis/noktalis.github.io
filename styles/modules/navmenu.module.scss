@@ -1,0 +1,110 @@
+
+/* Orders elements into one column
+ *		Intended for use with sticker buttons
+ */
+.oneCol {
+	// One column
+	display: flex;
+	flex-direction: column;
+
+	// Center content
+	text-align: center;
+
+	// Sticker Buttons
+	button {
+		width: 60%;
+
+		// Padding so text doesn't disappear under sticker
+		$pad: 65px;
+		padding-left: $pad;
+		padding-right: $pad;
+	}
+}
+
+/* Orders elements into two columns
+ *		Intended for use with sticker buttons
+ */
+.twoCol {
+	// Two columns
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0,1fr));
+
+	// Center content evenly
+	column-gap: 10px;
+	text-align: center;
+
+	padding-top: 10px;
+
+	// Sticker Buttons
+	button {
+		width: 95%;		
+	}
+
+	// Links
+	a {
+		// Push buttons toward center of grid
+		&:nth-child(odd) {
+			text-align: right;
+			button { 
+				text-align: right;
+			}
+		}
+		&:nth-child(even) {
+			text-align: left;
+			button {
+				text-align: left;
+			}
+		}
+
+		// Padding so text doesn't disappear under sticker
+		$pad: 68px;
+		$padder: 80px;
+		&:nth-child(4n+1) button {
+			padding-left: $pad;
+		}
+		&:nth-child(4n+2) button {
+			padding-right: $pad;
+		}
+		&:nth-child(4n+3) button {
+			padding-left: $padder;
+		}
+		&:nth-child(4n) button {
+			padding-right: $padder;
+		}
+	}
+}
+
+
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+	.oneCol button {
+		$pad: 35px;
+		padding-left: $pad;
+		padding-right: $pad;
+	}
+	.twoCol a {
+		$padder: 45px;
+		&:nth-child(odd) button {
+			padding-left: $padder;
+		}
+		&:nth-child(even) button {
+			padding-right: $padder;
+		}
+	}
+}
+@media (max-width: 400px) {
+	$pad: 10px;
+	.oneCol button {
+		padding-left: $pad;
+		padding-right: $pad;
+	}
+	.twoCol a {	
+		&:nth-child(odd) button {
+			padding-left: $pad;
+		}
+		&:nth-child(even) button {
+			padding-right: $pad;
+		}
+	}
+}

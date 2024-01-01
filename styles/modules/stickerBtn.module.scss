@@ -1,0 +1,102 @@
+@use "../components/color-mixins" as *;
+
+/* Buttons for an in-page menu */
+.button {
+	position: relative;
+	
+	// Dimensions
+	min-height: 70px;
+
+	// Appearance Attributes
+	margin: 10px auto;
+	padding: 15px;
+}
+
+/* Images that stick out over the sides of buttons */
+.sticker {
+	// Appearance
+	max-width: 90px;
+
+	// Positioning
+	position: absolute;
+	top: -20px;
+}
+
+// Sticker positioning
+.left { left: -2%; }
+.lefter { left: -7%; }
+.right { right: -2%; }
+.righter { right: -7%; }
+
+// Size adjustments
+.big { transform: scale(1.2); }
+.bigger { transform: scale(1.3); }
+.small { transform: scale(0.85); }
+.smaller { transform: scale(0.7); }
+
+
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+	.sticker {
+		transform: scale(0.7);
+		top: -35px;
+	}
+	.left { left: -13%; }
+	.lefter { left: -13%; }
+	.right { right: -13%; }
+	.righter { right: -13%; }
+}
+@media (max-width: 400px) {
+	.sticker {
+		transform: scale(0.5);
+		top: -50px;
+	}
+	.left { left: -28%; }
+	.lefter { left: -28%; }
+	.right { right: -28%; }
+	.righter { right: -28%; }
+	.button {
+		padding: 12px;
+	}
+}
+
+
+
+/* Theming
+ *	 Applied on the button element */
+
+/* Lynette */
+.lyt {
+	border: 4px solid var(--lyt-tbl-b);
+	border-radius: 10px;						// friend shaped!
+	font-family: Mattilda, serif;
+	font-size: large;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	@include btn-colors(var(--lyt-tbl), var(--lyt-tbl-a),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-h),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-a));
+}
+
+/* Rhodes Island */
+.ri {
+	font-family: RobotoCondensed, serif;
+	font-size: 28px;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	border: none;
+	@include btn-colors(var(--ri-tbl), var(--ri-tbl-a),
+							var(--ri-tbl-h), var(--ri-tbl-a-h),
+							var(--ri-tbl-av), var(--ri-tbl-a-a));
+}
+
+/* Mondstadt */
+.mond {
+	border: 4px solid var(--mon-tbl-b);
+	border-radius: 10px;						// friend shaped!
+	font-family: Mattilda, serif;
+	font-size: large;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	@include btn-colors(var(--mon-tbl), var(--mon-tbl-a),
+							var(--mon-tbl-h), var(--mon-tbl-a-h),
+							var(--mon-tbl-h), var(--mon-tbl-a-a));
+}

@@ -1,0 +1,110 @@
+@use "../components/color-mixins" as *;
+
+/*	The container that holds the entire tierlist */
+.container {
+	padding: 2vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* A container that holds an entire tier */
+.tierContainer {
+	display: grid;
+	grid-template-areas: "letter content";
+	grid-template-columns: auto 1fr;
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Styles the letter representing a tier */
+.tierLetter {
+	// Element Positioning & Dimensions
+	grid-area: letter;
+	height: 100%;
+	min-width: 50px;
+
+	// Content Positioning
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vh;
+}
+
+/* Styles the items and content within a tier */
+.tierContent {
+	padding: 2vh;
+	padding-right: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+/* Tierlist item types */
+
+/* Voice Over item */
+.vo {
+	position: relative;
+	margin-right: 2vh;
+	
+	img {
+		max-width: 80px;
+	}
+	
+	// Indicates which language the voiceover is in
+	.lang {
+		// Positioning the element
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+
+		// Shape of element
+		min-width: 28px;
+		min-height: 28px;
+		border-radius: 15px;
+
+		// Styling Contents
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+	}
+}
+
+
+
+/* Theming
+ * 		Applied alongside .container
+*/
+
+/* Mondstadt */
+.mond {
+	.tierContainer{
+		&:first-child > .tierLetter, &:first-child .vo > .lang {
+			@include colors(var(--mon-red2),white);
+		}
+		&:nth-child(2) > .tierLetter, &:nth-child(2) .vo > .lang {
+			@include colors(var(--mon-red1),white);
+		}
+		&:nth-child(3) > .tierLetter, &:nth-child(3) .vo > .lang {
+			@include colors(var(--mon-yellow1),black);
+		}
+		&:nth-child(4) > .tierLetter, &:nth-child(4) .vo > .lang {
+			@include colors(var(--mon-green5),black);
+		}
+		&:nth-child(5) > .tierLetter, &:nth-child(5) .vo > .lang {
+			@include colors(var(--mon-green3),white);
+		}
+	}
+
+	.tierLetter {
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.vo img {
+		border-radius: 15px;
+	}
+}
