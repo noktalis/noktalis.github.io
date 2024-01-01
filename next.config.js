@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: "/experiment",
+  basePath: "/noktalis.github.io",
   images: {
     unoptimized: true,
   },
