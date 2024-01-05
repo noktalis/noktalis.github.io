@@ -195,6 +195,7 @@
 
 		a {
 			@include link-colors(var(--mon-a), var(--mon-a-h), var(--mon-a-a));
+			text-shadow: black 0px 0px 5px;
 		}
 
 		> div > hr {

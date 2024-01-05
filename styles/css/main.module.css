@@ -1,0 +1,475 @@
+@charset "UTF-8";
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+/* Nat Voice: Friday October Twelve 
+ *   Also for the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* 	Xue Voice: Dehasta */
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/Dehasta.woff2") format("woff2");
+}
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* SaltyCheese
+ *   For headers */
+@font-face {
+  font-family: SaltyCheese;
+  src: url("../../public/fonts/SaltyCheese.woff2") format("woff2");
+}
+/* Handlee
+ *   For headers */
+@font-face {
+  font-family: Handlee;
+  src: url("../../public/fonts/Handlee.woff2") format("woff2");
+}
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
+/* Matilda 
+ *   For text in Main container */
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/Mattilda.woff2") format("woff2");
+}
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
+}
+/* Roboto Condensed 
+ *   For Arknights */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* I forgot what I wanted these for but I want them around In Case */
+/* BalsamiqSans */
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comic Nue */
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* Styling for the main container of content and content within */
+/* Contains main container and footer in center of page
+ * 	Scrollbar applied here
+*/
+.container {
+  grid-area: center;
+  display: flex;
+  flex-direction: column;
+  /* Styles scrollbar on the side of main and footer */
+  height: 89.75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Scrollbar settings */
+  scrollbar-width: thin;
+  font-size: 20px;
+  min-width: 900px;
+}
+.container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1.5vh;
+}
+.container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+}
+
+/* Contains contents of the page that the user is looking for */
+.main {
+  padding: 2vh;
+  font-family: Mattilda, serif;
+}
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+  margin: 1vh 0 auto;
+  margin-bottom: 15px;
+  font-family: Handlee, "Handlee", cursive;
+}
+.main p {
+  margin: 10px 0 10px 0;
+}
+.main hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* An image that may take up an entire section of the page */
+.headerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerImg img {
+  width: 100%;
+}
+
+/* Voices that may appear in content */
+.nat {
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+
+.xue {
+  font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+/* Footer at the bottom of the page below the main container */
+.footer {
+  padding: 15px;
+  text-align: center;
+  font-family: Mattilda, serif;
+}
+.footer p {
+  margin: 0;
+}
+
+/* Mobile formatting */
+@media (max-width: 1250px) {
+  .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    font-size: 18px;
+  }
+}
+/*	Theming
+ * 		Applied alongside .container
+*/
+/* Lynette */
+.lyt {
+  /* 	Note about $scroll: update with --lyt-scroll manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+}
+.lyt::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 44, 52, 0.7);
+}
+.lyt::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(3, 44, 52, 0.9);
+}
+.lyt .main {
+  background-color: var(--lyt-main);
+  color: var(--lyt-txt);
+}
+.lyt .main h1, .lyt .main h2, .lyt .main h3, .lyt .main h4, .lyt .main h5, .lyt .main h6 {
+  color: var(--lyt-header);
+}
+.lyt .main a {
+  color: var(--lyt-a);
+}
+.lyt .main a:hover {
+  color: var(--lyt-a-h);
+}
+.lyt .main a:active {
+  color: var(--lyt-a-a);
+}
+.lyt .footer {
+  background-color: var(--lyt-foot);
+  color: var(--lyt-foot-txt);
+}
+.lyt .footer a {
+  color: var(--lyt-a);
+}
+.lyt .footer a:hover {
+  color: var(--lyt-a-h);
+}
+.lyt .footer a:active {
+  color: var(--lyt-a-a);
+}
+
+/* Rhodes Island */
+.ri {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--ri-sd-scroll) var(--ri-sd-scroll-h);
+}
+.ri::-webkit-scrollbar-thumb {
+  background-color: rgba(11, 136, 177, 0.7);
+}
+.ri::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(11, 136, 177, 0.9);
+}
+.ri .main {
+  background-color: var(--ri-main);
+  color: var(--ri-txt);
+}
+.ri .main a {
+  color: var(--ri-a);
+}
+.ri .main a:hover {
+  color: var(--ri-a-h);
+}
+.ri .main a:active {
+  color: var(--ri-a-a);
+}
+.ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {
+  color: var(--ri-header);
+}
+.ri .footer {
+  background-color: var(--ri-foot);
+  color: var(--ri-foot-txt);
+}
+.ri .footer a {
+  color: var(--ri-yellow1);
+}
+.ri .footer a:hover {
+  color: var(--ri-orange1);
+}
+.ri .footer a:active {
+  color: var(--ri-blue1);
+}
+
+/* Mondstadt */
+.mond {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
+}
+.mond::-webkit-scrollbar-thumb {
+  background-color: rgba(28, 62, 78, 0.7);
+}
+.mond::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(28, 62, 78, 0.9);
+}
+.mond .main {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--mon-txt);
+}
+.mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
+  color: var(--mon-header);
+}
+.mond .main a {
+  color: var(--mon-a);
+  text-shadow: black 0px 0px 5px;
+}
+.mond .main a:hover {
+  color: var(--mon-a-h);
+}
+.mond .main a:active {
+  color: var(--mon-a-a);
+}
+.mond .main > div > hr {
+  border: none;
+  border-top: var(--mon-green3) double 3px;
+  color: var(--mon-green4);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.mond .main > div > hr:after {
+  background: transparent;
+  content: "✽";
+  padding: 0 4px;
+  position: relative;
+  top: -16px;
+  border-radius: 20px;
+}
+.mond .footer {
+  background-color: var(--mon-foot);
+  color: var(--mon-foot-txt);
+}
+.mond .footer a {
+  color: var(--mon-yellow1);
+}
+.mond .footer a:hover {
+  color: var(--mon-red1);
+}
+.mond .footer a:active {
+  color: var(--mon-red2);
+}
+
+/* Furina */
+.fra {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--fra-scroll) var(--fra-scroll-h);
+}
+.fra::-webkit-scrollbar-thumb {
+  background-color: rgba(158, 222, 250, 0.7);
+}
+.fra::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(158, 222, 250, 0.9);
+}
+.fra .main {
+  background-color: var(--fra-main);
+  color: var(--fra-txt);
+  font-family: SweetIcedCoffee, "Sweet Iced Coffee", serif;
+  font-size: 22px;
+}
+.fra .main h1, .fra .main h2, .fra .main h3, .fra .main h4, .fra .main h5, .fra .main h6 {
+  color: var(--fra-header);
+  font-family: GreatVibes, "Great Vibes", serif;
+}
+.fra .main a {
+  color: var(--fra-a);
+}
+.fra .main a:hover {
+  color: var(--fra-a-h);
+}
+.fra .main a:active {
+  color: var(--fra-a-a);
+}
+.fra .main > div > hr {
+  position: relative;
+  background: url("/images/genshin/furina_teardrop.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 45px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .main > div > hr:before, .fra .main > div > hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--fra-gold1);
+  height: 3px;
+  top: 50%;
+}
+.fra .main > div > hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
+}
+.fra .main > div > hr:after {
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
+}
+.fra .footer {
+  background-color: var(--fra-foot);
+  color: var(--fra-foot-txt);
+}
+.fra .footer a {
+  color: var(--fra-violet1);
+}
+.fra .footer a:hover {
+  color: var(--fra-gold2);
+}
+.fra .footer a:active {
+  color: var(--fra-blue4);
+}
