@@ -69,8 +69,8 @@ function Content() {
 					btnTitle={"Arknights story moments that keep me up at night"}
 					imgSide={"lefter"}
 					imgSize={"small"}
-					imgSrc={"/images/genshin/emotes/yanfei_scared.png"}
-					imgAlt={"Yanfei too scared to sleep"}>
+					imgSrc={"/images/ak/stickers/phantom_dramatic.png"}
+					imgAlt={"Phantom holding unconscious Doctor in his arms under the spotlight"}>
 						Arknights moments that keep me up at night
 				</StickerButtonLink>
 				<StickerButtonLink

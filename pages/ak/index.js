@@ -18,7 +18,7 @@ export default function Home(){
 		<FandomContext.Provider value='ak'>
 		<ThemeContext.Provider value='ri'>
 			<Head>
-				<title>Arknights Home</title>
+				<title>Home | Arknights</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
@@ -62,7 +62,7 @@ function Content() {
 						Skins Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/ak/wish/"}
+					href={"/ak/wishlist/"}
 					btnTitle={"Operator Wishlist"}
 					imgSide={"left"}
 					imgSize={"big"}

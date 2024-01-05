@@ -26,12 +26,12 @@
 		},
 		{
 			"title": "Webring",
-			"text": "Webing",
+			"text": "Webring",
 			"href": "/webring/",
 			"key":"nav-5"
 		},
 		{
-			"title": "Mischellaneous",
+			"title": "Miscellaneous",
 			"text": "Misc.",
 			"href": "/misc/",
 			"key":"nav-6"

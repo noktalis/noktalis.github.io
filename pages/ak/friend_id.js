@@ -41,7 +41,7 @@ function Content() {
 				If you're a stranger and managed to find this page, congrats! Feel free to add me in-game, my username is <b>Noktalis#1026</b>.
 			</p>
 			<p>
-				The most valuable waifu I own is my fucking&ndash; potential 6 Bagpipe&ndash; I swear I'm not a whale I don't have any other non-welfare 6*s at pot 6. She's just. Bagpipe. Anyway, she's maxed out, and I usually put her up when there's a <abbr title="Continguency Contract">CC</abbr> season is going on, but nowadays she's not as important for CC so I might not bother unless requested.
+				The most valuable waifu I own is my fucking&ndash; potential 6 Bagpipe&ndash; I SWEAR I'M NOT A WHALE... I don't have any other non-welfare 6*s at potential 6. She's just. Bagpipe. Anyway! She's maxed out, and I usually put her up when there's a <abbr title="Continguency Contract">CC</abbr> season (or Pinch Out Operation?) is going on, but nowadays she's not as important for CC so I might not bother unless requested.
 			</p>
 
 			<hr/>

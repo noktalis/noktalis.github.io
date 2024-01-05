@@ -40,7 +40,8 @@ function Content() {
 				src={"/images/genshin/emotes/jean_swet.png"}
 				fill={true}
 				sizes='100vw'
-				alt='Emote of Jean smiling nervously with a sweatdrop on her cheek'></Image>
+				alt='Emote of Jean smiling nervously with a sweatdrop on her cheek'
+				title='Whoops!'></Image>
 			</div>
 			
 			<p>Whoops! Sorry, that page couldn't be found. It probably doesn't exist yet, since this site is a work in progress!</p>

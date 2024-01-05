@@ -43,7 +43,8 @@ export default function DetailsList({path, arrayKey}) {
 						<div className={style.summaryContainer}>
 							<h2>{name}</h2>
 							<img
-								src={img}/>
+								src={img}
+								title={name}/>
 						</div>
 					</summary>
 					<hr/>

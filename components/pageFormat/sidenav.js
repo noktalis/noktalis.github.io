@@ -14,6 +14,7 @@ export default function SideNav({extra_menu_src}){
 	const fandomContext = useContext(FandomContext);
 
 	let fandom;
+	let mainTitle;
 	let themeClass;
 	let link;
 
@@ -33,29 +34,34 @@ export default function SideNav({extra_menu_src}){
 		case "mond":
 		default:
 			themeClass = sidenav.mond;
-			bottom_extra = <img className={sidenav.bottom_extra} src="/images/genshin/windwheel_asters.svg"></img>;
+			bottom_extra = <img className={sidenav.bottom_extra} src="/images/genshin/windwheel_asters.svg" title="Windwheels Asters from Xue :)"></img>;
 	}
 	
 	/* Figure out which header link to use at top of side nav */
 	switch(fandomContext){
 		case "ak":
 			fandom = "Arknights";
+			mainTitle = "Arknights Home";
 			link = "/ak/";
 			break;
 		case "genshin":
 			fandom = "Genshin";
+			mainTitle = "Genshin Impact Home";
 			link = "/genshin/";
 			break;
 		case "hsr":
-			fandom = "Star Rail";
+			fandom = "Star\u00A0Rail";
+			mainTitle = "Star Rail Home";
 			link = "/star_rail/";
 			break;
 		case "misc":
 			fandom = "Misc.";
+			mainTitle = "Miscellaneous";
 			link = "/misc/";
 			break;
 		default:
 			fandom = "Navigation";
+			mainTitle = "Home";
 			link = "/";
 	}
 
@@ -63,7 +69,7 @@ export default function SideNav({extra_menu_src}){
 		<div className={`${sidenav.nav} ${themeClass}`}>
 			<div className={`${sidenav.container} ${sidenav.top}`}>
 				{/* Changes based on fandom */}
-				<a href={link}> 
+				<a href={link} title={mainTitle}> 
 					<h1>{fandom}</h1>
 				</a>
 			</div>
