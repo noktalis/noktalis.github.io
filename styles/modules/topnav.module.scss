@@ -28,28 +28,34 @@
 	display: grid;
 	grid-template-columns: repeat(6, auto);
 	gap: 2vh;
+
+	/* 	Styling of all buttons' links */
+	a {
+		display: flex;
+		text-decoration: none;
+		cursor: default;
+	}
+
+	/*	Styling of buttons in navigation bar */
+	button {
+		// Align self in center of grid section
+		align-self: center;
+		justify-self: center;
+
+		// Dimensions
+		padding:  0 2vh 0 2vh;
+		margin: 0 auto;
+		height: 65%;
+
+		// Appearance
+		border: 0px;
+		cursor: pointer;
+	}
 }
 
-/* 	Styling of button's links */
-.buttons a {
-	display: flex;
-	text-decoration: none;
-}
 
-/*	Styling of buttons in navigation bar */
-.buttons button {
-	// Align self in center of grid section
-	align-self: center;
-	justify-self: center;
 
-	// Dimensions
-	padding:  0 2vh 0 2vh;
-	margin: 0 auto;
-	height: 65%;
 
-	// Appearance
-	border: 0px;
-}
 
 /*	Styling of image in left corner of navigation bar */
 .indicator {

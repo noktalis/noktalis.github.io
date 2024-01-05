@@ -30,7 +30,7 @@ const thisSite = "https://noktalis.github.io/webring/";
  * 				(static) current site's ico
  */
 export default function WebringDisplay(){
-	const [sites, setSites] = useState([{}]);
+	const [sites, setSites] = useState([{title: "placeholder"}]);
 	const hostURL = "/json/weebring.json";
 
 	/**Fetches, processes, and selects webring data to be used

@@ -1,0 +1,347 @@
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+/* Nat Voice: Friday October Twelve 
+ *   Also for the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* 	Xue Voice: Dehasta */
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/Dehasta.woff2") format("woff2");
+}
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* SaltyCheese
+ *   For headers */
+@font-face {
+  font-family: SaltyCheese;
+  src: url("../../public/fonts/SaltyCheese.woff2") format("woff2");
+}
+/* Handlee
+ *   For headers */
+@font-face {
+  font-family: Handlee;
+  src: url("../../public/fonts/Handlee.woff2") format("woff2");
+}
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
+/* Matilda 
+ *   For text in Main container */
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/Mattilda.woff2") format("woff2");
+}
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
+}
+/* Roboto Condensed 
+ *   For Arknights */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* I forgot what I wanted these for but I want them around In Case */
+/* BalsamiqSans */
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comic Nue */
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/*	Styles the navigation bar at the top of the screen
+ *	Splits the bar into three parts
+ *		left 	- for the indicator
+ *		buttons - in the center, for navigation buttons
+ *		right	- empty space
+*/
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid: "left buttons right";
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2vh;
+}
+
+/*	Styling of container that holds navigation buttons at center of top navigation bar */
+.buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 2vh;
+  /* 	Styling of all buttons' links */
+  /*	Styling of buttons in navigation bar */
+}
+.buttons a {
+  display: flex;
+  text-decoration: none;
+  cursor: default;
+}
+.buttons button {
+  align-self: center;
+  justify-self: center;
+  padding: 0 2vh 0 2vh;
+  margin: 0 auto;
+  height: 65%;
+  border: 0px;
+  cursor: pointer;
+}
+
+/*	Styling of image in left corner of navigation bar */
+.indicator {
+  justify-self: start;
+  width: 64px;
+  height: 64px;
+  margin: 6px;
+  padding: 2px;
+  border-radius: 99px;
+  opacity: 50%;
+}
+.indicator:hover {
+  transition: opacity 0.1s;
+  opacity: 100%;
+}
+
+/* Mobile Formatting */
+@media (max-width: 950px) {
+  .buttons button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 920px) {
+  .nav {
+    grid: "top" "buttons";
+    gap: 0vh;
+  }
+  .indicator {
+    justify-self: center;
+  }
+  .buttons {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1vh;
+    padding-bottom: 2vh;
+    display: none;
+  }
+  .buttons button {
+    height: 100%;
+    padding: 2vh 1.5vh 2vh 1.5vh;
+    width: 95%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .buttons {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+  }
+  .indicator {
+    height: 48px;
+    width: 48px;
+  }
+}
+/* 	Theming 
+ *		Applied alongside .nav
+*/
+/* Lynette */
+.lyt {
+  background-color: var(--lyt-nav);
+}
+.lyt .buttons button {
+  border-radius: 15px;
+  background-color: var(--lyt-nav);
+  color: var(--lyt-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.lyt .buttons button:hover {
+  background-color: var(--lyt-nav-h);
+  color: var(--lyt-nav-a-h);
+}
+.lyt .buttons button:active {
+  background-color: var(--lyt-nav-h);
+  color: var(--lyt-nav-a-a);
+}
+.lyt .indicator {
+  background-color: var(--lyt-indic);
+}
+
+/* Rhodes Island */
+.ri {
+  background-color: var(--ri-nav);
+}
+.ri .buttons button {
+  border-radius: 10px;
+  background-color: var(--ri-nav);
+  color: var(--ri-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.ri .buttons button:hover {
+  background-color: var(--ri-nav-h);
+  color: var(--ri-nav-a-h);
+}
+.ri .buttons button:active {
+  background-color: var(--ri-nav-h);
+  color: var(--ri-nav-a-a);
+}
+.ri .indicator {
+  background-color: var(--ri-indic);
+}
+
+/* Mondstadt */
+.mond {
+  background-color: var(--mon-nav);
+}
+.mond .buttons button {
+  border-radius: 10px;
+  background-color: var(--mon-nav);
+  color: var(--mon-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.mond .buttons button:hover {
+  background-color: var(--mon-nav-h);
+  color: var(--mon-nav-a-h);
+}
+.mond .buttons button:active {
+  background-color: var(--mon-nav-h);
+  color: var(--mon-nav-a-a);
+}
+.mond .indicator {
+  background-color: var(--mon-indic);
+}
+
+/* Furina */
+.fra {
+  background-color: var(--fra-nav);
+}
+.fra .buttons button {
+  border-radius: 10px;
+  background-color: var(--fra-nav);
+  color: var(--fra-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.fra .buttons button:hover {
+  background-color: var(--fra-nav-h);
+  color: var(--fra-nav-a-h);
+}
+.fra .buttons button:active {
+  background-color: var(--fra-nav-h);
+  color: var(--fra-nav-a-a);
+}
+.fra .indicator {
+  background-color: var(--fra-indic);
+}

@@ -1,0 +1,86 @@
+/* Orders elements into one column
+ *		Intended for use with sticker buttons
+ */
+.oneCol {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.oneCol a {
+  cursor: default;
+}
+.oneCol button {
+  width: 60%;
+  cursor: pointer;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+/* Orders elements into two columns
+ *		Intended for use with sticker buttons
+ */
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+.twoCol button {
+  width: 95%;
+  cursor: pointer;
+}
+.twoCol a {
+  cursor: default;
+}
+.twoCol a:nth-child(odd) {
+  text-align: right;
+}
+.twoCol a:nth-child(odd) button {
+  text-align: right;
+}
+.twoCol a:nth-child(even) {
+  text-align: left;
+}
+.twoCol a:nth-child(even) button {
+  text-align: left;
+}
+.twoCol a:nth-child(4n+1) button {
+  padding-left: 68px;
+}
+.twoCol a:nth-child(4n+2) button {
+  padding-right: 68px;
+}
+.twoCol a:nth-child(4n+3) button {
+  padding-left: 80px;
+}
+.twoCol a:nth-child(4n) button {
+  padding-right: 80px;
+}
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+  .oneCol button {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .twoCol a:nth-child(odd) button {
+    padding-left: 45px;
+  }
+  .twoCol a:nth-child(even) button {
+    padding-right: 45px;
+  }
+}
+@media (max-width: 400px) {
+  .oneCol button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .twoCol a:nth-child(odd) button {
+    padding-left: 10px;
+  }
+  .twoCol a:nth-child(even) button {
+    padding-right: 10px;
+  }
+}

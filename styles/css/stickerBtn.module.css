@@ -1,0 +1,145 @@
+/* Buttons for an in-page menu */
+.button {
+  position: relative;
+  min-height: 70px;
+  margin: 10px auto;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Images that stick out over the sides of buttons */
+.sticker {
+  max-width: 90px;
+  position: absolute;
+  top: -20px;
+}
+
+.left {
+  left: -2%;
+}
+
+.lefter {
+  left: -7%;
+}
+
+.right {
+  right: -2%;
+}
+
+.righter {
+  right: -7%;
+}
+
+.big {
+  transform: scale(1.2);
+}
+
+.bigger {
+  transform: scale(1.3);
+}
+
+.small {
+  transform: scale(0.85);
+}
+
+.smaller {
+  transform: scale(0.7);
+}
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+  .sticker {
+    transform: scale(0.7);
+    top: -35px;
+  }
+  .left {
+    left: -13%;
+  }
+  .lefter {
+    left: -13%;
+  }
+  .right {
+    right: -13%;
+  }
+  .righter {
+    right: -13%;
+  }
+}
+@media (max-width: 400px) {
+  .sticker {
+    transform: scale(0.5);
+    top: -50px;
+  }
+  .left {
+    left: -28%;
+  }
+  .lefter {
+    left: -28%;
+  }
+  .right {
+    right: -28%;
+  }
+  .righter {
+    right: -28%;
+  }
+  .button {
+    padding: 12px;
+  }
+}
+/* Theming
+ *	 Applied on the button element */
+/* Lynette */
+.lyt {
+  border: 4px solid var(--lyt-tbl-b);
+  border-radius: 10px;
+  font-family: Mattilda, serif;
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--lyt-tbl);
+  color: var(--lyt-tbl-a);
+}
+.lyt:hover {
+  background-color: var(--lyt-tbl-h);
+  color: var(--lyt-tbl-a-h);
+}
+.lyt:active {
+  background-color: var(--lyt-tbl-h);
+  color: var(--lyt-tbl-a-a);
+}
+
+/* Rhodes Island */
+.ri {
+  font-family: RobotoCondensed, serif;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: var(--ri-tbl);
+  color: var(--ri-tbl-a);
+}
+.ri:hover {
+  background-color: var(--ri-tbl-h);
+  color: var(--ri-tbl-a-h);
+}
+.ri:active {
+  background-color: var(--ri-tbl-av);
+  color: var(--ri-tbl-a-a);
+}
+
+/* Mondstadt */
+.mond {
+  border: 4px solid var(--mon-tbl-b);
+  border-radius: 10px;
+  font-family: Mattilda, serif;
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--mon-tbl);
+  color: var(--mon-tbl-a);
+}
+.mond:hover {
+  background-color: var(--mon-tbl-h);
+  color: var(--mon-tbl-a-h);
+}
+.mond:active {
+  background-color: var(--mon-tbl-h);
+  color: var(--mon-tbl-a-a);
+}

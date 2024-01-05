@@ -1,0 +1,671 @@
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+/* Nat Voice: Friday October Twelve 
+ *   Also for the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* 	Xue Voice: Dehasta */
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/Dehasta.woff2") format("woff2");
+}
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* SaltyCheese
+ *   For headers */
+@font-face {
+  font-family: SaltyCheese;
+  src: url("../../public/fonts/SaltyCheese.woff2") format("woff2");
+}
+/* Handlee
+ *   For headers */
+@font-face {
+  font-family: Handlee;
+  src: url("../../public/fonts/Handlee.woff2") format("woff2");
+}
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
+/* Matilda 
+ *   For text in Main container */
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/Mattilda.woff2") format("woff2");
+}
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
+}
+/* Roboto Condensed 
+ *   For Arknights */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* I forgot what I wanted these for but I want them around In Case */
+/* BalsamiqSans */
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comic Nue */
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/*	Styles the container that holds the entire navigation menu */
+.nav {
+  grid-area: left;
+  justify-self: end;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  height: 70vh;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*	Content container within .nav */
+/*	Styling for the top container within the side navigation menu
+ *		Styles the link and h1 element */
+.top {
+  display: flex;
+  min-height: 8vh;
+  align-items: center;
+  justify-content: center;
+}
+.top h1 {
+  text-align: center;
+  font-size: 28px;
+}
+.top a {
+  text-decoration: none;
+}
+.top a:hover {
+  text-decoration: underline;
+}
+
+/*	Styling for the custom divider using an image
+ *		Setting the image done where since it wouldn't appear on sidenav.js */
+.divider {
+  height: 2vh;
+}
+.divider img {
+  width: 100%;
+}
+
+/*	Styling for the bottom container within the side navigation menu */
+.bottom {
+  height: 100%;
+}
+
+/* Styling for the side navigation menu's buttons
+ *		Adds a scrollbar to the side nav */
+.menu {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.menu a {
+  text-decoration: none;
+  cursor: default;
+}
+.menu button {
+  padding: 1vh;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.menu:last-child {
+  margin-bottom: 0;
+}
+.menu::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.menu::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+
+/*	Mobile formatting */
+@media (max-width: 650px) {
+  .nav {
+    display: none;
+  }
+}
+/*	Theming
+ *		Applied alongside .nav */
+/* Lynette*/
+.lyt {
+  --gray: #333333;
+  border: var(--lyt-gold1) solid 5px;
+  border-radius: 30px 5px 5px 30px;
+}
+.lyt .top {
+  background-color: var(--lyt-main);
+  border-bottom: var(--lyt-gold1) solid 5px;
+  border-radius: 25px 0 0 0;
+}
+.lyt .top h1 {
+  font-family: SaltyCheese, sans-serif;
+  letter-spacing: 0.095em;
+  margin: 0 auto;
+}
+.lyt .top a {
+  color: var(--lyt-sd-hdr);
+}
+.lyt .top a:hover {
+  color: var(--lyt-sd-hdr-h);
+}
+.lyt .top a:active {
+  color: var(--lyt-sd-hdr-a);
+}
+.lyt .divider {
+  position: absolute;
+  z-index: 60;
+}
+.lyt .bottom {
+  position: relative;
+  background-color: var(--gray);
+  border-radius: 0 0px 0px 25px;
+}
+.lyt .menu {
+  position: absolute;
+  scrollbar-color: var(--lyt-sd-scroll) var(--lyt-sd-scroll-h);
+  padding-top: 5.25vh;
+}
+.lyt .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(22, 22, 22, 0.7);
+}
+.lyt .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(22, 22, 22, 0.9);
+}
+.lyt .menu a {
+  display: flex;
+}
+.lyt .menu button {
+  width: 100%;
+  border: var(--lyt-sd-itm-brdr) solid 4px;
+  border-radius: 10px;
+  font-family: Mattilda, ComicSans, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--lyt-sd-itm);
+  color: var(--lyt-sd-a);
+}
+.lyt .menu button:hover {
+  background-color: var(--lyt-sd-itm-h);
+  color: var(--lyt-sd-a-h);
+}
+.lyt .menu button:active {
+  background-color: var(--lyt-sd-itm-h);
+  color: var(--lyt-sd-a-a);
+}
+.lyt .menu hr {
+  position: relative;
+  background: url("/images/genshin/lynette_teacup.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.lyt .menu hr:before, .lyt .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.lyt .menu hr:before {
+  left: 0;
+  right: 55%;
+  margin-right: 10px;
+}
+.lyt .menu hr:after {
+  right: 0;
+  left: 55%;
+  margin-left: 10px;
+}
+
+/* Rhodes Island */
+.ri {
+  background-color: rgba(22, 22, 22, 0.3);
+  padding: 3px;
+}
+.ri .top {
+  background-color: var(--ri-sd);
+  justify-content: left;
+  padding: 8px;
+}
+.ri .top h1 {
+  font-family: RobotoCondensed, sans-serif;
+  font-size: 32px;
+  margin: 0 auto;
+}
+.ri .top a {
+  color: var(--ri-sd-hdr);
+}
+.ri .top a:hover {
+  color: var(--ri-sd-hdr-h);
+}
+.ri .top a:active {
+  color: var(--ri-sd-hdr-a);
+}
+.ri .divider {
+  display: none;
+}
+.ri .bottom {
+  margin-top: 16px;
+  height: 81%;
+}
+.ri .menu {
+  text-align: center;
+  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
+  padding-left: 0;
+  padding-right: 0;
+}
+.ri .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+.ri .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+.ri .menu button {
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  font-family: RobotoCondensed, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--ri-sd-itm);
+  color: var(--ri-sd-a);
+}
+.ri .menu button:hover {
+  background-color: var(--ri-sd-itm-h);
+  color: var(--ri-sd-a-h);
+}
+.ri .menu button:active {
+  background-color: var(--ri-sd-itm-h);
+  color: var(--ri-sd-a-a);
+}
+.ri .menu a {
+  display: inline-block;
+}
+.ri .menu a:nth-last-child(3) > button {
+  background-color: var(--ri-blue6);
+  color: var(--ri-sd);
+}
+.ri .menu a:nth-last-child(3) > button:hover {
+  background-color: var(--ri-blue5);
+  color: var(--ri-yellow1);
+}
+.ri .menu a:nth-last-child(3) > button:active {
+  background-color: var(--ri-blue5);
+  color: var(--ri-orange1);
+}
+.ri .menu a:nth-last-child(1) > button, .ri .menu a:nth-last-child(2) > button {
+  background-color: var(--ri-gray5);
+  color: var(--ri-sd);
+}
+.ri .menu a:nth-last-child(1) > button:hover, .ri .menu a:nth-last-child(2) > button:hover {
+  background-color: var(--ri-gray5);
+  color: var(--ri-yellow1);
+}
+.ri .menu a:nth-last-child(1) > button:active, .ri .menu a:nth-last-child(2) > button:active {
+  background-color: var(--ri-gray5);
+  color: var(--ri-orange1);
+}
+
+/* Mondstadt */
+.mond {
+  background-color: rgba(84, 159, 222, 0.5);
+  border-radius: 50px;
+}
+.mond .top {
+  justify-content: center;
+  padding: 8px;
+}
+.mond .top h1 {
+  font-family: BalsamiqSans, sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+}
+.mond .top a {
+  color: var(--mon-sd-hdr);
+}
+.mond .top a:hover {
+  color: var(--mon-sd-hdr-h);
+}
+.mond .top a:active {
+  color: var(--mon-sd-hdr-a);
+}
+.mond .divider {
+  position: absolute;
+  z-index: 60;
+  width: 100%;
+  height: 25px;
+  background-image: url("../../public/images/genshin/mond_flags.svg");
+  background-repeat: repeat-x;
+  background-size: 20%;
+}
+.mond .bottom {
+  position: relative;
+  margin-top: 4px;
+  height: 83%;
+}
+.mond .bottom .bottom_extra {
+  position: absolute;
+  border-radius: 50px;
+  bottom: -7%;
+  width: 100%;
+}
+.mond .menu {
+  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+  margin-top: 2px;
+  padding-top: 3vh;
+  padding-bottom: 80px;
+}
+.mond .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.mond .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.mond .menu button {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: "Comic Nue", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--mon-sd-itm);
+  color: var(--mon-sd-a);
+}
+.mond .menu button:hover {
+  background-color: var(--mon-sd-itm-h);
+  color: var(--mon-sd-a-h);
+}
+.mond .menu button:active {
+  background-color: var(--mon-sd-itm-h);
+  color: var(--mon-sd-a-a);
+}
+.mond .menu a {
+  display: flex;
+  justify-content: center;
+}
+.mond .menu hr {
+  position: relative;
+  background: url("/images/genshin/windblumeWindwheel.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.mond .menu hr:before, .mond .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.mond .menu hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 10px;
+}
+.mond .menu hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 10px;
+}
+
+/* Furina */
+.fra {
+  background-color: #435399;
+  background-image: url("/images/genshin/furina_scale_pattern.svg");
+  background-size: 48%;
+  background-position: center;
+  border: solid 6px var(--fra-blue8);
+  border-radius: 30px 0px;
+  outline: solid 8px var(--fra-blue7);
+  outline-offset: 0px;
+}
+.fra .top {
+  justify-content: center;
+  padding: 8px;
+}
+.fra .top h1 {
+  font-family: EdwardianScript, sans-serif;
+  font-size: 36px;
+  margin: 0 auto;
+}
+.fra .top a {
+  color: var(--fra-sd-hdr);
+}
+.fra .top a:hover {
+  color: var(--fra-sd-hdr-h);
+}
+.fra .top a:active {
+  color: var(--fra-sd-hdr-a);
+}
+.fra .divider {
+  position: absolute;
+  z-index: 60;
+  width: 100%;
+  height: 22px;
+  background-image: url("../../public/images/genshin/furina_gilded_trim.svg");
+  background-repeat: repeat-x;
+  background-size: 15%;
+  background-position: center;
+}
+.fra .bottom {
+  position: relative;
+  height: 83%;
+}
+.fra .menu {
+  scrollbar-color: var(--fra-sd-scroll) var(--fra-sd-scroll-h);
+  margin-top: 13px;
+  padding-top: 3vh;
+}
+.fra .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 217, 200, 0.7);
+}
+.fra .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(232, 217, 200, 0.9);
+}
+.fra .menu button {
+  border: 4px solid var(--fra-white1);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: Arinda, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--fra-sd-itm);
+  color: var(--fra-sd-a);
+}
+.fra .menu button:hover {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-h);
+}
+.fra .menu button:active {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-a);
+}
+.fra .menu a {
+  display: flex;
+  justify-content: center;
+}
+.fra .menu hr {
+  position: relative;
+  background: url("/images/genshin/furina_skirt_symbol.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .menu hr:before, .fra .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--fra-gold1);
+  height: 2px;
+  top: 52%;
+}
+.fra .menu hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
+}
+.fra .menu hr:after {
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
+}
+
+/* Template/Test */
+.test {
+  background-color: transparent;
+}
+.test .divider {
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+}
+.test .bottom {
+  background-color: transparent;
+  scrollbar-color: var(black) var(black);
+}
+.test .bottom::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.test .bottom::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.test .bottom button {
+  background-color: white;
+}
+
+/* References 
+ * 	https://stackoverflow.com/questions/35610251/style-hr-with-image
+*/

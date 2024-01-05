@@ -71,11 +71,13 @@
 	
 	a {
 		text-decoration: none;
+		cursor: default;
 	}
 
 	button {
 		padding: 1vh;
 		margin-bottom: 15px;
+		cursor: pointer;
 	}
 
 	&:last-child {
