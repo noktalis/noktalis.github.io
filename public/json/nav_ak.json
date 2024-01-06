@@ -41,6 +41,12 @@
 			"text": "Story Highlights",
 			"href": "/ak/story/",
 			"key":"ak-nav-7"
+		},
+		{
+			"title": "Sticker Gallery",
+			"text": "Sticker Gallery",
+			"href": "/ak/stickers/",
+			"key":"ak-nav-8"
 		}
 	]
 }

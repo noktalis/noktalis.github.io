@@ -106,6 +106,15 @@ function Content() {
 					imgAlt={"Zima inspecting a Clue 4"}>
 						Story Highlights
 				</StickerButtonLink>
+				<StickerButtonLink
+					href={"/ak/stickers/"}
+					btnTitle={"Sticker Gallery"}
+					imgSide={"right"}
+					imgSize={""}
+					imgSrc={"/images/ak/stickers/bagpipe_potatoes.png"}
+					imgAlt={"Bagpipe with potatoes"}>
+						Sticker Gallery
+				</StickerButtonLink>
 			</Nav2Col>
 		</div>
 	);
