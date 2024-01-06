@@ -71,7 +71,7 @@ function Content() {
 			<h3 style={{textAlign:"center", paddingTop:'15px'}}>Official Stickers</h3>
 			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit'>Official Arknights Fankit</a>!</h4>
 
-			<Gallery path={"/json/misc/ak_stickers.json"}/>
+			<Gallery path={"/json/misc/ak_stickers_acknowledgements.json"} arrayName="images"/>
 
 
 			<hr/> {/* Genshin Section */}

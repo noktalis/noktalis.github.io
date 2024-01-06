@@ -33,7 +33,14 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			<h1 style={{textAlign:"center"}}>Arknights Sticker Gallery</h1>
+			<h1>Arknights Sticker Gallery</h1>
+			<p>
+				All stickers in this gallery <em>should</em> be official Arkngights stickers! Meaning, the copyright should belong to Hypergryph.
+			</p>
+			<p>
+				While looking for stickers to use for my funky little site here, I discovered that the CN version of Arknights stickers don't have the copyright mark in the way, but the Global versions do. Obviously, for the sake of aesthetics, I'd prefer to have the version without the mark. But the CN version of stickers are super gatekept for some reason! So I had to scrounge the rest of the internet to look for places where they've breached containment.
+			</p>
+			
 		</div>
 	);
 }

@@ -34,7 +34,7 @@ function Content() {
 	return (
 		<div>
 			<h1 style={{textAlign:'center'}}>Wishlist</h1>
-			<DetailsList path={"/json/ak_wishlist.json"} arrayKey={"wishlist"}></DetailsList>
+			<DetailsList path={"/json/ak/ak_wishlist.json"} arrayKey={"wishlist"}></DetailsList>
 		</div>
 	);
 }
