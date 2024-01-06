@@ -46,9 +46,15 @@ function Content() {
 					title="Priestess' Yearning"
 					summaryText="This lovely speech at the end of the world [M8-8 After]"
 					
-					details={
-						<img/>
-					}>
+					details={<>
+						<img src='/images/ak/story/priestess_m8-8/1.png'/>
+						<img src='/images/ak/story/priestess_m8-8/2.png'/>
+						<img src='/images/ak/story/priestess_m8-8/3.png'/>
+						<img src='/images/ak/story/priestess_m8-8/4.png'/>
+						<img src='/images/ak/story/priestess_m8-8/5.png'/>
+						<img src='/images/ak/story/priestess_m8-8/6.png'/>
+						<img src='/images/ak/story/priestess_m8-8/7.png'/>
+					</>}>
 				</DetailsListEntry>
 			</DetailsList>
 

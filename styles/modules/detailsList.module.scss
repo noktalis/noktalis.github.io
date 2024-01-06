@@ -48,9 +48,13 @@
  *		details element from the hr
  */
 .textContainer {
-	padding: 12px;
+	padding: 10px;
 	padding-bottom: 15px;
 	white-space: pre-wrap;
+
+	img {
+		width: 100%;
+	}
 }
 
 
