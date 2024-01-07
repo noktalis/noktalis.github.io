@@ -40,6 +40,12 @@ function Content() {
 			<p>
 				While looking for stickers to use for my funky little site here, I discovered that the CN version of Arknights stickers don't have the copyright mark in the way, but the Global versions do. Obviously, for the sake of aesthetics, I'd prefer to have the version without the mark. But the CN version of stickers are super gatekept for some reason! So I had to scrounge the rest of the internet to look for places where they've breached containment.
 			</p>
+
+			<h2>All Chen</h2>
+			<p>
+				I found the high quality version of this sticker pack on <a href='https://stickers.wiki/telegram/arknights_sticker_3/'>stickers.wiki</a>! For some of the stickers with text, I spliced in the marked English version's text to create a markfree English version :D
+			</p>
+			<Gallery path="/json/ak/ak_stickers.json" arrayName="chen"/>
 			
 		</div>
 	);
