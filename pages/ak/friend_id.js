@@ -48,10 +48,10 @@ function Content() {
 
 			<h2 id="SupportUnits">Can you put so-and-so up as your support unit?</h2>
 			<p>
-				Here's a <a href="https://www.krooster.com/network/lookup/Noktalis">link</a> to all the units I own, although it might be a bit outdated. Most of my 6*s are raised, but my 5* and 4*s? Ah... They're most likely not promoted to <abbr title="Elite 2">E2</abbr>, sorry!
+				Here's a <a href="https://www.krooster.com/network/lookup/Noktalis" target="_blank" >link</a> to all the units I own, although it might be a bit outdated. Most of my 6*s are raised, but my 5* and 4*s? Ah... They're most likely not promoted to <abbr title="Elite 2">E2</abbr>, sorry!
 			</p>
 			<p>
-				If you want me to put up a certain unit, just shoot a message into <a href="https://sincerelyandyourstruly.neocities.org/ask/">Xue's askbox</a>. We're telepathically linked, so I'll know almost instantly! Oh, but do try to send another ask when you're done with needing that unit. Otherwise I'll just. Guess that you're done with them after a day?
+				If you want me to put up a certain unit, just shoot a message into <a href="https://sincerelyandyourstruly.neocities.org/ask/" target="_blank">Xue's askbox</a>. We're telepathically linked, so I'll know almost instantly! Oh, but do try to send another ask when you're done with needing that unit. Otherwise I'll just. Guess that you're done with them after a day?
 			</p>
 		</div>
 	);

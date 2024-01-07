@@ -53,7 +53,7 @@ function Content() {
 				align="left"
 				imgSrc="/images/ak/stickers/thorns_spiky.png">
 					<p>
-						An <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20'>edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie'>@asbestie</a>
+						An <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20' target="_blank">edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie' target="_blank">@asbestie</a>
 					</p>
 					<p>
 						They don't seem to be an artist, so there's no indication on their profile nor the post itself whether they want to be credited. But since it's an edit of official art, I'm going to take a guess that they intended for this edit to be used freely by fans since Hypergryph technically still holds the copyright.
@@ -64,12 +64,12 @@ function Content() {
 				align="right"
 				imgSrc="/images/ak/laterano_chapel.png">
 					<p>
-						A background from the Guiding Ahead Event. HD version from <a href='https://aceship.github.io/AN-EN-Tags/akgallery.html'>Aceship CG Gallery</a>.
+						A background from the Guiding Ahead Event. HD version from <a href='https://aceship.github.io/AN-EN-Tags/akgallery.html' target="_blank">Aceship CG Gallery</a>.
 					</p>
 			</AssetDescription>
 
 			<h3 style={{textAlign:"center", paddingTop:'15px'}}>Official Stickers</h3>
-			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit'>Official Arknights Fankit</a>!</h4>
+			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit' target="_blank">Official Arknights Fankit</a>!</h4>
 
 			<Gallery path={"/json/misc/ak_stickers_acknowledgements.json"} arrayName="images"/>
 
@@ -86,7 +86,7 @@ function Content() {
 				align="left"
 				imgSrc="/images/genshin/jean_namecard.png">
 					<p>
-						<a href='https://genshin-impact.fandom.com/wiki/Jean/Gallery#Namecard'>Jean's Namecard</a>, HD version from <a href='https://genshinresource.tumblr.com/cardlist'>@genshinresource</a>
+						<a href='https://genshin-impact.fandom.com/wiki/Jean/Gallery#Namecard' target="_blank">Jean's Namecard</a>, HD version from <a href='https://genshinresource.tumblr.com/cardlist' target="_blank">@genshinresource</a>
 					</p>
 			</AssetDescription>
 
@@ -94,7 +94,7 @@ function Content() {
 				align="right"
 				imgSrc="/images/genshin/windblumeWindwheel.svg">
 					<p>
-						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className={style.xue}>Xue</span></a>!
+						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org' target="_blank"><span className={style.xue}>Xue</span></a>!
 					</p>
 					<p>
 						I recolored it to match the colors of windwheel asters and combined it with an in-game screenshot of grass to decorate the side navigation :3
@@ -108,7 +108,7 @@ function Content() {
 				align="left"
 				imgSrc="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/">
 					<p>
-						The <a href='https://genshin-impact.fandom.com/wiki/Anemo'>Anemo symbol</a>, from the <a href='https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki'><span className='xue'>Fandom wiki</span></a>.
+						The <a href='https://genshin-impact.fandom.com/wiki/Anemo' target="_blank">Anemo symbol</a>, from the <a href='https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki' target="_blank">Fandom wiki</a>.
 					</p>
 					<p>
 						I decided to use the wiki's svg because it was a much bigger image than anything else I could find ¯\_(ツ)_/¯
