@@ -6,11 +6,11 @@
 		},
 		{
 			"src":"/images/ak/stickers/all-chen/chen_scold.png",
-			"alt":"Ch'en scolding someone on TV in Chinese"
+			"alt":"Ch'en scolding someone on TV in Chinese to not 'talk back to your boss'"
 		},
 		{
 			"src":"/images/ak/stickers/all-chen/chen_scold_en.png",
-			"alt":"Ch'en scolding someone on TV in English"
+			"alt":"Ch'en scolding someone on TV in English to not 'talk back to your boss'"
 		},
 		{
 			"src":"/images/ak/stickers/all-chen/chen_banish.png",
@@ -75,6 +75,108 @@
 		{
 			"src":"/images/ak/stickers/all-chen/chen_angry.png",
 			"alt":"Ch'en about to snap"
+		}
+	],
+	"rabbits1":[
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_letter.png",
+			"alt":"Bunny Courier with a letter"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_wand.png",
+			"alt":"Bunny Angelina with a wand"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_drive.png",
+			"alt":"Bunny driving a car"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_roll.png",
+			"alt":"Bunny Amiya rolling around on the floor"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_beg.png",
+			"alt":"Bunny Amiya holding onto Bunny Kal'tsit's labcoat to ask for something"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_attack.png",
+			"alt":"Bunny Kal'tsit attacking by throwing a giant syringe at another bunny"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_swivel.png",
+			"alt":"Bunny Ch'en spinning in a bunny-sized wheelchair"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_angry.png",
+			"alt":"Bunny Ch'en sitting in an oversized wheelchair, arms crossed and huffing in annoyance"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_kbsmack.png",
+			"alt":"Bunny Amiya smacking a key on a keyboard"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_startle.png",
+			"alt":"Bunny Amiya mid-jump after being startled"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_snore.png",
+			"alt":"Bunny Lappland snoring, creating a bubble"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_sword.png",
+			"alt":"Bunny Lappland smiling with Lappland's full-sized sword"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_uhoh.png",
+			"alt":"Bunny Lappland, smile froze on its face as it has a horrifying realization"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_answer.png",
+			"alt":"Bunny answering the phone"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_answer_en.png",
+			"alt":"Bunny answering the phone"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_soak.png",
+			"alt":"Bunny Courier soaking in hot water"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_naptuck.png",
+			"alt":"Bunny Amiya tucking in a sleeping Bunny Crownslayer"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_box.png",
+			"alt":"Bunny popping out of a dusty box"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_cold.png",
+			"alt":"Bunny Courier trying to fend off the cold"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_crane.png",
+			"alt":"Bunny Crownslayer held by a crane game crane over other bunnies"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_sob.png",
+			"alt":"Bunny Angelina with a bandage on her head and a tear from her eye"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_dream.png",
+			"alt":"Bunny Crownslayer dreaming as it sleeps"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_carrot.png",
+			"alt":"Bunny Amiya holding a carrot"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_suspicious.png",
+			"alt":"Bunny Ch'en pointing to an empty photo of 'this guy' with a brow raised in suspicion"
+		},
+		{
+			"src":"/images/ak/stickers/rabbits1/bunny_interview.png",
+			"alt":"Bunny Courier being interviewed with a microphone, its eyes blacked out"
 		}
 	]
 }

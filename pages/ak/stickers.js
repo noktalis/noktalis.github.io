@@ -46,6 +46,15 @@ function Content() {
 				I found the high quality version of this sticker pack on <a href='https://stickers.wiki/telegram/arknights_sticker_3/'>stickers.wiki</a>! For some of the stickers with text, I spliced in the marked English version's text to create a markfree English version :D
 			</p>
 			<Gallery path="/json/ak/ak_stickers.json" arrayName="chen"/>
+
+			<h2>All Rabbits</h2>
+			<p>
+				Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/'>stickers.wiki</a>! 
+			</p>
+			<p>
+				Arknights sticker packs are usually at most 16 stickers, but stickers.wiki had 8 extra stickers that matched the artstyle of this pack, so I'm going to assume they're part of the pack and included them at the end.
+			</p>
+			<Gallery path="/json/ak/ak_stickers.json" arrayName="rabbits1"/>
 			
 		</div>
 	);
