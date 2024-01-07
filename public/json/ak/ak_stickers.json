@@ -310,5 +310,76 @@
 			"src":"/images/ak/stickers/barrenland/purestream_bath.png",
 			"alt":"Purestream having a bath with two rubber ducks"
 		}
-	]
+	],
+	"reunion":[
+		{
+			"src":"/images/ak/stickers/reunion/patriot_bake.png",
+			"alt":"Patriot with a tray of freshly-baked cookies"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/skullshatterer_grocery.png",
+			"alt":"Skullshatterer carrying a bag of groceries while holding a train handle"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/talulah_binocular.png",
+			"alt":"Taluluah peeking around a corner with binoculars"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/w_disgust.png",
+			"alt":"W tearing documents in disgust"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/mephisto_bully.png",
+			"alt":"Mephisto bullying a homeless man"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/crownslayer_sad.png",
+			"alt":"Crownslayer drowning her sorrows in beer at a bar"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/frostnova_snowball.png",
+			"alt":"Frostnova about to angrily throw a snowball"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/faust_listless.png",
+			"alt":"Faust listlessly drawing a cone in the dirt"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/reunion_chill.png",
+			"alt":"A mage chilling at a counter while an infiltrator chills on the ground"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/reunion_drink.png",
+			"alt":"Homeless men drinking booze together"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/red_blade.png",
+			"alt":"A samurai man holding a menacing red blade"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/exploding_spiders.png",
+			"alt":"Exploding spiders signalling to give clout"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/yeti_hit.png",
+			"alt":"Yeti Squadmember brutally hit by a snowball"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/ax_pc.png",
+			"alt":"An angry man about to bring an axe down on his computer"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/feed_slugs.png",
+			"alt":"A Reunion member feeding slugs like pigeons"
+		},
+		{
+			"src":"/images/ak/stickers/reunion/silly_wolves.png",
+			"alt":"Reunion wolves mimicking the meme of a wolf trying to fit mouth around another wolf's head"
+		}
+	],
+	"template":
+	{
+		"src":"/images/ak/stickers/",
+		"alt":""
+	}
 }

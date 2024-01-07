@@ -72,7 +72,7 @@ function Content() {
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
 				</p>
 				<p>
-					The official download of this sticker pack for global servers lacks the stickers of Purestream and Conviction, probably because they came from a collaboration and April Fools special respectively, and global servers had yet to release them due to difference in schedule. 
+					The official download of this sticker pack for global servers lacks the stickers of Purestream and Conviction, probably because they came from a collaboration and April Fools' special respectively, and global servers had yet to release them due to difference in schedule. 
 				</p>
 				<Gallery path="/json/ak/ak_stickers.json" arrayName="barrenland"/>
 			</div>
@@ -86,12 +86,21 @@ function Content() {
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
 				</p>
 				<p>
-					Arknights sticker packs are usually at most 16 stickers, but stickers.wiki had 8 extra stickers that matched the artstyle of this pack, so I'm going to assume they're part of the pack and included them at the end.
+					Arknights sticker packs are usually at most 16 stickers, but stickers.wiki had 8 extra stickers that matched the artstyle of this pack, so I'm going to assume they're part of the pack and included them at the end. Also, when I downloaded this pack from the official site, all these stickers were still gifs rather than static image files.
 				</p>
 				<Gallery path="/json/ak/ak_stickers.json" arrayName="rabbits1"/>
 			</div>
 			
-			
+			<h2>Reunion</h2>
+			<div>
+				<p>
+					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1385216822014746627?s=20' target="_blank">22 April 2021</a>
+				</p>
+				<p>
+					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
+				</p>
+				<Gallery path="/json/ak/ak_stickers.json" arrayName="reunion"/>
+			</div>
 
 		</div>
 	);
