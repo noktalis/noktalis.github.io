@@ -71,7 +71,7 @@ function Content() {
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
 				</p>
-				<Gallery path="/json/ak/ak_stickers.json" arrayName="afternoon"/>
+				<Gallery path="/json/ak/ak_stickers.json" arrayName="barrenland"/>
 			</div>
 
 			<h2>All Rabbits</h2>

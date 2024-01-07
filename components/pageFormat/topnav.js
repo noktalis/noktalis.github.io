@@ -86,7 +86,7 @@ function Indicator() {
 	/* Determines which image to use as indicator */
 	switch(fandom){
 		case "ak":
-			path += "ak/stickers/bagpipe_potatoes.png";
+			path += "ak/stickers/barrenland/bagpipe_potatoes.png";
 			altText += "Bagpipe with potatoes";
 			break;
 		case "genshin":

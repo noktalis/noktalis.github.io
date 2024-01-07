@@ -111,7 +111,7 @@ function Content() {
 					btnTitle={"Sticker Gallery"}
 					imgSide={"right"}
 					imgSize={""}
-					imgSrc={"/images/ak/stickers/bagpipe_potatoes.png"}
+					imgSrc={"/images/ak/stickers/barrenland/bagpipe_potatoes.png"}
 					imgAlt={"Bagpipe with potatoes"}>
 						Sticker Gallery
 				</StickerButtonLink>

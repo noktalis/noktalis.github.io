@@ -244,5 +244,11 @@
 			"src":"/images/ak/stickers/afternoon/frostleaf_phone.png",
 			"alt":"Frostleaf looking mildly concerned as she picks up a phone"
 		}
+	],
+	"barrenland":[
+		{
+			"src":"/images/ak/stickers/afternoon/ceobe_happy.png",
+			"alt":"Ceobe, very happy"
+		}
 	]
 }
