@@ -71,6 +71,9 @@ function Content() {
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
 				</p>
+				<p>
+					The official download of this sticker pack for global servers lacks the stickers of Purestream and Conviction, probably because they came from a collaboration and April Fools special respectively, and global servers had yet to release them due to difference in schedule. 
+				</p>
 				<Gallery path="/json/ak/ak_stickers.json" arrayName="barrenland"/>
 			</div>
 

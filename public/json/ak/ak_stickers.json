@@ -247,8 +247,68 @@
 	],
 	"barrenland":[
 		{
-			"src":"/images/ak/stickers/afternoon/ceobe_happy.png",
-			"alt":"Ceobe, very happy"
+			"src":"/images/ak/stickers/barrenland/bagpipe_tractor.png",
+			"alt":"Bagpipe farming LMD on a tractor"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/bagpipe_potatoes.png",
+			"alt":"Bagpipe with potatoes"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/utage_plead.png",
+			"alt":"Utage pleading with fake tears"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/bibeak_knit.png",
+			"alt":"Bibeak knitting something"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/sesa_angry.png",
+			"alt":"Sesa angrily slams his fist on a table, causing a mug to fly up"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/astesia_smile.png",
+			"alt":"Astesia grinning"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/ceylon_umbrella.png",
+			"alt":"Ceylon holding her umbrella as it rains in the distance"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/sussurro_ambulance.png",
+			"alt":"Sussurro with an ambulance siren on her head, dragging a first aid kit behind her while rushing somewhere"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/myrtle_sleep.png",
+			"alt":"Myrtle and her golden apple tucked and sleeping"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/scavenger_clean.png",
+			"alt":"Scavenger trying to clean dust with a paint roller"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/perfumer_water.png",
+			"alt":"Perfumer watering some grass"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/grani_annoy.png",
+			"alt":"Grani being annoyed by a cursor"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/vanilla_hug.png",
+			"alt":"Vanilla hugging an originium slug"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/plume_icecream.png",
+			"alt":"Plume about to eat ice cream"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/conviction_crush.png",
+			"alt":"Conviction menacingly crushing something in their fist as they threaten Doctor"
+		},
+		{
+			"src":"/images/ak/stickers/barrenland/purestream_bath.png",
+			"alt":"Purestream having a bath with two rubber ducks"
 		}
 	]
 }
