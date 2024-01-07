@@ -178,5 +178,71 @@
 			"src":"/images/ak/stickers/rabbits1/bunny_interview.png",
 			"alt":"Bunny Courier being interviewed with a microphone, its eyes blacked out"
 		}
+	],
+	"afternoon":[
+		{
+			"src":"/images/ak/stickers/afternoon/ceobe_happy.png",
+			"alt":"Ceobe, very happy"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/ceobe_nap.png",
+			"alt":"Ceobe sleeping on the couch"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/ceobe_sticks.png",
+			"alt":"Ceobe struggling to carry a mountain of sticks on her back"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/nightmare_despair.png",
+			"alt":"Nightmare fearfully huddling in a corner"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/leizi_angry.png",
+			"alt":"Leizi, angrily holding up a fist charged with lightning"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/leizi_static.png",
+			"alt":"Leizi shaking hands with Amiya, causing Amiya's hair to puff up"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/leizi_charge.png",
+			"alt":"Leizi charging Closure's phone"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/durnar_suitcase.png",
+			"alt":"Durnar holding a suitcase of snacks from the underground snack network"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/beehunter_defeat.png",
+			"alt":"Beehunter sitting on a chair in defeat"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/indra_punchscreen.png",
+			"alt":"Indra angrily punched her fist through a computer monitor"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/gitano_death.png",
+			"alt":"Gitano attacking Doctor with a card of the 13th Major Arcana, Death"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/skyfire_dusty.png",
+			"alt":"Skyfire covered in dust and cobwebs"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/vulcan_disgust.png",
+			"alt":"Vulcan looking in disgust at a molten hot heart held in her blacksmith tongs"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/hellagur_nap.png",
+			"alt":"Hellagur napping in a rocking chair with Warfariin bat on his shoulder and Aak cat in his lap"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/meteor_praise.png",
+			"alt":"Meteor being praised by the Doctor for shooting the apple on his head several times while blindfolded"
+		},
+		{
+			"src":"/images/ak/stickers/afternoon/frostleaf_phone.png",
+			"alt":"Frostleaf looking mildly concerned as she picks up a phone"
+		}
 	]
 }
