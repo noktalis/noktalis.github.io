@@ -66,7 +66,7 @@ function Content() {
 					btnTitle={"Operator Wishlist"}
 					imgSide={"left"}
 					imgSize={"big"}
-					imgSrc={"/images/ak/stickers/liskarm_tired.png"}
+					imgSrc={"/images/ak/stickers/leisure/liskarm_tired.png"}
 					imgAlt={"Liskarm having none of Franka's mischief"}>
 						Wishlist
 				</StickerButtonLink>
@@ -75,7 +75,7 @@ function Content() {
 					btnTitle={"Arknights Ships"}
 					imgSide={"right"}
 					imgSize={"big"}
-					imgSrc={"/images/ak/stickers/franka_heart.png"}
+					imgSrc={"/images/ak/stickers/leisure/franka_wink.png"}
 					imgAlt={"Franka winking at Liskarm with finger guns"}>
 						Ships
 				</StickerButtonLink>
