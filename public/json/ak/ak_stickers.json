@@ -377,6 +377,72 @@
 			"alt":"Reunion wolves mimicking the meme of a wolf trying to fit mouth around another wolf's head"
 		}
 	],
+	"leisure":[
+		{
+			"src":"/images/ak/stickers/leisure/kafka_sad.png",
+			"alt":"Kafka sadly wiping away tears"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/kafka_plant.png",
+			"alt":"Kafka happily holding up a chia pet shaped like Doctor"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/mountain_revelation.png",
+			"alt":"Mountain having a shocking revelation as he reads a book"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/mountain_cheers.png",
+			"alt":"Mountain holding up a wine glass in cheers"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/robin_catch.png",
+			"alt":"Robin failing to catch a ball that bounces off her hands"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/robin_admire.png",
+			"alt":"Robin holding up her salary envelope in admiration and worship"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/pinecone_headache.png",
+			"alt":"Pinecone clutching her head, confused over too many battle records"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/pinecone_sleepy.png",
+			"alt":"Pinecone being sleepy and drooling a bit"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/vanilla_fear.png",
+			"alt":"Vanilla fearfully hugging an originium slug"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/vanilla_happy.png",
+			"alt":"Vanilla cheerfully walking around with an originium slug on her head"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/saria_threat.png",
+			"alt":"Saria threateningly holding a baton"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/saria_door.png",
+			"alt":"Saria slamming the door open"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/liskarm_tired.png",
+			"alt":"Liskarm holding her face as she has enough of Franka's nonsense"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/franka_wink.png",
+			"alt":"Franka winking and giving finger guns at Liskarm"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/liskarm_shoot.png",
+			"alt":"Liskarm shooting a Reunion member"
+		},
+		{
+			"src":"/images/ak/stickers/leisure/franka_skewer.png",
+			"alt":"Franka holding up her superheated sword to show off the skewered meat she cooked"
+		}
+	],
 	"template":
 	{
 		"src":"/images/ak/stickers/",

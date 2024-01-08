@@ -44,7 +44,7 @@ function Content() {
 			<h2>All Chen</h2>
 			<div>
 				<p>
-					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1272803313017163776?s=20' target="_blank">16 June 2020</a>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1272803313017163776?s=20' target="_blank">16 June 2020</a>
 				</p>
 				<p>
 					I found the high quality version of this sticker pack on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! For some of the stickers with text, I spliced in the marked English version's text to create a markfree English version :D
@@ -55,7 +55,7 @@ function Content() {
 			<h2>Afternoon Stories</h2>
 			<div>
 				<p>
-					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1300402964188876811?s=20' target="_blank">31 August 2020</a>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1300402964188876811?s=20' target="_blank">31 August 2020</a>
 				</p>
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
@@ -66,7 +66,7 @@ function Content() {
 			<h2>Operation Barrenland</h2>
 			<div>
 				<p>
-					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1305461295320186880?s=20' target="_blank">14 September 2020</a>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1305461295320186880?s=20' target="_blank">14 September 2020</a>
 				</p>
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
@@ -80,7 +80,7 @@ function Content() {
 			<h2>All Rabbits</h2>
 			<div>
 				<p>
-					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1371808469594992641?s=20' target="_blank">16 March 2021</a>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1371808469594992641?s=20' target="_blank">16 March 2021</a>
 				</p>
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
@@ -94,12 +94,29 @@ function Content() {
 			<h2>Reunion</h2>
 			<div>
 				<p>
-					Originally released to EN: <a href='https://x.com/ArknightsEN/status/1385216822014746627?s=20' target="_blank">22 April 2021</a>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1385216822014746627?s=20' target="_blank">22 April 2021</a>
 				</p>
 				<p>
 					Also found on <a href='https://stickers.wiki/telegram/arknights_sticker_3/' target="_blank">stickers.wiki</a>! 
 				</p>
 				<Gallery path="/json/ak/ak_stickers.json" arrayName="reunion"/>
+			</div>
+
+			<h2>Leisure Time</h2>
+			<div>
+				<p>
+					Released to CN: <a href='https://x.com/oyuki_gms/status/1344546557534687237?s=20' target="_blank">30 December 2020</a>
+				</p>
+				<p>
+					Released to EN: <a href='https://x.com/ArknightsEN/status/1385216822014746627?s=20' target="_blank">29 June 2021</a>
+				</p>
+				<p>
+					Using the smaller, markfree versions found at <a href='https://m.mamecn.com/wz/298989.html' target='_blank'>a random site found from reverse image search</a> as reference, I edited out the mark from the official global versions to create most of these stickers.
+				</p>
+				<p>
+					Additional Mountain stickers reference from <a href='https://ngabbs.com/read.php?tid=24921050&rand=61'>an NGA forum post</a>. 
+				</p>
+				<Gallery path="/json/ak/ak_stickers.json" arrayName="leisure"/>
 			</div>
 
 		</div>
