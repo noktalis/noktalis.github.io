@@ -2,7 +2,7 @@ import format from "../styles/modules/gallery.module.scss";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 
-export default function Gallery({path}){
+export default function Gallery({path, arrayName}){
 	const theme = useContext(ThemeContext);
 	const [images, setImages] = useState([{src:"",alt:""}]);
 
@@ -20,7 +20,7 @@ export default function Gallery({path}){
 			/* Fetch request */
 			const response = await fetch(path);
 			const obj = await response.json();
-			const data = obj.images;	// array of button data
+			const data = obj[arrayName];	// array of button data
 
 			console.log(data);
 			setImages(data);

@@ -5,6 +5,7 @@ import { ThemeContext } from '../components/pageFormat/ThemeContext';
 import { FandomContext } from '../components/pageFormat/FandomContext';
 import StickerButtonLink from '../components/stickerbtnlink';
 import NavCol from '../components/navCol';
+import style from '../styles/modules/main.module.scss';
 
 /**
  * Home page of website
@@ -36,7 +37,7 @@ function Content() {
 				If you know me in real life but I don't talk about my unhinged thoughts about fictional characters with you, this site is not for you! Turn back now! You've been <em>unwelcomed</em> because I cannot handle being Perceived&trade; and Judged&trade; by you!!
 			</p>
 			<p>
-				Okay, now that I've kicked those guys out, the rest of you are either my friends and/or internet strangers. I'm Nat and this is where I keep <em>some</em> of my brainrot and unhinged cringe :D! If you want to see the rest, like my (slightly more detailed) opinions on ships, AU's I've collaboratively created with my friend Xue, and my deepest, darkest, most hateriness rambling, I highly recommend you check out <Link target="_blank" href={"https://sincerelyandyourstruly.neocities.org"}>Xue's site</Link>!
+				Okay, now that I've kicked those guys out, the rest of you are either my friends and/or internet strangers. I'm Nat and this is where I keep <em>some</em> of my brainrot and unhinged cringe :D! If you want to see the rest, like my (slightly more detailed) opinions on ships, AU's I've collaboratively created with my friend <span className={style.xue}>Xue</span>, and my deepest, darkest, most hateriness rambling, I highly recommend you check out <Link target="_blank" href={"https://sincerelyandyourstruly.neocities.org"}><span className={style.xue}>Xue's</span> site</Link>!
 			</p>
 
 			<hr/>

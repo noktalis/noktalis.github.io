@@ -18,7 +18,7 @@ export default function Page(){
 		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>404: Not Found</title>
-				<link rel="icon" href="/ventiico.png" />
+				<link rel="icon" href="/ventiico.png"/>
 			</Head>
 			<Layout><Content/></Layout>
 		</ThemeContext.Provider>
