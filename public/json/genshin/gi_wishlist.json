@@ -1,0 +1,65 @@
+{
+	"mode":"char",
+	"wishlist":[
+		{
+			"name":"Lyney cons",
+			"text":"I want more kaboom cats and bigger kabooms!",
+			"img":"/images/genshin/emotes/lyney_tada.png",
+			"alt":"Lyney throwing a surprise with confetti"
+		},
+		{
+			"name":"Lynette cons",
+			"text":"To match Lyney! But also since she's a 4* there's no way to guarantee her cons...",
+			"img":"/images/genshin/emotes/lynette_tada.png",
+			"alt":"Lynette throwing a surprise with confetti"
+		},
+		{
+			"name":"Worcestershire C1",
+			"text":"He do more Mario twirl = More big number. Also he'll stay alive easier lol",
+			"img":"/images/genshin/emotes/wrio_curious.png",
+			"alt":"Wrio curiously looking up with his arms crossed"
+		},
+		{
+			"name":"Venti C6",
+			"text":"\"Wait Venti is your main, why is he so low on the list???\" BECAUSE HE'S ALREADY C2 WITH POLAR STAR. He's Fine. I'll get his cons when I got rolls to spare, but new characters and DPS are prioritized.",
+			"img":"/images/genshin/emotes/venti_whoa.png",
+			"alt":"Venti with starry-eyed amazement"
+		},
+		{
+			"name":"Arlecchino",
+			"text":"Mostly for Fatui collection purposes since I already have the rest, but also because there's a possibility she'll work with Lyney",
+			"img":"/images/genshin/emotes/arle_sit.png",
+			"alt":"Arlecchino smiling as she sits cross-legged in a fancy theater chair"
+		},
+		{
+			"name":"Kazuha cons",
+			"text":"Damage go brrrrrr even more",
+			"img":"",
+			"alt":""
+		},
+		{
+			"name":"Raiden",
+			"text":"Mostly for Archon collection purposes, but also because I need more electro lol",
+			"img":"",
+			"alt":""
+		},
+		{
+			"name":"Yae Miko",
+			"text":"Mostly so my theoretical Raiden doesn't get lonely, but also because I need more AFK electro for Tighnari and Nahida",
+			"img":"",
+			"alt":""
+		},
+		{
+			"name":"Xianyun",
+			"text":"For Anemo collection purposes",
+			"img":"",
+			"alt":""
+		},
+		{
+			"name":"Albedo",
+			"text":"Now that Golden Troupe is out, I finally have a set for him! Not sure where I'd use him, but he can sit pretty if I ever get around to pulling him.",
+			"img":"",
+			"alt":""
+		}
+	]
+}

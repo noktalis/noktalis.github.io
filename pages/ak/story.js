@@ -164,8 +164,8 @@ function Content() {
 					</>}>
 				</DetailsListEntry>
 				<DetailsListEntry
-					title="WIP"
-					summaryText="WIP"
+					title="Vigna's FBI meme"
+					summaryText="Vigna's FBI meme"
 					
 					details={<>
 						<img src=''/>

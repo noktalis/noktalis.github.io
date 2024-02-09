@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Container that holds the entire details list section */
 .container {
   display: flex;
@@ -13,9 +14,6 @@
 }
 .container details hr {
   margin: 0 auto;
-}
-.container hr {
-  border: 2px solid;
 }
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
   margin: 0 auto;
@@ -66,7 +64,49 @@
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;
   color: var(--ri-gray5);
 }
+.ri hr {
+  border: 2px solid;
+}
 .ri .summaryContainer img {
   background-color: var(--ri-gray6);
+  border-radius: 40px;
+}
+
+/* Mondstadt */
+.mond details {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+}
+.mond details summary::marker {
+  color: var(--mon-green3);
+}
+.mond details[open] summary::marker {
+  color: var(--mon-green6);
+}
+.mond h1, .mond h2, .mond h3, .mond h4, .mond h5, .mond h6 {
+  font-family: BalsamiqSans, sans-serif;
+  font-weight: 500;
+  color: var(--ri-gray5);
+}
+.mond hr {
+  border: none;
+  border-top: var(--mon-green3) dotted 3px;
+  color: var(--mon-green4);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.mond hr:after {
+  background: transparent;
+  color: white;
+  content: "❉";
+  padding: 0 4px;
+  position: relative;
+  top: -16px;
+  border-radius: 20px;
+}
+.mond .summaryContainer img {
+  background-color: var(--mon-blue5);
+  border: 3px solid var(--mon-green3);
   border-radius: 40px;
 }

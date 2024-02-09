@@ -16,9 +16,6 @@
 		}
 	}
 
-	hr {
-		border: 2px solid;
-	}
 
 	h1,h2,h3,h4,h5,h6 {
 		margin: 0 auto;
@@ -84,9 +81,62 @@
 		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
 		color: var(--ri-gray5);
 	}
+	
+	hr {
+		border: 2px solid;
+	}
 
 	.summaryContainer img {
 		background-color: var(--ri-gray6);
+		border-radius: 40px;
+	}
+}
+
+/* Mondstadt */
+.mond {
+
+	details {
+		background-color: rgba($color: white, $alpha: 0.4);
+		border-radius: 15px;
+
+		summary::marker {
+			color: var(--mon-green3);
+		}
+		
+		&[open] {
+			summary::marker {
+				color: var(--mon-green6);
+			}
+		}
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+		font-family: BalsamiqSans,sans-serif;
+		font-weight: 500;
+		color: var(--ri-gray5);
+	}
+
+	hr {
+		border: none;
+			border-top: var(--mon-green3) dotted 3px;
+			color: var(--mon-green4);
+			overflow: visible;
+			text-align: center;
+			height: 5px;
+			&:after {
+				background: transparent;
+				color: white;
+				content: '❉';
+				padding: 0 4px;
+				position: relative;
+				top: -16px;
+				border-radius: 20px
+			}
+	}
+
+	.summaryContainer img {
+		background-color: var(--mon-blue5);
+		border: 3px solid var(--mon-green3);
 		border-radius: 40px;
 	}
 }
