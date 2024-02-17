@@ -17,7 +17,7 @@ export default function Home(){
 		<FandomContext.Provider value='genshin'>
 		<ThemeContext.Provider value='mond'>
 			<Head>
-				<title>Genshin Home</title>
+				<title>Home | Genshin</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>

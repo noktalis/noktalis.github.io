@@ -19,7 +19,7 @@ export default function Page(){
 		<FandomContext.Provider value='genshin'>
 		<ThemeContext.Provider value='mond'>
 			<Head>
-				<title>Genshin Blorbos</title>
+				<title>Blorbos | Genshin</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout extra_menu_src="/json/nav_gi_blorbos.json"><Content/></Layout>
