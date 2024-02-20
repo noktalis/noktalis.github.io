@@ -6,5 +6,29 @@
 		"en-date":"2020-04-07",
 		"en-src":"https://x.com/ArknightsEN/status/1247771424833454081?s=20",
 		"stickers":[]
+	},
+	{
+		"name":"Ch6",
+		"cn-date":"2019-12-30",
+		"cn-src":null,
+		"en-date":"2020-07-17",
+		"en-src":"https://x.com/ArknightsEN/status/1284103056762650625?s=20",
+		"stickers":[
+			"ambriel_lost",
+			"ambriel_mischief",
+			"greythroat_wtf",
+			"blaze_greythroat_run","blaze_doctor_comrade",
+			"blaze_kidnap",
+			"reed_swet",
+			"broca_grumpy",
+			"cardigan_barf",
+			"silverash_sulk",
+			"pramanix_throw",
+			"schwarz_tea",
+			"vigna_nom",
+			"gavial_rage",
+			"estelle_despair",
+			"nearl_wince"
+		]
 	}
 ]}
