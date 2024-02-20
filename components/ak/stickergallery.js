@@ -6,17 +6,12 @@ import { ThemeContext } from "../pageFormat/ThemeContext";
  * Component for displaying an Arknights sticker pack, the pack's data stored in a map
  * @returns 
  */
-export default function AKStickerGallery({pack}){
-	let cnDate;
+export default function AKStickerGallery(data){
+	let pack = data['pack'];
 
-	if (pack) {
-		console.log("The pack isn't empty!");
-		console.log(pack);
-
-		cnDate = dateStringReformat(pack["cn-date"]);
-	} else {
-		console.log("Pack name wasn't found.");
-	}
+	let cnDate = dateStringReformat(pack["cn-date"]);
+	
+	
 	
 	
 
@@ -26,9 +21,13 @@ export default function AKStickerGallery({pack}){
 	
 	return (
 		<>
-			<p>
-				Released to CN: <a href='' target="_blank">{cnDate ? cnDate : ""}</a>
-			</p>
+			{
+				data ? <p>
+							Released to CN: <a href='' target="_blank">{cnDate ? cnDate : ""}</a>
+						</p>
+				:
+				<></>
+			}
 		</>
 	); // end return
 } // end Component

@@ -53,6 +53,7 @@ function Content() {
 		<div>
 			<AKStickerGallery
 				pack={packs[1]}></AKStickerGallery>
+			{/* <AKStickerGallery pack={packs[2]}></AKStickerGallery> */}
 			{/* {packs.map(({pack}) => <AKStickerGallery>{name}</AKStickerGallery>)} */}
 		</div>
 	);
