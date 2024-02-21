@@ -1,37 +1,35 @@
 import format from "../../styles/modules/gallery.module.scss";
-import { ThemeContext } from "../pageFormat/ThemeContext";
-
+import {StickerMap} from '@/components/ak/stickermap';
 
 /**
  * Component for displaying an Arknights sticker pack, the pack's data stored in a map
  * @returns 
  */
-export default function AKStickerGallery(data){
+export default function AKStickerGallery({children, ...data}){
 	let pack = data['pack'];
+	// let map = StickerMap.stickers;
+	console.log(StickerMap.stickers["chen_annoy"]);
+
 	let cnDate;
-	// let enDate;
+	let enDate;
 
 	try {
 		cnDate = dateStringReformat(pack["cn-date"]);
-		// enDate = dateStringReformat(pack["en-date"]);
+		enDate = dateStringReformat(pack["en-date"]);
 		// console.log(cnDate);
 		console.log("Dates set");
 	} catch (error) {
 		console.log("Could not set dates");
 	}
 	
-	
-	
-
-
-	
-	
 	return (
 		<>
 		{ pack ? 	
 			<>
+				<h2>{pack["name"]}</h2>
 				<CNDate src={pack["cn-src"]} dateStr={cnDate}/>
-				{/* <ENDate src="" dateStr={enDate}/> */}
+				<ENDate src={pack["en-src"]} dateStr={enDate}/>
+				{children}
 			</>
 			: <></>
 		}

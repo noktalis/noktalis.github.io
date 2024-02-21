@@ -1,4 +1,4 @@
-class StickerMap {
+export default class StickerMap {
 	static stickers = new Map([
 		["chen_smacked",[
 			"/images/ak/stickers/all-chen/chen_smacked.png",
@@ -25,6 +25,10 @@ class StickerMap {
 			"Ch'en is taken aback by something, her hand rising halfway in a gesture of shock."
 		]]
 	]);
+
+	static getStickerInfo(key) {
+		return stickers[key];
+	}
 
 
 }

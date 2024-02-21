@@ -42,7 +42,7 @@ function Content() {
 			const obj = await response.json();
 			const data = obj["packs"];	// array of maps, each map represents a sticker pack
 
-			console.log(data);
+			console.log(typeof data);
 			setPacks(data);
 		}
 		fetchData()
@@ -51,8 +51,9 @@ function Content() {
 
 	return (
 		<div>
-			<AKStickerGallery
-				pack={packs[1]}></AKStickerGallery>
+			<AKStickerGallery pack={packs[1]}>
+					<div>testing</div>
+				</AKStickerGallery>
 			{/* <AKStickerGallery pack={packs[2]}></AKStickerGallery> */}
 			{/* {packs.map(({pack}) => <AKStickerGallery>{name}</AKStickerGallery>)} */}
 		</div>
