@@ -1,128 +1,126 @@
 import format from "../../styles/modules/gallery.module.scss";
-import {StickerMapHelper} from '@/components/ak/stickermap';
+import { useContext, useState, useEffect } from "react";
+import { ThemeContext } from "../pageFormat/ThemeContext";
+import {StickerMap} from '@/components/ak/stickermap';
 
 /**
  * Component for displaying an Arknights sticker pack, the pack's data stored in a map
  * @returns 
  */
-export default function AKStickerGallery({children, ...data}){
-	let pack = data['pack'];
-	let stickermap = new Map();	// TODO: use map to fetch sticker data
-	
-	console.log(stickermap);
-	console.log()
+export default function AKStickerGallery({children, path}){
+	const [packData, setPackData] = useState({});
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch (theme) {
+		case 'mond':
+		default:
+			themeClass = format.mond;
+	}
 
 	let cnDate;
+	let cnSrc;
 	let enDate;
+	let enSrc;
 
-	try {
-		cnDate = dateStringReformat(pack["cn-date"]);
-		enDate = dateStringReformat(pack["en-date"]);
-		// console.log(cnDate);
-		console.log("Dates set");
-	} catch (error) {
-		console.log("Could not set dates");
-	}
+	/* Fetch the data for array */
+	useEffect(() => {
+		const fetchData = async() => {
+			/* Fetch request */
+			const response = await fetch(path);
+			const obj = await response.json();
+			const data = obj["stickers"];	// array of sticker data
+
+			cnDate =  new Date(obj["cn-date"]);
+			
+			cnSrc = obj["cn-src"];
+			enDate = new Date(obj["en-date"]);
+			enSrc = obj["en-src"];
+
+
+
+			console.log(obj);
+			setPackData(obj);
+		}
+		fetchData()
+		.catch(console.error);
+	},[])
 	
 	return (
 		<>
-		{ pack ? 	
-			<>
-				<h2>{pack["name"]}</h2>
-				<CNDate src={pack["cn-src"]} dateStr={cnDate}/>
-				<ENDate src={pack["en-src"]} dateStr={enDate}/>
-				{children}
-			</>
-			: <></>
-		}
+			<h2>{packData["fullname"]}</h2>
+			<ReleaseDate
+				region="CN"
+				date={new Date(packData["cn-date"])}
+				src={packData["cn-src"]}
+			/>
+			<ReleaseDate
+				region="EN"
+				date={new Date(packData["en-date"])}
+				src={packData["en-src"]}
+			/>
+			{ packData["cn-src"] ? null : <WeiboCropped/>}
+
+			{children}
+
+			<div className={`${format.container} ${themeClass}`}>
+				{packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>)}
+			</div>
 		</>
 	); // end return
 } // end Component
 
-function ENDate({dateStr, src}) {
-	if (src) {
-		return (
-			<p>
-				Released to EN: <a href={src} target="_blank">{dateStr}</a>
-			</p>
-		);
-	} else if (dateStr) {
-		return (
-			<p>
-				Released to EN: {dateStr}
-			</p>
-		);
-	} else {
-		return (
-			<p>
-				Released to EN: Unknown
-			</p>
-		);
-	}
+function WeiboCropped(){
+	return(
+		<p>
+			Sticker sheet and CN release date retrieved from Weibo by Xue.
+		</p>
+	);
 }
 
-function CNDate({dateStr, src}) {
+/**
+ * 
+ * @param {String} region 	- "CN" or "EN" to be inserted
+ * @param {Date} date		- Date object of release date
+ * @param {String} src		- String that contains the path/link 
+ * @returns 
+ */
+function ReleaseDate({region, date, src}) {
+	let releaseStr = "Released to " + region + ":"
+	let dateStr = dateToString(date);
+
 	if (src) {
 		return (
 			<p>
-				Released to CN: <a href={src} target="_blank">{dateStr}</a>
+				{releaseStr} <a href={src} target="_blank">{dateStr}</a>
 			</p>
 		);
-	} else if (dateStr) {
+	} else if (date) {
 		return (
 			<p>
-				Released to CN: {dateStr}
+				{releaseStr} {dateStr}
 			</p>
 		);
 	} else {
 		return (
 			<p>
-				Released to CN: Unknown
+				{releaseStr} Unknown
 			</p>
 		);
 	}
 }
 
 /**
- * Converts a data string from YYYY-MM-DD (ISO) format to DD Mon YYYY format
- * @param {String} string - a date in ISO format
+ * Converts a Date object to DD Mon YYYY string format
+ * @param {Date} date - a Date object
  * 
  * @returns date string in DD Mon YYYY format
  */
-function dateStringReformat(string) {
-	let date = new Date(string);
-	let newStr = date.toUTCString().substring(5,16);
-
-	return newStr;
+function dateToString(date) {
+	return date.toUTCString().substring(5,16);
 }
 
-const stickermap = new Map();
-
-function getStickerMap() {
-	let map = new Map([
-		["chen_smacked",[
-			"/images/ak/stickers/all-chen/chen_smacked.png",
-			"Chibi Ch'en doing a spit-take as Swire, in the form of a cat, smacks her head"
-		]],
-		["chen_scold",[
-			"/images/ak/stickers/all-chen/chen_scold.png",
-			"Ch'en pointing an accusing finger as a black bar censors her eyes. She's scolding someone in Chinese to not 'talk back to your boss.'"
-		]],
-		["chen_scold_en",[
-			"/images/ak/stickers/all-chen/chen_scold_en.png",
-			"Ch'en pointing an accusing finger as a black bar censors her eyes. She's scolding someone in Englishm \"Don't talk back to your boss!\""
-		]],
-		["chen_banish",[
-			"/images/ak/stickers/all-chen/chen_banish.png",
-			"Ch'en's leg is seen sticking out on the side, indicating that she had just kicked out Swire and Hoshiguma, both in the form of cats."
-		]],
-		["chen_annoy",[
-			"/images/ak/stickers/all-chen/chen_annoy.png",
-			"Ch'en is annoyed by Hoshiguma (in cat form) smacking her head while trying to do paperwork."
-		]],
-		["chen_astonish",[
-			"/images/ak/stickers/all-chen/chen_astonish.png",
-			"Ch'en is taken aback by something, her hand rising halfway in a gesture of shock."
-		]]
-	]);
+// from ISO string
+function getYear(string) {
+	return string.substring(0,4);
 }

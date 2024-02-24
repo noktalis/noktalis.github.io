@@ -32,28 +32,9 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	const [packs, setPacks] = useState([{}]);
-
-	/* Fetch the sticker packs data */
-	useEffect(() => {
-		const fetchData = async() => {
-			/* Fetch request */
-			const response = await fetch("/json/ak/stickers.json");
-			const obj = await response.json();
-			const data = obj["packs"];	// array of maps, each map represents a sticker pack
-
-			console.log(typeof data);
-			setPacks(data);
-		}
-		fetchData()
-		.catch(console.error);
-	},[])
-
 	return (
 		<div>
-			<AKStickerGallery pack={packs[1]}>
-					<div>testing</div>
-				</AKStickerGallery>
+			<AKStickerGallery path="https://noktalis.github.io/ak-stickers/2019/ch6/info.json"/>
 			{/* <AKStickerGallery pack={packs[2]}></AKStickerGallery> */}
 			{/* {packs.map(({pack}) => <AKStickerGallery>{name}</AKStickerGallery>)} */}
 		</div>

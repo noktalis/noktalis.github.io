@@ -14,7 +14,7 @@ export default function Gallery({path, arrayName}){
 			themeClass = format.mond;
 	}
 
-	/* Fetch the data for main main */
+	/* Fetch the data for array */
 	useEffect(() => {
 		const fetchData = async() => {
 			/* Fetch request */
