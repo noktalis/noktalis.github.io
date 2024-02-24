@@ -18,26 +18,12 @@ export default function AKStickerGallery({children, path}){
 			themeClass = format.mond;
 	}
 
-	let cnDate;
-	let cnSrc;
-	let enDate;
-	let enSrc;
-
 	/* Fetch the data for array */
 	useEffect(() => {
 		const fetchData = async() => {
 			/* Fetch request */
 			const response = await fetch(path);
 			const obj = await response.json();
-			const data = obj["stickers"];	// array of sticker data
-
-			cnDate =  new Date(obj["cn-date"]);
-			
-			cnSrc = obj["cn-src"];
-			enDate = new Date(obj["en-date"]);
-			enSrc = obj["en-src"];
-
-
 
 			console.log(obj);
 			setPackData(obj);
@@ -64,7 +50,7 @@ export default function AKStickerGallery({children, path}){
 			{children}
 
 			<div className={`${format.container} ${themeClass}`}>
-				{packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>)}
+				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>) : "Stickers not found." }
 			</div>
 		</>
 	); // end return

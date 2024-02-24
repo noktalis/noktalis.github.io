@@ -32,6 +32,24 @@ export default function Page(){
  * @returns 
  */
 function Content() {
+	const [packs, setPacks] = useState([]);
+	const [currentPage, setCurrentPage] = useState(1);
+
+	/* Fetch the data */
+	useEffect(() => {
+		const fetchData = async() => {
+			/* Fetch request */
+			const response = await fetch("/json/ak/sticker_packs.json");
+			const obj = await response.json();
+			const data = obj["packs"];
+
+			console.log(data);
+			setPacks(data);
+		}
+		fetchData()
+		.catch(console.error);
+	},[])
+
 	return (
 		<div>
 			<AKStickerGallery path="https://noktalis.github.io/ak-stickers/2019/ch6/info.json"/>
