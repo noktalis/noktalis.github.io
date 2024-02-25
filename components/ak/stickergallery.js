@@ -1,7 +1,7 @@
 import format from "../../styles/modules/gallery.module.scss";
+import style from "../../styles/modules/main.module.scss";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../pageFormat/ThemeContext";
-import {StickerMap} from '@/components/ak/stickermap';
 
 /**
  * Component for displaying an Arknights sticker pack, the pack's data stored in a map
@@ -42,24 +42,54 @@ export default function AKStickerGallery({children, path}){
 			/>
 			<ReleaseDate
 				region="EN"
-				date={new Date(packData["en-date"])}
+				date={packData["en-date"] != null ? new Date(packData["en-date"]) : null}
 				src={packData["en-src"]}
 			/>
 			{ packData["cn-src"] ? null : <WeiboCropped/>}
+			{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : null}
+			{ packData["en-edit"] ? <ENEdit/> : null}
 
 			{children}
 
-			<div className={`${format.container} ${themeClass}`}>
+			<div className={`${format.akarchive} ${themeClass}`}>
 				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>) : "Stickers not found." }
 			</div>
 		</>
 	); // end return
 } // end Component
 
+/**
+ * A component for a recurring paragraph that explains that the sticker pack's sheet and CN release date was retrieved from Weibo by Xue
+ * @returns 
+ */
 function WeiboCropped(){
 	return(
 		<p>
-			Sticker sheet and CN release date retrieved from Weibo by Xue.
+			Sticker sheet and CN release date retrieved from <a href="https://weibo.com/u/6441489862" target="_blank">
+			Arknights Choearth Weibo blog</a> by <span className={style.xue}>
+				<a href="https://sincerelyandyourstruly.neocities.org/" target="_blank">Xue</a></span>
+		</p>
+	);
+}
+
+function TumblrArchive(link1, link2){
+	return(
+		<>
+			<p>
+				Stickers are from <a href="https://arknights-archive.tumblr.com/">@arknights-archive</a> on Tumblr
+			</p>
+			<p>
+				<a href={link1} target="_blank">Part 1</a> <a href={link2} target="_blank">Part 2</a>
+			</p>
+		</>
+		
+	);
+}
+
+function ENEdit(){
+	return(
+		<p>
+			I created the EN version of some stickers by downloading the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> and editing them myself
 		</p>
 	);
 }
@@ -72,6 +102,9 @@ function WeiboCropped(){
  * @returns 
  */
 function ReleaseDate({region, date, src}) {
+	if (date == null)
+		return
+
 	let releaseStr = "Released to " + region + ":"
 	let dateStr = dateToString(date);
 

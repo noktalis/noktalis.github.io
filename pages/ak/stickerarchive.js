@@ -17,7 +17,7 @@ export default function Page(){
 		<FandomContext.Provider value='ak'>
 		<ThemeContext.Provider value='ri'>
 			<Head>
-				<title>Sticker Gallery Test</title>
+				<title>Sticker Archive | Arknights</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
@@ -52,9 +52,7 @@ function Content() {
 
 	return (
 		<div>
-			<AKStickerGallery path="https://noktalis.github.io/ak-stickers/2019/ch6/info.json"/>
-			{/* <AKStickerGallery pack={packs[2]}></AKStickerGallery> */}
-			{/* {packs.map(({pack}) => <AKStickerGallery>{name}</AKStickerGallery>)} */}
+			{packs.map((pack) => <AKStickerGallery path={pack}></AKStickerGallery>)}
 		</div>
 	);
 }
