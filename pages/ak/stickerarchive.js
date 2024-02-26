@@ -4,6 +4,7 @@ import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import { useState, useEffect } from 'react';
 import AKStickerGallery from '@/components/ak/stickergallery';
+import PaginateNav from '@/components/pagination/paginationnav';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -53,6 +54,8 @@ function Content() {
 	return (
 		<div>
 			{packs.map((pack) => <AKStickerGallery path={pack}></AKStickerGallery>)}
+
+			<PaginateNav/>
 		</div>
 	);
 }
