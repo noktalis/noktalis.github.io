@@ -1,0 +1,90 @@
+/*	The container that holds the entire tierlist */
+.container {
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* A container that holds an entire tier */
+.tierContainer {
+  display: grid;
+  grid-template-areas: "letter content";
+  grid-template-columns: auto 1fr;
+  margin-bottom: 15px;
+}
+.tierContainer:last-child {
+  margin-bottom: 0;
+}
+
+/* Styles the letter representing a tier */
+.tierLetter {
+  grid-area: letter;
+  height: 100%;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+/* Styles the items and content within a tier */
+.tierContent {
+  padding: 2vh;
+  padding-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Tierlist item types */
+/* Voice Over item */
+.vo {
+  position: relative;
+  margin-right: 2vh;
+}
+.vo img {
+  max-width: 80px;
+}
+.vo .lang {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Theming
+ * 		Applied alongside .container
+*/
+/* Mondstadt */
+.mond .tierContainer:first-child > .tierLetter, .mond .tierContainer:first-child .vo > .lang {
+  background-color: var(--mon-red2);
+  color: white;
+}
+.mond .tierContainer:nth-child(2) > .tierLetter, .mond .tierContainer:nth-child(2) .vo > .lang {
+  background-color: var(--mon-red1);
+  color: white;
+}
+.mond .tierContainer:nth-child(3) > .tierLetter, .mond .tierContainer:nth-child(3) .vo > .lang {
+  background-color: var(--mon-yellow1);
+  color: black;
+}
+.mond .tierContainer:nth-child(4) > .tierLetter, .mond .tierContainer:nth-child(4) .vo > .lang {
+  background-color: var(--mon-green5);
+  color: black;
+}
+.mond .tierContainer:nth-child(5) > .tierLetter, .mond .tierContainer:nth-child(5) .vo > .lang {
+  background-color: var(--mon-green3);
+  color: white;
+}
+.mond .tierLetter {
+  font-size: 28px;
+  font-weight: bold;
+}
+.mond .vo img {
+  border-radius: 15px;
+}

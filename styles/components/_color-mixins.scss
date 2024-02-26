@@ -27,7 +27,6 @@
 
 @mixin scrollbarColorsFF($thumb, $track){
 	scrollbar-color: var($thumb) var($track);
-	
 }
 
 @mixin scrollbarColor($color){

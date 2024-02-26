@@ -25,7 +25,7 @@ export default function AKStickerGallery({children, path}){
 			const response = await fetch(path);
 			const obj = await response.json();
 
-			console.log(obj);
+			console.log(obj["fullname"]);
 			setPackData(obj);
 		}
 		fetchData()
@@ -72,14 +72,11 @@ function WeiboCropped(){
 	);
 }
 
-function TumblrArchive(link1, link2){
+function TumblrArchive({link1, link2}){
 	return(
 		<>
 			<p>
-				Stickers are from <a href="https://arknights-archive.tumblr.com/">@arknights-archive</a> on Tumblr
-			</p>
-			<p>
-				<a href={link1} target="_blank">Part 1</a> <a href={link2} target="_blank">Part 2</a>
+				Stickers are from <a href="https://arknights-archive.tumblr.com/">@arknights-archive</a> on Tumblr: <a href={link1} target="_blank">Part 1</a> & <a href={link2} target="_blank">Part 2</a>
 			</p>
 		</>
 		
@@ -89,7 +86,7 @@ function TumblrArchive(link1, link2){
 function ENEdit(){
 	return(
 		<p>
-			I created the EN version of some stickers by downloading the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> and editing them myself
+			Some EN versions of stickers are modified from the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> by me
 		</p>
 	);
 }

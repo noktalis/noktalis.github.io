@@ -299,7 +299,7 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--ri-sd-scroll) var(--ri-sd-scroll-h);
+  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
 }
 .ri::-webkit-scrollbar-thumb {
   background-color: rgba(11, 136, 177, 0.7);

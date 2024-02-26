@@ -145,7 +145,7 @@
 	$scroll: #0b88b1;
 
 	// Scrollbar Settings
-	@include scrollbarColorsFF(--ri-sd-scroll, --ri-sd-scroll-h);	// for firefox
+	@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);	// for firefox
 	@include scrollbarColor($scroll);
 
 	.main {
