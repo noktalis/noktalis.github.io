@@ -299,7 +299,7 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--ri-sd-scroll) var(--ri-sd-scroll-h);
+  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
 }
 .ri::-webkit-scrollbar-thumb {
   background-color: rgba(11, 136, 177, 0.7);
@@ -311,13 +311,13 @@
   background-color: var(--ri-main);
   color: var(--ri-txt);
 }
-.ri .main a {
+.ri .main > a {
   color: var(--ri-a);
 }
-.ri .main a:hover {
+.ri .main > a:hover {
   color: var(--ri-a-h);
 }
-.ri .main a:active {
+.ri .main > a:active {
   color: var(--ri-a-a);
 }
 .ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {
@@ -335,6 +335,23 @@
 }
 .ri .footer a:active {
   color: var(--ri-blue1);
+}
+.ri .top {
+  background-color: var(--ri-blue6);
+  border-radius: 50px;
+  border: none;
+}
+.ri .top svg polygon {
+  fill: white;
+}
+.ri .top:hover {
+  background-color: var(--ri-blue5);
+}
+.ri .top:hover svg polygon {
+  fill: var(--ri-white1);
+}
+.ri .top:active svg polygon {
+  fill: var(--ri-yellow1);
 }
 
 /* Mondstadt */

@@ -108,12 +108,12 @@ function Content() {
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/ak/stickers/"}
-					btnTitle={"Sticker Gallery"}
+					btnTitle={"Sticker Archive"}
 					imgSide={"right"}
 					imgSize={""}
 					imgSrc={"/images/ak/stickers/barrenland/bagpipe_potatoes.png"}
 					imgAlt={"Bagpipe with potatoes"}>
-						Sticker Gallery
+						Sticker Archive
 				</StickerButtonLink>
 			</Nav2Col>
 		</div>

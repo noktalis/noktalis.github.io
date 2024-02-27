@@ -1,10 +1,20 @@
 {"packs":[
+	
 	{
-		"name":"Operation Intelligence",
-		"cn-date":null,
-		"cn-src":null,
-		"en-date":"2020-04-07",
-		"en-src":"https://x.com/ArknightsEN/status/1247771424833454081?s=20",
-		"stickers":[]
+		"name":"Leisure Time",
+		"cn-date":"2020-12-30",
+		"cn-src":"https://twitter.com/oyuki_gms/status/1344546557534687237",
+		"en-date":"2021-06-29",
+		"en-src":"https://x.com/ArknightsEN/status/1410100788727205890?s=20",
+		"stickers":[
+			"kafka_sad", "kafka_plant",
+			"mountain_revelation", "mountain_cheers",
+			"robin_catch", "robin_admire",
+			"pinecone_headache", "pinecone_sleepy",
+			"vanilla_fear", "vanilla_happy",
+			"saria_threat", "saria_door",
+			"liskarm_tired", "franka_wink",
+			"liskarm_shoot", "franka_skewer"
+		]
 	}
 ]}

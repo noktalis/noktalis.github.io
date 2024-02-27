@@ -1,0 +1,27 @@
+/*
+ *	Backgrounds for the page (behind Main and SideNav)
+ *		Each class refers to a different theme
+*/
+.lyt {
+  background-image: url("/images/genshin/lynette_pattern.svg");
+  background-size: 23%;
+  height: 100vh;
+}
+
+.ri {
+  background-image: url("https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.mond {
+  background-image: url("/images/genshin/jean_namecard.png");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+}
+
+.fra {
+  background-image: url("/images/genshin/furina_skirt_pattern.png");
+  background-repeat: repeat-x;
+  background-position: 0% 55%;
+}

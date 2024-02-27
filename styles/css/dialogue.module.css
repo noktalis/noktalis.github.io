@@ -1,0 +1,224 @@
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+/* Nat Voice: Friday October Twelve 
+ *   Also for the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* 	Xue Voice: Dehasta */
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/Dehasta.woff2") format("woff2");
+}
+@font-face {
+  font-family: Dehasta;
+  src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* SaltyCheese
+ *   For headers */
+@font-face {
+  font-family: SaltyCheese;
+  src: url("../../public/fonts/SaltyCheese.woff2") format("woff2");
+}
+/* Handlee
+ *   For headers */
+@font-face {
+  font-family: Handlee;
+  src: url("../../public/fonts/Handlee.woff2") format("woff2");
+}
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
+/* Matilda 
+ *   For text in Main container */
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/Mattilda.woff2") format("woff2");
+}
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
+}
+/* Roboto Condensed 
+ *   For Arknights */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* I forgot what I wanted these for but I want them around In Case */
+/* BalsamiqSans */
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comic Nue */
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNue/ComicNeue-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 3px !important;
+  max-width: 55%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* Speaker Fonts */
+.nat {
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+  font-size: 85%;
+}
+
+.xue {
+  font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+/* Mobile Formatting */
+@media (max-width: 1000px) {
+  .container {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 14px;
+  }
+}
+/* Theming 
+ *		Applied alongside .container
+ */
+/* Lynette */
+.lyt .left {
+  background-color: var(--lyt-bub-L);
+  color: var(--lyt-bub-L-txt);
+}
+.lyt .right {
+  background-color: var(--lyt-bub-R);
+  color: var(--lyt-bub-R-txt);
+}
+
+/* Mondstadt */
+.mond .left {
+  background-color: var(--mon-bub-L);
+  color: var(--mon-bub-L-txt);
+}
+.mond .right {
+  background-color: var(--mon-bub-R);
+  color: var(--mon-bub-R-txt);
+}
