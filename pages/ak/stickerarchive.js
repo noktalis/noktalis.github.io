@@ -2,9 +2,11 @@ import Head from 'next/head';
 import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AKStickerGallery from '@/components/ak/stickergallery';
 import PaginateNav from '@/components/pagination/paginationnav';
+import packData from "/public/json/ak/sticker_packs.json";
+import ReactPaginate from 'react-paginate';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -33,29 +35,46 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	const [packs, setPacks] = useState([]);
-	const [currentPage, setCurrentPage] = useState(1);
+	const [packs, setPacks] = useState(packData);
+	const [pageNumber, setPageNumber] = useState(0);
 
-	/* Fetch the data */
-	useEffect(() => {
-		const fetchData = async() => {
-			/* Fetch request */
-			const response = await fetch("/json/ak/sticker_packs.json");
-			const obj = await response.json();
-			const data = obj["packs"];
+	const itemsPerPage = 2;
+	const itemsIndex = pageNumber * itemsPerPage;
+	const totalPageCount = Math.ceil(packs.length/itemsPerPage);
 
-			console.log(data);
-			setPacks(data);
-		}
-		fetchData()
-		.catch(console.error);
-	},[])
+	const [display, setDisplay] = useState(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
+
+	// let displayItems = packs.slice(itemsIndex, itemsIndex + itemsPerPage);
+		// .map((item) => {
+		// 	return(
+		// 		<AKStickerGallery path={item}></AKStickerGallery>
+		// 	);
+		// });
+
+	const changePage = ({selected}) => {
+		setPageNumber(selected);
+		setDisplay(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
+		console.log(pageNumber);
+		console.log(display);
+	}
+
 
 	return (
 		<div>
-			{packs.map((pack) => <AKStickerGallery path={pack}></AKStickerGallery>)}
+			{/* {displayItems} */}
+			{display.map((pack) => <AKStickerGallery path={pack}></AKStickerGallery>)}
+			<ReactPaginate
+				previousLabel={"Prev"}
+				nextLabel={"Next"}
+				pageCount={totalPageCount}
+				onPageChange={changePage}
+				containerClassName=''
+				activeClassName=''
+			/>
 
-			<PaginateNav/>
+			
+
+			{/* <PaginateNav/> */}
 		</div>
 	);
 }
