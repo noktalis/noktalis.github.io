@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AKStickerGallery from '@/components/ak/stickergallery';
 import PaginateNav from '@/components/pagination/paginationnav';
-import packData from "/public/json/ak/sticker_packs.json";
 import ReactPaginate from 'react-paginate';
+
+//https://www.youtube.com/watch?v=HANSMtDy508
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -35,16 +36,17 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	const [packs, setPacks] = useState(packData);
+	const [packs, setPacks] = useState([]);
 	const [pageNumber, setPageNumber] = useState(0);
 
 	const itemsPerPage = 2;
 	const itemsIndex = pageNumber * itemsPerPage;
 	const totalPageCount = Math.ceil(packs.length/itemsPerPage);
 
-	const [display, setDisplay] = useState(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
+	// const [display, setDisplay] = useState(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
 
-	// let displayItems = packs.slice(itemsIndex, itemsIndex + itemsPerPage);
+	let display = packs.slice(itemsIndex, itemsIndex + itemsPerPage);
+	console.log(display);
 		// .map((item) => {
 		// 	return(
 		// 		<AKStickerGallery path={item}></AKStickerGallery>
@@ -53,16 +55,29 @@ function Content() {
 
 	const changePage = ({selected}) => {
 		setPageNumber(selected);
-		setDisplay(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
+		// setDisplay(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
 		console.log(pageNumber);
 		console.log(display);
 	}
+
+	/* Fetch the data */
+	useEffect(() => {
+		const fetchData = async() => {
+			/* Fetch request */
+			const response = await fetch("https://noktalis.github.io/ak-stickers/info.json");
+			const obj = await response.json();
+			console.log(obj);
+			setPacks(obj);
+		}
+		fetchData()
+		.catch(console.error);
+	},[])
 
 
 	return (
 		<div>
 			{/* {displayItems} */}
-			{display.map((pack) => <AKStickerGallery path={pack}></AKStickerGallery>)}
+			{display.map((pack) => <AKStickerGallery packData={pack}></AKStickerGallery>)}
 			<ReactPaginate
 				previousLabel={"Prev"}
 				nextLabel={"Next"}

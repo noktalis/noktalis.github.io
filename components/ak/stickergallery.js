@@ -7,8 +7,8 @@ import { ThemeContext } from "../pageFormat/ThemeContext";
  * Component for displaying an Arknights sticker pack, the pack's data stored in a map
  * @returns 
  */
-export default function AKStickerGallery({children, path}){
-	const [packData, setPackData] = useState({});
+export default function AKStickerGallery({children, packData}){
+	// const [packData, setPackData] = useState({});
 	const theme = useContext(ThemeContext);
 	let themeClass;
 
@@ -18,19 +18,21 @@ export default function AKStickerGallery({children, path}){
 			themeClass = format.mond;
 	}
 
-	/* Fetch the data for array */
-	useEffect(() => {
-		const fetchData = async() => {
-			/* Fetch request */
-			const response = await fetch(path);
-			const obj = await response.json();
+	console.log(packData);
 
-			console.log(obj["fullname"]);
-			setPackData(obj);
-		}
-		fetchData()
-		.catch(console.error);
-	},[])
+	/* Fetch the data for array */
+	// useEffect(() => {
+	// 	const fetchData = async() => {
+	// 		/* Fetch request */
+	// 		const response = await fetch(path);
+	// 		const obj = await response.json();
+
+	// 		console.log(obj["fullname"]);
+	// 		setPackData(obj);
+	// 	}
+	// 	fetchData()
+	// 	.catch(console.error);
+	// },[])
 	
 	return (
 		<>
