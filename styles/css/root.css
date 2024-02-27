@@ -123,6 +123,7 @@
   --ri-sd-a-a: var(--ri-orange1);
   --ri-sd-scroll: rgba(50, 50, 50,0.7);
   --ri-sd-scroll-h: rgba(50, 50, 50,0.7);
+  --ri-pg-button: ;
   /* Mondstadt Colors */
   --mon-teal1: #11666F;
   --mon-teal2: #389F98;

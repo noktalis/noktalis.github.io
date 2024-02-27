@@ -2,10 +2,11 @@ import Head from 'next/head';
 import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import AKStickerGallery from '@/components/ak/stickergallery';
-import PaginateNav from '@/components/pagination/paginationnav';
 import ReactPaginate from 'react-paginate';
+import style from "../../styles/modules/pagination.module.scss";
+import { ToTop } from '@/components/pageFormat/main';
 
 //https://www.youtube.com/watch?v=HANSMtDy508
 
@@ -36,28 +37,26 @@ export default function Page(){
  * @returns 
  */
 function Content() {
+	let theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch(theme) {
+		case "ri":
+		default:
+			themeClass = style.ri;
+	}
+
 	const [packs, setPacks] = useState([]);
 	const [pageNumber, setPageNumber] = useState(0);
 
-	const itemsPerPage = 2;
+	const itemsPerPage = 5;
 	const itemsIndex = pageNumber * itemsPerPage;
 	const totalPageCount = Math.ceil(packs.length/itemsPerPage);
 
-	// const [display, setDisplay] = useState(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
-
 	let display = packs.slice(itemsIndex, itemsIndex + itemsPerPage);
-	console.log(display);
-		// .map((item) => {
-		// 	return(
-		// 		<AKStickerGallery path={item}></AKStickerGallery>
-		// 	);
-		// });
 
 	const changePage = ({selected}) => {
 		setPageNumber(selected);
-		// setDisplay(packs.slice(itemsIndex, itemsIndex + itemsPerPage));
-		console.log(pageNumber);
-		console.log(display);
 	}
 
 	/* Fetch the data */
@@ -73,23 +72,38 @@ function Content() {
 		.catch(console.error);
 	},[])
 
-
 	return (
 		<div>
-			{/* {displayItems} */}
-			{display.map((pack) => <AKStickerGallery packData={pack}></AKStickerGallery>)}
+			<h1 style={{textAlign:"center"}}>Arknights Sticker Archive</h1>
+			<h4 style={{textAlign:"center"}}>Ordered by CN release date | Newest first</h4>
 			<ReactPaginate
-				previousLabel={"Prev"}
-				nextLabel={"Next"}
+				previousLabel={
+					<svg width="30px" height="30px" viewBox="0 -1 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 6L9 12L15 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				}
+				nextLabel={
+					<svg width="30px" height="30px" viewBox="0 -3 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 6L15 12L9 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				}
 				pageCount={totalPageCount}
 				onPageChange={changePage}
-				containerClassName=''
-				activeClassName=''
+				containerClassName={`${style.container} ${themeClass}`}
+				pageLinkClassName={style.pagebutton}
+				activeClassName={style.selected}
+				previousLinkClassName={style.prev}
+				nextLinkClassName={style.next}
+				disabledClassName={style.disabledarrow}
+				style={{textAlign:"center"}}
 			/>
 
-			
+			{display.map((pack) => <AKStickerGallery packData={pack}></AKStickerGallery>)}
 
-			{/* <PaginateNav/> */}
+			<div style={{textAlign:"right"}}>
+				<ToTop/>
+			</div>
+			
 		</div>
 	);
 }

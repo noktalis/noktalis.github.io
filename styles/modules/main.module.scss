@@ -152,7 +152,7 @@
 		// Background & text color
 		@include colors(var(--ri-main), var(--ri-txt));
 
-		a {
+		> a {
 			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
 		}
 	}
@@ -169,6 +169,27 @@
 		a {
 			@include link-colors(var(--ri-yellow1),var(--ri-orange1),var(--ri-blue1));
 		}
+	}
+
+	.top {
+		background-color: var(--ri-blue6);
+		border-radius: 50px;
+		border: none;
+		svg polygon {
+			fill: white;
+		}
+
+		&:hover {
+			background-color: var(--ri-blue5);
+			svg polygon {
+				fill: var(--ri-white1);
+			}
+		}
+
+		&:active svg polygon {
+			fill: var(--ri-yellow1);
+		}
+		
 	}
 }
 

@@ -1,12 +1,71 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts";
+
 .container {
-	// display: flex;
-	// flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 
-	button {
-		display: flex;
-		max-height: 20px;
-		background-color: red;
-		width: 50px;
+	list-style-type: none;
+
+	.pagebutton {
+		cursor: pointer;
+		margin: 8px;
+		min-width: 30px;
+		padding: 10px 18px;
+	}
+}
+
+.prev, .next {
+	margin: 8px;
+	padding: 15px 5px 5px 5px;
+}
+
+/* Theming 
+	Applies to .container */
+
+/* Rhodes Island */
+.ri {
+
+	.pagebutton {
+		@include btn-colors(var(--ri-gray5),var(--ri-sd),
+				var(--ri-gray5),var(--ri-yellow1),
+				var(--ri-gray5),var(--ri-orange1));
+		font-weight: bold;
+		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
+		font-size: larger;
+	}
+
+	.selected a {
+		@include btn-colors(var(--ri-blue6),var(--ri-sd),
+				var(--ri-blue5),var(--ri-yellow1),
+				var(--ri-blue5),var(--ri-orange1));
+	}
+
+	.prev, .next {
+		background-color: var(--ri-gray5);
+	}
+
+	.prev svg, .next svg {
+		stroke: var(--ri-sd);
+
+		&:hover { 
+			stroke: var(--ri-yellow1);
+		}
+		&:active {
+			stroke: var(--ri-orange1);
+		}
+	}
+
+	.disabledarrow a {
+		background-color: var(--ri-gray2);
+		svg {
+			stroke: var(--ri-white1);
+		}
+		&:hover svg, &:active svg {
+			stroke: var(--ri-white1);
+		}
 	}
 }

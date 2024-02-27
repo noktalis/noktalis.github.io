@@ -27,7 +27,7 @@ export default function Main({children}){
 	}
 
 	return(
-		<div className={`${format.container} ${themeClass}`}>
+		<div className={`${format.container} ${themeClass}`} id="main">
 			<div className={format.main}>
 				{children}
 			</div>
@@ -70,5 +70,38 @@ export function Footer(){
 		<div className={format.footer}>
 			{child}
 		</div>
+	);
+}
+
+export function ToTop(){
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch(theme){
+		case "lyt":
+			themeClass = format.lyt;
+			break;
+		case "ri":
+			themeClass = format.ri;
+			break;
+		case "fra":
+			themeClass = format.fra;
+			break;
+		case "mond":
+		default:
+			themeClass = format.mond;
+	}
+
+	const scrollToTop = () => {
+		document.getElementById('main').scroll({top:0,behavior:'smooth'});
+	};
+
+	return(
+		<button onClick={scrollToTop} className={`${format.top} ${themeClass}`}>
+			<svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<title>Scroll to Top</title>
+				<polygon id="Shape" points="12 8 19 16 5 16"/>
+			</svg>
+		</button>
 	);
 }
