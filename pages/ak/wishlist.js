@@ -34,6 +34,9 @@ function Content() {
 	return (
 		<div>
 			<h1 style={{textAlign:'center'}}>Wishlist</h1>
+			<div>
+				Last Updated: 2/29/24
+			</div>
 			<DetailsList path={"/json/ak/ak_wishlist.json"} arrayKey={"wishlist"}></DetailsList>
 		</div>
 	);
