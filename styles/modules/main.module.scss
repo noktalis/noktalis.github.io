@@ -203,7 +203,7 @@
 	$scroll: #1C3E4E;
 
 	// Scrollbar Settings
-	@include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);	// for firefox
+	// @include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);	// for firefox
 	@include scrollbarColor($scroll);
 
 	.main {

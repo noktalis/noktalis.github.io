@@ -166,8 +166,8 @@
   --mon-a: var(--mon-green7);
   --mon-a-h: var(--mon-yellow1);
   --mon-a-a: var(--mon-blue1);
-  --mon-scroll: rgba(28, 62, 78,0.9);
-  --mon-scroll-h: rgba(28, 62, 78,0.7);
+  --mon-scroll: rgba(28, 62, 78,0.7);
+  --mon-scroll-h: rgba(28, 62, 78,0.9);
   --mon-tbl: var(--mon-blue5);
   --mon-tbl-h: var(--mon-blue4);
   --mon-tbl-b: var(--mon-gold1);

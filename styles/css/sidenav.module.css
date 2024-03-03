@@ -280,8 +280,11 @@
 }
 .lyt .menu {
   position: absolute;
-  scrollbar-color: var(--lyt-sd-scroll) var(--lyt-sd-scroll-h);
+  scrollbar-color: var(--lyt-sd-scroll) transparent;
   padding-top: 5.25vh;
+}
+.lyt .menu:hover {
+  scrollbar-color: var(--lyt-sd-scroll-h) transparent;
 }
 .lyt .menu::-webkit-scrollbar-thumb {
   background-color: rgba(22, 22, 22, 0.7);
@@ -372,9 +375,12 @@
 }
 .ri .menu {
   text-align: center;
-  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
+  scrollbar-color: var(--ri-scroll) transparent;
   padding-left: 0;
   padding-right: 0;
+}
+.ri .menu:hover {
+  scrollbar-color: var(--ri-scroll-h) transparent;
 }
 .ri .menu::-webkit-scrollbar-thumb {
   background-color: rgba(50, 50, 50, 0.7);
@@ -472,10 +478,13 @@
   width: 100%;
 }
 .mond .menu {
-  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+  scrollbar-color: var(--mon-sd-scroll) transparent;
   margin-top: 2px;
   padding-top: 3vh;
   padding-bottom: 80px;
+}
+.mond .menu:hover {
+  scrollbar-color: var(--mon-sd-scroll-h) transparent;
 }
 .mond .menu::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.7);
@@ -579,9 +588,12 @@
   height: 83%;
 }
 .fra .menu {
-  scrollbar-color: var(--fra-sd-scroll) var(--fra-sd-scroll-h);
+  scrollbar-color: var(--fra-sd-scroll) transparent;
   margin-top: 13px;
   padding-top: 3vh;
+}
+.fra .menu:hover {
+  scrollbar-color: var(--fra-sd-scroll-h) transparent;
 }
 .fra .menu::-webkit-scrollbar-thumb {
   background-color: rgba(232, 217, 200, 0.7);
@@ -654,7 +666,10 @@
 }
 .test .bottom {
   background-color: transparent;
-  scrollbar-color: var(black) var(black);
+  scrollbar-color: var(black) transparent;
+}
+.test .bottom:hover {
+  scrollbar-color: var(black) transparent;
 }
 .test .bottom::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.7);

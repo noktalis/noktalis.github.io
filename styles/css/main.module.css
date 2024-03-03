@@ -254,7 +254,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+  scrollbar-color: var(--lyt-scroll) transparent;
+}
+.lyt:hover {
+  scrollbar-color: var(--lyt-scroll-h) transparent;
 }
 .lyt::-webkit-scrollbar-thumb {
   background-color: rgba(3, 44, 52, 0.7);
@@ -299,7 +302,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
+  scrollbar-color: var(--ri-scroll) transparent;
+}
+.ri:hover {
+  scrollbar-color: var(--ri-scroll-h) transparent;
 }
 .ri::-webkit-scrollbar-thumb {
   background-color: rgba(11, 136, 177, 0.7);
@@ -361,7 +367,6 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
 }
 .mond::-webkit-scrollbar-thumb {
   background-color: rgba(28, 62, 78, 0.7);
@@ -423,7 +428,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--fra-scroll) var(--fra-scroll-h);
+  scrollbar-color: var(--fra-scroll) transparent;
+}
+.fra:hover {
+  scrollbar-color: var(--fra-scroll-h) transparent;
 }
 .fra::-webkit-scrollbar-thumb {
   background-color: rgba(158, 222, 250, 0.7);
