@@ -183,18 +183,16 @@
 /* Rhodes Island */
 .ri .pagebutton {
   background-color: var(--ri-gray5);
-  color: var(--ri-sd);
+  color: var(--ri-sd) !important;
   font-weight: bold;
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;
   font-size: larger;
 }
 .ri .pagebutton:hover {
-  background-color: var(--ri-gray5);
-  color: var(--ri-yellow1);
+  color: var(--ri-yellow1) !important;
 }
 .ri .pagebutton:active {
-  background-color: var(--ri-gray5);
-  color: var(--ri-orange1);
+  color: var(--ri-orange1) !important;
 }
 .ri .selected a {
   background-color: var(--ri-blue6);

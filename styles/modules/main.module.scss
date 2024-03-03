@@ -152,7 +152,7 @@
 		// Background & text color
 		@include colors(var(--ri-main), var(--ri-txt));
 
-		> a {
+		a {
 			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
 		}
 	}

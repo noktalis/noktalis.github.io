@@ -317,13 +317,13 @@
   background-color: var(--ri-main);
   color: var(--ri-txt);
 }
-.ri .main > a {
+.ri .main a {
   color: var(--ri-a);
 }
-.ri .main > a:hover {
+.ri .main a:hover {
   color: var(--ri-a-h);
 }
-.ri .main > a:active {
+.ri .main a:active {
   color: var(--ri-a-a);
 }
 .ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {

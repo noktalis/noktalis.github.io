@@ -100,7 +100,7 @@ function Content() {
 
 			{display.map((pack) => <AKStickerGallery packData={pack}></AKStickerGallery>)}
 
-			<div style={{textAlign:"right"}}>
+			<div style={{textAlign:"center"}}>
 				<ToTop/>
 			</div>
 			
