@@ -103,8 +103,8 @@
   --ri-a: var(--ri-orange1);
   --ri-a-h: var(--ri-yellow1);
   --ri-a-a: var(--ri-blue4);
-  --ri-scroll: rgba(11, 136, 177,0.7);
-  --ri-scroll-h: rgba(11, 136, 177,0.2);
+  --ri-scroll: rgba(11, 136, 177,0.2);
+  --ri-scroll-h: rgba(11, 136, 177,0.7);
   --ri-tbl: var(--ri-blue6);
   --ri-tbl-h: var(--ri-blue5);
   --ri-tbl-av: var(--ri-teal1);
