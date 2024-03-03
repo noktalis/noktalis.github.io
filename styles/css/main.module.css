@@ -367,12 +367,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
+  scrollbar-color: var(--mon-scroll) transparent;
 }
-.mond::-webkit-scrollbar-thumb {
-  background-color: rgba(28, 62, 78, 0.7);
-}
-.mond::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(28, 62, 78, 0.9);
+.mond:hover {
+  scrollbar-color: var(--mon-scroll-h) transparent;
 }
 .mond .main {
   background-color: rgba(255, 255, 255, 0.3);
