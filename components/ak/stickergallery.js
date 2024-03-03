@@ -82,7 +82,7 @@ function TumblrPart3({link3}){
 	return(
 		<>
 			<p>
-				Special <a href={link3} target="_blank">Part 3</a>
+				Gifs from <a href={link3} target="_blank">Part 3</a>
 			</p>
 		</>
 	);
