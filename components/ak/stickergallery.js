@@ -13,26 +13,15 @@ export default function AKStickerGallery({children, packData}){
 	let themeClass;
 
 	switch (theme) {
+		case 'ri':
+			themeClass = format.ri;
+			break;
 		case 'mond':
 		default:
 			themeClass = format.mond;
 	}
 
 	console.log(packData);
-
-	/* Fetch the data for array */
-	// useEffect(() => {
-	// 	const fetchData = async() => {
-	// 		/* Fetch request */
-	// 		const response = await fetch(path);
-	// 		const obj = await response.json();
-
-	// 		console.log(obj["fullname"]);
-	// 		setPackData(obj);
-	// 	}
-	// 	fetchData()
-	// 	.catch(console.error);
-	// },[])
 	
 	return (
 		<>
@@ -54,7 +43,7 @@ export default function AKStickerGallery({children, packData}){
 			{children}
 
 			<div className={`${format.akarchive} ${themeClass}`}>
-				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>) : "Stickers not found." }
+				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key,name}) => <img src={href} alt={alt} key={key} title={name}/>) : "Stickers not found." }
 			</div>
 		</>
 	); // end return
