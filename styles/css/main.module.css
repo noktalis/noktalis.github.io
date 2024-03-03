@@ -254,7 +254,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+  scrollbar-color: var(--lyt-scroll) transparent;
+}
+.lyt:hover {
+  scrollbar-color: var(--lyt-scroll-h) transparent;
 }
 .lyt::-webkit-scrollbar-thumb {
   background-color: rgba(3, 44, 52, 0.7);
@@ -299,7 +302,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
+  scrollbar-color: var(--ri-scroll) transparent;
+}
+.ri:hover {
+  scrollbar-color: var(--ri-scroll-h) transparent;
 }
 .ri::-webkit-scrollbar-thumb {
   background-color: rgba(11, 136, 177, 0.7);
@@ -311,13 +317,13 @@
   background-color: var(--ri-main);
   color: var(--ri-txt);
 }
-.ri .main > a {
+.ri .main a {
   color: var(--ri-a);
 }
-.ri .main > a:hover {
+.ri .main a:hover {
   color: var(--ri-a-h);
 }
-.ri .main > a:active {
+.ri .main a:active {
   color: var(--ri-a-a);
 }
 .ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {
@@ -361,13 +367,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
+  scrollbar-color: var(--mon-scroll) transparent;
 }
-.mond::-webkit-scrollbar-thumb {
-  background-color: rgba(28, 62, 78, 0.7);
-}
-.mond::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(28, 62, 78, 0.9);
+.mond:hover {
+  scrollbar-color: var(--mon-scroll-h) transparent;
 }
 .mond .main {
   background-color: rgba(255, 255, 255, 0.3);
@@ -423,7 +426,10 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--fra-scroll) var(--fra-scroll-h);
+  scrollbar-color: var(--fra-scroll) transparent;
+}
+.fra:hover {
+  scrollbar-color: var(--fra-scroll-h) transparent;
 }
 .fra::-webkit-scrollbar-thumb {
   background-color: rgba(158, 222, 250, 0.7);

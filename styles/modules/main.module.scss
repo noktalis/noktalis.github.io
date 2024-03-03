@@ -152,7 +152,7 @@
 		// Background & text color
 		@include colors(var(--ri-main), var(--ri-txt));
 
-		> a {
+		a {
 			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
 		}
 	}
@@ -204,7 +204,7 @@
 
 	// Scrollbar Settings
 	@include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);	// for firefox
-	@include scrollbarColor($scroll);
+	// @include scrollbarColor($scroll);
 
 	.main {
 		// Background & text color

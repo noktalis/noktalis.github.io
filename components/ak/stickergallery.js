@@ -13,26 +13,15 @@ export default function AKStickerGallery({children, packData}){
 	let themeClass;
 
 	switch (theme) {
+		case 'ri':
+			themeClass = format.ri;
+			break;
 		case 'mond':
 		default:
 			themeClass = format.mond;
 	}
 
-	console.log(packData);
-
-	/* Fetch the data for array */
-	// useEffect(() => {
-	// 	const fetchData = async() => {
-	// 		/* Fetch request */
-	// 		const response = await fetch(path);
-	// 		const obj = await response.json();
-
-	// 		console.log(obj["fullname"]);
-	// 		setPackData(obj);
-	// 	}
-	// 	fetchData()
-	// 	.catch(console.error);
-	// },[])
+	console.log(packData["pack"]);
 	
 	return (
 		<>
@@ -49,12 +38,15 @@ export default function AKStickerGallery({children, packData}){
 			/>
 			{ packData["cn-src"] ? null : <WeiboCropped/>}
 			{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : null}
+
+			{ packData["pack"] == "set1" ? <TumblrPart3 link3="https://arknights-archive.tumblr.com/post/726394540041371648/sticker-pack-1-33"/> : null}
+			
 			{ packData["en-edit"] ? <ENEdit/> : null}
 
 			{children}
 
 			<div className={`${format.akarchive} ${themeClass}`}>
-				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key}) => <img src={href} alt={alt} key={key}/>) : "Stickers not found." }
+				{ packData["stickers"] ? packData["stickers"].map(({href,alt,key,name}) => <img src={href} alt={alt} key={key} title={name}/>) : "Stickers not found." }
 			</div>
 		</>
 	); // end return
@@ -85,10 +77,21 @@ function TumblrArchive({link1, link2}){
 	);
 }
 
+function TumblrPart3({link3}){
+	/* For Set 1 */
+	return(
+		<>
+			<p>
+				Gifs from <a href={link3} target="_blank">Part 3</a>
+			</p>
+		</>
+	);
+}
+
 function ENEdit(){
 	return(
 		<p>
-			Some EN versions of stickers are modified from the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> by me
+			Some stickers are modified from the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> by me
 		</p>
 	);
 }

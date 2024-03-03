@@ -30,9 +30,19 @@
 .ri {
 
 	.pagebutton {
-		@include btn-colors(var(--ri-gray5),var(--ri-sd),
-				var(--ri-gray5),var(--ri-yellow1),
-				var(--ri-gray5),var(--ri-orange1));
+		// actually the a element, li element is untouched
+		background-color: var(--ri-gray5);
+		color: var(--ri-sd)!important;
+		&:hover {
+			color: var(--ri-yellow1)!important;
+		}
+		&:active{
+			color: var(--ri-orange1)!important;
+		}
+
+		// @include btn-colors(var(--ri-gray5),var(--ri-sd),
+		// 		var(--ri-gray5),var(--ri-yellow1),
+		// 		var(--ri-gray5),var(--ri-orange1));
 		font-weight: bold;
 		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
 		font-size: larger;

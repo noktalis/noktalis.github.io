@@ -103,8 +103,8 @@
   --ri-a: var(--ri-orange1);
   --ri-a-h: var(--ri-yellow1);
   --ri-a-a: var(--ri-blue4);
-  --ri-scroll: rgba(11, 136, 177,0.7);
-  --ri-scroll-h: rgba(11, 136, 177,0.2);
+  --ri-scroll: rgba(11, 136, 177,0.2);
+  --ri-scroll-h: rgba(11, 136, 177,0.7);
   --ri-tbl: var(--ri-blue6);
   --ri-tbl-h: var(--ri-blue5);
   --ri-tbl-av: var(--ri-teal1);
@@ -166,8 +166,8 @@
   --mon-a: var(--mon-green7);
   --mon-a-h: var(--mon-yellow1);
   --mon-a-a: var(--mon-blue1);
-  --mon-scroll: rgba(28, 62, 78,0.9);
-  --mon-scroll-h: rgba(28, 62, 78,0.7);
+  --mon-scroll: rgba(28, 62, 78,0.7);
+  --mon-scroll-h: rgba(28, 62, 78,0.9);
   --mon-tbl: var(--mon-blue5);
   --mon-tbl-h: var(--mon-blue4);
   --mon-tbl-b: var(--mon-gold1);
