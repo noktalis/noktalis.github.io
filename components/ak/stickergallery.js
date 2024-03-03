@@ -21,7 +21,7 @@ export default function AKStickerGallery({children, packData}){
 			themeClass = format.mond;
 	}
 
-	console.log(packData);
+	console.log(packData["pack"]);
 	
 	return (
 		<>
@@ -38,6 +38,9 @@ export default function AKStickerGallery({children, packData}){
 			/>
 			{ packData["cn-src"] ? null : <WeiboCropped/>}
 			{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : null}
+
+			{ packData["pack"] == "set1" ? <TumblrPart3 link3="https://arknights-archive.tumblr.com/post/726394540041371648/sticker-pack-1-33"/> : null}
+			
 			{ packData["en-edit"] ? <ENEdit/> : null}
 
 			{children}
@@ -74,10 +77,21 @@ function TumblrArchive({link1, link2}){
 	);
 }
 
+function TumblrPart3({link3}){
+	/* For Set 1 */
+	return(
+		<>
+			<p>
+				Special <a href={link3} target="_blank">Part 3</a>
+			</p>
+		</>
+	);
+}
+
 function ENEdit(){
 	return(
 		<p>
-			Some EN versions of stickers are modified from the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> by me
+			Some stickers are modified from the <a href="https://www.arknights.global/fankit" target="_blank">official EN version</a> by me
 		</p>
 	);
 }
