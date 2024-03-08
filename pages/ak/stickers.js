@@ -76,6 +76,7 @@ function Content() {
 		<div>
 			<h1 style={{textAlign:"center"}}>Arknights Sticker Archive</h1>
 			<h4 style={{textAlign:"center"}}>Ordered by CN release date | Newest first</h4>
+			<p style={{textAlign:"center"}}>Shoutout to Xue for also translating all <br/>the Chinese text (among many other things)!</p>
 			<ReactPaginate
 				previousLabel={
 					<svg width="30px" height="30px" viewBox="0 -1 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">

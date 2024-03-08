@@ -7,16 +7,6 @@
   width: 100%;
 }
 
-.akarchive {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  padding: 5px;
-  margin-bottom: 30px;
-}
-.akarchive img {
-  width: 100%;
-}
-
 /* Mobile Formatting */
 @media (max-width: 700px) {
   .container {
@@ -45,11 +35,4 @@
 .mond {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-}
-
-/* Rhodes Island */
-.ri {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  border: 4px inset var(--ri-header);
 }
