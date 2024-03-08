@@ -1,0 +1,38 @@
+
+
+
+
+.container {
+	display: flex;
+}
+
+.sheet {
+	width: 15%;
+	margin-left: 10px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 8px;
+	padding: 5px;
+	margin-bottom: 50px;
+
+	background-color: rgba(50, 50, 50, 0.4);
+	border: 5px solid var(--ri-header);
+	border-radius: 5px;
+}
+
+.entry {
+	background-color: rgba(50, 50, 50, 0.4);
+	img {
+		width: 100%;
+	}
+}
+
+.caption {
+	color: white;
+	padding: 5px;
+	font-size: medium;
+	text-align: center;
+}
