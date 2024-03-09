@@ -143,8 +143,8 @@ function ReleaseDate({region, date, src}) {
 
 	if (date == null){
 		dateStr = "Unknown"
-		if (src == null && region == "EN")
-			return	// Never released to EN
+	} else if (src == null && region == "EN"){	// Never released to EN
+		return
 	} else {
 		dateStr = dateToString(date);
 	}
