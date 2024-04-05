@@ -1,9 +1,9 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
 :root {
-  /*	Manual collapsible fold:
-   *		Ctrl+K Ctrl+,
-   *	To remove:
-   *		Ctrl+K Ctrl+.
-  */
   /*  Lynette Colors */
   --lyt-white1: #D8D9E2;
   --lyt-white2: #F2ECE7;
@@ -66,6 +66,14 @@
   --lyt-bub-L-txt: var(--lyt-white1);
   --lyt-bub-R: var(--lyt-violet2);
   --lyt-bub-R-txt: var(--lyt-violet3);
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Rhodes Island Colors */
   --ri-black1: #1D242D;
   --ri-black2: #15151E;
@@ -121,9 +129,17 @@
   --ri-sd-a: var(--ri-gray5);
   --ri-sd-a-h: white;
   --ri-sd-a-a: var(--ri-orange1);
-  --ri-sd-scroll: rgba(50, 50, 50,0.7);
-  --ri-sd-scroll-h: rgba(50, 50, 50,0.7);
+  --ri-sd-scroll: rgba(50, 50, 50,0.5);
+  --ri-sd-scroll-h: rgba(50, 50, 50,0.8);
   --ri-pg-button: ;
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Mondstadt Colors */
   --mon-teal1: #11666F;
   --mon-teal2: #389F98;
@@ -189,6 +205,14 @@
   --mon-bub-L-txt: var(--mon-green6);
   --mon-bub-R: white;
   --mon-bub-R-txt: var(--mon-teal2);
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Furina Colors */
   --fra-blue1: #5E7FD7;
   --fra-blue7: #85DBFF;

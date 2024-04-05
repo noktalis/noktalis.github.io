@@ -375,12 +375,12 @@
 }
 .ri .menu {
   text-align: center;
-  scrollbar-color: var(--ri-scroll) transparent;
+  scrollbar-color: var(--ri-sd-scroll) transparent;
   padding-left: 0;
   padding-right: 0;
 }
 .ri .menu:hover {
-  scrollbar-color: var(--ri-scroll-h) transparent;
+  scrollbar-color: var(--ri-sd-scroll-h) transparent;
 }
 .ri .menu::-webkit-scrollbar-thumb {
   background-color: rgba(50, 50, 50, 0.7);

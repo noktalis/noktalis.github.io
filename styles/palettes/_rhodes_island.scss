@@ -1,0 +1,109 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root{
+	/* Rhodes Island Colors */
+	--ri-black1: #1D242D;	// blue tint
+	--ri-black2: #15151E;	// blue tint
+
+	--ri-gray1: #373F48;
+	--ri-gray2: #B5BCD3;
+	--ri-gray3: #37455E;	// more blue than gray1
+	--ri-gray4: #254958;
+	--ri-gray5: #323232;
+	--ri-gray6: #BFC0C1;
+
+	--ri-white1: #EEEEEE;
+
+	--ri-blue1: #41D2E5;
+	--ri-blue2: #1A44B0;
+	--ri-blue3: #05A8DE;
+	--ri-blue4: #096F83;
+	--ri-blue5: #0b88b1;
+	--ri-blue6: #4ABEE6;
+	--ri-blue7: #42AAC6;
+	--ri-blue8: #1E2F89;
+	
+	--ri-orange1: #E0790D;
+	--ri-yellow1: #ECC953;
+
+	--ri-teal1: #163636;
+	--ri-teal2: #46B6B0;
+
+	
+	/* Rhodes Island Theme */
+
+	// Top Navigation Bar
+	--ri-nav: var(--ri-black1);
+	--ri-nav-h: var(--ri-gray1);
+
+	--ri-nav-a: white;
+	--ri-nav-a-h: var(--ri-blue1);
+	--ri-nav-a-a: var(--ri-blue2);
+
+	--ri-indic: var(--ri-gray2);
+
+
+	// Footer
+	--ri-foot: var(--ri-black1);
+	--ri-foot-txt: white;
+	
+
+	// Main Content
+	--ri-main: var(--ri-white1);
+	--ri-txt: var(--ri-black2);
+	--ri-header: var(--ri-blue8);
+
+	--ri-a: var(--ri-orange1);
+	--ri-a-h: var(--ri-yellow1);
+	--ri-a-a: var(--ri-blue4);
+	
+	// Scrollbar Thumb
+	// #0b88b1
+	--ri-scroll: rgba(11, 136, 177,0.2); // blue5 w/ a = 0.7	
+	--ri-scroll-h: rgba(11, 136, 177,0.7);// blue5 w/ a = 0.9
+	
+	
+	// Navigation Tables
+	--ri-tbl: var(--ri-blue6);
+	--ri-tbl-h: var(--ri-blue5);
+	--ri-tbl-av: var(--ri-teal1); // active
+	--ri-tbl-a: white;
+	--ri-tbl-a-h: var(--ri-yellow1);
+	--ri-tbl-a-a: var(--ri-orange1);
+	
+	
+	// Sidebar Navigation
+	--ri-sd: white;
+	--ri-sd-hdr:var(--ri-gray5);
+	--ri-sd-hdr-h: var(--ri-blue1);
+	--ri-sd-hdr-a: var(--ri-blue2);
+
+	--ri-sd-itm: white;
+	--ri-sd-itm-h: var(--ri-gray6);
+	--ri-sd-itm-brdr: var(--ri-gold1);
+
+	--ri-sd-a: var(--ri-gray5);
+	--ri-sd-a-h: white;
+	--ri-sd-a-a: var(--ri-orange1);
+
+	// --ri-gray5, #323232
+	--ri-sd-scroll: rgba(50, 50, 50,0.5);
+	--ri-sd-scroll-h: rgba(50, 50, 50,0.8);
+	
+	
+	// Dialogue Bubbles
+	// --ri-bub-L: 		var(--ri);
+	// --ri-bub-L-txt: 	var(--ri);
+	// --ri-bub-R: 		var(--ri);
+	// --ri-bub-R-txt: 	var(--ri);
+
+
+	//Pagination
+	// TODO
+	--ri-pg-button: ;
+
+
+}

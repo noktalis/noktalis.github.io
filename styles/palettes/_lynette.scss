@@ -1,0 +1,97 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root{
+	/*  Lynette Colors */
+	--lyt-white1: #D8D9E2;	// slight purple tint
+	--lyt-white2: #F2ECE7; // slight tan tint
+
+	--lyt-brown1: #C6BBB6;
+	--lyt-brown2: #B39A8C;
+	--lyt-brown3: #B88F63;
+	--lyt-brown4: #885F37;
+	--lyt-brown5: #5A3619;
+	--lyt-brown6: #381508;
+
+	--lyt-gold1: #9D9286;
+
+	--lyt-blue1: #22374D;
+	--lyt-blue2: #426476;
+	--lyt-blue3: #375468;
+	--lyt-blue4: #032C34;
+	--lyt-blue5: #075969;
+	--lyt-blue6: #096F83;
+	--lyt-blue7: #064D5B;
+
+	--lyt-violet1: #A5A5BD;
+	--lyt-violet2: #DBB1EF;
+	--lyt-violet3: #362265;
+
+	--lyt-teal1: #3CA9A8;
+	--lyt-teal2: #08A8B1;
+	--lyt-teal3: #25C9CC;
+	
+	/*	Lynette Theme */
+
+	// Top Navigation Bar
+	--lyt-nav: var(--lyt-blue1);
+	--lyt-nav-h: var(--lyt-blue2);
+
+	--lyt-nav-a: var(--lyt-white1);
+	--lyt-nav-a-h: white;
+	--lyt-nav-a-a: var(--lyt-violet1);
+
+	--lyt-indic: var(--lyt-blue2);
+
+	// Footer
+	--lyt-foot: var(--lyt-blue3);
+	--lyt-foot-txt: var(--lyt-white2);
+
+	// Main Content
+	--lyt-main: var(--lyt-white1);
+	--lyt-txt: var(--lyt-blue4);
+	--lyt-header: var(--lyt-blue5);
+
+	--lyt-a: var(--lyt-teal2);
+	--lyt-a-h: var(--lyt-teal3);
+	--lyt-a-a: var(--lyt-blue6);
+
+	// Scrollbar Thumb
+	// --lyt-blue4, #032C34;
+	--lyt-scroll: rgba(3,44,52,0.7); // blue4 w/ a = 0.7	
+	--lyt-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
+	
+	// Navigation Tables
+	--lyt-tbl: var(--lyt-blue7);
+	--lyt-tbl-h: var(--lyt-blue4);
+	--lyt-tbl-b: var(--lyt-teal2);	//border
+	--lyt-tbl-a: var(--lyt-brown1);
+	--lyt-tbl-a-h: var(--lyt-white2);
+	--lyt-tbl-a-a: var(--lyt-brown2);
+	
+	// Sidebar Navigation
+	--lyt-sd: var(--lyt-white1);
+	--lyt-sd-hdr:var(--lyt-blue5);
+	--lyt-sd-hdr-h: var(--lyt-blue6);
+	--lyt-sd-hdr-a: var(--lyt-blue4);
+
+	--lyt-sd-itm: var(--lyt-blue6);
+	--lyt-sd-itm-h: var(--lyt-teal2);
+	--lyt-sd-itm-brdr: var(--lyt-gold1);
+
+	--lyt-sd-a: var(--lyt-white1);
+	--lyt-sd-a-h: white;
+	--lyt-sd-a-a: var(--lyt-violet1);
+
+	// #161616
+	--lyt-sd-scroll: rgba(22,22,22,0.7);				//out of order
+	--lyt-sd-scroll-h: rgba(22,22,22,0.9);
+	
+	// Dialogue Bubbles
+	--lyt-bub-L: var(--lyt-violet3);
+	--lyt-bub-L-txt: var(--lyt-white1);
+	--lyt-bub-R: var(--lyt-violet2);
+	--lyt-bub-R-txt: var(--lyt-violet3);
+}

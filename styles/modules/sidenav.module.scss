@@ -241,7 +241,7 @@
 		$scroll: #323232;	// --ri-gray5
 
 		// scroll settings
-		@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);
+		@include scrollbarColorsFF(--ri-sd-scroll, --ri-sd-scroll-h);
 		@include scrollbarColor($scroll);
 		
 		padding-left: 0;

@@ -1,0 +1,89 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root{
+	/* Furina Colors */
+	--fra-blue1: #5E7FD7;
+	--fra-blue7: #85DBFF;
+	--fra-blue8: #2D3E79;
+
+	--fra-blue2: #1A1F3F;
+	--fra-blue3: #171D50;
+	--fra-blue5: #2C468E;
+	--fra-blue6: #324076;
+	--fra-blue10: #A8EFFA;
+	
+	--fra-blue4: #9EDEFA;
+	--fra-blue9: #3566AB;
+
+	--fra-violet1: #C2B1E9;
+	--fra-violet2: #708CDD;
+	--fra-violet3: #5971CB;
+	--fra-white1: #E0E0E0;
+
+	--fra-black1: #171D2A;
+
+	--fra-gold1: #D4CEC5;
+	--fra-gold2: #BFAD96;
+	--fra-gold3: #E8D9C8;
+	--fra-gold4: #BBB3B6;
+	--fra-gold5: #AE946E;
+
+	/* Furina Theme */
+	
+	// Top Navigation Bar
+	--fra-nav: var(--fra-black1);
+	--fra-nav-h: var(--fra-blue3);
+
+	--fra-nav-a: var(--fra-gold2);
+	--fra-nav-a-h: var(--fra-blue4);
+	--fra-nav-a-a: var(--fra-gold2);
+
+	--fra-indic: var(--fra-blue5);
+
+	// Footer
+	--fra-foot: var(--fra-blue6);
+	--fra-foot-txt: var(--fra-white1);
+
+	// Main Content
+	--fra-main: var(--fra-white1);
+	--fra-txt: var(--fra-blue3);
+	--fra-header: var(--fra-blue5);
+
+	--fra-a: var(--fra-blue1);
+	--fra-a-h: var(--fra-blue8);
+	--fra-a-a: var(--fra-blue7);
+
+	// Scrollbar (for firefox)
+	// #9EDEFA
+	--fra-scroll: rgba(158, 222, 250,0.7); // blue4 w/ a = 0.7	
+	--fra-scroll-h: rgba(158, 222, 250,0.9);// blue4 w/ a = 0.9
+
+	// Navigation Tables
+	// --fra-tbl: var(--fra-blue5);
+	// --fra-tbl-h: var(--fra-blue4);
+	// --fra-tbl-b: var(--fra-gold1);	//border
+	// --fra-tbl-a: var(--fra-gold2);
+	// --fra-tbl-a-h: var(--fra-gold1);
+	// --fra-tbl-a-a: var(--fra-green3);
+	
+	// Sidebar Navigation
+	--fra-sd: var(--fra-blue1);
+	--fra-sd-hdr: var(--fra-gold2);
+	--fra-sd-hdr-h: var(--fra-gold5);
+	--fra-sd-hdr-a: var(--fra-blue10);
+
+	--fra-sd-itm: var(--fra-violet3);
+	--fra-sd-itm-h: var(--fra-violet2);
+
+	--fra-sd-a: var(--fra-white1);
+	--fra-sd-a-h: var(--fra-blue10);
+	--fra-sd-a-a: var(--fra-gold2);
+
+	// --fra-gray5, #323232
+	--fra-sd-scroll: rgba(255, 255, 255,0.7);
+	--fra-sd-scroll-h: rgba(255, 255, 255,0.9);
+	
+}
