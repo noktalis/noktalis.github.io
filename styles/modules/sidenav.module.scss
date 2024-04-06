@@ -503,6 +503,41 @@
 	}
 }
 
+/* Astral Express */
+.ae {
+	//.nav
+	background-image: url("/images/hsr/crewticket.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.bottom {
+		background-color: transparent;
+
+		//scroll settings
+		$scroll: black;
+		@include scrollbarColorsFF($scroll, $scroll);
+		@include scrollbarColor($scroll);
+
+		button {
+			background-color: white;
+		}
+	}
+
+	.menu {
+		background-color: rgba($color: #4f3729, $alpha: 0.2);
+		height: 75%;
+		width: 90%;
+		margin: auto;
+		border: inset 10px rgba($color: #CAB798, $alpha: 0.5); //ae-
+
+		a {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
 /* Template/Test */
 .test {
 	//.nav

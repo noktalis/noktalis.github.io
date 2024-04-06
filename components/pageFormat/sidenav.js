@@ -31,6 +31,9 @@ export default function SideNav({extra_menu_src}){
 		case "fra":
 			themeClass = sidenav.fra;
 			break;
+		case "express":
+			themeClass = sidenav.ae;
+			break;
 		case "mond":
 		default:
 			themeClass = sidenav.mond;

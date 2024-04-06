@@ -21,6 +21,9 @@ export default function Main({children}){
 		case "fra":
 			themeClass = format.fra;
 			break;
+		case "express":
+			themeClass = format.ae;
+			break;
 		case "mond":
 		default:
 			themeClass = format.mond;
@@ -86,6 +89,9 @@ export function ToTop(){
 			break;
 		case "fra":
 			themeClass = format.fra;
+			break;
+		case "express":
+			themeClass = format.ae;
 			break;
 		case "mond":
 		default:

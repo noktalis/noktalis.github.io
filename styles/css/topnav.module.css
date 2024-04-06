@@ -196,6 +196,8 @@
   height: 65%;
   border: 0px;
   cursor: pointer;
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }
 
 /*	Styling of image in left corner of navigation bar */
@@ -262,8 +264,6 @@
   border-radius: 15px;
   background-color: var(--lyt-nav);
   color: var(--lyt-nav-a);
-  font-size: 20px;
-  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }
 .lyt .buttons button:hover {
   background-color: var(--lyt-nav-h);
@@ -285,8 +285,6 @@
   border-radius: 10px;
   background-color: var(--ri-nav);
   color: var(--ri-nav-a);
-  font-size: 20px;
-  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }
 .ri .buttons button:hover {
   background-color: var(--ri-nav-h);
@@ -308,8 +306,6 @@
   border-radius: 10px;
   background-color: var(--mon-nav);
   color: var(--mon-nav-a);
-  font-size: 20px;
-  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }
 .mond .buttons button:hover {
   background-color: var(--mon-nav-h);
@@ -331,8 +327,6 @@
   border-radius: 10px;
   background-color: var(--fra-nav);
   color: var(--fra-nav-a);
-  font-size: 20px;
-  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }
 .fra .buttons button:hover {
   background-color: var(--fra-nav-h);
@@ -344,4 +338,26 @@
 }
 .fra .indicator {
   background-color: var(--fra-indic);
+}
+
+/* Astral Express */
+.ae {
+  background-color: var(--ae-nav);
+}
+.ae .buttons button {
+  border-radius: 10px;
+  background-color: var(--ae-nav);
+  color: var(--ae-nav-a);
+}
+.ae .buttons button:hover {
+  background-color: var(--ae-nav-h);
+  color: var(--ae-nav-a-h);
+}
+.ae .buttons button:active {
+  background-color: var(--ae-nav-h);
+  color: var(--ae-nav-a-a);
+}
+.ae .indicator {
+  background-color: var(--ae-indic);
+  border: 3px solid var(--ae-gold1);
 }
