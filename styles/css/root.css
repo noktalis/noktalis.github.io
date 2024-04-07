@@ -284,6 +284,7 @@
   --ae-red1: #A71522;
   --ae-red2: #901A29;
   --ae-red3: #D45758;
+  --ae-red4: #a24b45;
   --ae-blue1: #7EEEF0;
   /* Theme */
   --ae-nav: var(--ae-black3);
@@ -302,4 +303,10 @@
   --ae-a-a: var(--ae-blue1);
   --ae-scroll: rgba(167,21,34, 0.3);
   --ae-scroll-h: rgba(167,21,34, 0.6);
+  --ae-tbl: var(--ae-red1);
+  --ae-tbl-h: var(--ae-red3);
+  --ae-tbl-b: var(--ae-gold1);
+  --ae-tbl-a: var(--ae-gold4);
+  --ae-tbl-a-h: var(--ae-black3);
+  --ae-tbl-a-a: var(--ae-blue1);
 }

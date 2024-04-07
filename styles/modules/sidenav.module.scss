@@ -511,30 +511,61 @@
 	background-size: cover;
 	background-position: center;
 
+	font-family: DIN, sans-serif;
+
+	.top {
+		min-height: 47px;
+		
+		h1 {
+			margin: auto;
+		}
+		a {
+			@include link-colors(var(--ae-gold4), var(--ae-blue1), var(--ae-gold3));
+		}
+	}
+
+	.divider {
+		height: 25px; // black stripe + menu top margin
+	}
+
 	.bottom {
 		background-color: transparent;
 
 		//scroll settings
-		$scroll: black;
-		@include scrollbarColorsFF($scroll, $scroll);
-		@include scrollbarColor($scroll);
+		// $scroll: black;
+		@include scrollbarColorsFF(--ae-brown1, --ae-brown1);
+		// @include scrollbarColor(--ae-brown1);
 
 		button {
-			background-color: white;
+			border: solid 3px var(--ae-gold1);
+			@include btn-colors(var(--ae-red4), var(--ae-gold4),
+				var(--ae-red1), var(--ae-gold4),
+				var(--ae-red1), var(--ae-black3));
+			border-radius: 3px;
+			width: 100%;
+			font-family: DIN, sans-serif;
+			font-size: large;
 		}
 	}
 
 	.menu {
-		background-color: rgba($color: #4f3729, $alpha: 0.2);
+		background-color: rgba($color: #4f3729, $alpha: 0.2); //ae-brown1
 		height: 75%;
 		width: 90%;
 		margin: auto;
-		border: inset 10px rgba($color: #CAB798, $alpha: 0.5); //ae-
+		padding: 10px;
+		border: inset 10px rgba($color: #CAB798, $alpha: 0.5); //ae-gold5
 
 		a {
 			display: flex;
 			justify-content: center;
+
+			&:last-child button{
+				margin-bottom: 0;
+			}
 		}
+
+		
 	}
 }
 

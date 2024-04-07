@@ -22,6 +22,7 @@
 	--ae-red1: #A71522;
 	--ae-red2: #901A29;
 	--ae-red3: #D45758;
+	--ae-red4: #a24b45;
 
 	--ae-blue1: #7EEEF0;
 	
@@ -42,7 +43,6 @@
 	--ae-foot: var(--ae-gold2);
 	--ae-foot-txt: var(--ae-gold4);
 	
-
 	// Main Content
 	--ae-main: black;
 	--ae-txt: var(--ae-gold4);
@@ -57,7 +57,12 @@
 	--ae-scroll-h: rgba(167,21,34, 0.6);
 	
 	// Navigation Tables
-	
+	--ae-tbl: var(--ae-red1);
+	--ae-tbl-h: var(--ae-red3);
+	--ae-tbl-b: var(--ae-gold1);	//border
+	--ae-tbl-a: var(--ae-gold4); // link
+	--ae-tbl-a-h: var(--ae-black3);
+	--ae-tbl-a-a: var(--ae-blue1);
 	
 	// Sidebar Navigation
 	

@@ -27,6 +27,9 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 		case "ri":
 			themeClass = style.ri;
 			break;
+		case "express":
+			themeClass = style.ae;
+			break;
 		case "mond":
 		default:
 			themeClass = style.mond;

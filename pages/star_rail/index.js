@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
+import NavCol from '@/components/navCol';
+import StickerButtonLink from '@/components/stickerbtnlink';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -32,31 +34,53 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			<p>Under construction!</p>
+			<h1 style={{textAlign:"center"}}>Honkai: Star Rail</h1>
+			
 			<p>To do:</p>
 			<ul>
 				<li>
-					Astral Express theme
+					Blorbo page
 				</li>
 				<li>
-					Blorbo page?
+					Ramblings
 				</li>
 				<li>
-					Aven ramblings
-				</li>
-				<li>
-					relic infographic
+					relic infographic bc i can't keep track of everything anymore and putting it here is more convenient
 				</li>
 			</ul>
-			<hr></hr>
-			<p> Testing! <a>Testing!</a></p>
-			<h1>Hm?</h1>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
+
+			<p>Under construction! All the links below are broken TwT</p>
+
+			<NavCol>
+				<StickerButtonLink
+						href={"/star_rail/blorbos/"}
+						btnTitle={"Blorbos"}
+						imgSide={"left"}
+						imgSize={""}
+						imgSrc={"/images/hsr/emotes/aven_shades.png"}
+						imgAlt={"Aventurine wearing shades"}>
+							Blorbos
+					</StickerButtonLink>
+					<StickerButtonLink
+						href={"/star_rail/rambling/"}
+						btnTitle={"Penacony Ramblings"}
+						imgSide={"right"}
+						imgSize={""}
+						imgSrc={"/images/hsr/emotes/acheron_sad.png"}
+						imgAlt={"Acheron crying"}>
+							Penacony Ramblings
+					</StickerButtonLink>
+					<StickerButtonLink
+						href={"/star_rail/farm/"}
+						btnTitle={"Relic Farming Chart"}
+						imgSide={"left"}
+						imgSize={""}
+						imgSrc={"/images/hsr/emotes/huohuo_frazzled.png"}
+						imgAlt={"Huohuo crying out in frazzled despair"}>
+							Relic Farming Chart
+					</StickerButtonLink>
+			</NavCol>
+
 			<hr/>
 		</div>
 	);
