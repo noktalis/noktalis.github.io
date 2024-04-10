@@ -3,7 +3,7 @@ import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import FarmChart from '@/components/farmChart';
-import { FarmChartRow } from '@/components/farmChart';
+import { FarmChartRow, HSRChar } from '@/components/farmChart';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -32,6 +32,8 @@ export default function Page(){
  * @returns 
  */
 function Content() {
+	let substatTest = ["CRIT DMG", "SPD"]
+
 	return (
 		<div>
 			<h1>Relic Farming Chart</h1>
@@ -39,8 +41,23 @@ function Content() {
 			<p>Making this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
 			<FarmChart>
-				<FarmChartRow></FarmChartRow>
+				<FarmChartRow
+				setName="Messenger"
+				setImg="/images/hsr/relics/messenger.png">
+					<HSRChar src='/images/hsr/icons/bronya.png'
+						alt='Bronya'
+						name='Bronya'
+						body='CRIT DMG'
+						feet='HP/SPD'
+						rope='ER'
+						sphere='HP/DEF'>
+							{substatTest.map(stat => <span>{stat}</span>)}
+					</HSRChar>
+
+				</FarmChartRow>
 			</FarmChart>
+
+			{/* <img src='/images/hsr/relics/messenger.png'></img> */}
 		</div>
 	);
 }

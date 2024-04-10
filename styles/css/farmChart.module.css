@@ -1,0 +1,79 @@
+.chart {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  width: 98%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: solid 1px red;
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.set button {
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  min-height: 130px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.set button img {
+  max-width: 50px;
+}
+.set p {
+  width: 250px;
+}
+
+.chars {
+  display: flex;
+  flex-direction: row;
+}
+
+.character {
+  display: grid;
+  grid-template-areas: "icon mainstats" "substats substats";
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+.character img {
+  max-width: 70px;
+  border-radius: 40px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: icon;
+}
+
+.mainstats {
+  grid-area: mainstats;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  font-size: small;
+  align-items: center;
+}
+.mainstats img {
+  width: 25px;
+}
+
+.substats {
+  display: flex;
+  grid-area: substats;
+}
+.substats span {
+  background-color: red;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 3px;
+}
