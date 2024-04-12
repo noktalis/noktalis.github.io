@@ -105,6 +105,22 @@
   font-weight: lighter;
   font-style: italic;
 }
+/* DIN
+ *  For Star Rail */
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DIN.woff2") format("woff2");
+}
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DINBold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DIN-Medium.woff2") format("woff2");
+  font-size: medium;
+}
 /* I forgot what I wanted these for but I want them around In Case */
 /* BalsamiqSans */
 @font-face {
@@ -375,6 +391,8 @@
 .mond .main {
   background-color: rgba(255, 255, 255, 0.3);
   color: var(--mon-txt);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
   color: var(--mon-header);
@@ -496,4 +514,74 @@
 }
 .fra .footer a:active {
   color: var(--fra-blue4);
+}
+
+/* Astral Express */
+.ae {
+  scrollbar-color: var(--ae-scroll) transparent;
+}
+.ae:hover {
+  scrollbar-color: var(--ae-scroll-h) transparent;
+}
+.ae .main {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--ae-txt);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.ae .main h1, .ae .main h2, .ae .main h3, .ae .main h4, .ae .main h5, .ae .main h6 {
+  color: var(--ae-header);
+}
+.ae .main a {
+  color: var(--ae-a);
+}
+.ae .main a:hover {
+  color: var(--ae-a-h);
+}
+.ae .main a:active {
+  color: var(--ae-a-a);
+}
+.ae .main > div > hr {
+  position: relative;
+  background: url("/images/hsr/trailblaze_icon.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 45px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.ae .main > div > hr:before, .ae .main > div > hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--ae-gold2);
+  height: 3px;
+  top: 50%;
+}
+.ae .main > div > hr:before {
+  left: 25%;
+  right: 52%;
+  margin-right: 20px;
+}
+.ae .main > div > hr:after {
+  right: 25%;
+  left: 52%;
+  margin-left: 20px;
+}
+.ae .footer {
+  background-color: var(--ae-foot);
+  color: var(--ae-foot-txt);
+}
+.ae .footer a {
+  color: var(--ae-red1);
+}
+.ae .footer a:hover {
+  color: var(--ae-red2);
+}
+.ae .footer a:active {
+  color: var(--ae-blue1);
+}
+.ae .footer a:hover {
+  text-shadow: var(--ae-red2) 0px 0px 2px;
 }

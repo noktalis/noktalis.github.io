@@ -101,3 +101,14 @@
 							var(--mon-tbl-h), var(--mon-tbl-a-h),
 							var(--mon-tbl-h), var(--mon-tbl-a-a));
 }
+
+/* Astral Express */
+.ae {
+	font-family: DIN, sans-serif;
+	font-size: large;
+	border: 4px solid var(--ae-tbl-b);
+	@include btn-colors(var(--ae-tbl), var(--ae-tbl-a),
+							var(--ae-tbl-h), var(--ae-tbl-a-h),
+							var(--ae-tbl-h), var(--ae-tbl-a-a));
+	
+}

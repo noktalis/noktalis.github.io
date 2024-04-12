@@ -104,6 +104,22 @@
   font-weight: lighter;
   font-style: italic;
 }
+/* DIN
+ *  For Star Rail */
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DIN.woff2") format("woff2");
+}
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DINBold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: DIN;
+  src: url("../../public/fonts/DIN/DIN-Medium.woff2") format("woff2");
+  font-size: medium;
+}
 /* I forgot what I wanted these for but I want them around In Case */
 /* BalsamiqSans */
 @font-face {
@@ -375,12 +391,12 @@
 }
 .ri .menu {
   text-align: center;
-  scrollbar-color: var(--ri-scroll) transparent;
+  scrollbar-color: var(--ri-sd-scroll) transparent;
   padding-left: 0;
   padding-right: 0;
 }
 .ri .menu:hover {
-  scrollbar-color: var(--ri-scroll-h) transparent;
+  scrollbar-color: var(--ri-sd-scroll-h) transparent;
 }
 .ri .menu::-webkit-scrollbar-thumb {
   background-color: rgba(50, 50, 50, 0.7);
@@ -653,6 +669,72 @@
   right: 0;
   left: 52%;
   margin-left: 10px;
+}
+
+/* Astral Express */
+.ae {
+  background-image: url("/images/hsr/crewticket.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: DIN, sans-serif;
+}
+.ae .top {
+  min-height: 47px;
+}
+.ae .top h1 {
+  margin: auto;
+}
+.ae .top a {
+  color: var(--ae-gold4);
+}
+.ae .top a:hover {
+  color: var(--ae-blue1);
+}
+.ae .top a:active {
+  color: var(--ae-gold3);
+}
+.ae .divider {
+  height: 25px;
+}
+.ae .bottom {
+  background-color: transparent;
+  scrollbar-color: var(--ae-brown1) transparent;
+}
+.ae .bottom:hover {
+  scrollbar-color: var(--ae-brown1) transparent;
+}
+.ae .bottom button {
+  border: solid 3px var(--ae-gold1);
+  background-color: var(--ae-red4);
+  color: var(--ae-gold4);
+  border-radius: 3px;
+  width: 100%;
+  font-family: DIN, sans-serif;
+  font-size: large;
+}
+.ae .bottom button:hover {
+  background-color: var(--ae-red1);
+  color: var(--ae-gold4);
+}
+.ae .bottom button:active {
+  background-color: var(--ae-red1);
+  color: var(--ae-black3);
+}
+.ae .menu {
+  background-color: rgba(79, 55, 41, 0.2);
+  height: 75%;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border: inset 10px rgba(202, 183, 152, 0.5);
+}
+.ae .menu a {
+  display: flex;
+  justify-content: center;
+}
+.ae .menu a:last-child button {
+  margin-bottom: 0;
 }
 
 /* Template/Test */

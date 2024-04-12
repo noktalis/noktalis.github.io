@@ -18,12 +18,19 @@
 .mond {
 	background-image: url("/images/genshin/jean_namecard.png");
 	background-repeat: no-repeat;
-	background-size: 100% 100vh;
+	background-size: cover;
 }
 
 .fra {
 	background-image: url("/images/genshin/furina_skirt_pattern.png");
 	background-repeat: repeat-x;
 	background-position: 0% 55%;
+}
+
+.ae {
+	background-image: url("/images/hsr/astral_express_wallpaper.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 

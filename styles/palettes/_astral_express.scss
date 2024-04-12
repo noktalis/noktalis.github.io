@@ -1,0 +1,73 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root{
+	/* Colors */
+	--ae-gold1: #E4D1AE;
+	--ae-gold2: #BDA186;
+	--ae-gold3: #F1E6C5;
+	--ae-gold4: #F9F4EC;
+	--ae-gold5: #CAB798;
+
+	--ae-brown1: #4f3729;
+
+	--ae-black1: #2B2E39;
+	--ae-black2: #292733;
+	--ae-black3: #18171F;
+
+	--ae-gray1: #757076;
+
+	--ae-red1: #A71522;
+	--ae-red2: #901A29;
+	--ae-red3: #D45758;
+	--ae-red4: #a24b45;
+
+	--ae-blue1: #7EEEF0;
+	--ae-blue2: #3bb7b9;
+	
+	
+	/* Theme */
+
+	// Top Navigation Bar
+	--ae-nav: var(--ae-black3);
+	--ae-nav-h: var(--ae-black1);
+
+	--ae-nav-a: var(--ae-gold1);
+	--ae-nav-a-h: var(--ae-gold3);
+	--ae-nav-a-a: var(--ae-gold2);
+
+	--ae-indic: var(--ae-red1);
+
+	// Footer
+	--ae-foot: var(--ae-gold2);
+	--ae-foot-txt: var(--ae-gold4);
+	
+	// Main Content
+	--ae-main: black;
+	--ae-txt: var(--ae-gold4);
+	--ae-header: var(--ae-gold1);
+
+	--ae-a: var(--ae-red3);
+	--ae-a-h: var(--ae-red1);
+	--ae-a-a: var(--ae-blue1);
+
+	// Scrollbar Thumb
+	--ae-scroll: rgba(167,21,34, 0.3);
+	--ae-scroll-h: rgba(167,21,34, 0.6);
+	
+	// Navigation Tables
+	--ae-tbl: var(--ae-red1);
+	--ae-tbl-h: var(--ae-red3);
+	--ae-tbl-b: var(--ae-gold1);	//border
+	--ae-tbl-a: var(--ae-gold4); // link
+	--ae-tbl-a-h: var(--ae-black3);
+	--ae-tbl-a-a: var(--ae-blue1);
+	
+	// Sidebar Navigation
+	
+	
+	// Dialogue Bubbles
+	
+}

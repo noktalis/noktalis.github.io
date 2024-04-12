@@ -209,6 +209,7 @@
 	.main {
 		// Background & text color
 		@include colors(rgba(255,255,255,0.3), var(--mon-txt));
+		backdrop-filter: blur(5px); // frosted glass effect
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
@@ -316,6 +317,74 @@
 		@include colors(var(--fra-foot), var(--fra-foot-txt));
 		a {
 			@include link-colors(var(--fra-violet1),var(--fra-gold2),var(--fra-blue4));
+		}
+	}
+}
+
+/* Astral Express */
+.ae {
+	// $scroll: #FFFFFF;
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--ae-scroll, --ae-scroll-h);	// for firefox
+	// @include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(rgba(0,0,0,0.4), var(--ae-txt));
+		backdrop-filter: blur(5px);	// frosted glass effect
+		
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			color: var(--ae-header);
+		}
+
+		a {
+			@include link-colors(var(--ae-a), var(--ae-a-h), var(--ae-a-a));
+		}
+
+		> div > hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/hsr/trailblaze_icon.png") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 45px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: var(--ae-gold2);
+				height: 3px;
+				top: 50%;
+			}
+			&:before {
+				left: 25%;
+				right: 52%;
+				margin-right: 20px;
+			}
+			&:after {
+				right:25%;
+				left: 52%;
+				margin-left: 20px;
+			}
+		}
+	}
+	.footer {
+		@include colors(var(--ae-foot), var(--ae-foot-txt));
+		a {
+			@include link-colors(var(--ae-red1),var(--ae-red2),var(--ae-blue1));
+			&:hover {
+				text-shadow: var(--ae-red2) 0px 0px 2px;
+			}
 		}
 	}
 }

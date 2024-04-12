@@ -22,6 +22,9 @@ export default function TopNav() {
 		case "fra":
 			themeClass = topnav.fra;
 			break;
+		case "express":
+			themeClass = topnav.ae;	// astral express
+			break;
 		case "mond":
 		default:
 			themeClass = topnav.mond;

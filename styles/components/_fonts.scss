@@ -129,6 +129,24 @@
     font-style: italic;
 }
 
+/* DIN
+ *  For Star Rail */
+@font-face {
+    font-family: DIN;
+    src: url('../../public/fonts/DIN/DIN.woff2') format('woff2');
+}
+@font-face {
+    font-family: DIN;
+    src: url('../../public/fonts/DIN/DINBold.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: DIN;
+    src: url('../../public/fonts/DIN/DIN-Medium.woff2') format('woff2');
+    font-size: medium;
+}
+
+
 
 /* I forgot what I wanted these for but I want them around In Case */
 

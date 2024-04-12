@@ -50,6 +50,9 @@
 		// Appearance
 		border: 0px;
 		cursor: pointer;
+
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 }
 
@@ -134,8 +137,6 @@
 		@include btn-colors(var(--lyt-nav), var(--lyt-nav-a),
 								var(--lyt-nav-h), var(--lyt-nav-a-h),
 								var(--lyt-nav-h), var(--lyt-nav-a-a));
-		font-size: 20px;
-		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 
 	.indicator {
@@ -152,8 +153,6 @@
 		@include btn-colors(var(--ri-nav), var(--ri-nav-a),
 								var(--ri-nav-h), var(--ri-nav-a-h),
 								var(--ri-nav-h), var(--ri-nav-a-a));
-		font-size: 20px;
-		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 
 	.indicator {
@@ -170,8 +169,6 @@
 		@include btn-colors(var(--mon-nav), var(--mon-nav-a),
 								var(--mon-nav-h), var(--mon-nav-a-h),
 								var(--mon-nav-h), var(--mon-nav-a-a));
-		font-size: 20px;
-		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 
 	.indicator {
@@ -188,11 +185,26 @@
 		@include btn-colors(var(--fra-nav), var(--fra-nav-a),
 								var(--fra-nav-h), var(--fra-nav-a-h),
 								var(--fra-nav-h), var(--fra-nav-a-a));
-		font-size: 20px;
-		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 
 	.indicator {
 		background-color: var(--fra-indic);
+	}
+}
+
+/* Astral Express */
+.ae {
+	background-color: var(--ae-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--ae-nav), var(--ae-nav-a),
+								var(--ae-nav-h), var(--ae-nav-a-h),
+								var(--ae-nav-h), var(--ae-nav-a-a));
+	}
+
+	.indicator {
+		background-color: var(--ae-indic);
+		border: 3px solid var(--ae-gold1);
 	}
 }

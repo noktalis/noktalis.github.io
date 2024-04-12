@@ -1,0 +1,107 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: solid 2px var(--ae-gold2);
+  padding: 5px;
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.set button {
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-wrap: wrap;
+  border: var(--ae-gold2) 4px solid;
+  background-color: var(--ae-red1);
+  color: var(--ae-gold3);
+}
+.set button:hover {
+  background-color: var(--ae-blue2);
+}
+.set button:active {
+  background-color: var(--ae-red3);
+}
+.set button img {
+  max-width: 50px;
+}
+.set p {
+  width: 200px;
+}
+
+.chars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.character {
+  display: grid;
+  grid-template-areas: "icon mainstats" "substats substats";
+  gap: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  width: 33%;
+  overflow: hidden;
+}
+.character img {
+  width: 70px;
+  border-radius: 35px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: icon;
+  text-align: center;
+}
+
+.mainstats {
+  grid-area: mainstats;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  font-size: small;
+  align-items: center;
+}
+.mainstats img {
+  width: 25px;
+  height: auto;
+}
+
+.substatsContainer {
+  display: flex;
+  grid-area: substats;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.substatsContainer span {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: medium;
+  background-color: var(--ae-gold2);
+  color: #000000;
+  border-radius: 10px;
+  padding: 3px;
+}

@@ -1,9 +1,9 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
 :root {
-  /*	Manual collapsible fold:
-   *		Ctrl+K Ctrl+,
-   *	To remove:
-   *		Ctrl+K Ctrl+.
-  */
   /*  Lynette Colors */
   --lyt-white1: #D8D9E2;
   --lyt-white2: #F2ECE7;
@@ -66,6 +66,14 @@
   --lyt-bub-L-txt: var(--lyt-white1);
   --lyt-bub-R: var(--lyt-violet2);
   --lyt-bub-R-txt: var(--lyt-violet3);
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Rhodes Island Colors */
   --ri-black1: #1D242D;
   --ri-black2: #15151E;
@@ -121,9 +129,17 @@
   --ri-sd-a: var(--ri-gray5);
   --ri-sd-a-h: white;
   --ri-sd-a-a: var(--ri-orange1);
-  --ri-sd-scroll: rgba(50, 50, 50,0.7);
-  --ri-sd-scroll-h: rgba(50, 50, 50,0.7);
+  --ri-sd-scroll: rgba(50, 50, 50,0.5);
+  --ri-sd-scroll-h: rgba(50, 50, 50,0.8);
   --ri-pg-button: ;
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Mondstadt Colors */
   --mon-teal1: #11666F;
   --mon-teal2: #389F98;
@@ -189,6 +205,14 @@
   --mon-bub-L-txt: var(--mon-green6);
   --mon-bub-R: white;
   --mon-bub-R-txt: var(--mon-teal2);
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
   /* Furina Colors */
   --fra-blue1: #5E7FD7;
   --fra-blue7: #85DBFF;
@@ -238,4 +262,52 @@
   --fra-sd-a-a: var(--fra-gold2);
   --fra-sd-scroll: rgba(255, 255, 255,0.7);
   --fra-sd-scroll-h: rgba(255, 255, 255,0.9);
+}
+
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root {
+  /* Colors */
+  --ae-gold1: #E4D1AE;
+  --ae-gold2: #BDA186;
+  --ae-gold3: #F1E6C5;
+  --ae-gold4: #F9F4EC;
+  --ae-gold5: #CAB798;
+  --ae-brown1: #4f3729;
+  --ae-black1: #2B2E39;
+  --ae-black2: #292733;
+  --ae-black3: #18171F;
+  --ae-gray1: #757076;
+  --ae-red1: #A71522;
+  --ae-red2: #901A29;
+  --ae-red3: #D45758;
+  --ae-red4: #a24b45;
+  --ae-blue1: #7EEEF0;
+  --ae-blue2: #3bb7b9;
+  /* Theme */
+  --ae-nav: var(--ae-black3);
+  --ae-nav-h: var(--ae-black1);
+  --ae-nav-a: var(--ae-gold1);
+  --ae-nav-a-h: var(--ae-gold3);
+  --ae-nav-a-a: var(--ae-gold2);
+  --ae-indic: var(--ae-red1);
+  --ae-foot: var(--ae-gold2);
+  --ae-foot-txt: var(--ae-gold4);
+  --ae-main: black;
+  --ae-txt: var(--ae-gold4);
+  --ae-header: var(--ae-gold1);
+  --ae-a: var(--ae-red3);
+  --ae-a-h: var(--ae-red1);
+  --ae-a-a: var(--ae-blue1);
+  --ae-scroll: rgba(167,21,34, 0.3);
+  --ae-scroll-h: rgba(167,21,34, 0.6);
+  --ae-tbl: var(--ae-red1);
+  --ae-tbl-h: var(--ae-red3);
+  --ae-tbl-b: var(--ae-gold1);
+  --ae-tbl-a: var(--ae-gold4);
+  --ae-tbl-a-h: var(--ae-black3);
+  --ae-tbl-a-a: var(--ae-blue1);
 }

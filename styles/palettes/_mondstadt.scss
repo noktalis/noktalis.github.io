@@ -1,0 +1,107 @@
+/*	Manual collapsible fold:
+*		Ctrl+K Ctrl+,
+*	To remove:
+*		Ctrl+K Ctrl+.
+*/
+:root{
+	/* Mondstadt Colors */
+	--mon-teal1: #11666F;
+	--mon-teal2: #389F98;
+	--mon-teal3: #42B69C;
+	--mon-teal4: #69C8B3;
+	--mon-teal5: #5AB5B3;
+	--mon-teal6: #a1ffeb;
+
+	--mon-green1: #84CA9A;
+	--mon-green2: #91CF99;
+	--mon-green3: #3AA789;
+	--mon-green4: #2A8479;
+	--mon-green5: #c3ffcb;
+	--mon-green6: #dcffe1;
+	--mon-green7: #b1ffbb;
+
+	--mon-blue1: #549FDE;
+	--mon-blue2: #3F4354;
+	--mon-blue3: #12222E;
+	--mon-blue4: #336FA2;
+	--mon-blue5: #194971;
+	--mon-blue6: #3E768A;
+	--mon-blue7: #1C3E4E;
+
+	--mon-red1: #EF9572;
+	--mon-red2: #D04C3E;
+
+	--mon-gold1: #D5B784;
+	--mon-gold2: #CEBF8B;
+	--mon-gold3: #9D896B;
+
+	--mon-yellow1: #FFDD5F;
+
+
+	/* Mondstadt Theme */
+
+	// Top Navigation Bar
+	--mon-nav: var(--mon-blue7);
+	--mon-nav-h: var(--mon-blue6);
+
+	--mon-nav-a: var(--mon-gold2);
+	--mon-nav-a-h: var(--mon-green5);
+	--mon-nav-a-a: var(--mon-gold3);
+
+	--mon-indic: var(--mon-teal1);
+
+
+	// Footer
+	--mon-foot: var(--mon-blue7);
+	--mon-foot-txt: white;
+
+
+	// Main Content
+	--mon-main: white;
+	--mon-txt: var(--mon-blue3);
+	--mon-header: var(--mon-teal1);
+
+	--mon-a: var(--mon-green7);
+	--mon-a-h: var(--mon-yellow1);
+	--mon-a-a: var(--mon-blue1);
+
+	// Scrollbar (for firefox)
+	// #1C3E4E
+	--mon-scroll: rgba(28, 62, 78,0.7); // blue5 w/ a = 0.7	
+	--mon-scroll-h: rgba(28, 62, 78,0.9);// blue5 w/ a = 0.9
+
+
+	// Navigation Tables
+	--mon-tbl: var(--mon-blue5);
+	--mon-tbl-h: var(--mon-blue4);
+	--mon-tbl-b: var(--mon-gold1);	//border
+	--mon-tbl-a: var(--mon-gold2);
+	--mon-tbl-a-h: var(--mon-gold1);
+	--mon-tbl-a-a: var(--mon-green3);
+	
+
+	// Sidebar Navigation
+	--mon-sd: var(--mon-blue1);
+	--mon-sd-hdr: white;
+	--mon-sd-hdr-h: var(--mon-green2);
+	--mon-sd-hdr-a: var(--mon-red1);
+
+	--mon-sd-itm: white;
+	--mon-sd-itm-h: var(--mon-green2);
+
+	--mon-sd-a: var(--mon-teal2);
+	--mon-sd-a-h: white;
+	--mon-sd-a-a: var(--mon-red2);
+
+	// --mon-gray5, #FFFFFF
+	--mon-sd-scroll: rgba(255, 255, 255,0.7);
+	--mon-sd-scroll-h: rgba(255, 255, 255,0.9);
+
+	
+	// Dialogue Bubbles
+	--mon-bub-L: var(--mon-teal1);
+	--mon-bub-L-txt: var(--mon-green6);
+	--mon-bub-R: white;
+	--mon-bub-R-txt: var(--mon-teal2);
+	
+}
