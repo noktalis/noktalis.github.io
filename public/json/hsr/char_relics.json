@@ -22,12 +22,12 @@
 		]
 	},
 	"daniel":{
-		"name":"Dan Heng - Imbibitor Lunae",
+		"name":"Dan Heng - Imbibitor Lunae",
 		"src":"/images/hsr/icons/daniel.png",
 		"body":"CRIT",
 		"feet":"SPD/ATK",
 		"rope":"ATK",
-		"sphere":"Imaginary DMG/ATK",
+		"sphere":"Imaginary DMG/ATK",
 		"substats":[
 			"SPD", "CRIT", "ATK"
 		]

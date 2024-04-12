@@ -34,11 +34,13 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	let test = Object.keys(char_data);
-	console.log(test);
+	let sets = Object.keys(relic_data);
 
-	console.log(char_data);
-	let bronya = char_data["bronya"];
+	// let test = Object.keys(char_data);
+	// console.log(test);
+
+	// console.log(char_data);
+	// let bronya = char_data["bronya"];
 	// console.log(test["name"]);
 
 	// TODO: fetch list of character objects
@@ -52,18 +54,9 @@ function Content() {
 			<p>Making this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
 			<FarmChart>
-				<FarmChartRow {...relic_data["pioneer"]}>
-					{relic_data["pioneer"]["characters"].map(char => <HSRChar {...char_data[char]}/>)}
-				</FarmChartRow>
-				<FarmChartRow
-				name="Messenger"
-				icon="/images/hsr/relics/messenger.png">
-
-					<HSRChar {...bronya}/>
-
-					{test.map(char_name => <HSRChar {...char_data[char_name]}></HSRChar>)}
-
-				</FarmChartRow>
+				{sets.map(relicSet => <FarmChartRow {...relic_data[relicSet]}>
+					{relic_data[relicSet]["characters"].map(char => <HSRChar {...char_data[char]} key={char}/>)}
+				</FarmChartRow>)}
 			</FarmChart>
 
 			{/* <img src='/images/hsr/relics/messenger.png'></img> */}
