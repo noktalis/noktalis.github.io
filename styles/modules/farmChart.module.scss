@@ -106,12 +106,13 @@
 	grid-area: substats;
 	flex-wrap: wrap;
 	gap: 5px;
+	height: fit-content;
 
 	span {
 		height: fit-content;
 		font-size: medium;
-		background-color: var(--ae-blue1);
-		color: black;
+		background-color: var(--ae-gold2);
+		color: #000000;
 		border-radius: 10px;
 		padding: 3px;
 	}

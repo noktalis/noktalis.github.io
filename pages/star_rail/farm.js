@@ -36,30 +36,17 @@ export default function Page(){
 function Content() {
 	let sets = Object.keys(relic_data);
 
-	// let test = Object.keys(char_data);
-	// console.log(test);
-
-	// console.log(char_data);
-	// let bronya = char_data["bronya"];
-	// console.log(test["name"]);
-
-	// TODO: fetch list of character objects
-	// TODO: fetch list of relic sets
-	// TODO: for each relic set's list of characters, pass character corresponding character object into element
-
 	return (
 		<div>
 			<h1>Relic Farming Chart</h1>
-			<h3>Work in Progress!</h3>
-			<p>Making this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
+			<p>Made this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
 			<FarmChart>
-				{sets.map(relicSet => <FarmChartRow {...relic_data[relicSet]}>
+				{sets.map(relicSet => 
+				<FarmChartRow {...relic_data[relicSet]}>
 					{relic_data[relicSet]["characters"].map(char => <HSRChar {...char_data[char]} key={char}/>)}
 				</FarmChartRow>)}
 			</FarmChart>
-
-			{/* <img src='/images/hsr/relics/messenger.png'></img> */}
 		</div>
 	);
 }
