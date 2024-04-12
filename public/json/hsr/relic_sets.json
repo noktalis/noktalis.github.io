@@ -6,7 +6,7 @@
 		"desc2":"Increases SPD by 6%.",
 		"desc4":"When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked.",
 		"characters":[
-			"bronya","tingyun","bailu","jingliu","aven","lynx","yukong"
+			"bronya","tingyun","bailu","jingliu","aven","lynx","yukong","hanya","gepard","march","natasha","asta"
 		]
 	},
 	"disiciple":{
@@ -16,7 +16,7 @@
 		"desc2":"Increases Max HP by 12%.",
 		"desc4":"When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks.",
 		"characters":[
-			"tingyun","blade","bailu","bronya","lynx","yukong"
+			"tingyun","blade","bailu","bronya","lynx","yukong","hanya","natasha","asta","arlan"
 		]
 	},
 	"pioneer":{
@@ -26,7 +26,7 @@
 		"desc2":"Increases DMG dealt to enemies with debuff by 12%.",
 		"desc4":"Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn.",
 		"characters":[
-			"topaz","ratio","jingliu","aven","yanqing"
+			"topaz","ratio","jingliu","aven","yanqing","dan","sampo","serval","hook"
 		]
 	},
 	"duke":{
@@ -46,7 +46,7 @@
 		"desc2":"Increases DEF by 15%.",
 		"desc4":"Increases the max DMG that can be absorbed by the shield created by the wearer by 20%.",
 		"characters":[
-			"aven"
+			"aven","gepard","march"
 		]
 	},
 	"musketeer":{
@@ -56,7 +56,7 @@
 		"desc2":"ATK increases by 12%.",
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
 		"characters":[
-			"daniel","jingliu","pela","herta"
+			"daniel","jingliu","pela","herta","qq","sushang"
 		]
 	},
 	"passerby":{
@@ -66,7 +66,7 @@
 		"desc2":"Increases Outgoing Healing by 10%.",
 		"desc4":"At the beginning of the battle, immediately recovers 1 Skill Point.",
 		"characters":[
-			"bailu","lynx"
+			"bailu","lynx","natasha"
 		]
 	},
 	"eagle":{
@@ -89,6 +89,16 @@
 			"jingliu","yanqing","herta"
 		]
 	},
+	"prisoner":{
+		"id":"prisoner",
+		"name":"Prisoner in Deep Confinement",
+		"icon":"/images/hsr/relics/prisoner.png",
+		"desc2":"Increases ATK by 12%.",
+		"desc4":"For every DoT the target enemy is afflicted with, the wearer will ignore 6% of target's DEF when dealing DMG to them. This effect is valid for a max of 3 DoTs.",
+		"characters":[
+			"guin","sampo"
+		]
+	},
 
 
 	"arena":{
@@ -97,7 +107,7 @@
 		"icon":"/images/hsr/relics/arena.png",
 		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%.",
 		"characters":[
-			"daniel", "blade","jingliu","yanqing"
+			"daniel", "blade","jingliu","yanqing","dan","qq","hook","sushang","arlan"
 		]
 	},
 	"keel":{
@@ -106,7 +116,7 @@
 		"icon":"/images/hsr/relics/keel.png",
 		"desc2":"Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%.",
 		"characters":[
-			"tingyun", "sparkle","bailu","bronya","lynx","pela","yukong"
+			"tingyun", "sparkle","bailu","bronya","lynx","pela","yukong","hanya","gepard","natasha","asta"
 		]
 	},
 	"fleet":{
@@ -115,7 +125,7 @@
 		"icon":"/images/hsr/relics/fleet.png",
 		"desc2":"Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%.",
 		"characters":[
-			"sparkle","bailu","bronya","tingyun","lynx","pela","yukong"
+			"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","march","natasha","asta"
 		]
 	},
 	"salsotto":{
@@ -133,7 +143,7 @@
 		"icon":"/images/hsr/relics/glamoth.png",
 		"desc2":"Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG.",
 		"characters":[
-			"yanqing","herta"
+			"yanqing","herta","guin","dan","sampo","serval","hook"
 		]
 	}
 }
