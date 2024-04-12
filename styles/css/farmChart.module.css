@@ -1,13 +1,16 @@
 .chart {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .row {
   width: 98%;
   display: grid;
   grid-template-columns: auto 1fr;
-  border: solid 1px red;
+  border: solid 2px var(--ae-gold2);
+  padding: 5px;
 }
 
 .set {
@@ -16,13 +19,15 @@
   align-items: center;
 }
 .set button {
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  min-width: 130px;
-  min-height: 130px;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  text-wrap: wrap;
 }
 .set button img {
   max-width: 50px;
@@ -33,7 +38,7 @@
 
 .chars {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .character {
@@ -41,6 +46,8 @@
   grid-template-areas: "icon mainstats" "substats substats";
   background-color: rgba(0, 0, 0, 0.3);
   padding: 5px;
+  width: 33%;
+  overflow: hidden;
 }
 .character img {
   max-width: 70px;
@@ -67,13 +74,17 @@
   width: 25px;
 }
 
-.substats {
+.substatsContainer {
   display: flex;
   grid-area: substats;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-.substats span {
+.substatsContainer span {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: large;
   background-color: red;
-  margin-right: 5px;
   border-radius: 10px;
   padding: 3px;
 }

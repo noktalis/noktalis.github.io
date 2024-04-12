@@ -391,6 +391,8 @@
 .mond .main {
   background-color: rgba(255, 255, 255, 0.3);
   color: var(--mon-txt);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
   color: var(--mon-header);
@@ -524,6 +526,8 @@
 .ae .main {
   background-color: rgba(0, 0, 0, 0.4);
   color: var(--ae-txt);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .ae .main h1, .ae .main h2, .ae .main h3, .ae .main h4, .ae .main h5, .ae .main h6 {
   color: var(--ae-header);

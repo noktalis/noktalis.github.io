@@ -4,6 +4,8 @@ import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import FarmChart from '@/components/farmChart';
 import { FarmChartRow, HSRChar } from '@/components/farmChart';
+import char_data from "/public/json/hsr/char_relics.json";
+import relic_data from "/public/json/hsr/relic_sets.json";
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -32,7 +34,16 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	let substatTest = ["CRIT DMG", "SPD"]
+	let test = Object.keys(char_data);
+	console.log(test);
+
+	console.log(char_data);
+	let bronya = char_data["bronya"];
+	// console.log(test["name"]);
+
+	// TODO: fetch list of character objects
+	// TODO: fetch list of relic sets
+	// TODO: for each relic set's list of characters, pass character corresponding character object into element
 
 	return (
 		<div>
@@ -41,18 +52,16 @@ function Content() {
 			<p>Making this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
 			<FarmChart>
+				<FarmChartRow {...relic_data["pioneer"]}>
+					{relic_data["pioneer"]["characters"].map(char => <HSRChar {...char_data[char]}/>)}
+				</FarmChartRow>
 				<FarmChartRow
-				setName="Messenger"
-				setImg="/images/hsr/relics/messenger.png">
-					<HSRChar src='/images/hsr/icons/bronya.png'
-						alt='Bronya'
-						name='Bronya'
-						body='CRIT DMG'
-						feet='HP/SPD'
-						rope='ER'
-						sphere='HP/DEF'>
-							{substatTest.map(stat => <span>{stat}</span>)}
-					</HSRChar>
+				name="Messenger"
+				icon="/images/hsr/relics/messenger.png">
+
+					<HSRChar {...bronya}/>
+
+					{test.map(char_name => <HSRChar {...char_data[char_name]}></HSRChar>)}
 
 				</FarmChartRow>
 			</FarmChart>

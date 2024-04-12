@@ -1,0 +1,111 @@
+{
+	"messenger":{
+		"name":"Messenger Traversing Hackerspace",
+		"desc2":"Increases SPD by 6%.",
+		"desc4":"When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked.",
+		"characters":[
+			"bronya","tingyun","bailu","jingliu","aven","lynx","yukong"
+		]
+	},
+	"disiciple":{
+		"name":"Longevous Disciple",
+		"desc2":"Increases Max HP by 12%.",
+		"desc4":"When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks.",
+		"characters":[
+			"tingyun","blade","bailu","bronya","lynx","yukong"
+		]
+	},
+	"pioneer":{
+		"name":"Pioneer Diver of Dead Waters",
+		"desc2":"Increases DMG dealt to enemies with debuff by 12%.",
+		"desc4":"Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn.",
+		"characters":[
+			"topaz","ratio","jingliu","aven","yanqing"
+		]
+	},
+	"duke":{
+		"name":"The Ashblazing Grand Duke",
+		"desc2":"Increases follow-up attack DMG by 20%.",
+		"desc4":"When the wearer uses follow-up attacks against the target enemy, increase the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack for a maximum of 8 times and lasts for 3 turns. This effect is removed the next time the wearer uses a follow-up attack.",
+		"characters":[
+			"topaz","ratio","jingyuan","aven"
+		]
+	},
+	"knight":{
+		"name":"Knight of Purity Palace",
+		"desc2":"Increases DEF by 15%.",
+		"desc4":"Increases the max DMG that can be absorbed by the shield created by the wearer by 20%.",
+		"characters":[
+			"aven"
+		]
+	},
+	"musketeer":{
+		"name":"Musketeer of Wild Wheat",
+		"desc2":"ATK increases by 12%.",
+		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
+		"characters":[
+			"daniel","jingliu","pela","herta"
+		]
+	},
+	"passerby":{
+		"name":"Passerby of Wandering Cloud",
+		"desc2":"Increases Outgoing Healing by 10%.",
+		"desc4":"At the beginning of the battle, immediately recovers 1 Skill Point.",
+		"characters":[
+			"bailu","lynx"
+		]
+	},
+	"eagle":{
+		"name":"Eagle of Twilight Line",
+		"desc2":"Increases Wind DMG by 10%.",
+		"desc4":"After the wearer uses Ultimate, their action is Advanced Forward by 25%.",
+		"characters":[
+			"sparkle","pela"
+		]
+	},
+	"hunter":{
+		"name":"Hunter of Glacial Forest",
+		"desc2":"Increases Ice DMG by 10%.",
+		"desc4":"After the wearer unleashes their Ultimate, their CRIT DMG increases by 25% for 2 turn(s).",
+		"characters":[
+			"jingliu","yanqing","herta"
+		]
+	},
+
+
+	"arena":{
+		"name":"Rutiliant Arena",
+		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%.",
+		"characters":[
+			"daniel", "blade","jingliu","yanqing"
+		]
+	},
+	"keel":{
+		"name":"Broken Keel",
+		"desc2":"Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%.",
+		"characters":[
+			"tingyun", "sparkle","bailu","bronya","lynx","pela","yukong"
+		]
+	},
+	"fleet":{
+		"name":"Fleet of the Ageless",
+		"desc2":"Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%.",
+		"characters":[
+			"sparkle","bailu","bronya","tingyun","lynx","pela","yukong"
+		]
+	},
+	"salsotto":{
+		"name":"Inert Salsotto",
+		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%.",
+		"characters":[
+			"jingyuan","ratio","topaz","herta"
+		]
+	},
+	"firmament":{
+		"name":"Firmament Frontline: Glamoth",
+		"desc2":"Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG.",
+		"characters":[
+			"yanqing","herta"
+		]
+	}
+}

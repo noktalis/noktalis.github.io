@@ -209,6 +209,7 @@
 	.main {
 		// Background & text color
 		@include colors(rgba(255,255,255,0.3), var(--mon-txt));
+		backdrop-filter: blur(5px); // frosted glass effect
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
@@ -330,7 +331,8 @@
 	.main {
 		// Background & text color
 		@include colors(rgba(0,0,0,0.4), var(--ae-txt));
-
+		backdrop-filter: blur(5px);	// frosted glass effect
+		
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
 			color: var(--ae-header);

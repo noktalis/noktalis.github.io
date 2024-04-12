@@ -1,0 +1,321 @@
+{
+	"bronya":{
+		"name":"Bronya",
+		"src":"/images/hsr/icons/bronya.png",
+		"body":"CRIT DMG",
+		"feet":"SPD/HP/DEF",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"SPD", "CRIT DMG", "HP", "DEF", "EFF RES (Keel)"
+		]
+	},
+	"jingliu":{
+		"name":"Jingliu",
+		"src":"/images/hsr/icons/jingliu.png",
+		"body":"CRIT DMG",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Ice DMG/ATK",
+		"substats":[
+			"SPD", "CRIT", "ATK"
+		]
+	},
+	"daniel":{
+		"name":"Dan Heng - Imbibitor Lunae",
+		"src":"/images/hsr/icons/daniel.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Imaginary DMG/ATK",
+		"substats":[
+			"SPD", "CRIT", "ATK"
+		]
+	},
+	"tingyun":{
+		"name":"Tingyun",
+		"src":"/images/hsr/icons/tingyun.png",
+		"body":"ATK/HP/DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"ATK/HP/DEF",
+		"substats":[
+			"SPD","ATK","HP","DEF","EFF RES (Keel)"
+		]
+	},
+	"sparkle":{
+		"name":"Sparkle",
+		"src":"/images/hsr/icons/sparkle.png",
+		"body":"CRIT DMG",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"SPD", "CRIT DMG", "HP", "DEF", "EFF RES (Keel)"
+		]
+	},
+	"bailu":{
+		"name":"Bailu",
+		"src":"/images/hsr/icons/bailu.png",
+		"body":"Outgoing Healing/HP",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP",
+		"substats":[
+			"SPD", "HP", "EFF RES", "DEF"
+		]
+	},
+	"jingyuan":{
+		"name":"Jingyuan",
+		"src":"/images/hsr/icons/jingyuan.png",
+		"body":"CRIT",
+		"feet":"ATK",
+		"rope":"ATK",
+		"sphere":"Lightning DMG/ATK",
+		"substats":[
+			"CRIT", "ATK"
+		]
+	},
+	"ratio":{
+		"name":"Dr. Ratio",
+		"src":"/images/hsr/icons/ratio.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Imaginary DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"aven":{
+		"name":"Aventurine",
+		"src":"/images/hsr/icons/aven.png",
+		"body":"CRIT DMG",
+		"feet":"SPD/DEF",
+		"rope":"DEF",
+		"sphere":"Imaginary DMG/DEF",
+		"substats":[
+			"DEF","SPD","CRIT","EFF RES"
+		]
+	},
+	"yanqing":{
+		"name":"Yanqing",
+		"src":"/images/hsr/icons/yanqing.png",
+		"body":"CRIT DMG",
+		"feet":"SPD/ATK",
+		"rope":"ATK/ER",
+		"sphere":"Ice DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"blade":{
+		"name":"Blade",
+		"src":"/images/hsr/icons/blade.png",
+		"body":"CRIT",
+		"feet":"SPD/HP",
+		"rope":"HP",
+		"sphere":"Wind DMG/HP",
+		"substats":[
+			"SPD","CRIT","HP"
+		]
+	},
+	"lynx":{
+		"name":"Lynx",
+		"src":"/images/hsr/icons/lynx.png",
+		"body":"HP",
+		"feet":"SPD/HP",
+		"rope":"ER/HP",
+		"sphere":"HP",
+		"substats":[
+			"SPD","HP","EFF RES","DEF"
+		]
+	},
+	"pela":{
+		"name":"Pela",
+		"src":"/images/hsr/icons/pela.png",
+		"body":"EHR/HP/DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"EHR","SPD","HP","DEF","EFF RES (Keel)"
+		]
+	},
+	"hanya":{
+		"name":"Hanya",
+		"src":"/images/hsr/icons/hanya.png",
+		"body":"HP/DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"SPD","HP","DEF","Break","EFF RES (Keel)"
+		]
+	},
+	"gepard":{
+		"name":"Gepard",
+		"src":"/images/hsr/icons/gepard.png",
+		"body":"DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"DEF",
+		"substats":[
+			"SPD","DEF","EFF RES","HP"
+		]
+	},
+	"march":{
+		"name":"March 7th",
+		"src":"/images/hsr/icons/march.png",
+		"body":"EHR/DEF",
+		"feet":"SPD",
+		"rope":"ER/DEF",
+		"sphere":"DEF",
+		"substats":[
+			"EHR","SPD","DEF","HP","EFF RES"
+		]
+	},
+	"natasha":{
+		"name":"Natasha",
+		"src":"/images/hsr/icons/natasha.png",
+		"body":"Outgoing Healing/HP",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP",
+		"substats":[
+			"SPD","HP","EFF RES","DEF"
+		]
+	},
+	"guin":{
+		"name":"Guinaifen",
+		"src":"/images/hsr/icons/guin.png",
+		"body":"EHR/ATK",
+		"feet":"SPD",
+		"rope":"ATK",
+		"sphere":"Fire DMG/ATK",
+		"substats":[
+			"EHR","SPD","ATK","HP","DEF","Break"
+		]
+	},
+	"herta":{
+		"name":"Herta",
+		"src":"/images/hsr/icons/herta.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Ice DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"dan":{
+		"name":"Dan Heng",
+		"src":"/images/hsr/icons/dan.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Wind DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"sampo":{
+		"name":"Sampo",
+		"src":"/images/hsr/icons/sampo.png",
+		"body":"EHR/ATK",
+		"feet":"SPD",
+		"rope":"ATK",
+		"sphere":"Wind DMG/ATK",
+		"substats":[
+			"SPD","EHR","ATK","Break"
+		]
+	},
+	"asta":{
+		"name":"Asta",
+		"src":"/images/hsr/icons/asta.png",
+		"body":"HP/DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"SPD","HP","DEF","EFF RES (Keel)"
+		]
+	},
+	"qq":{
+		"name":"Qingque",
+		"src":"/images/hsr/icons/qq.png",
+		"body":"CRIT",
+		"feet":"ATK",
+		"rope":"ATK",
+		"sphere":"Quantum DMG",
+		"substats":[
+			"CRIT","ATK"
+		]
+	},
+	"serval":{
+		"name":"Serval",
+		"src":"/images/hsr/icons/serval.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Lightning DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"hook":{
+		"name":"Hook",
+		"src":"/images/hsr/icons/hook.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Fire DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"yukong":{
+		"name":"Yukong",
+		"src":"/images/hsr/icons/yukong.png",
+		"body":"HP/DEF",
+		"feet":"SPD",
+		"rope":"ER",
+		"sphere":"HP/DEF",
+		"substats":[
+			"SPD","HP","DEF","EFF RES (Keel)"
+		]
+	},
+	"sushang":{
+		"name":"Sushang",
+		"src":"/images/hsr/icons/sushang.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK/Break",
+		"sphere":"Physical DMG/ATK",
+		"substats":[
+			"SPD","Break","CRIT","ATK"
+		]
+	},
+	"arlan":{
+		"name":"Arlan",
+		"src":"/images/hsr/icons/arlan.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Lightning DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"topaz":{
+		"name":"Topaz",
+		"src":"/images/hsr/icons/topaz.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Fire DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	}
+}

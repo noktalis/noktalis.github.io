@@ -3,7 +3,6 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 
 export default function FarmChart({children}){
-	// TODO: css container class
 	return(
 		<div className={format.chart}>
 			{children}
@@ -11,18 +10,17 @@ export default function FarmChart({children}){
 	)
 }
 
-export function FarmChartRow({setName, setImg, children}){
-	// TODO: row container css class
-	// TODO: see prop spreading
+export function FarmChartRow({name, icon, desc2, desc4, children}){
 	// TODO: json
 	return(
 		<div className={format.row}>
 			<div className={format.set}>
 				<button>
-					<img src={setImg}/>
-					{setName}
+					<img src={icon}/>
+					{name}
 				</button>
-				<p>set description</p>
+				<p><b>2pc: </b><small>{desc2}</small></p>
+				<p><b>4pc: </b><small>{desc4}</small></p>
 			</div>
 			<div className={format.chars}>
 				{children}
@@ -37,12 +35,15 @@ function toggleRow(setName){
 	// within row, toggle all children elements' descriptions
 }
 
-export function HSRChar({src, alt, name, body, feet, rope, sphere, substats, children}) {
+export function HSRChar({src, name, body, feet, rope, sphere, substats, children}) {
+	if (substats == undefined)
+		substats = []
+	
 	return(
 		<div className={format.character}>
 			<div className={format.icon}>
 				<img src={src}
-					alt={alt}
+					alt={name}
 					title={name}/>
 				<span>{name}</span>
 			</div>
@@ -65,9 +66,10 @@ export function HSRChar({src, alt, name, body, feet, rope, sphere, substats, chi
 					title="Sphere"/>
 				<p>{sphere}</p>
 			</div>
-			<div className={format.substats}>
+			<div className={format.substatsContainer}>
 				{children} 
-				{substats}
+				{substats.map(stat => <span key={stat}>{stat}</span>)}
+				{/* {substats} */}
 			</div>
 		</div>
 	);
