@@ -238,7 +238,7 @@
 		"rope":"ER",
 		"sphere":"HP/DEF",
 		"substats":[
-			"SPD","HP","DEF","EFF RES (Keel)"
+			"SPD","Break","HP","DEF","EFF RES (Keel)"
 		]
 	},
 	"qq":{
@@ -316,6 +316,17 @@
 		"sphere":"Fire DMG/ATK",
 		"substats":[
 			"SPD","CRIT","ATK"
+		]
+	},
+	"clara":{
+		"name":"Clara",
+		"src":"/images/hsr/icons/clara.png",
+		"body":"CRIT",
+		"feet":"ATK",
+		"rope":"ATK",
+		"sphere":"Physical DMG/ATK",
+		"substats":[
+			"CRIT","ATK"
 		]
 	}
 }

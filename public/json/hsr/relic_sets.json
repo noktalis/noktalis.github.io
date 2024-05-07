@@ -36,7 +36,7 @@
 		"desc2":"Increases follow-up attack DMG by 20%.",
 		"desc4":"When the wearer uses follow-up attacks against the target enemy, increase the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack for a maximum of 8 times and lasts for 3 turns. This effect is removed the next time the wearer uses a follow-up attack.",
 		"characters":[
-			"topaz","ratio","jingyuan","aven"
+			"topaz","ratio","jingyuan","aven","clara"
 		]
 	},
 	"knight":{
@@ -99,6 +99,16 @@
 			"guin","sampo"
 		]
 	},
+	"boxer":{
+		"id":"boxer",
+		"name":"Champion of Streetwise Boxing",
+		"icon":"/images/hsr/relics/phys.png",
+		"desc2":"Increases Physical DMG by 10%.",
+		"desc4":"After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s).",
+		"characters":[
+			"clara", "sushang"
+		]
+	},
 
 
 	"arena":{
@@ -116,7 +126,7 @@
 		"icon":"/images/hsr/relics/keel.png",
 		"desc2":"Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%.",
 		"characters":[
-			"tingyun", "sparkle","bailu","bronya","lynx","pela","yukong","hanya","gepard","natasha","asta"
+			"aven","tingyun", "sparkle","bailu","bronya","lynx","pela","yukong","hanya","gepard","natasha","asta"
 		]
 	},
 	"fleet":{
@@ -134,7 +144,7 @@
 		"icon":"/images/hsr/relics/salsotto.png",
 		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%.",
 		"characters":[
-			"jingyuan","ratio","topaz","herta"
+			"aven","jingyuan","ratio","topaz","herta","clara"
 		]
 	},
 	"firmament":{
