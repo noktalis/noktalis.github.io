@@ -1,3 +1,6 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts" as *;
+
 .chart {
 	display: flex;
 	flex-direction: column;
@@ -8,8 +11,6 @@
 .row {
 	display: grid;
 	grid-template-columns: auto 1fr;
-
-
 	border: solid 2px var(--ae-gold2);
 	padding: 5px;
 }
@@ -36,14 +37,10 @@
 		
 		// Appearance
 		border: var(--ae-gold2) 4px solid;
-		background-color: var(--ae-red1);
-		color: var(--ae-gold3);
-		&:hover{
-			background-color: var(--ae-blue2);
-		}
-		&:active{
-			background-color: var(--ae-red3);
-		}
+		@include btn-colors(var(--ae-red1),var(--ae-gold3),
+			var(--ae-blue2),var(--ae-gold3),
+			var(--ae-red3),var(--ae-gold3));
+		font-family: DIN, "DIN", sans-serif;
 
 		img {
 			max-width: 50px;
@@ -115,6 +112,7 @@
 		color: #000000;
 		border-radius: 10px;
 		padding: 3px;
+		font-weight: bold;
 	}
 }
 

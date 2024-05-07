@@ -328,5 +328,16 @@
 		"substats":[
 			"CRIT","ATK"
 		]
+	},
+	"hmc":{
+		"name":"Harmony Trailblazer",
+		"src":"",
+		"body":"HP/DEF",
+		"feet":"SPD",
+		"rope":"Break",
+		"sphere":"HP/DEF",
+		"substats":[
+			"Break","SPD","HP","DEF","ATK"
+		]
 	}
 }
