@@ -5,11 +5,13 @@ export const ThemeContext = createContext("");
 /**
  * Current themes:
  * 		lyt - Lynette
+ * 		ri	- Rhodes Island
+ * 		mond- Mondstadt
+ * 		fra - Furina
+ * 		express - Astral Express
  * 
  * Planned themes (coming eventually):
  * 		lyy - Lyney
  * 		ven - Venti
- * 		ri	- Rhodes Island
  * 		rl	- Rhine Lab
- * 		hsr - Star Rail (TBD)
  */

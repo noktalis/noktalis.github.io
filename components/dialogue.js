@@ -2,7 +2,11 @@ import format from "../styles/modules/dialogue.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 
-/**Container that holds dialogue bubbles
+// TODO: update dialogue bubbles to visually change depending on the next speaker
+// TODO: update dialogue container to take list of objects as input
+
+/**
+ * Container that holds dialogue bubbles
  * 
  * @param {Bubble} children - Content to appear within container. Can be anything,
  * 								but Bubble elements are expected
@@ -28,7 +32,8 @@ export default function Dialogue({children}){
 	);
 }
 
-/**A paragraph element styled to look like a text bubble
+/**
+ * A paragraph element styled to look like a text bubble
  * 
  * @param {*} children 		- Text to appear within the text bubble
  * @param {String} side		- Indicates which side of the container the bubble should stick to

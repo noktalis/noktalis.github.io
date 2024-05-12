@@ -2,7 +2,8 @@ import { useContext, useState, useEffect } from "react";
 import style from "../styles/modules/tierlist.module.scss";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 
-/**Creates a tier list based on data from a given JSON file
+/**
+ * Creates a tier list based on data from a given JSON file
  * 
  * @param {String} path - absolute path to the JSON file holding tier list data
  * @returns 
@@ -61,7 +62,8 @@ export default function TierList({path}){
 	);
 }
 
-/**A tier within the tierlist
+/**
+ * A tier within the tierlist
  * 
  * @param {String} type 	- the type of items being ranked
  * @param {String} letter 	- the letter representing the tier
@@ -87,7 +89,8 @@ export function Tier({type, letter, list}){
 	);
 }
 
-/**An item to represent a Voice Over being ranked in the tierlist
+/**
+ * An item to represent a Voice Over being ranked in the tierlist
  * 
  * @param {Object} attributes 	- holds the necessary data for the component 
  * @param {String} character	- the character of the voice over

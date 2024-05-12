@@ -1,7 +1,8 @@
 import Link from "next/link";
 import StickerButton from "./stickerbtn";
 
-/**A button that functions as a link when clicked and has a sticker on the side
+/**
+ * A button that functions as a link when clicked and has a sticker on the side
  * 
  * @param {*} prop 	- holds data needed for element attributes
  * 

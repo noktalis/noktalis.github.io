@@ -1,13 +1,14 @@
 import format from "../styles/modules/navmenu.module.scss";
 
-/**Arranges elements of a menu into two columns
+/**
+ * Arranges elements of a menu into two columns
  * 	Only intended for use in the Main element
  * 
  * @param {*} prop
  * 		children - children elements that make up a menu
  * @returns 
  * 
- * Reminder: Theme is handled within the children, by the children
+ * Reminder: Theme is handled within the children via ThemeContext
  */
 export default function Nav2Col({children}){
 	return(

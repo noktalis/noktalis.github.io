@@ -1,9 +1,10 @@
-import Image from 'next/image';
 import LinkButton from '../linkbtn';
 import topnav from "../../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
+
+// TODO: render from json
 
 /**Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages

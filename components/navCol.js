@@ -8,7 +8,7 @@ import format from "../styles/modules/navmenu.module.scss";
  * 		children - children elements
  * @returns 
  * 
- * Reminder: Theme is handled within the children, by the children
+ * Reminder: Theme is handled within the children via ThemeContext
  */
 export default function NavCol({children}){
 	return(

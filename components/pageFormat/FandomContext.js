@@ -4,9 +4,9 @@ export const FandomContext = createContext("");
 
 /**
  * Fandoms:
- * 		Arknights
- * 		Genshin Impact
- * 		Star Rail
+ * 		ak - Arknights
+ * 		genshin - Genshin Impact
+ * 		hsr - Star Rail
  * 
  * Fandoms to fall under Miscellaneous:
  * 		PokeSpe

@@ -1,15 +1,15 @@
 import format from "../../styles/modules/gallery.module.scss";
 import formatting from "../../styles/modules/akStickerGallery.module.scss";
 import style from "../../styles/modules/main.module.scss";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../pageFormat/ThemeContext";
 
 /**
- * Component for displaying an Arknights sticker pack, the pack's data stored in a map
+ * Component for displaying an Arknights sticker pack and associated information
+ * @param {*} packData - data of a sticker pack
  * @returns 
  */
 export default function AKStickerGallery({packData}){
-	// const [packData, setPackData] = useState({});
 	const theme = useContext(ThemeContext);
 	let themeClass;
 
@@ -21,8 +21,6 @@ export default function AKStickerGallery({packData}){
 		default:
 			themeClass = format.mond;
 	}
-
-	// console.log(packData["pack"]);
 	
 	return (
 		<>
@@ -40,7 +38,7 @@ export default function AKStickerGallery({packData}){
 						date={packData["en-date"] != null ? new Date(packData["en-date"]) : null}
 						src={packData["en-src"]}
 					/>
-					{ packData["cn-src"] ? null : <WeiboCropped/>}
+					{ packData["cn-src"] ? null : <Weibo/>}
 					{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : null}
 
 					{ packData["pack"] == "set1" ? <TumblrPart3 link3="https://arknights-archive.tumblr.com/post/726394540041371648/sticker-pack-1-33"/> : null}
@@ -61,8 +59,13 @@ export default function AKStickerGallery({packData}){
 	); // end return
 } // end Component
 
+/**
+ * Component for a single sticker within AKStickerGallery
+ * @param {*} sticker - data of a sticker to be displayed 
+ * @returns 
+ */
 function StickerEntry({sticker}){
-	console.log(sticker);
+	// console.log(sticker);
 	return(
 		<div className={formatting.entry}>
 			<img
@@ -75,14 +78,20 @@ function StickerEntry({sticker}){
 	);
 }
 
+/**
+ * Componet for the image of a sticker pack's sticker sheet
+ * @param {*} pack - the sticker pack associated with the sheet
+ * @returns 
+ */
 function StickerSheet({pack}){
+	// Concatenate image source url
 	let substring = pack["stickers"][0]["href"].substring(39);//39
 	let list = substring.split("/");
 
 	const HEAD = "https://noktalis.github.io/ak-stickers/";
 	const URL = HEAD + list[0] + "/" + list[1] + "/sheet.png";
 
-	console.log(URL)
+	// console.log(URL)
 
 	return(
 		<img className={formatting.sheet} 
@@ -92,10 +101,10 @@ function StickerSheet({pack}){
 }
 
 /**
- * A component for a recurring paragraph that explains that the sticker pack's sheet and CN release date was retrieved from Weibo by Xue
+ * Component for a recurring paragraph that explains that the sticker pack's sheet and CN release date was retrieved from Weibo by Xue
  * @returns 
  */
-function WeiboCropped(){
+function Weibo(){
 	return(
 		<p>
 			Sticker sheet and CN release date retrieved from <a href="https://weibo.com/u/6441489862" target="_blank">
@@ -105,6 +114,12 @@ function WeiboCropped(){
 	);
 }
 
+/**
+ * Component for a paragraph with links to the (arknights-archive) Tumblr source of stickers
+ * @param {String} link1	- link to part 1 
+ * @param {String} link2	- link to part 2
+ * @returns 
+ */
 function TumblrArchive({link1, link2}){
 	return(
 		<p>
@@ -113,6 +128,11 @@ function TumblrArchive({link1, link2}){
 	);
 }
 
+/**
+ * Component for special cases where (arknights-archive) Tumblr source has a 3rd part
+ * @param {String} link3 
+ * @returns 
+ */
 function TumblrPart3({link3}){
 	/* For Set 1 */
 	return(
@@ -122,6 +142,10 @@ function TumblrPart3({link3}){
 	);
 }
 
+/**
+ * Component for a paragraph indicating that some stickers of a pack were edited by me to recreate the English version
+ * @returns 
+ */
 function ENEdit(){
 	return(
 		<p>
@@ -131,7 +155,7 @@ function ENEdit(){
 }
 
 /**
- * 
+ * Component for a paragraph element detailing a sticker pack's release date in a region
  * @param {String} region 	- "CN" or "EN" to be inserted
  * @param {Date} date		- Date object of release date
  * @param {String} src		- String that contains the path/link 
@@ -141,6 +165,7 @@ function ReleaseDate({region, date, src}) {
 	let releaseStr = "Released to " + region + ":"
 	let dateStr;
 
+	// Handle null date first
 	if (date == null){
 		dateStr = "Unknown"
 		if (src == null && region == "EN")
@@ -149,6 +174,7 @@ function ReleaseDate({region, date, src}) {
 		dateStr = dateToString(date);
 	}
 
+	// Implement link into <p>
 	if (src) {
 		return (
 			<p>
@@ -172,9 +198,4 @@ function ReleaseDate({region, date, src}) {
  */
 function dateToString(date) {
 	return date.toUTCString().substring(5,16);
-}
-
-// from ISO string
-function getYear(string) {
-	return string.substring(0,4);
 }

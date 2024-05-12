@@ -13,7 +13,6 @@ import SideNav from "./sidenav";
  */
 export default function Container({extra_menu_src,children}){
 	
-
 	return(
 		<div className={format.container}>
 			<SideNav extra_menu_src={extra_menu_src}></SideNav>

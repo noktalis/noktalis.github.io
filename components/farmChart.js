@@ -1,7 +1,10 @@
 import format from "/styles/modules/farmChart.module.scss";
-import { useContext, useState, useEffect } from "react";
+import { useState } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 import React from "react";
+
+// TODO: documentation
+// TODO: split set characters box by 2pc or 4pc usage
 
 export default function FarmChart({children}){
 	return(
