@@ -5,8 +5,25 @@
 		"icon":"/images/hsr/relics/messenger.png",
 		"desc2":"Increases SPD by 6%.",
 		"desc4":"When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked.",
-		"characters":[
-			"bronya","tingyun","bailu","jingliu","aven","lynx","yukong","hanya","gepard","march","natasha","asta"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"jingliu","aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko"
+				]
+			},
+			{
+				"usecase":"2pc/4pc",
+				"characters":[
+					"bronya","tingyun","bailu","yukong"
+				]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"hanya"
+				]
+			}
 		]
 	},
 	"disiciple":{
@@ -15,8 +32,21 @@
 		"icon":"/images/hsr/relics/disciple.png",
 		"desc2":"Increases Max HP by 12%.",
 		"desc4":"When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks.",
-		"characters":[
-			"tingyun","blade","bailu","bronya","lynx","yukong","hanya","natasha","asta","arlan"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"tingyun","bailu","bronya","lynx","yukong","hanya","natasha","asta"
+				]
+			},
+			{
+				"usecase":"4pc",
+				"characters":["arlan","clara"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["blade"]
+			}
 		]
 	},
 	"pioneer":{
@@ -25,8 +55,19 @@
 		"icon":"/images/hsr/relics/pioneer.png",
 		"desc2":"Increases DMG dealt to enemies with debuff by 12%.",
 		"desc4":"Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn.",
-		"characters":[
-			"topaz","ratio","jingliu","aven","yanqing","dan","sampo","serval","hook"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["jingliu","yanqing","sampo","serval"]
+			},
+			{
+				"usecase":"2pc/4pc",
+				"characters":["aven","topaz","himeko"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["ratio","dan","aven","topaz","hook"]
+			}
 		]
 	},
 	"duke":{
@@ -35,8 +76,15 @@
 		"icon":"/images/hsr/relics/duke.png",
 		"desc2":"Increases follow-up attack DMG by 20%.",
 		"desc4":"When the wearer uses follow-up attacks against the target enemy, increase the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack for a maximum of 8 times and lasts for 3 turns. This effect is removed the next time the wearer uses a follow-up attack.",
-		"characters":[
-			"topaz","ratio","jingyuan","aven","clara"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["ratio","clara","aven"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["topaz","jingyuan","himeko"]
+			}
 		]
 	},
 	"knight":{
@@ -45,8 +93,15 @@
 		"icon":"/images/hsr/relics/knight.png",
 		"desc2":"Increases DEF by 15%.",
 		"desc4":"Increases the max DMG that can be absorbed by the shield created by the wearer by 20%.",
-		"characters":[
-			"aven","gepard","march"
+		"charGroups":[
+			{
+				"usecase":"2pc/4pc",
+				"characters":["aven"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["gepard","march"]
+			}
 		]
 	},
 	"musketeer":{
@@ -55,8 +110,27 @@
 		"icon":"/images/hsr/relics/musketeer.png",
 		"desc2":"ATK increases by 12%.",
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
-		"characters":[
-			"daniel","jingliu","pela","herta","qq","sushang"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["jingliu","yanqing"]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["robin"]
+			},
+			{
+				"usecase":"2pc/4pc",
+				"characters":["pela","herta","sushang","dan","clara","himeko","serval"]
+			},
+			{
+				"usecase":"4pc",
+				"characters":["qq","hook"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["daniel"]
+			}
 		]
 	},
 	"passerby":{
@@ -65,8 +139,11 @@
 		"icon":"/images/hsr/relics/passerby.png",
 		"desc2":"Increases Outgoing Healing by 10%.",
 		"desc4":"At the beginning of the battle, immediately recovers 1 Skill Point.",
-		"characters":[
-			"bailu","lynx","natasha"
+		"charGroups":[
+			{
+				"usecase":"2pc/4pc",
+				"characters":["bailu","lynx","natasha"]
+			}
 		]
 	},
 	"eagle":{
@@ -75,8 +152,15 @@
 		"icon":"/images/hsr/relics/eagle.png",
 		"desc2":"Increases Wind DMG by 10%.",
 		"desc4":"After the wearer uses Ultimate, their action is Advanced Forward by 25%.",
-		"characters":[
-			"sparkle","pela"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["blade"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["pela","sparkle"]
+			}
 		]
 	},
 	"hunter":{
@@ -85,8 +169,11 @@
 		"icon":"/images/hsr/relics/glacial.png",
 		"desc2":"Increases Ice DMG by 10%.",
 		"desc4":"After the wearer unleashes their Ultimate, their CRIT DMG increases by 25% for 2 turn(s).",
-		"characters":[
-			"jingliu","yanqing","herta"
+		"charGroups":[
+			{
+				"usecase":"2pc/4pc",
+				"characters":["jingliu","yanqing","herta"]
+			}
 		]
 	},
 	"prisoner":{
@@ -95,8 +182,19 @@
 		"icon":"/images/hsr/relics/prisoner.png",
 		"desc2":"Increases ATK by 12%.",
 		"desc4":"For every DoT the target enemy is afflicted with, the wearer will ignore 6% of target's DEF when dealing DMG to them. This effect is valid for a max of 3 DoTs.",
-		"characters":[
-			"guin","sampo"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["jingliu","yanqing","clara","herta","jingyuan","ratio","topaz","daniel","dan"]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["robin"]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":["guin","sampo"]
+			}
 		]
 	},
 	"boxer":{
@@ -105,8 +203,11 @@
 		"icon":"/images/hsr/relics/phys.png",
 		"desc2":"Increases Physical DMG by 10%.",
 		"desc4":"After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s).",
-		"characters":[
-			"clara", "sushang"
+		"charGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":["clara","sushang"]
+			}
 		]
 	},
 	"watchmaker":{
@@ -115,8 +216,11 @@
 		"icon":"/images/hsr/relics/watchmaker.png",
 		"desc2":"Increases Break Effect by 16%.",
 		"desc4":"When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked.",
-		"characters":[
-			"hmc"
+		"charGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":["hmc"]
+			}
 		]
 	},
 
@@ -126,8 +230,15 @@
 		"name":"Rutiliant Arena",
 		"icon":"/images/hsr/relics/arena.png",
 		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%.",
-		"characters":[
-			"daniel", "blade","jingliu","yanqing","dan","qq","hook","sushang","arlan"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["yanqing","hook","jingyuan","ratio","topaz","herta","clara","himeko","serval"]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["daniel","blade","jingliu","dan","qq","sushang","arlan","dan"]
+			}
 		]
 	},
 	"keel":{
@@ -135,8 +246,19 @@
 		"name":"Broken Keel",
 		"icon":"/images/hsr/relics/keel.png",
 		"desc2":"Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%.",
-		"characters":[
-			"aven","tingyun", "sparkle","bailu","bronya","lynx","pela","yukong","hanya","gepard","natasha","asta"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"aven","topaz","ratio","robin",
+					"tingyun","pela","yukong","hanya","asta",
+					"bailu","lynx","gepard","natasha"
+				]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["sparkle","bronya"]
+			}
 		]
 	},
 	"fleet":{
@@ -144,8 +266,20 @@
 		"name":"Fleet of the Ageless",
 		"icon":"/images/hsr/relics/fleet.png",
 		"desc2":"Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%.",
-		"characters":[
-			"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","march","natasha","asta"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"aven","march","asta","guin",
+					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha"
+				]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"robin"
+				]
+			}
 		]
 	},
 	"salsotto":{
@@ -153,8 +287,15 @@
 		"name":"Inert Salsotto",
 		"icon":"/images/hsr/relics/salsotto.png",
 		"desc2":"Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%.",
-		"characters":[
-			"aven","jingyuan","ratio","topaz","herta","clara"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["blade","jingliu","yanqing","herta","dan","serval"]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["aven","jingyuan","ratio","topaz","clara","himeko"]
+			}
 		]
 	},
 	"firmament":{
@@ -162,8 +303,27 @@
 		"name":"Firmament Frontline: Glamoth",
 		"icon":"/images/hsr/relics/glamoth.png",
 		"desc2":"Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG.",
-		"characters":[
-			"yanqing","herta","guin","dan","sampo","serval","hook"
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["jingliu","dan","qq","sushang","arlan","ratio","topaz","dan"]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":["yanqing","hook","jingyuan","herta","himeko","guin","sampo","serval"]
+			}
+		]
+	},
+	"sprightly":{
+		"id":"sprightly",
+		"name":"Sprightly Vonwacq",
+		"icon":"/images/hsr/relics/sprightly.png",
+		"desc2":"Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle.",
+		"charGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["robin"]
+			}
 		]
 	}
 }

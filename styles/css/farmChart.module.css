@@ -224,10 +224,39 @@
   width: 200px;
 }
 
+.charGroups {
+  display: flex;
+  flex-direction: column;
+}
+
+.charGroup {
+  position: relative;
+}
+.charGroup > p {
+  display: flex;
+  align-items: center;
+}
+.charGroup > p:before, .charGroup > p:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  text-align: left;
+}
+.charGroup > p:before {
+  margin: 0 0.25em 0 0;
+  width: 2%;
+}
+.charGroup > p:after {
+  margin: 0 0 0 0.25em;
+  flex-grow: 1;
+}
+
 .chars {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
+  margin-bottom: 15px;
 }
 
 .character {
@@ -283,5 +312,4 @@
   color: #000000;
   border-radius: 10px;
   padding: 3px;
-  font-weight: bold;
 }

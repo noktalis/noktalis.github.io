@@ -2,10 +2,17 @@ import format from "/styles/modules/farmChart.module.scss";
 import { useState } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 import React from "react";
+import hsr_char_data from "/public/json/hsr/char_relics.json";
 
 // TODO: documentation
-// TODO: split set characters box by 2pc or 4pc usage
+// TODO: split set characters box by 2pc, 2pc bis, 4pc, or 4pc bis usage
 
+/**
+ * A container for FarmChartRow elements
+ * 
+ * @param {*} children - child elements to be placed within container
+ * @returns 
+ */
 export default function FarmChart({children}){
 	return(
 		<div className={format.chart}>
@@ -14,9 +21,22 @@ export default function FarmChart({children}){
 	)
 }
 
+/**
+ * A container for a row within the FarmChart. Represents a(n) artifact/relic set. 
+ * 
+ * @param {*} children 
+ * @returns 
+ */
 export function FarmChartRow({id, name, icon, desc2, desc4, children}){
 	const [visible, setVisibility] = useState(true);
 
+	/**
+	 * Minimizes the display of the row by:
+	 * 		- Hiding the set effect descriptions
+	 * 		- Hiding character information except for their portraits/icons
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
 	function hideRow(setID){
 		// use setname to identify row
 		let row = document.getElementById(setID);
@@ -40,6 +60,13 @@ export function FarmChartRow({id, name, icon, desc2, desc4, children}){
 		setVisibility(false);
 	}
 
+	/**
+	 * Expands the display of the row by:
+	 * 		- Showing the set effect descriptions
+	 * 		- Showing all character information
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
 	function showRow(setID){
 		// use setname to identify row
 		let row = document.getElementById(setID);
@@ -69,10 +96,14 @@ export function FarmChartRow({id, name, icon, desc2, desc4, children}){
 			item.style.height = "auto";
 		});
 
-
 		setVisibility(true);
 	}
 
+	/**
+	 * Toggles the between hiding and showing extra information within a given row
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
 	function toggleRow(setID){
 		visible ? hideRow(setID) : showRow(setID)
 	}
@@ -89,16 +120,52 @@ export function FarmChartRow({id, name, icon, desc2, desc4, children}){
 				{desc4 ? <p className="description"><b>4pc: </b><small>{desc4}</small></p> : null}
 				
 			</div>
-			<div className={format.chars}>
+			<div className={format.charGroups}>
 				{children}
 			</div>
 		</div>
 	);
 }
 
+/**
+ * Component that represents a use case of an HSR relic set
+ * 	Ex: 2pc, 4pc
+ */
+export function RelicGroup({usecase, characters, children}){
+	if (characters == undefined)
+		characters = []
+	console.log(usecase);
+	console.log(characters);
 
+	return(
+		<div className={`${format.charGroup}`}>
+			<p>
+				{usecase}
+			</p>
+			<div className={format.chars}>
+				{characters.map(char => <HSRChar {...hsr_char_data[char]} key={char}/>)}	
+			</div>
+			{children}
+		</div>
+	);
+}
 
-
+/**
+ * Component for displaying a character within a FarmChartRow's chars div
+ * 
+ * @param {String} src	- path for character icon image
+ * @param {String} name	- name of character
+ * 
+ * Parameters to indicate character's preferred relic stats
+ * @param {String} body		- main stat of body/chest piece
+ * @param {String} feet		- main stat of feet/boots piece
+ * @param {String} rope		- main stat of rope piece
+ * @param {String} sphere	- main stat of sphere piece
+ * @param {list[String]} substats	- list of substats
+ * 
+ * @param {String} children - child elements in substats container
+ * @returns 
+ */
 export function HSRChar({src, name, body, feet, rope, sphere, substats, children}) {
 	if (substats == undefined)
 		substats = []
