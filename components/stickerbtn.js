@@ -2,7 +2,8 @@ import style from "../styles/modules/stickerBtn.module.scss";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 import { useContext } from "react";
 
-/**A button with a Sticker on the side
+/**
+ * A button with a Sticker on the side
  * 
  * @param {*} prop	- holds data needed for attributes
  * 
@@ -49,7 +50,8 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 	);
 }
 
-/**A image that will stick out of its container a bit on one side
+/**
+ * A image that will stick out of its container a bit on one side
  * 
  * @param {*} prop - holds data needed for attributes
  * 

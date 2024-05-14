@@ -2,8 +2,8 @@ import format from "../styles/modules/assetDesc.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 
-/**A component that holds an image and a description of the image on the side
- * 
+/**
+ * A component that holds an image and a description of the image on the side
  * @param {*} prop 
  * @returns 
  */
@@ -24,9 +24,9 @@ export default function AssetDescription({align, imgSrc, children}){
 	}
 }
 
-/**The image is on the left and the description is on the right.
- * 
- * @param {*} children - child elements to be placed inside the component
+/**
+ * The image is on the left and the description is on the right.
+ * @param {*} children - description to be placed inside the component
  */
 export function LeftDescription({imgSrc, children, themeClass}){
 	return(
@@ -39,9 +39,9 @@ export function LeftDescription({imgSrc, children, themeClass}){
 	);
 }
 
-/**The image is on the right and the description is on the left.
- * 
- * @param {*} children - child elements to be placed inside the component
+/**
+ * The image is on the right and the description is on the left.
+ * @param {*} children - description to be placed inside the component
  */
 export function RightDescription({imgSrc, children, themeClass}){
 	return (

@@ -2,11 +2,14 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 import style from "../styles/modules/detailsList.module.scss";
 
-/**A list of details elements
+/**
+ * A list of details elements
  * 		Data can be automatically loaded from a JSON or manually determined with
  * 		as the children attribute in the prop
  * 
- * @param {*} param0 
+ * @param {String} path 	- path to the JSON containing data
+ * @param {String} arrayKey - name/key of array containing relevant data in JSON
+ * @param {*} children 		- child elements (manually added)
  * @returns 
  */
 export default function DetailsList({path, arrayKey, children}) {
@@ -15,7 +18,6 @@ export default function DetailsList({path, arrayKey, children}) {
 	const theme = useContext(ThemeContext);
 	let themeClass;
 
-	/* Figure out which theme to appear with */
 	switch(theme){
 		case "ri":
 			themeClass = style.ri;
@@ -28,7 +30,7 @@ export default function DetailsList({path, arrayKey, children}) {
 			themeClass = style.mond;
 	}
 
-	/* Fetch the data */
+	// If given path, fetch data
 	if (path){
 		useEffect(() => {
 			const fetchData = async() => {
@@ -36,7 +38,7 @@ export default function DetailsList({path, arrayKey, children}) {
 				const response = await fetch(path);
 				const obj = await response.json();
 				const data = obj[arrayKey];	// array of data
-				setJSONStatus(obj.mode);
+				setJSONStatus(obj.mode);	// set type of list
 
 				console.log(obj);
 				setList(data);
@@ -46,7 +48,7 @@ export default function DetailsList({path, arrayKey, children}) {
 		},[])
 	}
 		
-
+	// TODO: other types aside from CharDetailsList
 	return (
 		<div className={`${style.container} ${themeClass}`}>
 			{/* If loading from json, use data from json */}
@@ -58,7 +60,8 @@ export default function DetailsList({path, arrayKey, children}) {
 	);
 }
 
-/**A version of the list mapping for characters
+/**
+ * A version of the list mapping for characters
  * 
  * @param {*} list	- List to load character data from
  */
@@ -70,12 +73,22 @@ function CharDetailsList({list}){
 					summaryText={name}
 					details={text}
 					summaryImg={img}/>)}
+			{children}
 		</>
 	);
 }
 
-/**A details element meant to be an entry in a details list
+/**
+ * A details element meant to be an entry in a DetailsList
  * 
+ * @param {*} title - title of details container when mouse hovers over
+ * 
+ * @param {*} summary 			- manually determined content in summary
+ * @param {*} summaryText 		- header text in summary
+ * @param {*} summaryImg 		- source path of image in summary
+ * @param {*} summaryImgTitle 	- title for image
+ * 
+ * @param {*} details 
  */
 export function DetailsListEntry({
 		title,
@@ -93,6 +106,7 @@ export function DetailsListEntry({
 					{summary}
 				</div>
 			</summary>
+			{/* dropdown divide */}
 			<hr/>
 			<div className={style.textContainer}>
 				{details}

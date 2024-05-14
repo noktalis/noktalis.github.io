@@ -1,3 +1,6 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts" as *;
+
 .chart {
 	display: flex;
 	flex-direction: column;
@@ -8,9 +11,7 @@
 .row {
 	display: grid;
 	grid-template-columns: auto 1fr;
-
-
-	border: solid 2px var(--ae-gold2);
+	border: solid 2px var(--ae-gold2);// TODO move to theme class
 	padding: 5px;
 }
 
@@ -35,15 +36,11 @@
 		text-wrap: wrap;
 		
 		// Appearance
-		border: var(--ae-gold2) 4px solid;
-		background-color: var(--ae-red1);
-		color: var(--ae-gold3);
-		&:hover{
-			background-color: var(--ae-blue2);
-		}
-		&:active{
-			background-color: var(--ae-red3);
-		}
+		border: var(--ae-gold2) 4px solid;// TODO move to theme class
+		@include btn-colors(var(--ae-red1),var(--ae-gold3),
+			var(--ae-blue2),var(--ae-gold3),
+			var(--ae-red3),var(--ae-gold3));
+		font-family: DIN, "DIN", sans-serif;
 
 		img {
 			max-width: 50px;
@@ -55,11 +52,41 @@
 	}
 }
 
+.charGroups {
+	display: flex;
+	flex-direction: column;
+}
+
+.charGroup {
+	position: relative;
+
+	> p {
+		display: flex;
+		align-items: center;
+		&:before, &:after {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+  			border-bottom: 1px solid;
+			text-align: left;
+		}
+		&:before {
+			margin: 0 0.25em 0 0;
+			width: 2%;
+		}
+		&:after {
+			margin: 0 0 0 0.25em;
+			flex-grow: 1;
+		}
+	}
+}
+
+// grid of characters
 .chars{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 3px;
-	// flex-direction: row;
+	margin-bottom: 15px;
 }
 
 .character {
@@ -67,7 +94,7 @@
 	grid-template-areas: 'icon mainstats''substats substats';
 	gap: 6px;
 
-	background-color: rgba($color: #000000, $alpha: 0.3);
+	background-color: rgba($color: #000000, $alpha: 0.3);// TODO move to theme class
 	padding: 5px;
 	width: 33%;
 	overflow: hidden;
@@ -111,7 +138,7 @@
 	span {
 		height: fit-content;
 		font-size: medium;
-		background-color: var(--ae-gold2);
+		background-color: var(--ae-gold2);// TODO move to theme class
 		color: #000000;
 		border-radius: 10px;
 		padding: 3px;

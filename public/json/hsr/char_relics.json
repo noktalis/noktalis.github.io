@@ -57,7 +57,7 @@
 	"bailu":{
 		"name":"Bailu",
 		"src":"/images/hsr/icons/bailu.png",
-		"body":"Outgoing Healing/HP",
+		"body":"Outgoing Healing/HP",
 		"feet":"SPD",
 		"rope":"ER",
 		"sphere":"HP",
@@ -178,7 +178,7 @@
 	"natasha":{
 		"name":"Natasha",
 		"src":"/images/hsr/icons/natasha.png",
-		"body":"Outgoing Healing/HP",
+		"body":"Outgoing Healing/HP",
 		"feet":"SPD",
 		"rope":"ER",
 		"sphere":"HP",
@@ -238,7 +238,7 @@
 		"rope":"ER",
 		"sphere":"HP/DEF",
 		"substats":[
-			"SPD","HP","DEF","EFF RES (Keel)"
+			"SPD","Break","HP","DEF","EFF RES (Keel)"
 		]
 	},
 	"qq":{
@@ -316,6 +316,50 @@
 		"sphere":"Fire DMG/ATK",
 		"substats":[
 			"SPD","CRIT","ATK"
+		]
+	},
+	"clara":{
+		"name":"Clara",
+		"src":"/images/hsr/icons/clara.png",
+		"body":"CRIT",
+		"feet":"ATK",
+		"rope":"ATK",
+		"sphere":"Physical DMG/ATK",
+		"substats":[
+			"CRIT","ATK"
+		]
+	},
+	"hmc":{
+		"name":"Harmony Trailblazer",
+		"src":"/images/hsr/icons/hmc.png",
+		"body":"HP/DEF",
+		"feet":"SPD",
+		"rope":"Break",
+		"sphere":"HP/DEF",
+		"substats":[
+			"Break","SPD","HP","DEF","ATK"
+		]
+	},
+	"himeko":{
+		"name":"Himeko",
+		"src":"/images/hsr/icons/himeko.png",
+		"body":"CRIT",
+		"feet":"SPD/ATK",
+		"rope":"ATK",
+		"sphere":"Fire DMG/ATK",
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"robin":{
+		"name":"Robin",
+		"src":"/images/hsr/icons/robin.png",
+		"body":"ATK",
+		"feet":"SPD/ATK",
+		"rope":"ER",
+		"sphere":"Physical DMG/ATK",
+		"substats":[
+			"ATK","SPD","HP","DEF"
 		]
 	}
 }

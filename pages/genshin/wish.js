@@ -13,7 +13,7 @@ import DetailsList from '@/components/detailsList';
  */
 export default function Page(){
 	return (
-		<FandomContext.Provider value='gi'>
+		<FandomContext.Provider value='genshin'>
 		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Wishlist | Genshin</title>

@@ -4,6 +4,8 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { FandomContext } from "./FandomContext";
 
+// TODO: optimize render from json
+
 /**
  * Side navigation menu
  * 		Content changes based on the fandom
@@ -89,6 +91,8 @@ export default function SideNav({extra_menu_src}){
 	);
 }
 
+// TODO: investigate conditional render of Divider
+
 /**
  * Divider between the top and bottom containers of the navigation menu
  * @returns 
@@ -102,7 +106,7 @@ function Divider(){
 			path = "/images/genshin/lynette_teacup_segment.png";
 			break;
 		default:
-			path = "";
+			path = ""; // maybe null?
 	}
 
 	return(
