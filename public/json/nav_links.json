@@ -1,0 +1,196 @@
+{
+	"default":[
+		{
+			"title": "Home",
+			"text": "Home",
+			"href": "/",
+			"key":"nav-1"
+		},
+		{
+			"title": "Arknights",
+			"text": "Arknights",
+			"href": "/ak/",
+			"key":"nav-2"
+		},
+		{
+			"title": "Genshin Impact",
+			"text": "Genshin",
+			"href": "/genshin/",
+			"key":"nav-3"
+		},
+		{
+			"title": "Honkai: Star Rail",
+			"text": "Star\u00A0Rail",
+			"href": "/star_rail/",
+			"key":"nav-4"
+		},
+		{
+			"title": "Webring",
+			"text": "Webring",
+			"href": "/webring/",
+			"key":"nav-5"
+		},
+		{
+			"title": "Miscellaneous",
+			"text": "Misc.",
+			"href": "/misc/",
+			"key":"nav-6"
+		}
+	],
+	"ak":[
+		{
+			"title": "Friend ID",
+			"text": "Friend ID",
+			"href": "/ak/friend_id/",
+			"key":"ak-nav-1"
+		},
+		{
+			"title": "Arknights Skins Tier List",
+			"text": "Skins Tier List",
+			"href": "/ak/skins/",
+			"key":"ak-nav-2"
+		},
+		{
+			"title": "Operator Wishlist",
+			"text": "Wishlist",
+			"href": "/ak/wishlist/",
+			"key":"ak-nav-3"
+		},
+		{
+			"title": "Arknights Ships",
+			"text": "Ships",
+			"href": "/ak/ships/",
+			"key":"ak-nav-4"
+		},
+		{
+			"title": "Waifus",
+			"text": "Waifus",
+			"href": "/ak/waifu/",
+			"key":"ak-nav-5"
+		},
+		{
+			"title": "Xue's Vigna Shrine",
+			"text": "Xue's Vigna Shrine",
+			"href": "/ak/vigna/",
+			"key":"ak-nav-6"
+		},
+		{
+			"title": "Story Highlights",
+			"text": "Story Highlights",
+			"href": "/ak/story/",
+			"key":"ak-nav-7"
+		},
+		{
+			"title": "Sticker Archive",
+			"text": "Sticker Archive",
+			"href": "/ak/stickers/",
+			"key":"ak-nav-8"
+		}
+	],
+	"gi":[
+		{
+			"title": "Genshin Blorbos",
+			"text": "Blorbos",
+			"href": "/genshin/blorbos/",
+			"key":"gi-nav-1"
+		},
+		{
+			"title":"Genshin Ships",
+			"text":"Ship List",
+			"href":"/genshin/ships/",
+			"key":"gi-nav-2"
+		},
+		{
+			"title":"My Primogem Savings",
+			"text":"Wishlist",
+			"href":"/genshin/wish/",
+			"key":"gi-nav-3"
+		},
+		{
+			"title":"Genshin Haterisms",
+			"text":"Shit List",
+			"href":"/genshin/haterism/",
+			"key":"gi-nav-4"
+		},
+		{
+			"title":"Genshin Voiceover Rankings",
+			"text":"VO Rankings",
+			"href":"/genshin/vo_rank/",
+			"key":"gi-nav-5"
+		},
+		{
+			"title":"Genshin AU Ideas",
+			"text":"AUs",
+			"href":"/genshin/au/",
+			"key":"gi-nav-6"
+		},
+		{
+			"title":"Genshin Coop Stories",
+			"text":"Coop Stories",
+			"href":"/genshin/coop/",
+			"key":"gi-nav-7"
+		},
+		{
+			"title":"Genshin Cold Takes",
+			"text":"Hot (Cold) Takes",
+			"href":"/genshin/takes/",
+			"key":"gi-nav-8"
+		}
+	],
+	"gi-blorbos":[
+		{
+			"title": "Venti",
+			"text": "Venti",
+			"href": "/genshin/blorbos/venti/",
+			"key":"gi-blorbo-1"
+		},
+		{
+			"title":"Lyney",
+			"text":"Lyney",
+			"href":"/genshin/blorbos/lyney/",
+			"key":"gi-blorbo-2"
+		},
+		{
+			"title":"Lynette",
+			"text":"Lynette",
+			"href":"/genshin/blorbos/lynette/",
+			"key":"gi-blorbo-3"
+		},
+		{
+			"title":"Kazuha",
+			"text":"Kazuha",
+			"href":"/genshin/blorbos/kazuha/",
+			"key":"gi-blorbo-4"
+		},
+		{
+			"title":"Heizou",
+			"text":"Heizou",
+			"href":"/genshin/blorbos/heizou/",
+			"key":"gi-blorbo-5"
+		},
+		{
+			"title":"Furina",
+			"text":"Furina",
+			"href":"/genshin/blorbos/furina/",
+			"key":"gi-blorbo-6"
+		},
+		{
+			"title":"Wrio de Janeiro",
+			"text":"Wario",
+			"href":"/genshin/blorbos/wrio/",
+			"key":"gi-blorbo-7"
+		},
+		{
+			"title":"Hattie",
+			"text":"Wanderer",
+			"href":"/genshin/blorbos/wanderer/",
+			"key":"gi-blorbo-8"
+		},
+		{
+			"title":"Nahida",
+			"text":"Nahida",
+			"href":"/genshin/blorbos/nahida/",
+			"key":"gi-blorbo-9"
+		}
+	]
+}

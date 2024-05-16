@@ -18,7 +18,7 @@ export default function Page(){
 				<title>Furina | Genshin Blorbos</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
-			<Layout extra_menu_src="/json/nav_gi_blorbos.json"><Content/></Layout>
+			<Layout extra_menu_src="gi-blorbos"><Content/></Layout>
 		</ThemeContext.Provider>
 		</FandomContext.Provider>
 		

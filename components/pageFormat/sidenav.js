@@ -1,10 +1,9 @@
 import LinkButton from "../linkbtn";
 import sidenav from "../../styles/modules/sidenav.module.scss";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { FandomContext } from "./FandomContext";
-
-// TODO: optimize render from json
+import navLinks from "/public/json/nav_links.json";
 
 /**
  * Side navigation menu
@@ -119,69 +118,41 @@ function Divider(){
 /**Navigation buttons in the bottom container of the navigation menu
  * 	Changes the set of buttons based on fandom
  * 
+ * @param {String} extra_menu_src - the key to the array of extra menu links
+ * 
  * @returns 
  */
 function Menu({extra_menu_src}){
-	const [links, setLinks] = useState([{title:"",text:"",href:"",key:""}]);
-	const [extra, setExtra] = useState();
-
-	/* Figure out which set of button data to fetch based on fandom */
 	let fandom = useContext(FandomContext);
-	let path;
+	let mainLinks;
+	let extraLinks;
+	
+	// Base main links on current page's fandom
 	switch(fandom){
 		case "genshin":
-			path = "/json/nav_gi.json";
+			mainLinks = navLinks["gi"]
 			break;
 		case "ak":
-			path = "/json/nav_ak.json";
+			mainLinks = navLinks["ak"]
 			break;
 		default:
-			path = "/json/nav_default.json";
+			mainLinks = navLinks["default"];
 	}
 
-	/* Fetch the data for main main */
-	useEffect(() => {
-		const fetchData = async() => {
-			/* Fetch request */
-			const response = await fetch(path);
-			const obj = await response.json();
-			const data = obj.buttons;	// array of button data
-
-			console.log(data);
-			setLinks(data);
-		}
-		fetchData()
-		.catch(console.error);
-	},[])
-
-	/* Check if there needs to be extra buttons in the menu */
+	// Extra menu links
 	if (extra_menu_src) {
-		/* Fetch the data */
-		useEffect(() => {
-			const fetchData = async() => {
-				/* Fetch request */
-				const response = await fetch(extra_menu_src);
-				const obj = await response.json();
-				const data = obj.buttons;	// array of button data
-
-				console.log(data);
-				setExtra(data);
-			}
-			fetchData()
-			.catch(console.error);
-		},[])
-		
+		extraLinks = navLinks[extra_menu_src];
 	}
 
 	return (
 		<div className={sidenav.menu}>
 			{/* Conditionally render extra menu buttons */}
-			{extra ? extra.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>) : ""}
+			{extraLinks ? extraLinks.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>) : ""}
 
-			{extra ? <hr/> : ""}
+			{extraLinks ? <hr/> : ""}
 
 			{/* Map each button's data to a LinkButton element */}
-			{links.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>)}
+			{mainLinks.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>)}
 		</div>
 	);
 }
