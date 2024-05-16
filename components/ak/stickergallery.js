@@ -39,7 +39,7 @@ export default function AKStickerGallery({packData}){
 						src={packData["en-src"]}
 					/>
 					{ packData["cn-src"] ? null : <Weibo/>}
-					{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : null}
+					{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : <OtherSrc link={packData["src"]} text={packData["src-text"]} />}
 
 					{ packData["pack"] == "set1" ? <TumblrPart3 link3="https://arknights-archive.tumblr.com/post/726394540041371648/sticker-pack-1-33"/> : null}
 					
@@ -51,8 +51,6 @@ export default function AKStickerGallery({packData}){
 			
 
 			<div className={`${formatting.gallery} ${themeClass}`}>
-				{/* { packData["stickers"] ? packData["stickers"].map(({href,alt,key,name}) => <img src={href} alt={alt} key={key} title={name}/>) : "Stickers not found." } */}
-
 				{ packData["stickers"] ? packData["stickers"].map((sticker) => <StickerEntry sticker={sticker}/>) : "Stickers not found." }
 			</div>
 		</>
@@ -123,7 +121,7 @@ function Weibo(){
 function TumblrArchive({link1, link2}){
 	return(
 		<p>
-			Stickers are from <a href="https://arknights-archive.tumblr.com/">@arknights-archive</a> on Tumblr: <a href={link1} target="_blank">Part 1</a> & <a href={link2} target="_blank">Part 2</a>
+			Stickers are from <a href="https://arknights-archive.tumblr.com/" target="_blank">@arknights-archive</a> on Tumblr: <a href={link1} target="_blank">Part 1</a> & <a href={link2} target="_blank">Part 2</a>
 		</p>
 	);
 }
@@ -138,6 +136,19 @@ function TumblrPart3({link3}){
 	return(
 		<p>
 			Gifs from <a href={link3} target="_blank">Part 3</a>
+		</p>
+	);
+}
+
+/**
+ * Generic component for link to sticker source
+ * @param {*} param0 
+ * @returns 
+ */
+function OtherSrc({link,text}){
+	return(
+		<p>
+			Stickers are from <a href={link} target="_blank">{text}</a>
 		</p>
 	);
 }
