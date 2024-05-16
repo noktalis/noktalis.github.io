@@ -65,7 +65,7 @@ export default function DetailsList({path, arrayKey, children}) {
  * 
  * @param {*} list	- List to load character data from
  */
-function CharDetailsList({list}){
+function CharDetailsList({list, children}){
 	return(
 		<>{list.map(({name, text, img}) => 
 				<DetailsListEntry

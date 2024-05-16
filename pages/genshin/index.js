@@ -35,7 +35,7 @@ function Content() {
 	return (
 		<div>
 			<h1 style={{textAlign:"center"}}>Genshin Impact</h1>
-			<h3 style={{textAlign:"center"}}>The weeaboo game that's been holding my serotonin hostage for two years, yippee!!</h3>
+			<h3 style={{textAlign:"center"}}>The weeaboo game that's been holding my serotonin hostage for <s>two</s> three years, yippee!!</h3>
 
 			<p>
 				If it was not already clear, yes, my favorite element is anemo.  
