@@ -370,7 +370,7 @@
 		"rope":"ATK/Break",
 		"sphere":"Physical DMG/ATK",
 		"substats":[
-			"SPD","EHR","Break","ATK"
+			"SPD","EHR","ATK"
 		]
 	}
 }
