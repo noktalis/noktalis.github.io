@@ -3,6 +3,7 @@ import topnav from "../../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
+import navLinks from "/public/json/nav_links.json";
 
 // TODO: render from json
 
@@ -31,6 +32,8 @@ export default function TopNav() {
 			themeClass = topnav.mond;
 	}
 
+	let links = navLinks["default"];
+
 	return (
 		<div className={`${topnav.nav} ${themeClass}`}
 			id='nav'>
@@ -39,11 +42,15 @@ export default function TopNav() {
 			<div className={topnav.buttons}
 				id='navBtns'>
 
+				{links.map(({title, text, href, key}) => 
 				<LinkButton
-					path={"/"}
-					title={"Home"}>
-						Home
-				</LinkButton>
+					path={href}
+					title={title}
+					key={key}>
+						{text}
+				</LinkButton>)}
+
+{/* 				
 
 				<LinkButton
 					path={"/ak/"}
@@ -73,7 +80,7 @@ export default function TopNav() {
 					path={"/misc/"}
 					title={"Miscellaneous"}>
 						Misc.
-				</LinkButton>
+				</LinkButton> */}
 			</div>
 		</div>
 	);

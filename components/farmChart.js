@@ -4,8 +4,7 @@ import { ThemeContext } from "./pageFormat/ThemeContext";
 import React from "react";
 import hsr_char_data from "/public/json/hsr/char_relics.json";
 
-// TODO: documentation
-// TODO: split set characters box by 2pc, 2pc bis, 4pc, or 4pc bis usage
+// TODO: genshin version
 
 /**
  * A container for FarmChartRow elements
