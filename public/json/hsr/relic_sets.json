@@ -270,9 +270,11 @@
 		]
 	},
 	"talia":{
+		"id":"talia",
+		"name":"Talia: Kingdom of Banditry",
 		"icon":"/images/hsr/relics/talia.png",
 		"desc2":"Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%.",
-		"charGroup":[
+		"charGroups":[
 			{
 				"usecase":"2pc",
 				"characters":["asta"]
@@ -301,9 +303,11 @@
 		]
 	},
 	"belobog":{
+		"id":"belobog",
+		"name":"Belobog of the Architects",
 		"icon":"/images/hsr/relics/belobog.png",
 		"desc2":"Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF.",
-		"charGroup":[
+		"charGroups":[
 			{
 				"usecase":"2pc",
 				"characters":["aven","gepard"]
@@ -369,9 +373,11 @@
 		]
 	},
 	"penacony":{
+		"id":"penacony",
+		"name":"Penacony, Land of the Dreams",
 		"icon":"/images/hsr/relics/penacony.png",
 		"desc2":"Increases wearer's Energy Regeneration Rate by 5%. Increases DMG by 10% for all other allies that are of the same Type as the wearer.",
-		"charGroup":[
+		"charGroups":[
 			{
 				"usecase":"2pc",
 				"characters":[
