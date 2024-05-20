@@ -36,7 +36,7 @@ export default function Page(){
 function Content() {
 	let setIDs = Object.keys(relic_data);
 
-	console.log(relic_data["messenger"]["charGroups"]);
+	// console.log(relic_data["messenger"]["charGroups"]);
 
 	return (
 		<div>
