@@ -361,5 +361,16 @@
 		"substats":[
 			"ATK","SPD","HP","DEF"
 		]
+	},
+	"luka":{
+		"name":"Luka",
+		"src":"/images/hsr/icons/luka.png",
+		"body":"EHR/ATK",
+		"feet":"SPD",
+		"rope":"ATK/Break",
+		"sphere":"Physical DMG/ATK",
+		"substats":[
+			"SPD","EHR","Break","ATK"
+		]
 	}
 }
