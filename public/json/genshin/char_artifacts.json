@@ -119,36 +119,196 @@
 		"circlet":["HP","Crit Rate"],
 		"substats":["ER","HP","EM"]
 	},
-	"shortname":{
-		"name":"",
+	"arle":{
+		"name":"Arlecchino",
 		"img":"",
-		"sands":[""],
-		"goblet":[""],
-		"circlet":[""],
-		"substats":[]
+		"sands":["ATK","EM"],
+		"goblet":["Pyro"],
+		"circlet":["CRIT"],
+		"substats":["CRIT","ATK","EM"]
 	},
-	"shortname":{
-		"name":"",
+	"yoi":{
+		"name":"Yoimiya",
 		"img":"",
-		"sands":[""],
-		"goblet":[""],
-		"circlet":[""],
-		"substats":[]
+		"sands":["ATK","EM"],
+		"goblet":["Pyro","ATK"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK","EM"]
 	},
-	"shortname":{
-		"name":"",
+	"dehya":{
+		"name":"Dehya",
 		"img":"",
-		"sands":[""],
-		"goblet":[""],
-		"circlet":[""],
-		"substats":[]
+		"sands":["HP"],
+		"goblet":["HP"],
+		"circlet":["HP","Crit Rate","HB"],
+		"substats":["HP","Crit Rate"]
 	},
-	"shortname":{
-		"name":"",
+	"xq":{
+		"name":"Xingqiu",
 		"img":"",
-		"sands":[""],
-		"goblet":[""],
-		"circlet":[""],
-		"substats":[]
+		"sands":["ER","ATK"],
+		"goblet":["Hydro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK"]
+	},
+	"childe":{
+		"name":"Childe",
+		"img":"",
+		"sands":["ATK"],
+		"goblet":["Hydro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK"]
+	},
+	"furi":{
+		"name":"Furina",
+		"img":"",
+		"sands":["HP","ER"],
+		"goblet":["HP","Hydro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","HP"]
+	},
+	"diona":{
+		"name":"Diona",
+		"img":"",
+		"sands":["HP"],
+		"goblet":["HP"],
+		"circlet":["HP"],
+		"substats":["ER","HP"]
+	},
+	"wrio":{
+		"name":"Wriothesley",
+		"img":"",
+		"sands":["ATK","EM"],
+		"goblet":["Cryo"],
+		"circlet":["CRIT"],
+		"substats":["CRIT","ATK","EM"]
+	},
+	"ayaka":{
+		"name":"Ayaka",
+		"img":"",
+		"sands":["ATK"],
+		"goblet":["Cryo"],
+		"circlet":["Crit Damage"],
+		"substats":["ER","CRIT","ATK"]
+	},
+	"fremi":{
+		"name":"Freminet",
+		"img":"",
+		"sands":["ER","ATK"],
+		"goblet":["Cryo","Physical"],
+		"circlet":["CRIT"],
+		"substats":["ER","ATK","CRIT"]
+	},
+	"char":{
+		"name":"Charlotte",
+		"img":"",
+		"sands":["ER","ATK"],
+		"goblet":["ATK","Cryo"],
+		"circlet":["Crit Rate","HB"],
+		"substats":["ER","ATK","Crit Rate"]
+	},
+	"kaeya":{
+		"name":"Kaeya",
+		"img":"",
+		"sands":["ER","ATK"],
+		"goblet":["Cryo"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK"]
+	},
+	"qiqi":{
+		"name":"Qiqi",
+		"img":"",
+		"sands":["ATK"],
+		"goblet":["ATK"],
+		"circlet":["Crit Rate","ATK"],
+		"substats":["ER","ATK","CRIT"]
+	},
+	"zhong":{
+		"name":"Zhongli",
+		"img":"",
+		"sands":["HP"],
+		"goblet":["HP","Geo"],
+		"circlet":["Crit Rate"],
+		"substats":["HP","CRIT"]
+	},
+	"yunjin":{
+		"name":"Yunjin",
+		"img":"",
+		"sands":["ER","DEF"],
+		"goblet":["DEF"],
+		"circlet":["DEF","Crit Rate"],
+		"substats":["ER","DEF","Crit Rate"]
+	},
+	"cyno":{
+		"name":"Cyno",
+		"img":"",
+		"sands":["EM","ATK","ER"],
+		"goblet":["Electro","EM"],
+		"circlet":["CRIT","EM"],
+		"substats":["ER","CRIT","EM","ATK"]
+	},
+	"fischl":{
+		"name":"Fischl",
+		"img":"",
+		"sands":["ATK","EM"],
+		"goblet":["Electro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK","EM"]
+	},
+	"kuki":{
+		"name":"Shinobu",
+		"img":"",
+		"sands":["EM"],
+		"goblet":["EM"],
+		"circlet":["EM"],
+		"substats":["EM","ER","HP"]
+	},
+	"beidou":{
+		"name":"Beidou",
+		"img":"",
+		"sands":["ATK","ER"],
+		"goblet":["Electro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK","EM"]
+	},
+	"dori":{
+		"name":"Dori",
+		"img":"",
+		"sands":["EM"],
+		"goblet":["EM"],
+		"circlet":["EM"],
+		"substats":["ER","EM","HP"]
+	},
+	"nahi":{
+		"name":"Nahida",
+		"img":"",
+		"sands":["EM"],
+		"goblet":["EM","Dendro"],
+		"circlet":["EM","CRIT"],
+		"substats":["ER","EM","CRIT"]
+	},
+	"tigh":{
+		"name":"Tighnari",
+		"img":"",
+		"sands":["ATK","EM"],
+		"goblet":["Dendro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","EM","ATK"]
+	},
+	"yao":{
+		"name":"Yaoyao",
+		"img":"",
+		"sands":["HP","ER"],
+		"goblet":["HP"],
+		"circlet":["HB","HP"],
+		"substats":["ER","Crit Rate","HP","EM"]
+	},
+	"kirara":{
+		"name":"Kirara",
+		"img":"",
+		"sands":["HP"],
+		"goblet":["HP"],
+		"circlet":["HP", "Crit Rate"],
+		"substats":["HP","ER","Crit Rate"]
 	}
 }
