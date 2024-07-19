@@ -3,7 +3,7 @@ import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import FarmChart from '@/components/farmChart';
-import { FarmChartRow, HSRChar, RelicGroup } from '@/components/farmChart';
+import { HSRRow, HSRChar, RelicGroup } from '@/components/farmChart';
 import char_data from "/public/json/hsr/char_relics.json";
 import relic_data from "/public/json/hsr/relic_sets.json";
 
@@ -45,9 +45,9 @@ function Content() {
 
 			<FarmChart>
 				{setIDs.map(relicSet => 
-				<FarmChartRow {...relic_data[relicSet]}>
+				<HSRRow {...relic_data[relicSet]}>
 					{relic_data[relicSet]["charGroups"].map(group => <RelicGroup {...group} key={group["usecase"]}/>)}
-				</FarmChartRow>)}
+				</HSRRow>)}
 			</FarmChart>
 		</div>
 	);

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ThemeContext } from "./pageFormat/ThemeContext";
 import React from "react";
 import hsr_char_data from "/public/json/hsr/char_relics.json";
+import gi_char_data from "/public/json/genshin/char_artifacts.json"
 
 // TODO: genshin version
 
@@ -20,13 +21,31 @@ export default function FarmChart({children}){
 	)
 }
 
+export function GIRow({id, name, icon, chars, children}){
+	return(
+		<div className={format.row} id={id}>
+			<div className={format.set}>
+			<button	title={name} onClick={() => toggleRow(id)}>
+					<img src={icon}
+					alt={"Icon for "+name+" relic set."}/>
+					{name}
+				</button>
+
+				<div className={[format.portraits, "portraits"].join(' ')}>
+					{chars.map((char) => <img src={gi_char_data[char]["img"]} alt={"Portrait of " + gi_char_data[char]["name"]}></img>)}
+				</div>				
+			</div>
+		</div>
+	);
+}
+
 /**
- * A container for a row within the FarmChart. Represents a(n) artifact/relic set. 
+ * A container for a row within the FarmChart. Represents a relic set. 
  * 
  * @param {*} children 
  * @returns 
  */
-export function FarmChartRow({id, name, icon, desc2, desc4, children}){
+export function HSRRow({id, name, icon, desc2, desc4, children}){
 	const [visible, setVisibility] = useState(true);
 
 	/**
@@ -115,7 +134,7 @@ export function FarmChartRow({id, name, icon, desc2, desc4, children}){
 					alt={"Icon for "+name+" relic set."}/>
 					{name}
 				</button>
-				<p className="description"><b>2pc: </b><small>{desc2}</small></p>
+				{desc2 ? <p className="description"><b>2pc: </b><small>{desc2}</small></p> : null}
 				{desc4 ? <p className="description"><b>4pc: </b><small>{desc4}</small></p> : null}
 				
 			</div>

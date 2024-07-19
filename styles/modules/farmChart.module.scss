@@ -145,3 +145,14 @@
 	}
 }
 
+.portraits {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 10px;
+
+	img {
+		max-width: 60px;
+	}
+	
+	
+}
