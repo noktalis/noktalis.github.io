@@ -35,7 +35,48 @@ export function GIRow({id, name, icon, chars, children}){
 					{chars.map((char) => <img src={gi_char_data[char]["img"]} alt={"Portrait of " + gi_char_data[char]["name"]}></img>)}
 				</div>				
 			</div>
+			<div className={format.pieceGroups}>
+				<ArtiPieceGroup piece="sands">
+
+				</ArtiPieceGroup>
+				<ArtiPieceGroup piece="goblet">
+					
+				</ArtiPieceGroup>
+				<ArtiPieceGroup piece="circlet">
+					
+				</ArtiPieceGroup>
+				{children}
+			</div>
 		</div>
+	);
+}
+
+function ArtiPieceGroup({piece}){
+	let icon = ""
+	let name = ""
+	switch (piece) {
+		case "sands":
+			icon = "/images/genshin/sands.png"
+			name = "Sands"
+			break;
+		case "goblet":
+			icon = "/images/genshin/goblet.png"
+			name = "Goblet"
+			break;
+		case "circlet":
+			icon = "/images/genshin/circlet.png"
+			name = "Circlet"
+	}
+	return(
+		<details>
+			<summary>
+				<img src={icon} title={name} alt={"Icon for the " + {name} + " artifact set piece"}/>
+			</summary>
+
+
+
+			<hr/>
+		</details>
 	);
 }
 

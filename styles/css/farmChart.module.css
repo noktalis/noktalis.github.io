@@ -322,3 +322,26 @@
 .portraits img {
   max-width: 60px;
 }
+
+.pieceGroups {
+  margin: 15px 0 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pieceGroups details {
+  display: inline-block;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.pieceGroups details > summary {
+  list-style: none;
+}
+.pieceGroups details > summary img {
+  max-width: 50px;
+}
+.pieceGroups details[open] {
+  width: 100%;
+}
+.pieceGroups details > hr {
+  margin: 10px 0 10px 0;
+}

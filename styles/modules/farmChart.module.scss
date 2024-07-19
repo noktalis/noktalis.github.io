@@ -153,6 +153,30 @@
 	img {
 		max-width: 60px;
 	}
-	
-	
+}
+
+.pieceGroups {
+	margin: 15px 0 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	details {
+		display: inline-block;
+		height: fit-content;
+	}
+
+	details > summary {
+		list-style: none;
+		img {
+			max-width: 50px;
+		}
+	}
+
+	details[open]{
+		width: 100%;
+	}
+
+	details > hr {
+		margin: 10px 0 10px 0;
+	}
 }
