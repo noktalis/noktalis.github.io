@@ -219,7 +219,7 @@ function GIMainStat({stat, chars}){
  * @param {String} children - child elements in substats container
  * @returns 
  */
-export function GIChar({img, name, substats, children}) {
+export function GIChar({img, name, substats, note, children}) {
 	if (substats == undefined)
 		substats = []
 
@@ -231,6 +231,7 @@ export function GIChar({img, name, substats, children}) {
 					title={name}/>
 				<span>{name}</span>
 			</div>
+			{note ? note : null}
 			{children} 
 			<div className={[format.substatsContainer, "substats"].join(' ')}>
 				{substats.map(stat => <span key={stat}>{stat}</span>)}

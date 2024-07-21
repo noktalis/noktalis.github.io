@@ -7,7 +7,7 @@
 			{
 				"usecase":"",
 				"characters":[
-					"xiao"
+					"xiao","qiqi"
 				]
 			}
 		]
@@ -46,7 +46,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"benny","diona"
+					"benny","diona","char","mona","mika"
 				]
 			}
 		]
@@ -78,7 +78,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"cyno","dori"
+					"cyno","dori","kq","razor"
 				]
 			}
 		]
@@ -102,9 +102,15 @@
 		"icon":"/images/genshin/artifacts/tenacity.png",
 		"useGroups":[
 			{
+				"usecase":"2pc",
+				"characters":[
+					"kirara"
+				]
+			},
+			{
 				"usecase":"4pc",
 				"characters":[
-					"faru","dehya","zhong"
+					"faru","dehya","zhong","layla"
 				]
 			}
 		]
@@ -143,7 +149,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"xiang","xq"
+					"xiang","xq","kaeya","rosa","raiden","yelan"
 				]
 			}
 		]
@@ -156,7 +162,20 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"yunjin"
+					"yunjin","noelle","alb","chi"
+				]
+			}
+		]
+	},
+	"clam":{
+		"id":"clam",
+		"name":"Ocean-Hued Clam",
+		"icon":"/images/genshin/artifacts/clam.png",
+		"useGroups":[
+			{
+				"usecase":"4pc",
+				"characters":[
+					"qiqi","char","mika"
 				]
 			}
 		]
@@ -234,7 +253,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"lyy","wrio"
+					"lyy","wrio","noelle"
 				]
 			}
 		]
@@ -247,7 +266,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"furi","fischl"
+					"furi","fischl","alb","chi","yae"
 				]
 			}
 		]
