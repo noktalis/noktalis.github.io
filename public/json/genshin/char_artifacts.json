@@ -385,8 +385,8 @@
 		"note":"Aim for 40k HP"
 	},
 	"mika":{
-		"name":"temp",
-		"img":"/images/genshin/icons/temp.png",
+		"name":"Mika",
+		"img":"/images/genshin/icons/Mika.png",
 		"sands":["ER","HP"],
 		"goblet":["HP"],
 		"circlet":["HB","HP","Crit Rate"],
@@ -394,7 +394,7 @@
 	},
 	"raiden":{
 		"name":"Raiden",
-		"img":"/images/genshin/icons/temp.png",
+		"img":"/images/genshin/icons/Raiden.png",
 		"sands":["ATK","ER","EM"],
 		"goblet":["Electro","ATK"],
 		"circlet":["CRIT"],
