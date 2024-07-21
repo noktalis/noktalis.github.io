@@ -112,7 +112,7 @@
 
 	background-color: rgba($color: #000000, $alpha: 0.3);// TODO move to theme class
 	padding: 5px;
-	width: 19%;
+	width: 16%;
 	overflow: hidden;
 
 	img {
@@ -129,19 +129,9 @@
 	justify-content: center;
 	grid-area: icon;
 	text-align: center;
-}
 
-.mainstats {
-	grid-area: mainstats;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 3px;
-	font-size: small;
-	align-items: center;
-
-	img {
-		width: 25px;
-		height: auto;
+	span {
+		width: fit-content;
 	}
 }
 

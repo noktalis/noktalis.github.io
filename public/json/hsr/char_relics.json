@@ -209,7 +209,7 @@
 		]
 	},
 	"dan":{
-		"name":"Dan Heng",
+		"name":"Dan Heng",
 		"img":"/images/hsr/icons/dan.png",
 		"body":["CRIT"],
 		"feet":["SPD","ATK"],
@@ -371,6 +371,40 @@
 		"sphere":["Physical","ATK"],
 		"substats":[
 			"SPD","EHR","ATK"
+		]
+	},
+	"ruan":{
+		"name":"Ruan Mei",
+		"img":"/images/hsr/icons/ruanmei.png",
+		"body":["HP","DEF"],
+		"feet":["SPD"],
+		"rope":["Break","ER"],
+		"sphere":["HP","DEF"],
+		"note":"Aim for 180 Break",
+		"substats":[
+			"Break","SPD","HP","DEF","EffRes"
+		]
+	},
+	"huo":{
+		"name":"Huohuo",
+		"img":"/images/hsr/icons/huo.png",
+		"body":["Healing","HP"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP"],
+		"substats":[
+			"SPD","HP","EffRes","DEF"
+		]
+	},
+	"fx":{
+		"name":"Fu Xuan",
+		"img":"/images/hsr/icons/fx.png",
+		"body":["HP","DEF"],
+		"feet":["SPD","HP"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
+		"substats":[
+			"SPD","HP","DEF","EffRes"
 		]
 	}
 }

@@ -28,6 +28,7 @@ export default function FarmChart({children}){
  * @returns 
  */
 export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, children}){
+	const [visible, setVisibility] = useState(true);
 
 	// Specify which json to pull data from
 	let data;
@@ -88,6 +89,78 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
 			{children}
 		</div>
 	);
+
+	/**
+	 * Minimizes the display of the row by:
+	 * 		- Hiding the set effect descriptions
+	 * 		- Hiding character wanted substats except for their portraits/icons
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
+	function hideRow(setID){
+		// use setname to identify row
+		let row = document.getElementById(setID);
+
+		// within row, hide all children elements' descriptions
+		let elements = row.querySelectorAll(".description, .substats");
+		elements.forEach((element) => {
+			element.style.display = "none";
+			// console.log(element);
+		});
+
+		// fix spacing & appearance
+		let items = row.querySelectorAll(".character");
+		items.forEach((item) => {
+			item.style.gridGap = 0;
+			item.style.maxWidth = "150px";
+			item.style.width = "fit-content";
+			item.style.height = "fit-content";
+		});
+		// console.log(test);
+		setVisibility(false);
+	}
+
+	/**
+	 * Expands the display of the row by:
+	 * 		- Showing the set effect descriptions
+	 * 		- Showing all character information
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
+	function showRow(setID){
+		// use setname to identify row
+		let row = document.getElementById(setID);
+
+		// within row, show all details
+		let elements = row.querySelectorAll(".description");
+		elements.forEach((element) => {
+			element.style.display = "block";
+		});
+
+		elements = row.querySelectorAll(".substats");
+		elements.forEach((element) => {
+			element.style.display = "flex";
+		});
+
+		// fix spacing & appearance SEE STYLES SHEET
+		let items = row.querySelectorAll(".character");
+		items.forEach((item) => {
+			item.style.gap = "6px";
+			item.style.width = "16%";
+			// item.style.height = "auto";
+		});
+
+		setVisibility(true);
+	}
+
+	/**
+	 * Toggles the between hiding and showing extra information within a given row
+	 * 
+	 * @param {*} setID - identifies the row
+	 */
+	function toggleRow(setID){
+		visible ? hideRow(setID) : showRow(setID)
+	}
 }
 
 /**A grid of character portraits
