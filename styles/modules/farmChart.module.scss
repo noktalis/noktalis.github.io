@@ -121,6 +121,7 @@
 	}
 }
 
+/* Image and nametag */
 .icon {
 	display: flex;
 	flex-direction: column;
@@ -161,6 +162,16 @@
 	}
 }
 
+/* portraits and small use case indicators*/
+.userDisplay {
+	> p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+/* For grid of character portraits. No nametags */
 .portraits {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -174,11 +185,12 @@
 .pieces {
 	margin: 15px 0 15px 0;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 
 	details {
 		display: inline-block;
-		height: fit-content;
+		width: fit-content;
 	}
 
 	details > summary {

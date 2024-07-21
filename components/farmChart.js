@@ -67,12 +67,12 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
 				{desc4 ? <p className="description"><b>4pc: </b><small>{desc4}</small></p> : null}
 
 				{/* Portraits of characters that want the set, separated by use case */}
-				<div className="userDisplay">
+				<div className={format.userDisplay}>
 					{useGroups.map((usecase) => 
-						<div>
-							<small>{usecase["usecase"]}</small>
+						<>
+							<p>{usecase["usecase"]}</p>
 							<PortraitGrid data={data} chars={usecase["characters"]} key={usecase["usecase"]}/>
-						</div>
+						</>
 					)}					
 				</div>
 
