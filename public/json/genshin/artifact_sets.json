@@ -3,7 +3,7 @@
 		"id":"atk",
 		"name":"2pc ATK",
 		"icon":"/images/genshin/artifacts/atk.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"",
 				"characters":[
@@ -16,7 +16,7 @@
 		"id":"gladiator",
 		"name":"Gladiator's Finale",
 		"icon":"/images/genshin/artifacts/gladiator.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -29,7 +29,7 @@
 		"id":"wt",
 		"name":"Wanderer's Troupe",
 		"icon":"/images/genshin/artifacts/wt.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -42,7 +42,7 @@
 		"id":"noblesse",
 		"name":"Noblesse Oblige",
 		"icon":"/images/genshin/artifacts/noblesse.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -55,7 +55,7 @@
 		"id":"vv",
 		"name":"Viridescent Venerer",
 		"icon":"/images/genshin/artifacts/vv.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"2pc",
 				"characters":[
@@ -74,7 +74,7 @@
 		"id":"thundering",
 		"name":"Thundering Fury",
 		"icon":"/images/genshin/artifacts/thundering.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -87,7 +87,7 @@
 		"id":"blizzard",
 		"name":"Blizzard Strayer",
 		"icon":"/images/genshin/artifacts/blizzard.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -100,7 +100,7 @@
 		"id":"tenacity",
 		"name":"Tenacity",
 		"icon":"/images/genshin/artifacts/tenacity.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -113,7 +113,7 @@
 		"id":"pale",
 		"name":"Pale Flame",
 		"icon":"/images/genshin/artifacts/pale.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -126,7 +126,7 @@
 		"id":"shime",
 		"name":"Shimenawa's Reminiscence",
 		"icon":"/images/genshin/artifacts/shime.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -139,7 +139,7 @@
 		"id":"emblem",
 		"name":"Emblem of Severed Fate",
 		"icon":"/images/genshin/artifacts/emblem.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -152,7 +152,7 @@
 		"id":"husk",
 		"name":"Husk of Opulent Dreams",
 		"icon":"/images/genshin/artifacts/husk.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -165,7 +165,7 @@
 		"id":"deepwood",
 		"name":"Deepwood Memories",
 		"icon":"/images/genshin/artifacts/deepwood.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -178,11 +178,11 @@
 		"id":"gilded",
 		"name":"Gilded Dreams",
 		"icon":"/images/genshin/artifacts/gilded.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
-					"cyno","nahi", "tigh"
+					"cyno","nahi", "tigh", "razor"
 				]
 			}
 		]
@@ -191,7 +191,7 @@
 		"id":"desert",
 		"name":"Desert Pavilion Chronicle",
 		"icon":"/images/genshin/artifacts/desert.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -204,7 +204,7 @@
 		"id":"flop",
 		"name":"Flower of Paradise Lost",
 		"icon":"/images/genshin/artifacts/flop.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -217,7 +217,7 @@
 		"id":"nymph",
 		"name":"Nymph's Dream",
 		"icon":"/images/genshin/artifacts/nymph.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -230,7 +230,7 @@
 		"id":"hunter",
 		"name":"Marechaussee Hunter",
 		"icon":"/images/genshin/artifacts/hunter.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -243,7 +243,7 @@
 		"id":"golden",
 		"name":"Golden Troupe",
 		"icon":"/images/genshin/artifacts/golden.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[
@@ -256,7 +256,7 @@
 		"id":"whimsy",
 		"name":"Fragment of Harmonic Whimsy",
 		"icon":"/images/genshin/artifacts/whimsy.png",
-		"charGroups":[
+		"useGroups":[
 			{
 				"usecase":"4pc",
 				"characters":[

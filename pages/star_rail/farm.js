@@ -36,7 +36,7 @@ export default function Page(){
 function Content() {
 	let setIDs = Object.keys(relic_data);
 
-	// console.log(relic_data["messenger"]["charGroups"]);
+	// console.log(relic_data["messenger"]["useGroups"]);
 
 	return (
 		<div>
@@ -46,7 +46,7 @@ function Content() {
 			<FarmChart>
 				{setIDs.map(relicSet => 
 				<HSRRow {...relic_data[relicSet]}>
-					{relic_data[relicSet]["charGroups"].map(group => <RelicGroup {...group} key={group["usecase"]}/>)}
+					{relic_data[relicSet]["useGroups"].map(group => <RelicGroup {...group} key={group["usecase"]}/>)}
 				</HSRRow>)}
 			</FarmChart>
 		</div>
