@@ -1,374 +1,374 @@
 {
 	"bronya":{
 		"name":"Bronya",
-		"src":"/images/hsr/icons/bronya.png",
-		"body":"CRIT DMG",
-		"feet":"SPD/HP/DEF",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/bronya.png",
+		"body":["CDmg"],
+		"feet":["SPD","HP","DEF"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"SPD", "CRIT DMG", "HP", "DEF", "EFF RES (Keel)"
+			"SPD", "CDmg", "HP", "DEF", "EffRes"
 		]
 	},
 	"jingliu":{
 		"name":"Jingliu",
-		"src":"/images/hsr/icons/jingliu.png",
-		"body":"CRIT DMG",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Ice DMG/ATK",
+		"img":"/images/hsr/icons/jingliu.png",
+		"body":["CDmg"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Ice","ATK"],
 		"substats":[
 			"SPD", "CRIT", "ATK"
 		]
 	},
 	"daniel":{
 		"name":"Dan Heng - Imbibitor Lunae",
-		"src":"/images/hsr/icons/daniel.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Imaginary DMG/ATK",
+		"img":"/images/hsr/icons/daniel.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Imaginary","ATK"],
 		"substats":[
 			"SPD", "CRIT", "ATK"
 		]
 	},
 	"tingyun":{
 		"name":"Tingyun",
-		"src":"/images/hsr/icons/tingyun.png",
-		"body":"ATK/HP/DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"ATK/HP/DEF",
+		"img":"/images/hsr/icons/tingyun.png",
+		"body":["ATK","HP","DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["ATK","HP","DEF"],
 		"substats":[
-			"SPD","ATK","HP","DEF","EFF RES (Keel)"
+			"SPD","ATK","HP","DEF","EffRes"
 		]
 	},
 	"sparkle":{
 		"name":"Sparkle",
-		"src":"/images/hsr/icons/sparkle.png",
-		"body":"CRIT DMG",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/sparkle.png",
+		"body":["CRIT"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"SPD", "CRIT DMG", "HP", "DEF", "EFF RES (Keel)"
+			"SPD", "CDmg", "HP", "DEF", "EffRes"
 		]
 	},
 	"bailu":{
 		"name":"Bailu",
-		"src":"/images/hsr/icons/bailu.png",
-		"body":"Outgoing Healing/HP",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP",
+		"img":"/images/hsr/icons/bailu.png",
+		"body":["Healing","HP"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP"],
 		"substats":[
-			"SPD", "HP", "EFF RES", "DEF"
+			"SPD", "HP", "EffRes", "DEF"
 		]
 	},
 	"jingyuan":{
 		"name":"Jingyuan",
-		"src":"/images/hsr/icons/jingyuan.png",
-		"body":"CRIT",
-		"feet":"ATK",
-		"rope":"ATK",
-		"sphere":"Lightning DMG/ATK",
+		"img":"/images/hsr/icons/jingyuan.png",
+		"body":["CRIT"],
+		"feet":["ATK"],
+		"rope":["ATK"],
+		"sphere":["Lightning","ATK"],
 		"substats":[
 			"CRIT", "ATK"
 		]
 	},
 	"ratio":{
 		"name":"Dr. Ratio",
-		"src":"/images/hsr/icons/ratio.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Imaginary DMG/ATK",
+		"img":"/images/hsr/icons/ratio.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Imaginary","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"aven":{
 		"name":"Aventurine",
-		"src":"/images/hsr/icons/aven.png",
-		"body":"CRIT DMG",
-		"feet":"SPD/DEF",
-		"rope":"DEF",
-		"sphere":"Imaginary DMG/DEF",
+		"img":"/images/hsr/icons/aven.png",
+		"body":["CRIT"],
+		"feet":["SPD","DEF"],
+		"rope":["DEF"],
+		"sphere":["Imaginary","DEF"],
 		"substats":[
-			"DEF","SPD","CRIT","EFF RES"
+			"DEF","SPD","CRIT","EffRes"
 		]
 	},
 	"yanqing":{
 		"name":"Yanqing",
-		"src":"/images/hsr/icons/yanqing.png",
-		"body":"CRIT DMG",
-		"feet":"SPD/ATK",
-		"rope":"ATK/ER",
-		"sphere":"Ice DMG/ATK",
+		"img":"/images/hsr/icons/yanqing.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK","ER"],
+		"sphere":["Ice","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"blade":{
 		"name":"Blade",
-		"src":"/images/hsr/icons/blade.png",
-		"body":"CRIT",
-		"feet":"SPD/HP",
-		"rope":"HP",
-		"sphere":"Wind DMG/HP",
+		"img":"/images/hsr/icons/blade.png",
+		"body":["CRIT"],
+		"feet":["SPD","HP"],
+		"rope":["HP"],
+		"sphere":["Wind","HP"],
 		"substats":[
 			"SPD","CRIT","HP"
 		]
 	},
 	"lynx":{
 		"name":"Lynx",
-		"src":"/images/hsr/icons/lynx.png",
-		"body":"HP",
-		"feet":"SPD/HP",
-		"rope":"ER/HP",
-		"sphere":"HP",
+		"img":"/images/hsr/icons/lynx.png",
+		"body":["HP"],
+		"feet":["SPD","HP"],
+		"rope":["ER","HP"],
+		"sphere":["HP"],
 		"substats":[
-			"SPD","HP","EFF RES","DEF"
+			"SPD","HP","EffRes","DEF"
 		]
 	},
 	"pela":{
 		"name":"Pela",
-		"src":"/images/hsr/icons/pela.png",
-		"body":"EHR/HP/DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/pela.png",
+		"body":["EHR","HP","DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"EHR","SPD","HP","DEF","EFF RES (Keel)"
+			"EHR","SPD","HP","DEF","EffRes"
 		]
 	},
 	"hanya":{
 		"name":"Hanya",
-		"src":"/images/hsr/icons/hanya.png",
-		"body":"HP/DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/hanya.png",
+		"body":["HP","DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"SPD","HP","DEF","Break","EFF RES (Keel)"
+			"SPD","HP","DEF","Break","EffRes"
 		]
 	},
 	"gepard":{
 		"name":"Gepard",
-		"src":"/images/hsr/icons/gepard.png",
-		"body":"DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"DEF",
+		"img":"/images/hsr/icons/gepard.png",
+		"body":["DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["DEF"],
 		"substats":[
-			"SPD","DEF","EFF RES","HP"
+			"SPD","DEF","EffRes","HP"
 		]
 	},
 	"march":{
 		"name":"March 7th",
-		"src":"/images/hsr/icons/march.png",
-		"body":"EHR/DEF",
-		"feet":"SPD",
-		"rope":"ER/DEF",
-		"sphere":"DEF",
+		"img":"/images/hsr/icons/march.png",
+		"body":["EHR","DEF"],
+		"feet":["SPD"],
+		"rope":["ER","DEF"],
+		"sphere":["DEF"],
 		"substats":[
-			"EHR","SPD","DEF","HP","EFF RES"
+			"EHR","SPD","DEF","HP","EffRes"
 		]
 	},
 	"natasha":{
 		"name":"Natasha",
-		"src":"/images/hsr/icons/natasha.png",
-		"body":"Outgoing Healing/HP",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP",
+		"img":"/images/hsr/icons/natasha.png",
+		"body":["Healing","HP"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP"],
 		"substats":[
-			"SPD","HP","EFF RES","DEF"
+			"SPD","HP","EffRes","DEF"
 		]
 	},
 	"guin":{
 		"name":"Guinaifen",
-		"src":"/images/hsr/icons/guin.png",
-		"body":"EHR/ATK",
-		"feet":"SPD",
-		"rope":"ATK",
-		"sphere":"Fire DMG/ATK",
+		"img":"/images/hsr/icons/guin.png",
+		"body":["EHR","ATK"],
+		"feet":["SPD"],
+		"rope":["ATK"],
+		"sphere":["Fire","ATK"],
 		"substats":[
 			"EHR","SPD","ATK","HP","DEF","Break"
 		]
 	},
 	"herta":{
 		"name":"Herta",
-		"src":"/images/hsr/icons/herta.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Ice DMG/ATK",
+		"img":"/images/hsr/icons/herta.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Ice","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"dan":{
 		"name":"Dan Heng",
-		"src":"/images/hsr/icons/dan.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Wind DMG/ATK",
+		"img":"/images/hsr/icons/dan.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Wind","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"sampo":{
 		"name":"Sampo",
-		"src":"/images/hsr/icons/sampo.png",
-		"body":"EHR/ATK",
-		"feet":"SPD",
-		"rope":"ATK",
-		"sphere":"Wind DMG/ATK",
+		"img":"/images/hsr/icons/sampo.png",
+		"body":["EHR","ATK"],
+		"feet":["SPD"],
+		"rope":["ATK"],
+		"sphere":["Wind","ATK"],
 		"substats":[
 			"SPD","EHR","ATK","Break"
 		]
 	},
 	"asta":{
 		"name":"Asta",
-		"src":"/images/hsr/icons/asta.png",
-		"body":"HP/DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/asta.png",
+		"body":["HP","DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"SPD","Break","HP","DEF","EFF RES (Keel)"
+			"SPD","Break","HP","DEF","EffRes"
 		]
 	},
 	"qq":{
 		"name":"Qingque",
-		"src":"/images/hsr/icons/qq.png",
-		"body":"CRIT",
-		"feet":"ATK",
-		"rope":"ATK",
-		"sphere":"Quantum DMG",
+		"img":"/images/hsr/icons/qq.png",
+		"body":["CRIT"],
+		"feet":["ATK"],
+		"rope":["ATK"],
+		"sphere":["Quantum"],
 		"substats":[
 			"CRIT","ATK"
 		]
 	},
 	"serval":{
 		"name":"Serval",
-		"src":"/images/hsr/icons/serval.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Lightning DMG/ATK",
+		"img":"/images/hsr/icons/serval.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Lightning","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"hook":{
 		"name":"Hook",
-		"src":"/images/hsr/icons/hook.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Fire DMG/ATK",
+		"img":"/images/hsr/icons/hook.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Fire","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"yukong":{
 		"name":"Yukong",
-		"src":"/images/hsr/icons/yukong.png",
-		"body":"HP/DEF",
-		"feet":"SPD",
-		"rope":"ER",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/yukong.png",
+		"body":["HP","DEF"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
 		"substats":[
-			"SPD","HP","DEF","EFF RES (Keel)"
+			"SPD","HP","DEF","EffRes"
 		]
 	},
 	"sushang":{
 		"name":"Sushang",
-		"src":"/images/hsr/icons/sushang.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK/Break",
-		"sphere":"Physical DMG/ATK",
+		"img":"/images/hsr/icons/sushang.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK","Break"],
+		"sphere":["Physical","ATK"],
 		"substats":[
 			"SPD","Break","CRIT","ATK"
 		]
 	},
 	"arlan":{
 		"name":"Arlan",
-		"src":"/images/hsr/icons/arlan.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Lightning DMG/ATK",
+		"img":"/images/hsr/icons/arlan.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Lightning","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"topaz":{
 		"name":"Topaz",
-		"src":"/images/hsr/icons/topaz.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Fire DMG/ATK",
+		"img":"/images/hsr/icons/topaz.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Fire","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"clara":{
 		"name":"Clara",
-		"src":"/images/hsr/icons/clara.png",
-		"body":"CRIT",
-		"feet":"ATK",
-		"rope":"ATK",
-		"sphere":"Physical DMG/ATK",
+		"img":"/images/hsr/icons/clara.png",
+		"body":["CRIT"],
+		"feet":["ATK"],
+		"rope":["ATK"],
+		"sphere":["Physical","ATK"],
 		"substats":[
 			"CRIT","ATK"
 		]
 	},
 	"hmc":{
 		"name":"Harmony Trailblazer",
-		"src":"/images/hsr/icons/hmc.png",
-		"body":"HP/DEF",
-		"feet":"SPD",
-		"rope":"Break",
-		"sphere":"HP/DEF",
+		"img":"/images/hsr/icons/hmc.png",
+		"body":["HP","DEF"],
+		"feet":["SPD"],
+		"rope":["Break"],
+		"sphere":["HP","DEF"],
 		"substats":[
 			"Break","SPD","HP","DEF","ATK"
 		]
 	},
 	"himeko":{
 		"name":"Himeko",
-		"src":"/images/hsr/icons/himeko.png",
-		"body":"CRIT",
-		"feet":"SPD/ATK",
-		"rope":"ATK",
-		"sphere":"Fire DMG/ATK",
+		"img":"/images/hsr/icons/himeko.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Fire","ATK"],
 		"substats":[
 			"SPD","CRIT","ATK"
 		]
 	},
 	"robin":{
 		"name":"Robin",
-		"src":"/images/hsr/icons/robin.png",
-		"body":"ATK",
-		"feet":"SPD/ATK",
-		"rope":"ER",
-		"sphere":"Physical DMG/ATK",
+		"img":"/images/hsr/icons/robin.png",
+		"body":["ATK"],
+		"feet":["SPD","ATK"],
+		"rope":["ER"],
+		"sphere":["Physical","ATK"],
 		"substats":[
 			"ATK","SPD","HP","DEF"
 		]
 	},
 	"luka":{
 		"name":"Luka",
-		"src":"/images/hsr/icons/luka.png",
-		"body":"EHR/ATK",
-		"feet":"SPD",
-		"rope":"ATK/Break",
-		"sphere":"Physical DMG/ATK",
+		"img":"/images/hsr/icons/luka.png",
+		"body":["EHR","ATK"],
+		"feet":["SPD"],
+		"rope":["ATK","Break"],
+		"sphere":["Physical","ATK"],
 		"substats":[
 			"SPD","EHR","ATK"
 		]

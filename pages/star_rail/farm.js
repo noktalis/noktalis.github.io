@@ -3,8 +3,7 @@ import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import FarmChart from '@/components/farmChart';
-import { HSRRow, HSRChar, RelicGroup } from '@/components/farmChart';
-import char_data from "/public/json/hsr/char_relics.json";
+import { FarmChartRow } from '@/components/farmChart';
 import relic_data from "/public/json/hsr/relic_sets.json";
 
 /**
@@ -36,18 +35,13 @@ export default function Page(){
 function Content() {
 	let setIDs = Object.keys(relic_data);
 
-	// console.log(relic_data["messenger"]["useGroups"]);
-
 	return (
 		<div>
 			<h1>Relic Farming Chart</h1>
 			<p>Made this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
 			<FarmChart>
-				{setIDs.map(relicSet => 
-				<HSRRow {...relic_data[relicSet]}>
-					{relic_data[relicSet]["useGroups"].map(group => <RelicGroup {...group} key={group["usecase"]}/>)}
-				</HSRRow>)}
+				{setIDs.map((set) => <FarmChartRow {...relic_data[set]} type="hsr"/>)}
 			</FarmChart>
 		</div>
 	);
