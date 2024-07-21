@@ -1,6 +1,7 @@
 @use "../components/color-mixins" as *;
 @use "../components/fonts" as *;
 
+/* For farmChart, which contains all rows and data */
 .chart {
 	display: flex;
 	flex-direction: column;
@@ -8,6 +9,7 @@
 	gap: 10px;
 }
 
+/* For farmRowChart, which represents data on a relic/artifact set */
 .row {
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -15,12 +17,14 @@
 	padding: 5px;
 }
 
-.set {
+/* Information about a relic/artifact set on the LEFT side of a row */
+.left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
 
+	/* Button toggles expansion of information in the row, and shows name and image of set */
 	button {
 		// Dimension and Shape
 		min-width: 130px;
@@ -42,22 +46,33 @@
 			var(--ae-red3),var(--ae-gold3));
 		font-family: DIN, "DIN", sans-serif;
 
+		/* Icon of set */
 		img {
 			max-width: 50px;
 		}
 	}
 
+	/* Contains set description */
 	p {
 		width: 200px;
 	}
 }
 
-.charGroups {
+/* Information about a relic/artifact set on the RIGHT side of a row */
+.right {
 	display: flex;
 	flex-direction: column;
 }
 
-.charGroup {
+.mainStatGroup {
+	display: flex;
+	flex-direction: column;
+}
+
+/**For a container that holds a <p> element 
+ *	The label text is within the <p> element. :before and :after create horizontal lines through the vertical center of the <p> element
+*/
+.label {
 	position: relative;
 
 	> p {
@@ -81,22 +96,23 @@
 	}
 }
 
-// grid of characters
-.chars{
+/* For a grid of characters (& their substats) */
+.chars {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 3px;
 	margin-bottom: 15px;
 }
 
+/* To display a character, their portrait, name, and substats*/
 .character {
 	display: grid;
-	grid-template-areas: 'icon mainstats''substats substats';
+	grid-template-areas: 'icon''substats';
 	gap: 6px;
 
 	background-color: rgba($color: #000000, $alpha: 0.3);// TODO move to theme class
 	padding: 5px;
-	width: 33%;
+	width: 16%;
 	overflow: hidden;
 
 	img {
@@ -105,6 +121,7 @@
 	}
 }
 
+/* Image and nametag */
 .icon {
 	display: flex;
 	flex-direction: column;
@@ -112,19 +129,9 @@
 	justify-content: center;
 	grid-area: icon;
 	text-align: center;
-}
 
-.mainstats {
-	grid-area: mainstats;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 3px;
-	font-size: small;
-	align-items: center;
-
-	img {
-		width: 25px;
-		height: auto;
+	span {
+		width: fit-content;
 	}
 }
 
@@ -145,3 +152,49 @@
 	}
 }
 
+/* portraits and small use case indicators*/
+.userDisplay {
+	> p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+/* For grid of character portraits. No nametags */
+.portraits {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 10px;
+
+	img {
+		max-width: 40px;
+	}
+}
+
+.pieces {
+	margin: 15px 0 15px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	details {
+		display: inline-block;
+		width: fit-content;
+	}
+
+	details > summary {
+		list-style: none;
+		img {
+			max-width: 50px;
+		}
+	}
+
+	details[open]{
+		width: 100%;
+	}
+
+	details > hr {
+		margin: 10px 0 10px 0;
+	}
+}

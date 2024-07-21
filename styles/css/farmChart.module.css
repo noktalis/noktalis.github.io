@@ -174,6 +174,7 @@
   font-weight: lighter;
   font-style: italic;
 }
+/* For farmChart, which contains all rows and data */
 .chart {
   display: flex;
   flex-direction: column;
@@ -181,6 +182,7 @@
   gap: 10px;
 }
 
+/* For farmRowChart, which represents data on a relic/artifact set */
 .row {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -188,13 +190,16 @@
   padding: 5px;
 }
 
-.set {
+/* Information about a relic/artifact set on the LEFT side of a row */
+.left {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  /* Button toggles expansion of information in the row, and shows name and image of set */
+  /* Contains set description */
 }
-.set button {
+.left button {
   min-width: 130px;
   max-width: 130px;
   min-height: 130px;
@@ -208,50 +213,61 @@
   background-color: var(--ae-red1);
   color: var(--ae-gold3);
   font-family: DIN, "DIN", sans-serif;
+  /* Icon of set */
 }
-.set button:hover {
+.left button:hover {
   background-color: var(--ae-blue2);
   color: var(--ae-gold3);
 }
-.set button:active {
+.left button:active {
   background-color: var(--ae-red3);
   color: var(--ae-gold3);
 }
-.set button img {
+.left button img {
   max-width: 50px;
 }
-.set p {
+.left p {
   width: 200px;
 }
 
-.charGroups {
+/* Information about a relic/artifact set on the RIGHT side of a row */
+.right {
   display: flex;
   flex-direction: column;
 }
 
-.charGroup {
+.mainStatGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/**For a container that holds a <p> element 
+ *	The label text is within the <p> element. :before and :after create horizontal lines through the vertical center of the <p> element
+*/
+.label {
   position: relative;
 }
-.charGroup > p {
+.label > p {
   display: flex;
   align-items: center;
 }
-.charGroup > p:before, .charGroup > p:after {
+.label > p:before, .label > p:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   border-bottom: 1px solid;
   text-align: left;
 }
-.charGroup > p:before {
+.label > p:before {
   margin: 0 0.25em 0 0;
   width: 2%;
 }
-.charGroup > p:after {
+.label > p:after {
   margin: 0 0 0 0.25em;
   flex-grow: 1;
 }
 
+/* For a grid of characters (& their substats) */
 .chars {
   display: flex;
   flex-wrap: wrap;
@@ -259,13 +275,14 @@
   margin-bottom: 15px;
 }
 
+/* To display a character, their portrait, name, and substats*/
 .character {
   display: grid;
-  grid-template-areas: "icon mainstats" "substats substats";
+  grid-template-areas: "icon" "substats";
   gap: 6px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 5px;
-  width: 33%;
+  width: 16%;
   overflow: hidden;
 }
 .character img {
@@ -273,6 +290,7 @@
   border-radius: 35px;
 }
 
+/* Image and nametag */
 .icon {
   display: flex;
   flex-direction: column;
@@ -281,19 +299,9 @@
   grid-area: icon;
   text-align: center;
 }
-
-.mainstats {
-  grid-area: mainstats;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  -moz-column-gap: 3px;
-       column-gap: 3px;
-  font-size: small;
-  align-items: center;
-}
-.mainstats img {
-  width: 25px;
-  height: auto;
+.icon span {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .substatsContainer {
@@ -312,4 +320,45 @@
   color: #000000;
   border-radius: 10px;
   padding: 3px;
+}
+
+/* portraits and small use case indicators*/
+.userDisplay > p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* For grid of character portraits. No nametags */
+.portraits {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 10px;
+}
+.portraits img {
+  max-width: 40px;
+}
+
+.pieces {
+  margin: 15px 0 15px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pieces details {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pieces details > summary {
+  list-style: none;
+}
+.pieces details > summary img {
+  max-width: 50px;
+}
+.pieces details[open] {
+  width: 100%;
+}
+.pieces details > hr {
+  margin: 10px 0 10px 0;
 }

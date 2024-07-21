@@ -3,8 +3,8 @@ import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import FarmChart from '@/components/farmChart';
-import { FarmChartRow } from '@/components/farmChart';
-import relic_data from "/public/json/hsr/relic_sets.json";
+import { GIRow, FarmChartRow } from '@/components/farmChart';
+import artifact_data from "/public/json/genshin/artifact_sets.json"
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -15,10 +15,10 @@ import relic_data from "/public/json/hsr/relic_sets.json";
  */
 export default function Page(){
 	return (
-		<FandomContext.Provider value='hsr'>
-		<ThemeContext.Provider value='express'>
+		<FandomContext.Provider value='genshin'>
+		<ThemeContext.Provider value='mond'>
 			<Head>
-				<title>Relic Chart | Star Rail</title>
+				<title>Farming Chart | Genshin</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
@@ -33,15 +33,15 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	let setIDs = Object.keys(relic_data);
+	let setIDs = Object.keys(artifact_data);
 
 	return (
 		<div>
-			<h1>Relic Farming Chart</h1>
-			<p>Made this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
-
+			<h1>Artifact Farming Chart</h1>
+			<p>Because I cannot for the life of me keep track of who needs what all at once anymore &lt;/3</p>
+			
 			<FarmChart>
-				{setIDs.map((set) => <FarmChartRow {...relic_data[set]} type="hsr"/>)}
+				{setIDs.map((set) => <FarmChartRow {...artifact_data[set]} type="gi"/>)}
 			</FarmChart>
 		</div>
 	);
