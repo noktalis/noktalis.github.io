@@ -375,7 +375,7 @@
 	},
 	"ruan":{
 		"name":"Ruan Mei",
-		"img":"/images/hsr/icons/ruanmei.png",
+		"img":"/images/hsr/icons/ruan.png",
 		"body":["HP","DEF"],
 		"feet":["SPD"],
 		"rope":["Break","ER"],
