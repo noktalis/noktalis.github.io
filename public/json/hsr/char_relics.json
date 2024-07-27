@@ -406,5 +406,16 @@
 		"substats":[
 			"SPD","HP","DEF","EffRes"
 		]
+	},
+	"xueyi":{
+		"name":"Xueyi",
+		"img":"/images/hsr/icons/xueyi.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["Break"],
+		"sphere":["ATK","Quantum"],
+		"substats":[
+			"SPD","Break","CRIT","ATK"
+		]
 	}
 }
