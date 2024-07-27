@@ -97,6 +97,10 @@
 				"characters":["ratio","clara","aven"]
 			},
 			{
+				"usecase":"4pc",
+				"characters":["xueyi"]
+			},
+			{
 				"usecase":"4pc BIS",
 				"characters":["topaz","jingyuan","himeko"]
 			}
@@ -145,7 +149,7 @@
 			},
 			{
 				"usecase":"4pc",
-				"characters":["qq","hook"]
+				"characters":["qq","hook","xueyi"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -250,7 +254,7 @@
 				"characters":[
 					"clara","luka","sushang","guin","himeko","topaz","hook",
 					"herta","jingliu","yanqing","arlan","jingyuan","serval",
-					"dan","sampo","qq","daniel","ratio"
+					"dan","sampo","qq","daniel","ratio","xueyi"
 				]
 			}
 		]
@@ -280,7 +284,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["hmc"]
+				"characters":["hmc","xueyi"]
 			}
 		]
 	},
@@ -293,7 +297,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","herta","dan","serval"]
+				"characters":["blade","jingliu","yanqing","herta","dan","serval","xueyi"]
 			},
 			{
 				"usecase":"2pc BIS",
