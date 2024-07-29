@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"jingliu","aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx"
+					"jingliu","aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx","galla"
 				]
 			},
 			{
@@ -78,6 +78,10 @@
 		"desc2":"Increases Break Effect by 16%.",
 		"desc4":"When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked.",
 		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["galla"]
+			},
 			{
 				"usecase":"4pc BIS",
 				"characters":["hmc","ruan"]
@@ -166,7 +170,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc/4pc",
-				"characters":["bailu","lynx","natasha","huo"]
+				"characters":["bailu","lynx","natasha","huo","galla"]
 			}
 		]
 	},
@@ -232,7 +236,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"aven","march","asta","guin",
-					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha","huo","ruan","fx"
+					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha","huo","ruan","fx","galla"
 				]
 			},
 			{
@@ -280,7 +284,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["asta","ruan"]
+				"characters":["asta","ruan","galla"]
 			},
 			{
 				"usecase":"2pc BIS",

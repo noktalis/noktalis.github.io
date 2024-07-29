@@ -417,5 +417,16 @@
 		"substats":[
 			"SPD","Break","CRIT","ATK"
 		]
+	},
+	"galla":{
+		"name":"Gallagher",
+		"img":"/images/hsr/icons/gallagher.png",
+		"body":["Healing"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
+		"substats":[
+			"SPD","Break","EffRes","HP","DEF"
+		]
 	}
 }
