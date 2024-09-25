@@ -63,11 +63,11 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["aven","topaz","himeko"]
+				"characters":["aven"]
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["ratio","dan","aven","topaz","hook"]
+				"characters":["ratio","dan","aven","topaz","hook","moze"]
 			}
 		]
 	},
@@ -80,7 +80,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["galla"]
+				"characters":["galla","ff"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -98,11 +98,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["ratio","clara","aven"]
+				"characters":["clara","aven"]
 			},
 			{
 				"usecase":"4pc",
-				"characters":["xueyi"]
+				"characters":["moze"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -119,7 +119,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing","clara","herta","jingyuan","ratio","topaz","daniel","dan"]
+				"characters":["jingliu","yanqing","clara","herta","jingyuan","daniel","dan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -149,7 +149,7 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["pela","herta","sushang","dan","clara","himeko","serval"]
+				"characters":["pela","herta","sushang","dan","clara","serval"]
 			},
 			{
 				"usecase":"4pc",
@@ -157,7 +157,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["daniel"]
+				"characters":["daniel","march_hunt"]
 			}
 		]
 	},
@@ -214,12 +214,45 @@
 		"desc4":"Increases the max DMG that can be absorbed by the shield created by the wearer by 20%.",
 		"useGroups":[
 			{
+				"usecase":"4pc BIS",
+				"characters":["gepard","march"]
+			}
+		]
+	},
+
+	"iron":{
+		"id":"iron",
+		"name":"Iron Cavalry Against the Scourge",
+		"icon":"/images/hsr/relics/iron.png",
+		"desc2":"Increases Break Effect by 16%.",
+		"desc4":"If the wearer's Break Effect is 150% or higher, the Break DMG dealt to the enemy target ignores 10% of their DEF. If the wearer's Break Effect is 250% or higher, the Super Break DMG dealt to the enemy target additionally ignores 15% of their DEF.",
+		"useGroups":[
+			{
 				"usecase":"2pc/4pc",
-				"characters":["aven"]
+				"characters":[
+					"xueyi"
+				]
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["gepard","march"]
+				"characters":[
+					"ff"
+				]
+			}
+		]
+	},
+	"soaring":{
+		"id":"soaring",
+		"name":"The Wind-Soaring Valorous",
+		"icon":"/images/hsr/relics/soaring.png",
+		"desc2":"Increases ATK by 12%.",
+		"desc4":"Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s).",
+		"useGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"feixiao"
+				]
 			}
 		]
 	},
@@ -256,8 +289,8 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"clara","luka","sushang","guin","himeko","topaz","hook",
-					"herta","jingliu","yanqing","arlan","jingyuan","serval",
+					"luka","sushang","guin","himeko","hook",
+					"herta","jingliu","yanqing","arlan","serval",
 					"dan","sampo","qq","daniel","ratio","xueyi"
 				]
 			}
@@ -272,7 +305,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["robin","hanya"]
+				"characters":["hanya"]
 			}
 		]
 	},
@@ -284,7 +317,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["asta","ruan","galla"]
+				"characters":["asta","ruan","galla","ff"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -301,11 +334,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","herta","dan","serval","xueyi"]
+				"characters":["blade","jingliu","yanqing","herta","dan","serval","xueyi","ratio","topaz","jingyuan","moze"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["aven","jingyuan","ratio","topaz","clara","himeko"]
+				"characters":["clara","himeko"]
 			}
 		]
 	},
@@ -317,7 +350,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["aven","gepard"]
+				"characters":["gepard"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -338,7 +371,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["daniel","blade","jingliu","dan","qq","sushang","arlan"]
+				"characters":["daniel","blade","jingliu","dan","qq","sushang","arlan","march_hunt"]
 			}
 		]
 	},
@@ -371,11 +404,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","qq","sushang","arlan","ratio","topaz","dan"]
+				"characters":["jingliu","dan","qq","sushang","arlan"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["yanqing","hook","jingyuan","herta","himeko","guin","sampo","serval"]
+				"characters":["yanqing","hook","herta","himeko","guin","sampo","serval"]
 			}
 		]
 	},
@@ -388,11 +421,62 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"pela","bronya","tingyun","yukong"
+					"yukong"
+				]
+			}
+		]
+	},
+
+	"duran":{
+		"id":"duran",
+		"name":"Duran, Dynasty of Running Wolves",
+		"icon":"/images/hsr/relics/duran.png",
+		"desc2":"When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%.",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"topaz"
+				]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"ratio","feixiao","moze"
+				]
+			}
+		]
+	},
+	"lamp":{
+		"id":"lamp",
+		"name":"Forge of the Kalpagni Lantern",
+		"icon":"/images/hsr/relics/lamp.png",
+		"desc2":"Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s).",
+		"useGroups":[
+			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"galla","ff"
+				]
+			}
+		]
+	},
+
+	"banana":{
+		"id":"banana",
+		"name":"The Wondrous BananAmusement Park",
+		"icon":"/images/hsr/relics/banana.png",
+		"desc2":"Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%.",
+		"useGroups":[
+			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"jingyuan","topaz"
 				]
 			}
 		]
 	}
+
 
 
 }

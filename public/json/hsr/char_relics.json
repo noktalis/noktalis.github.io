@@ -428,5 +428,49 @@
 		"substats":[
 			"SPD","Break","EffRes","HP","DEF"
 		]
+	},
+	"feixiao":{
+		"name":"Feixiao",
+		"img":"/images/hsr/icons/feixiao.png",
+		"body":["CRIT"],
+		"feet":["ATK","SPD"],
+		"rope":["ATK"],
+		"sphere":["Wind","ATK"],
+		"substats":[
+			"CRIT","ATK"
+		]
+	},
+	"ff":{
+		"name":"Firefly",
+		"img":"/images/hsr/icons/ff.png",
+		"body":["ATK"],
+		"feet":["SPD"],
+		"rope":["Break"],
+		"sphere":["ATK"],
+		"substats":[
+			"SPD","Break","ATK"
+		]
+	},
+	"march_hunt":{
+		"name":"March 7th (Hunt)",
+		"img":"/images/hsr/icons/march_hunt.png",
+		"body":["CRIT"],
+		"feet":["SPD","ATK"],
+		"rope":["ATK"],
+		"sphere":["Imaginary","ATK"],
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
+	},
+	"moze":{
+		"name":"Moze",
+		"img":"/images/hsr/icons/moze.png",
+		"body":["CRIT"],
+		"feet":["ATK"],
+		"rope":["ATK"],
+		"sphere":["Lightning"],
+		"substats":[
+			"SPD","CRIT","ATK"
+		]
 	}
 }
