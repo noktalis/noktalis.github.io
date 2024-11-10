@@ -106,7 +106,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["topaz","jingyuan","himeko"]
+				"characters":["topaz","jingyuan","himeko","herta"]
 			}
 		]
 	},
@@ -119,7 +119,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","herta","jingyuan","daniel","dan"]
+				"characters":["clara","jingyuan","daniel","dan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -145,7 +145,7 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["pela","herta","sushang","dan","clara","serval"]
+				"characters":["pela","sushang","dan","clara","serval"]
 			},
 			{
 				"usecase":"4pc",
@@ -183,21 +183,8 @@
 				"characters":["blade"]
 			},
 			{
-				"usecase":"4pc BIS",
+				"usecase":"4pc",
 				"characters":["pela","sparkle"]
-			}
-		]
-	},
-	"hunter":{
-		"id":"hunter",
-		"name":"Hunter of Glacial Forest",
-		"icon":"/images/hsr/relics/glacial.png",
-		"desc2":"Increases Ice DMG by 10%.",
-		"desc4":"After the wearer unleashes their Ultimate, their CRIT DMG increases by 25% for 2 turn(s).",
-		"useGroups":[
-			{
-				"usecase":"2pc/4pc",
-				"characters":["herta"]
 			}
 		]
 	},
@@ -316,7 +303,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"luka","sushang","guin","himeko","hook",
-					"herta","jingliu","yanqing","arlan","serval",
+					"arlan","serval",
 					"dan","sampo","qq","daniel","ratio","xueyi"
 				]
 			}
@@ -360,11 +347,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","herta","dan","serval","xueyi","ratio","topaz","jingyuan","moze"]
+				"characters":["blade","jingliu","yanqing","dan","serval","xueyi","ratio","topaz","jingyuan","moze"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["clara","himeko"]
+				"characters":["clara","himeko","herta"]
 			}
 		]
 	},
@@ -430,11 +417,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","qq","sushang","arlan"]
+				"characters":["jingliu","dan","qq","sushang","arlan","herta"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["yanqing","hook","herta","himeko","guin","sampo","serval"]
+				"characters":["yanqing","hook","himeko","guin","sampo","serval"]
 			}
 		]
 	},
