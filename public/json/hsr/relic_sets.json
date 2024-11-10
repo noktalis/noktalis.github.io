@@ -10,7 +10,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"aven","huo","ruan","fx","galla",
-					"lynx","march","asta","bailu"
+					"lynx","march","asta","bailu","guin"
 				]
 			},
 			{
@@ -56,7 +56,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["sampo"]
+				"characters":["sampo","guin"]
 			},
 			{
 				"usecase":"2pc/4pc",
@@ -119,12 +119,16 @@
 				"characters":["clara"]
 			},
 			{
+				"usecase":"2pc/4pc",
+				"characters":["guin"]
+			},
+			{
 				"usecase":"2pc BIS",
 				"characters":["robin"]
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["guin","sampo","luka"]
+				"characters":["sampo","luka"]
 			}
 		]
 	},
@@ -136,6 +140,10 @@
 		"desc2":"ATK increases by 12%.",
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
 		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":["guin"]
+			},
 			{
 				"usecase":"2pc BIS",
 				"characters":["robin"]
@@ -210,7 +218,7 @@
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"xueyi"
+					"xueyi","guin"
 				]
 			},
 			{
@@ -274,7 +282,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx","bailu","huo","ruan","asta","pela"
+					"fx","bailu","huo","ruan","asta","pela","guin"
 				]
 			},
 			{
@@ -317,8 +325,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"luka","guin",
-					"sampo","xueyi"
+					"luka","sampo","xueyi"
 				]
 			}
 		]
@@ -480,6 +487,12 @@
 		"icon":"/images/hsr/relics/lamp.png",
 		"desc2":"Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s).",
 		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"guin"
+				]
+			},
 			{
 				"usecase":"2pc BIS",
 				"characters":[
