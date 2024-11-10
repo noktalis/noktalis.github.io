@@ -343,7 +343,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","dan","xueyi","ratio","topaz","jingyuan","moze","clara"]
+				"characters":["blade","jingliu","yanqing","dan","xueyi","ratio","jingyuan","moze","clara"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -376,7 +376,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["yanqing","jingyuan","ratio","topaz","herta","clara","himeko"]
+				"characters":["yanqing","jingyuan","ratio","herta","clara","himeko"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -393,7 +393,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","topaz","ratio","robin",
+					"aven","ratio","robin",
 					"tingyun","pela","hanya","asta",
 					"bailu","lynx","huo","ruan","fx"
 				]
