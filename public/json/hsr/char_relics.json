@@ -153,17 +153,6 @@
 			"SPD","HP","DEF","Break","EffRes"
 		]
 	},
-	"gepard":{
-		"name":"Gepard",
-		"img":"/images/hsr/icons/gepard.png",
-		"body":["DEF"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["DEF"],
-		"substats":[
-			"SPD","DEF","EffRes","HP"
-		]
-	},
 	"march":{
 		"name":"March 7th",
 		"img":"/images/hsr/icons/march.png",
@@ -173,17 +162,6 @@
 		"sphere":["DEF"],
 		"substats":[
 			"EHR","SPD","DEF","HP","EffRes"
-		]
-	},
-	"natasha":{
-		"name":"Natasha",
-		"img":"/images/hsr/icons/natasha.png",
-		"body":["Healing","HP"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["HP"],
-		"substats":[
-			"SPD","HP","EffRes","DEF"
 		]
 	},
 	"guin":{
@@ -241,72 +219,6 @@
 			"SPD","Break","HP","DEF","EffRes"
 		]
 	},
-	"qq":{
-		"name":"Qingque",
-		"img":"/images/hsr/icons/qq.png",
-		"body":["CRIT"],
-		"feet":["ATK"],
-		"rope":["ATK"],
-		"sphere":["Quantum"],
-		"substats":[
-			"CRIT","ATK"
-		]
-	},
-	"serval":{
-		"name":"Serval",
-		"img":"/images/hsr/icons/serval.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Lightning","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
-		]
-	},
-	"hook":{
-		"name":"Hook",
-		"img":"/images/hsr/icons/hook.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Fire","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
-		]
-	},
-	"yukong":{
-		"name":"Yukong",
-		"img":"/images/hsr/icons/yukong.png",
-		"body":["HP","DEF"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["HP","DEF"],
-		"substats":[
-			"SPD","HP","DEF","EffRes"
-		]
-	},
-	"sushang":{
-		"name":"Sushang",
-		"img":"/images/hsr/icons/sushang.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK","Break"],
-		"sphere":["Physical","ATK"],
-		"substats":[
-			"SPD","Break","CRIT","ATK"
-		]
-	},
-	"arlan":{
-		"name":"Arlan",
-		"img":"/images/hsr/icons/arlan.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Lightning","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
-		]
-	},
 	"topaz":{
 		"name":"Topaz",
 		"img":"/images/hsr/icons/topaz.png",
@@ -348,7 +260,7 @@
 		"rope":["ATK"],
 		"sphere":["Fire","ATK"],
 		"substats":[
-			"SPD","CRIT","ATK"
+			"SPD","CRIT","ATK","Break"
 		]
 	},
 	"robin":{
@@ -357,7 +269,7 @@
 		"body":["ATK"],
 		"feet":["SPD","ATK"],
 		"rope":["ER"],
-		"sphere":["Physical","ATK"],
+		"sphere":["ATK"],
 		"substats":[
 			"ATK","SPD","HP","DEF"
 		]
@@ -411,7 +323,7 @@
 		"name":"Xueyi",
 		"img":"/images/hsr/icons/xueyi.png",
 		"body":["CRIT"],
-		"feet":["SPD","ATK"],
+		"feet":["SPD"],
 		"rope":["Break"],
 		"sphere":["ATK","Quantum"],
 		"substats":[

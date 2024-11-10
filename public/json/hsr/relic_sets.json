@@ -9,13 +9,14 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"jingliu","aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx","galla"
+					"aven","huo","ruan","fx","galla",
+					"lynx","march","asta","bailu","guin"
 				]
 			},
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"bronya","tingyun","bailu","yukong"
+					"bronya","tingyun","sparkle","pela"
 				]
 			},
 			{
@@ -36,12 +37,8 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"tingyun","bailu","bronya","lynx","yukong","hanya","natasha","asta","huo","fx"
+					"bailu","lynx","huo","fx"
 				]
-			},
-			{
-				"usecase":"4pc",
-				"characters":["arlan","clara"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -59,7 +56,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing","sampo","serval"]
+				"characters":["sampo","guin"]
 			},
 			{
 				"usecase":"2pc/4pc",
@@ -67,7 +64,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["ratio","dan","aven","topaz","hook","moze"]
+				"characters":["ratio","dan","aven","moze"]
 			}
 		]
 	},
@@ -80,7 +77,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["galla","ff"]
+				"characters":["galla","asta"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -98,7 +95,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","aven"]
+				"characters":["clara"]
 			},
 			{
 				"usecase":"4pc",
@@ -106,7 +103,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["topaz","jingyuan","himeko"]
+				"characters":["topaz","jingyuan","himeko","herta"]
 			}
 		]
 	},
@@ -119,7 +116,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing","clara","herta","jingyuan","daniel","dan"]
+				"characters":["clara"]
+			},
+			{
+				"usecase":"2pc/4pc",
+				"characters":["guin"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -127,7 +128,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["guin","sampo","luka"]
+				"characters":["sampo","luka"]
 			}
 		]
 	},
@@ -141,7 +142,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing"]
+				"characters":["guin"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -149,11 +150,7 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["pela","herta","sushang","dan","clara","serval"]
-			},
-			{
-				"usecase":"4pc",
-				"characters":["qq","hook","xueyi"]
+				"characters":["clara"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -170,7 +167,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc/4pc",
-				"characters":["bailu","lynx","natasha","huo","galla"]
+				"characters":["bailu","lynx","huo"]
 			}
 		]
 	},
@@ -184,24 +181,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade"]
+				"characters":[]
 			},
 			{
-				"usecase":"4pc BIS",
-				"characters":["pela","sparkle"]
-			}
-		]
-	},
-	"hunter":{
-		"id":"hunter",
-		"name":"Hunter of Glacial Forest",
-		"icon":"/images/hsr/relics/glacial.png",
-		"desc2":"Increases Ice DMG by 10%.",
-		"desc4":"After the wearer unleashes their Ultimate, their CRIT DMG increases by 25% for 2 turn(s).",
-		"useGroups":[
-			{
-				"usecase":"2pc/4pc",
-				"characters":["jingliu","yanqing","herta"]
+				"usecase":"4pc",
+				"characters":["pela"]
 			}
 		]
 	},
@@ -215,7 +199,7 @@
 		"useGroups":[
 			{
 				"usecase":"4pc BIS",
-				"characters":["gepard","march"]
+				"characters":["march"]
 			}
 		]
 	},
@@ -230,13 +214,13 @@
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"xueyi"
+					"guin","galla"
 				]
 			},
 			{
 				"usecase":"4pc BIS",
 				"characters":[
-					"ff"
+					"ff","xueyi"
 				]
 			}
 		]
@@ -249,6 +233,12 @@
 		"desc4":"Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s).",
 		"useGroups":[
 			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"robin"
+				]
+			},
+			{
 				"usecase":"4pc BIS",
 				"characters":[
 					"feixiao"
@@ -257,6 +247,48 @@
 		]
 	},
 
+	"scholar":{
+		"id":"scholar",
+		"name":"Scholar Lost in Erudition",
+		"icon":"/images/hsr/relics/scholar.png",
+		"desc2":"CRIT Rate increases by 8%.",
+		"desc4":"Increases DMG dealt by Ultimate and Skill by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%.",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"blade"
+				]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"jingliu","yanqing"
+				]
+			}
+		]
+	},
+	"sacred":{
+		"id":"sacred",
+		"name":"Sacerdos' Relived Ordeal",
+		"icon":"/images/hsr/relics/sacred.png",
+		"desc2":"SPD increases by 6%.",
+		"desc4":"When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turns. This effect can stack up to 2 times.",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"fx","bailu","huo","ruan","asta","pela","guin","hanya","galla"
+				]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"sparkle","bronya","tingyun"
+				]
+			}
+		]
+	},
 
 
 	"fleet":{
@@ -268,8 +300,8 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","march","asta","guin",
-					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha","huo","ruan","fx","galla"
+					"march","guin","pela",
+					"sparkle","bailu","tingyun","lynx","huo","ruan"
 				]
 			},
 			{
@@ -289,9 +321,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"luka","sushang","guin","himeko","hook",
-					"herta","jingliu","yanqing","arlan","serval",
-					"dan","sampo","qq","daniel","ratio","xueyi"
+					"luka","sampo","xueyi"
 				]
 			}
 		]
@@ -305,7 +335,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["hanya"]
+				"characters":["hanya","asta"]
 			}
 		]
 	},
@@ -317,7 +347,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["asta","ruan","galla","ff"]
+				"characters":["asta","ruan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -334,11 +364,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","herta","dan","serval","xueyi","ratio","topaz","jingyuan","moze"]
+				"characters":["blade","jingliu","yanqing","ratio","jingyuan","clara"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["clara","himeko"]
+				"characters":["himeko","herta"]
 			}
 		]
 	},
@@ -350,7 +380,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["gepard"]
+				"characters":[]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -367,11 +397,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["yanqing","hook","jingyuan","ratio","topaz","herta","clara","himeko","serval"]
+				"characters":["yanqing","herta","clara","himeko"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["daniel","blade","jingliu","dan","qq","sushang","arlan","march_hunt"]
+				"characters":["daniel","blade","jingliu","dan","march_hunt"]
 			}
 		]
 	},
@@ -384,9 +414,9 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","topaz","ratio","robin",
-					"tingyun","pela","yukong","hanya","asta",
-					"bailu","lynx","gepard","natasha","huo","ruan","fx"
+					"aven","robin",
+					"tingyun","pela","hanya",
+					"bailu","lynx","huo","ruan","fx"
 				]
 			},
 			{
@@ -404,11 +434,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","qq","sushang","arlan"]
+				"characters":["jingliu","dan","herta"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["yanqing","hook","herta","himeko","guin","sampo","serval"]
+				"characters":["yanqing","himeko","guin","sampo","luka"]
 			}
 		]
 	},
@@ -421,7 +451,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"yukong"
+					
 				]
 			}
 		]
@@ -436,13 +466,13 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"topaz"
+					"aven"
 				]
 			},
 			{
 				"usecase":"2pc BIS",
 				"characters":[
-					"ratio","feixiao","moze"
+					"ratio","feixiao","moze","clara","topaz"
 				]
 			}
 		]
@@ -453,6 +483,12 @@
 		"icon":"/images/hsr/relics/lamp.png",
 		"desc2":"Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s).",
 		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"guin"
+				]
+			},
 			{
 				"usecase":"2pc BIS",
 				"characters":[
@@ -472,6 +508,21 @@
 				"usecase":"2pc BIS",
 				"characters":[
 					"jingyuan","topaz"
+				]
+			}
+		]
+	},
+	"lushaka":{
+		"id":"lushaka",
+		"name":"Lushaka, the Sunken Seas",
+		"icon":"/images/hsr/relics/lushaka.png",
+		"desc2":"Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%.",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"lynx","fx","bailu",
+					"huo","sparkle","asta","tingyun"
 				]
 			}
 		]
