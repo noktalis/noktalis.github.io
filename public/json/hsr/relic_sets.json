@@ -268,7 +268,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx","bailu"
+					"fx","bailu","huo"
 				]
 			},
 			{
@@ -506,7 +506,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"lynx","fx","bailu"
+					"lynx","fx","bailu","huo"
 				]
 			}
 		]
