@@ -16,7 +16,7 @@
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"bronya","tingyun"
+					"bronya","tingyun","sparkle"
 				]
 			},
 			{
@@ -181,7 +181,7 @@
 			},
 			{
 				"usecase":"4pc",
-				"characters":["pela","sparkle"]
+				"characters":["pela"]
 			}
 		]
 	},
@@ -312,7 +312,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"luka","sushang","guin",
-					"dan","sampo","ratio","xueyi"
+					"dan","sampo","xueyi"
 				]
 			}
 		]
@@ -388,7 +388,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["yanqing","ratio","herta","clara","himeko"]
+				"characters":["yanqing","herta","clara","himeko"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -405,7 +405,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","ratio","robin",
+					"aven","robin",
 					"tingyun","pela","hanya","asta",
 					"bailu","lynx","huo","ruan","fx"
 				]
@@ -506,7 +506,8 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"lynx","fx","bailu","huo"
+					"lynx","fx","bailu",
+					"huo","sparkle"
 				]
 			}
 		]
