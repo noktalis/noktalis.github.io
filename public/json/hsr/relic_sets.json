@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"jingliu","aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx","galla"
+					"aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx","galla"
 				]
 			},
 			{
@@ -59,7 +59,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing","sampo","serval"]
+				"characters":["sampo","serval"]
 			},
 			{
 				"usecase":"2pc/4pc",
@@ -119,7 +119,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","yanqing","clara","herta","jingyuan","daniel","dan"]
+				"characters":["clara","herta","jingyuan","daniel","dan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -139,10 +139,6 @@
 		"desc2":"ATK increases by 12%.",
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
 		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":["jingliu","yanqing"]
-			},
 			{
 				"usecase":"2pc BIS",
 				"characters":["robin"]
@@ -201,7 +197,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc/4pc",
-				"characters":["jingliu","yanqing","herta"]
+				"characters":["herta"]
 			}
 		]
 	},
