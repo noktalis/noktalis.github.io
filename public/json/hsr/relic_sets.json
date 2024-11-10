@@ -37,7 +37,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"tingyun","bailu","lynx","hanya","huo","fx"
+					"bailu","lynx","hanya","huo","fx"
 				]
 			},
 			{
@@ -435,7 +435,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["yanqing","himeko","guin","sampo"]
+				"characters":["yanqing","himeko","guin","sampo","luka"]
 			}
 		]
 	},
@@ -513,7 +513,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"lynx","fx","bailu",
-					"huo","sparkle","asta"
+					"huo","sparkle","asta","tingyun"
 				]
 			}
 		]
