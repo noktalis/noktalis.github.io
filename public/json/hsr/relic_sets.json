@@ -64,7 +64,7 @@
 			},
 			{
 				"usecase":"4pc BIS",
-				"characters":["ratio","dan","aven","topaz","moze"]
+				"characters":["ratio","dan","aven","moze"]
 			}
 		]
 	},
@@ -116,7 +116,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","jingyuan","daniel","dan"]
+				"characters":["clara","daniel","dan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -376,7 +376,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["yanqing","jingyuan","ratio","herta","clara","himeko"]
+				"characters":["yanqing","ratio","herta","clara","himeko"]
 			},
 			{
 				"usecase":"2pc BIS",
