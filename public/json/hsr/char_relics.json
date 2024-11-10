@@ -219,39 +219,6 @@
 			"SPD","Break","HP","DEF","EffRes"
 		]
 	},
-	"serval":{
-		"name":"Serval",
-		"img":"/images/hsr/icons/serval.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Lightning","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
-		]
-	},
-	"hook":{
-		"name":"Hook",
-		"img":"/images/hsr/icons/hook.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Fire","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
-		]
-	},
-	"yukong":{
-		"name":"Yukong",
-		"img":"/images/hsr/icons/yukong.png",
-		"body":["HP","DEF"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["HP","DEF"],
-		"substats":[
-			"SPD","HP","DEF","EffRes"
-		]
-	},
 	"sushang":{
 		"name":"Sushang",
 		"img":"/images/hsr/icons/sushang.png",
@@ -261,17 +228,6 @@
 		"sphere":["Physical","ATK"],
 		"substats":[
 			"SPD","Break","CRIT","ATK"
-		]
-	},
-	"arlan":{
-		"name":"Arlan",
-		"img":"/images/hsr/icons/arlan.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK"],
-		"sphere":["Lightning","ATK"],
-		"substats":[
-			"SPD","CRIT","ATK"
 		]
 	},
 	"topaz":{
