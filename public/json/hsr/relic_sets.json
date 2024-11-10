@@ -475,6 +475,20 @@
 				]
 			}
 		]
+	},
+	"lushaka":{
+		"id":"lushaka",
+		"name":"Lushaka, the Sunken Seas",
+		"icon":"/images/hsr/relics/lushaka.png",
+		"desc2":"Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%.",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"huo"
+				]
+			}
+		]
 	}
 
 
