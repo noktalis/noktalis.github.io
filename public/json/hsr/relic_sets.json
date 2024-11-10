@@ -257,6 +257,36 @@
 		]
 	},
 
+	"scholar":{
+		"id":"scholar",
+		"name":"Scholar Lost in Erudition",
+		"icon":"/images/hsr/relics/scholar.png",
+		"desc2":"CRIT Rate increases by 8%.",
+		"desc4":"Increases DMG dealt by Ultimate and Skill by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%.",
+		"useGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"jingliu","yanqing"
+				]
+			}
+		]
+	},
+	"sacred":{
+		"id":"sacred",
+		"name":"Sacerdos' Relived Ordeal",
+		"icon":"/images/hsr/relics/sacred.png",
+		"desc2":"SPD increases by 6%.",
+		"desc4":"When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turns. This effect can stack up to 2 times.",
+		"useGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"sparkle","bronya","tingyun"
+				]
+			}
+		]
+	},
 
 
 	"fleet":{
