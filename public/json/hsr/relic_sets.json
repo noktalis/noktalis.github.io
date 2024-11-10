@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","blade","huo","ruan","fx","galla",
+					"aven","huo","ruan","fx","galla",
 					"lynx","march","asta"
 				]
 			},
@@ -177,7 +177,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade"]
+				"characters":[]
 			},
 			{
 				"usecase":"4pc",
@@ -245,6 +245,12 @@
 		"desc4":"Increases DMG dealt by Ultimate and Skill by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%.",
 		"useGroups":[
 			{
+				"usecase":"2pc",
+				"characters":[
+					"blade"
+				]
+			},
+			{
 				"usecase":"4pc BIS",
 				"characters":[
 					"jingliu","yanqing"
@@ -259,6 +265,12 @@
 		"desc2":"SPD increases by 6%.",
 		"desc4":"When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turns. This effect can stack up to 2 times.",
 		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"fx"
+				]
+			},
 			{
 				"usecase":"4pc BIS",
 				"characters":[
@@ -279,7 +291,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"march","asta","guin",
-					"sparkle","bailu","tingyun","lynx","pela","hanya","huo","ruan","fx","galla"
+					"sparkle","bailu","tingyun","lynx","pela","hanya","huo","ruan","galla"
 				]
 			},
 			{
@@ -494,7 +506,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"lynx"
+					"lynx","fx"
 				]
 			}
 		]
