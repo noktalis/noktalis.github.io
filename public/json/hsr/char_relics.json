@@ -219,17 +219,6 @@
 			"SPD","Break","HP","DEF","EffRes"
 		]
 	},
-	"sushang":{
-		"name":"Sushang",
-		"img":"/images/hsr/icons/sushang.png",
-		"body":["CRIT"],
-		"feet":["SPD","ATK"],
-		"rope":["ATK","Break"],
-		"sphere":["Physical","ATK"],
-		"substats":[
-			"SPD","Break","CRIT","ATK"
-		]
-	},
 	"topaz":{
 		"name":"Topaz",
 		"img":"/images/hsr/icons/topaz.png",

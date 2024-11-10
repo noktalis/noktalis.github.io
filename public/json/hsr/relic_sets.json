@@ -142,7 +142,7 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["sushang","clara"]
+				"characters":["clara"]
 			},
 			{
 				"usecase":"4pc",
@@ -317,7 +317,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"luka","sushang","guin",
+					"luka","guin",
 					"sampo","xueyi"
 				]
 			}
@@ -398,7 +398,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["daniel","blade","jingliu","dan","sushang","march_hunt"]
+				"characters":["daniel","blade","jingliu","dan","march_hunt"]
 			}
 		]
 	},
@@ -431,7 +431,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","sushang","herta"]
+				"characters":["jingliu","dan","herta"]
 			},
 			{
 				"usecase":"2pc BIS",
