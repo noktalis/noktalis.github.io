@@ -219,17 +219,6 @@
 			"SPD","Break","HP","DEF","EffRes"
 		]
 	},
-	"qq":{
-		"name":"Qingque",
-		"img":"/images/hsr/icons/qq.png",
-		"body":["CRIT"],
-		"feet":["ATK"],
-		"rope":["ATK"],
-		"sphere":["Quantum"],
-		"substats":[
-			"CRIT","ATK"
-		]
-	},
 	"serval":{
 		"name":"Serval",
 		"img":"/images/hsr/icons/serval.png",

@@ -149,7 +149,7 @@
 			},
 			{
 				"usecase":"4pc",
-				"characters":["qq","hook","xueyi"]
+				"characters":["hook","xueyi"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -304,7 +304,7 @@
 				"characters":[
 					"luka","sushang","guin","himeko","hook",
 					"arlan","serval",
-					"dan","sampo","qq","daniel","ratio","xueyi"
+					"dan","sampo","daniel","ratio","xueyi"
 				]
 			}
 		]
@@ -384,7 +384,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["daniel","blade","jingliu","dan","qq","sushang","arlan","march_hunt"]
+				"characters":["daniel","blade","jingliu","dan","sushang","arlan","march_hunt"]
 			}
 		]
 	},
@@ -417,7 +417,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","qq","sushang","arlan","herta"]
+				"characters":["jingliu","dan","sushang","arlan","herta"]
 			},
 			{
 				"usecase":"2pc BIS",
