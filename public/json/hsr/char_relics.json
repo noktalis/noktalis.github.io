@@ -323,7 +323,7 @@
 		"name":"Xueyi",
 		"img":"/images/hsr/icons/xueyi.png",
 		"body":["CRIT"],
-		"feet":["SPD","ATK"],
+		"feet":["SPD"],
 		"rope":["Break"],
 		"sphere":["ATK","Quantum"],
 		"substats":[

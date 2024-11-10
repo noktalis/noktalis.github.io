@@ -37,7 +37,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"bailu","lynx","hanya","huo","fx"
+					"bailu","lynx","huo","fx"
 				]
 			},
 			{
@@ -153,10 +153,6 @@
 				"characters":["clara"]
 			},
 			{
-				"usecase":"4pc",
-				"characters":["xueyi"]
-			},
-			{
 				"usecase":"4pc BIS",
 				"characters":["daniel","march_hunt"]
 			}
@@ -218,13 +214,13 @@
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"xueyi","guin"
+					"guin"
 				]
 			},
 			{
 				"usecase":"4pc BIS",
 				"characters":[
-					"ff"
+					"ff","xueyi"
 				]
 			}
 		]
@@ -282,7 +278,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx","bailu","huo","ruan","asta","pela","guin"
+					"fx","bailu","huo","ruan","asta","pela","guin","hanya"
 				]
 			},
 			{
@@ -305,7 +301,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"march","guin","pela",
-					"sparkle","bailu","tingyun","lynx","hanya","huo","ruan","galla"
+					"sparkle","bailu","tingyun","lynx","huo","ruan","galla"
 				]
 			},
 			{
@@ -368,7 +364,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","xueyi","ratio","jingyuan","moze","clara"]
+				"characters":["blade","jingliu","yanqing","ratio","jingyuan","moze","clara"]
 			},
 			{
 				"usecase":"2pc BIS",
