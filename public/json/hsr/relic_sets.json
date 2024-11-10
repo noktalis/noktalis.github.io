@@ -10,13 +10,13 @@
 				"usecase":"2pc",
 				"characters":[
 					"aven","huo","ruan","fx","galla",
-					"lynx","march","asta"
+					"lynx","march","asta","bailu"
 				]
 			},
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"bronya","tingyun","bailu"
+					"bronya","tingyun"
 				]
 			},
 			{
@@ -116,7 +116,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","daniel","dan"]
+				"characters":["clara","dan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -268,7 +268,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx"
+					"fx","bailu"
 				]
 			},
 			{
@@ -312,7 +312,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"luka","sushang","guin",
-					"dan","sampo","daniel","ratio","xueyi"
+					"dan","sampo","ratio","xueyi"
 				]
 			}
 		]
@@ -506,7 +506,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"lynx","fx"
+					"lynx","fx","bailu"
 				]
 			}
 		]
