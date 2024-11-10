@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","blade","himeko","huo","ruan","fx","galla",
+					"aven","blade","huo","ruan","fx","galla",
 					"lynx","march","asta"
 				]
 			},
@@ -303,8 +303,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"luka","sushang","guin","himeko",
-					
+					"luka","sushang","guin",
 					"dan","sampo","daniel","ratio","xueyi"
 				]
 			}

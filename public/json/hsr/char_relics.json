@@ -271,7 +271,7 @@
 		"rope":["ATK"],
 		"sphere":["Fire","ATK"],
 		"substats":[
-			"SPD","CRIT","ATK"
+			"SPD","CRIT","ATK","Break"
 		]
 	},
 	"robin":{
