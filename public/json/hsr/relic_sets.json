@@ -98,7 +98,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","aven"]
+				"characters":["clara"]
 			},
 			{
 				"usecase":"4pc",
@@ -281,7 +281,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","march","asta","guin",
+					"march","asta","guin",
 					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha","huo","ruan","fx","galla"
 				]
 			},
