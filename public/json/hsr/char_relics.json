@@ -280,7 +280,7 @@
 		"body":["ATK"],
 		"feet":["SPD","ATK"],
 		"rope":["ER"],
-		"sphere":["Physical","ATK"],
+		"sphere":["ATK"],
 		"substats":[
 			"ATK","SPD","HP","DEF"
 		]

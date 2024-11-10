@@ -116,7 +116,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["clara","dan"]
+				"characters":["clara"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -142,7 +142,7 @@
 			},
 			{
 				"usecase":"2pc/4pc",
-				"characters":["pela","sushang","dan","clara"]
+				"characters":["pela","sushang","clara"]
 			},
 			{
 				"usecase":"4pc",
@@ -229,6 +229,12 @@
 		"desc4":"Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s).",
 		"useGroups":[
 			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"robin"
+				]
+			},
+			{
 				"usecase":"4pc BIS",
 				"characters":[
 					"feixiao"
@@ -312,7 +318,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"luka","sushang","guin",
-					"dan","sampo","xueyi"
+					"sampo","xueyi"
 				]
 			}
 		]
@@ -355,7 +361,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","dan","xueyi","ratio","jingyuan","moze","clara"]
+				"characters":["blade","jingliu","yanqing","xueyi","ratio","jingyuan","moze","clara"]
 			},
 			{
 				"usecase":"2pc BIS",
