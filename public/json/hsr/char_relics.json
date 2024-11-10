@@ -153,17 +153,6 @@
 			"SPD","HP","DEF","Break","EffRes"
 		]
 	},
-	"gepard":{
-		"name":"Gepard",
-		"img":"/images/hsr/icons/gepard.png",
-		"body":["DEF"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["DEF"],
-		"substats":[
-			"SPD","DEF","EffRes","HP"
-		]
-	},
 	"march":{
 		"name":"March 7th",
 		"img":"/images/hsr/icons/march.png",
@@ -173,17 +162,6 @@
 		"sphere":["DEF"],
 		"substats":[
 			"EHR","SPD","DEF","HP","EffRes"
-		]
-	},
-	"natasha":{
-		"name":"Natasha",
-		"img":"/images/hsr/icons/natasha.png",
-		"body":["Healing","HP"],
-		"feet":["SPD"],
-		"rope":["ER"],
-		"sphere":["HP"],
-		"substats":[
-			"SPD","HP","EffRes","DEF"
 		]
 	},
 	"guin":{

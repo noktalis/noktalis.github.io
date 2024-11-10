@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","lynx","gepard","march","natasha","asta","hmc","blade","himeko","huo","ruan","fx","galla"
+					"aven","lynx","march","asta","hmc","blade","himeko","huo","ruan","fx","galla"
 				]
 			},
 			{
@@ -36,7 +36,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"tingyun","bailu","bronya","lynx","yukong","hanya","natasha","asta","huo","fx"
+					"tingyun","bailu","bronya","lynx","yukong","hanya","asta","huo","fx"
 				]
 			},
 			{
@@ -166,7 +166,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc/4pc",
-				"characters":["bailu","lynx","natasha","huo","galla"]
+				"characters":["bailu","lynx","huo","galla"]
 			}
 		]
 	},
@@ -198,7 +198,7 @@
 		"useGroups":[
 			{
 				"usecase":"4pc BIS",
-				"characters":["gepard","march"]
+				"characters":["march"]
 			}
 		]
 	},
@@ -282,7 +282,7 @@
 				"usecase":"2pc",
 				"characters":[
 					"march","asta","guin",
-					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","natasha","huo","ruan","fx","galla"
+					"sparkle","bailu","bronya","tingyun","lynx","pela","yukong","hanya","huo","ruan","fx","galla"
 				]
 			},
 			{
@@ -363,7 +363,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["gepard"]
+				"characters":[]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -399,7 +399,7 @@
 				"characters":[
 					"aven","topaz","ratio","robin",
 					"tingyun","pela","yukong","hanya","asta",
-					"bailu","lynx","gepard","natasha","huo","ruan","fx"
+					"bailu","lynx","huo","ruan","fx"
 				]
 			},
 			{
@@ -498,7 +498,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"huo"
+					"lynx"
 				]
 			}
 		]
