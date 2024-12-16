@@ -12,6 +12,7 @@
 			}
 		]
 	},
+
 	"gladiator":{
 		"id":"gladiator",
 		"name":"Gladiator's Finale",
@@ -38,6 +39,7 @@
 			}
 		]
 	},
+
 	"noblesse":{
 		"id":"noblesse",
 		"name":"Noblesse Oblige",
@@ -51,6 +53,7 @@
 			}
 		]
 	},
+
 	"vv":{
 		"id":"vv",
 		"name":"Viridescent Venerer",
@@ -70,6 +73,7 @@
 			}
 		]
 	},
+
 	"thundering":{
 		"id":"thundering",
 		"name":"Thundering Fury",
@@ -83,6 +87,7 @@
 			}
 		]
 	},
+
 	"blizzard":{
 		"id":"blizzard",
 		"name":"Blizzard Strayer",
@@ -96,6 +101,7 @@
 			}
 		]
 	},
+
 	"tenacity":{
 		"id":"tenacity",
 		"name":"Tenacity",
@@ -110,7 +116,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"faru","dehya","zhong","layla"
+					"faru","dehya","zhong","layla","thoma"
 				]
 			}
 		]
@@ -128,6 +134,7 @@
 			}
 		]
 	},
+
 	"shime":{
 		"id":"shime",
 		"name":"Shimenawa's Reminiscence",
@@ -154,6 +161,7 @@
 			}
 		]
 	},
+
 	"husk":{
 		"id":"husk",
 		"name":"Husk of Opulent Dreams",
@@ -180,6 +188,7 @@
 			}
 		]
 	},
+
 	"deepwood":{
 		"id":"deepwood",
 		"name":"Deepwood Memories",
@@ -206,6 +215,7 @@
 			}
 		]
 	},
+
 	"desert":{
 		"id":"desert",
 		"name":"Desert Pavilion Chronicle",
@@ -232,6 +242,7 @@
 			}
 		]
 	},
+
 	"nymph":{
 		"id":"nymph",
 		"name":"Nymph's Dream",
@@ -245,6 +256,7 @@
 			}
 		]
 	},
+
 	"hunter":{
 		"id":"hunter",
 		"name":"Marechaussee Hunter",
@@ -266,11 +278,12 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"furi","fischl","alb","chi","yae"
+					"furi","fischl","chi","yae"
 				]
 			}
 		]
 	},
+
 	"whimsy":{
 		"id":"whimsy",
 		"name":"Fragment of Harmonic Whimsy",
@@ -285,6 +298,34 @@
 		]
 	},
 
+	"obsidian":{
+		"id":"obsidian",
+		"name":"Obsidian Codex",
+		"icon":"/images/genshin/artifacts/obsidian.png",
+		"useGroups":[
+			{
+				"usecase":"4pc",
+				"characters":[
+					"kinich","mavuika"
+				]
+			}
+		]
+	},
+	"scroll":{
+		"id":"scroll",
+		"name":"Scroll of the Hero of Cinder City",
+		"icon":"/images/genshin/artifacts/scroll.png",
+		"useGroups":[
+			{
+				"usecase":"4pc",
+				"characters":[
+					"kachina","xilonen","mavuika"
+				]
+			}
+		]
+	},
+
+
 	"offpiece":{
 		"id":"offpiece",
 		"name":"Off-Pieces",
@@ -297,9 +338,9 @@
 					"lyy","benny","xiang","thoma","arle","yoi","dehya","chev",
 					"xq","childe","furi","yelan",
 					"diona","wrio","ayaka","fremi","char","kaeya","qiqi","layla","mika",
-					"zhong","yunjin","chi",
+					"zhong","yunjin","chi","kachina","xilonen",
 					"cyno","fischl","kuki","beidou","dori","raiden","yae",
-					"nahi","tigh","yao","kirara"
+					"nahi","tigh","yao","kirara","kinich"
 				]
 			}
 		]
