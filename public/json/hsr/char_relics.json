@@ -46,7 +46,7 @@
 	"sparkle":{
 		"name":"Sparkle",
 		"img":"/images/hsr/icons/sparkle.png",
-		"body":["CRIT"],
+		"body":["CDmg"],
 		"feet":["SPD"],
 		"rope":["ER"],
 		"sphere":["HP","DEF"],

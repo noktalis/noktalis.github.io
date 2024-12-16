@@ -227,7 +227,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"kuki"
+					"kuki","thoma"
 				]
 			}
 		]
@@ -280,6 +280,26 @@
 				"usecase":"4pc",
 				"characters":[
 					"arle"
+				]
+			}
+		]
+	},
+
+	"offpiece":{
+		"id":"offpiece",
+		"name":"Off-Pieces",
+		"icon":"/images/genshin/artifacts/vv.png",
+		"useGroups":[
+			{
+				"usecase":"4pc",
+				"characters":[
+					"venti","kazu","faru","xiao","wander","heizou","lyt","jean","sayu","suc","xian",
+					"lyy","benny","xiang","thoma","arle","yoi","dehya","chev",
+					"xq","childe","furi","yelan",
+					"diona","wrio","ayaka","fremi","char","kaeya","qiqi","layla","mika",
+					"zhong","yunjin","chi",
+					"cyno","fischl","kuki","beidou","dori","raiden","yae",
+					"nahi","tigh","yao","kirara"
 				]
 			}
 		]
