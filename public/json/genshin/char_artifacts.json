@@ -233,7 +233,7 @@
 	},
 	"yunjin":{
 		"name":"Yunjin",
-		"img":"/images/genshin/icons/Yunjin.png",
+		"img":"/images/genshin/icons/YunJin.png",
 		"sands":["ER","DEF"],
 		"goblet":["DEF"],
 		"circlet":["DEF","Crit Rate"],
@@ -319,14 +319,6 @@
 		"circlet":["EM"],
 		"substats":["ER","EM"]
 	},
-	"mona":{
-		"name":"Mona",
-		"img":"/images/genshin/icons/Mona.png",
-		"sands":["ER","ATK"],
-		"goblet":["Hydro","ATK"],
-		"circlet":["CRIT"],
-		"substats":["ER","CRIT","ATK"]
-	},
 	"kq":{
 		"name":"Keqing",
 		"img":"/images/genshin/icons/Keqing.png",
@@ -358,14 +350,6 @@
 		"goblet":["HP","Cryo"],
 		"circlet":["HP","CRIT"],
 		"substats":["ER","HP","CRIT"]
-	},
-	"alb":{
-		"name":"Albedo",
-		"img":"/images/genshin/icons/Albedo.png",
-		"sands":["DEF"],
-		"goblet":["Geo"],
-		"circlet":["CRIT"],
-		"substats":["CRIT","DEF"]
 	},
 	"chi":{
 		"name":"Chiori",
@@ -415,5 +399,37 @@
 		"goblet":["Hydro","HP"],
 		"circlet":["CRIT","HP"],
 		"substats":["ER","HP","CRIT"]
+	},
+	"kinich":{
+		"name":"Kinich",
+		"img":"/images/genshin/icons/Kinich.png",
+		"sands":["ATK"],
+		"goblet":["Dendro"],
+		"circlet":["CRIT"],
+		"substats":["CRIT","ATK"]
+	},
+	"kachina":{
+		"name":"Kachina",
+		"img":"/images/genshin/icons/Kachina.png",
+		"sands":["DEF"],
+		"goblet":["Geo"],
+		"circlet":["CRIT"],
+		"substats":["ER","DEF","CRIT"]
+	},
+	"xilonen":{
+		"name":"Xilonen",
+		"img":"/images/genshin/icons/Xilonen.png",
+		"sands":["ER","DEF"],
+		"goblet":["DEF"],
+		"circlet":["DEF","HB","Crit Rate"],
+		"substats":["ER","Crit Rate","DEF"]
+	},
+	"mavuika":{
+		"name":"Mavuika",
+		"img":"/images/genshin/icons/Kinich.png",
+		"sands":["ATK","EM"],
+		"goblet":["Pyro"],
+		"circlet":["CRIT"],
+		"substats":["CRIT","ATK"]
 	}
 }
