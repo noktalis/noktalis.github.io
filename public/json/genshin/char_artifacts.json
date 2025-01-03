@@ -426,10 +426,18 @@
 	},
 	"mavuika":{
 		"name":"Mavuika",
-		"img":"/images/genshin/icons/Kinich.png",
+		"img":"/images/genshin/icons/Mavuika.png",
 		"sands":["ATK","EM"],
 		"goblet":["Pyro"],
 		"circlet":["CRIT"],
 		"substats":["CRIT","ATK"]
+	},
+	"pmc":{
+		"name":"Pyro Traveler",
+		"img":"/images/genshin/icons/Lumine.png",
+		"sands":["ER"],
+		"goblet":["Pyro"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK"]
 	}
 }

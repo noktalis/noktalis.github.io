@@ -197,7 +197,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"nahi","yao"
+					"nahi","yao","thoma","pmc"
 				]
 			}
 		]
@@ -306,7 +306,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"kinich","mavuika"
+					"kinich","pmc"
 				]
 			}
 		]
@@ -319,7 +319,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"kachina","xilonen","mavuika"
+					"kachina","xilonen","mavuika","pmc"
 				]
 			}
 		]
@@ -335,7 +335,7 @@
 				"usecase":"4pc",
 				"characters":[
 					"venti","kazu","faru","xiao","wander","heizou","lyt","jean","sayu","suc","xian",
-					"lyy","benny","xiang","thoma","arle","yoi","dehya","chev",
+					"lyy","benny","xiang","thoma","arle","yoi","dehya","chev","mavuika","pmc",
 					"xq","childe","furi","yelan",
 					"diona","wrio","ayaka","fremi","char","kaeya","qiqi","layla","mika",
 					"zhong","yunjin","chi","kachina","xilonen",
