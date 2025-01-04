@@ -220,7 +220,7 @@
 			{
 				"usecase":"4pc BIS",
 				"characters":[
-					"ff","xueyi"
+					"xueyi"
 				]
 			}
 		]
@@ -284,7 +284,7 @@
 			{
 				"usecase":"4pc BIS",
 				"characters":[
-					"sparkle","bronya","tingyun"
+					"sparkle","bronya","tingyun","sunday"
 				]
 			}
 		]
@@ -492,7 +492,7 @@
 			{
 				"usecase":"2pc BIS",
 				"characters":[
-					"galla","ff"
+					"galla"
 				]
 			}
 		]
@@ -523,6 +523,12 @@
 				"characters":[
 					"lynx","fx","bailu",
 					"huo","sparkle","asta","tingyun"
+				]
+			},
+			{
+				"usecase":"2pc BIS",
+				"characters":[
+					"sunday"
 				]
 			}
 		]
