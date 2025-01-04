@@ -352,17 +352,6 @@
 			"CRIT","ATK"
 		]
 	},
-	"ff":{
-		"name":"Firefly",
-		"img":"/images/hsr/icons/ff.png",
-		"body":["ATK"],
-		"feet":["SPD"],
-		"rope":["Break"],
-		"sphere":["ATK"],
-		"substats":[
-			"SPD","Break","ATK"
-		]
-	},
 	"march_hunt":{
 		"name":"March 7th (Hunt)",
 		"img":"/images/hsr/icons/march_hunt.png",
@@ -383,6 +372,17 @@
 		"sphere":["Lightning"],
 		"substats":[
 			"SPD","CRIT","ATK"
+		]
+	},
+	"sunday":{
+		"name":"Sunday",
+		"img":"/images/hsr/icons/sunday.png",
+		"body":["CDmg"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
+		"substats":[
+			"SPD","CDmg","EffRes","HP","DEF"
 		]
 	}
 }
