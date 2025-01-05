@@ -1,20 +1,120 @@
 import format from "/styles/modules/farmChart.module.scss";
-import { useState } from "react";
-import { ThemeContext } from "./pageFormat/ThemeContext";
+import { useState, useEffect, useContext, createContext } from "react";
+import { FandomContext } from "./pageFormat/FandomContext";
 import React from "react";
-import hsr_char_data from "/public/json/hsr/char_relics.json";
-import gi_char_data from "/public/json/genshin/char_artifacts.json"
+
+// Data before loading finished
+const default_char_data = {
+	"venti":{
+		"name":"Venti",
+		"img":"/images/genshin/icons/Venti.png",
+		"sands":["ATK"],
+		"goblet":["Anemo","ATK"],
+		"circlet":["CRIT"],
+		"substats":["ER", "CRIT", "ATK", "EM"],
+		"body":[],
+		"feet":[],
+		"sphere":[],
+		"rope":[]
+	},
+	"xiao":{
+		"name":"Xiao",
+		"img":"/images/genshin/icons/Xiao.png",
+		"sands":["ATK"],
+		"goblet":["Anemo","ATK"],
+		"circlet":["CRIT"],
+		"substats":["ER","CRIT","ATK"],
+		"body":[],
+		"feet":[],
+		"sphere":[],
+		"rope":[]
+	}
+}
+const default_gear_data = {
+	"vv":{
+		"id":"vv",
+		"name":"Viridescent Venerer",
+		"icon":"/images/genshin/artifacts/vv.png",
+		"useGroups":[
+			{
+				"usecase":"2pc",
+				"characters":[
+					"xiao"
+				]
+			},
+			{
+				"usecase":"4pc",
+				"characters":[
+					"venti"
+				]
+			}
+		]
+	},
+}
+
+// Keeping data in context removes need to keep passing as many props to children
+const DataContext = createContext();
+let DataContextProvider;
 
 /**A container for FarmChartRow elements
  * 
  * @param {*} children - child elements to be placed within container
  * @returns 
  */
-export default function FarmChart({children}){
+export default function FarmChart(){
+	const type = useContext(FandomContext)
+
+	// Default data before fetch
+	const [char_data, setCharData] = useState(default_char_data);
+	const [gear_data, setGearData] = useState(default_gear_data);
+	DataContextProvider = () => {
+		return (
+			<DataContext.Provider value={{ "ch_data": [char_data, setCharData], "g_data": [gear_data, setGearData] }}/>
+		);
+	}
+
+	// Fetch data based on type
+	useEffect(() => {
+		const fetchData = async() => {
+
+			let ch_path;
+			let g_path;
+			switch(type) {
+				case "genshin":
+					ch_path = "/json/genshin/char_artifacts.json"
+					g_path = "/json/genshin/artifact_sets.json"
+					break;
+				case "hsr":
+					ch_path = "/json/hsr/char_relics.json"
+					g_path = "/json/hsr/relic_sets.json"
+			}
+
+			/* Fetch request */
+			const ch_response = await fetch(ch_path);
+			const ch_obj = await ch_response.json();
+
+			const g_response = await fetch(g_path);
+			const g_obj = await g_response.json();
+
+			setCharData(ch_obj)
+			setGearData(g_obj)
+
+			// console.log(ch_obj)
+			// console.log(g_obj)
+		}
+		fetchData()
+		.catch(console.error);
+	},[])
+
+	let setIDs = Object.keys(gear_data);
+
 	return(
-		<div className={format.chart}>
-			{children}
-		</div>
+			<DataContext.Provider value={{"ch_data":char_data, "g_data":gear_data}}>
+				<div className={format.chart}>
+					{setIDs.map((set) => <FarmChartRow {...gear_data[set]} type={type} key={set}/>)}
+				</div>
+			</DataContext.Provider>
+			
 	);
 }
 
@@ -27,20 +127,13 @@ export default function FarmChart({children}){
  * @param {list[Object]} useGroups - data of use cases and characters under them
  * @returns 
  */
-export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, children}){
+export function FarmChartRow({id, name, icon, desc2, desc4, useGroups}){
 	const [visible, setVisibility] = useState(true);
+	const type = useContext(FandomContext)
+	
+	// console.log("=========="+name+"==========")
 
-	// Specify which json to pull data from
-	let data;
-	switch (type){
-		case "gi":
-			data = gi_char_data;
-			break;
-		case "hsr":
-			data = hsr_char_data;
-	}
-
-	// List of all characters that want this set
+	// Assemble list of all characters that want this set
 	let chars = [];
 	for(let usecase of useGroups){
 		for(let charID of usecase["characters"]){
@@ -49,6 +142,7 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
 			}
 		}
 	}
+	// console.log(chars)
 
 	// HSR-specific set type preparation
 	let setType = (type == "hsr" && desc4) ? "" : "planar"
@@ -75,7 +169,7 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
 					{useGroups.map((usecase) => 
 						<>
 							<p>{usecase["usecase"]}</p>
-							<PortraitGrid data={data} chars={usecase["characters"]} key={usecase["usecase"]}/>
+							<PortraitGrid chars={usecase["characters"]} key={usecase["usecase"]}/>
 						</>
 					)}					
 				</div>
@@ -84,9 +178,8 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
 			{/* end left */}
 
 			{/* right side */}
-			{type == "gi" ? <GIArtifacts chars={chars}/> : null}
+			{type == "genshin" ? <GIArtifacts chars={chars}/> : null}
 			{type == "hsr" ? <HSRRelics chars={chars} setType={setType}/> : null}
-			{children}
 		</div>
 	);
 
@@ -169,10 +262,13 @@ export function FarmChartRow({type, id, name, icon, desc2, desc4, useGroups, chi
  * @param {*} chars - list of character codes/ids/keys 
  * @returns 
  */
-function PortraitGrid({data, chars}){
+function PortraitGrid({chars}){
+	const datacontext = useContext(DataContext)
+	const data = datacontext["ch_data"]
+
 	return(
 		<div className={[format.portraits, "portraits"].join(' ')}>
-			{chars.map((char) => <img src={data[char]["img"]} alt={"Portrait of " + data[char]["name"]} key={data[char]["name"]}></img>)}
+			{chars.map((char) => data[char] ? <img src={data[char]["img"]} alt={"Portrait of " + data[char]["name"]} key={data[char]["name"]}/> : "")}
 		</div>
 	);
 }
@@ -238,19 +334,25 @@ function ArtiPieceSection({piece, chars}){
 			name = "Circlet"
 	}
 
+	const char_data = useContext(DataContext)["ch_data"]
+
+	// console.log("====="+name+"=====")
+
 	// take info from char data json, turns it into hashmap based on piece and main stats
 	let statGroups = {};	// data of all wanted main stats and the characters that want each one
-	for(let char of chars){							// using list of char array keys
-		let mainStats = gi_char_data[char][piece]	// get character's wanted main stats
-		console.log(mainStats)
 
-		for(let stat of mainStats){					// add character names as list under main stat in statGroups list
-			
-			if(statGroups[stat] === undefined){
-				statGroups[stat] = []
-				console.log("new array")
+	for(let char of chars){							// using list of char array keys
+
+		if(char_data[char]){
+			let mainStats = char_data[char][piece]	// get character's wanted main stats
+
+			for(let stat of mainStats){					// add character names as list under main stat in statGroups list
+				
+				if(statGroups[stat] === undefined){
+					statGroups[stat] = []
+				}
+				statGroups[stat].push(char)
 			}
-			statGroups[stat].push(char)
 		}
 	}
 
@@ -273,6 +375,8 @@ function ArtiPieceSection({piece, chars}){
  * @returns 
  */
 function GIMainStat({stat, chars}){
+	const gi_char_data = useContext(DataContext)["ch_data"]
+
 	return(
 		<div className={format.mainStatGroup}>
 			<h3>{stat}</h3>
@@ -371,20 +475,24 @@ function RelicPieceSection({piece, chars}){
 			name = "Rope"
 	}
 
+	const char_data = useContext(DataContext)["ch_data"]
+
 	// take info from char data json, turns it into hashmap based on piece and main stats
 	let statGroups = {};	// data of all wanted main stats and the characters that want each one
 	for(let char of chars){							// using list of char array keys
-		let mainStats = hsr_char_data[char][piece]	// get character's wanted main stats
-		console.log(mainStats)
 
-		for(let stat of mainStats){					// add character names as list under main stat in statGroups list
+		if(char_data[char]){
+			let mainStats = char_data[char][piece]	// get character's wanted main stats
+			// console.log(mainStats)
+
+			for(let stat of mainStats){					// add character names as list under main stat in statGroups list
 			
-			if(statGroups[stat] === undefined){
-				statGroups[stat] = []
-				console.log("new array")
+				if(statGroups[stat] === undefined){
+					statGroups[stat] = []
+				}
+				statGroups[stat].push(char)
 			}
-			statGroups[stat].push(char)
-		}
+		}		
 	}
 
 	let mainStats = Object.keys(statGroups)
@@ -406,6 +514,8 @@ function RelicPieceSection({piece, chars}){
  * @returns 
  */
 function HSRMainStat({stat, chars}){
+	const hsr_char_data = useContext(DataContext)["ch_data"]
+
 	return(
 		<div className={format.mainStatGroup}>
 			<h3>{stat}</h3>

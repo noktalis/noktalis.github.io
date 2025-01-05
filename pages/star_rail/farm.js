@@ -33,16 +33,12 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	let setIDs = Object.keys(relic_data);
-
 	return (
 		<div>
 			<h1>Relic Farming Chart</h1>
 			<p>Made this because I got tired of tracking what stats I'm looking for on each relic set and this was the most convenient place to put it &lt;/3</p>
 
-			<FarmChart>
-				{setIDs.map((set) => <FarmChartRow {...relic_data[set]} type="hsr"/>)}
-			</FarmChart>
+			<FarmChart/>
 		</div>
 	);
 }
