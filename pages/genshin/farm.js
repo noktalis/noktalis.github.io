@@ -33,16 +33,12 @@ export default function Page(){
  * @returns 
  */
 function Content() {
-	let setIDs = Object.keys(artifact_data);
-
 	return (
 		<div>
 			<h1>Artifact Farming Chart</h1>
 			<p>Because I cannot for the life of me keep track of who needs what all at once anymore &lt;/3</p>
 			
-			<FarmChart>
-				{setIDs.map((set) => <FarmChartRow {...artifact_data[set]} type="gi"/>)}
-			</FarmChart>
+			<FarmChart/>
 		</div>
 	);
 }
