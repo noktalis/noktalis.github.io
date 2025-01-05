@@ -11,7 +11,11 @@ const default_char_data = {
 		"sands":["ATK"],
 		"goblet":["Anemo","ATK"],
 		"circlet":["CRIT"],
-		"substats":["ER", "CRIT", "ATK", "EM"]
+		"substats":["ER", "CRIT", "ATK", "EM"],
+		"body":[],
+		"feet":[],
+		"sphere":[],
+		"rope":[]
 	},
 	"xiao":{
 		"name":"Xiao",
@@ -19,7 +23,11 @@ const default_char_data = {
 		"sands":["ATK"],
 		"goblet":["Anemo","ATK"],
 		"circlet":["CRIT"],
-		"substats":["ER","CRIT","ATK"]
+		"substats":["ER","CRIT","ATK"],
+		"body":[],
+		"feet":[],
+		"sphere":[],
+		"rope":[]
 	}
 }
 const default_gear_data = {
@@ -270,12 +278,12 @@ function PortraitGrid({chars}){
  * @param {*} chars - codes/IDs of characters that want the current set 
  * @returns 
  */
-function GIArtifacts({chars, char_data}){
+function GIArtifacts({chars}){
 	return(
 		<div className={`${format.right} ${format.pieces}`}>
-			<ArtiPieceSection piece="sands" chars={chars} char_data={char_data}/>
-			<ArtiPieceSection piece="goblet" chars={chars} char_data={char_data}/>
-			<ArtiPieceSection piece="circlet" chars={chars} char_data={char_data}/>
+			<ArtiPieceSection piece="sands" chars={chars}/>
+			<ArtiPieceSection piece="goblet" chars={chars}/>
+			<ArtiPieceSection piece="circlet" chars={chars}/>
 		</div>
 	);
 }
@@ -467,20 +475,24 @@ function RelicPieceSection({piece, chars}){
 			name = "Rope"
 	}
 
+	const char_data = useContext(DataContext)["ch_data"]
+
 	// take info from char data json, turns it into hashmap based on piece and main stats
 	let statGroups = {};	// data of all wanted main stats and the characters that want each one
 	for(let char of chars){							// using list of char array keys
-		let mainStats = hsr_char_data[char][piece]	// get character's wanted main stats
-		// console.log(mainStats)
 
-		for(let stat of mainStats){					// add character names as list under main stat in statGroups list
+		if(char_data[char]){
+			let mainStats = char_data[char][piece]	// get character's wanted main stats
+			console.log(mainStats)
+
+			// for(let stat of mainStats){					// add character names as list under main stat in statGroups list
 			
-			if(statGroups[stat] === undefined){
-				statGroups[stat] = []
-				// console.log("new array")
-			}
-			statGroups[stat].push(char)
-		}
+			// 	if(statGroups[stat] === undefined){
+			// 		statGroups[stat] = []
+			// 	}
+			// 	statGroups[stat].push(char)
+			// }
+		}		
 	}
 
 	let mainStats = Object.keys(statGroups)
@@ -502,6 +514,8 @@ function RelicPieceSection({piece, chars}){
  * @returns 
  */
 function HSRMainStat({stat, chars}){
+	const hsr_char_data = useContext(DataContext)["ch_data"]
+
 	return(
 		<div className={format.mainStatGroup}>
 			<h3>{stat}</h3>
