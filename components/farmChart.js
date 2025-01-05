@@ -111,7 +111,7 @@ export default function FarmChart(){
 	return(
 			<DataContext.Provider value={{"ch_data":char_data, "g_data":gear_data}}>
 				<div className={format.chart}>
-					{setIDs.map((set) => <FarmChartRow {...gear_data[set]} type={type}/>)}
+					{setIDs.map((set) => <FarmChartRow {...gear_data[set]} type={type} key={set}/>)}
 				</div>
 			</DataContext.Provider>
 			

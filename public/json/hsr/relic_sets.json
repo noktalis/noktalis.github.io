@@ -59,10 +59,6 @@
 				"characters":["sampo","guin"]
 			},
 			{
-				"usecase":"2pc/4pc",
-				"characters":["aven"]
-			},
-			{
 				"usecase":"4pc BIS",
 				"characters":["ratio","dan","aven","moze"]
 			}
