@@ -131,7 +131,7 @@ export function FarmChartRow({id, name, icon, desc2, desc4, useGroups}){
 	const [visible, setVisibility] = useState(true);
 	const type = useContext(FandomContext)
 	
-	console.log("=========="+name+"==========")
+	// console.log("=========="+name+"==========")
 
 	// Assemble list of all characters that want this set
 	let chars = [];
@@ -483,15 +483,15 @@ function RelicPieceSection({piece, chars}){
 
 		if(char_data[char]){
 			let mainStats = char_data[char][piece]	// get character's wanted main stats
-			console.log(mainStats)
+			// console.log(mainStats)
 
-			// for(let stat of mainStats){					// add character names as list under main stat in statGroups list
+			for(let stat of mainStats){					// add character names as list under main stat in statGroups list
 			
-			// 	if(statGroups[stat] === undefined){
-			// 		statGroups[stat] = []
-			// 	}
-			// 	statGroups[stat].push(char)
-			// }
+				if(statGroups[stat] === undefined){
+					statGroups[stat] = []
+				}
+				statGroups[stat].push(char)
+			}
 		}		
 	}
 
