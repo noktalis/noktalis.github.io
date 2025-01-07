@@ -48,7 +48,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"benny","diona","char","mona","mika"
+					"benny","diona","char","mona","mika","zhong"
 				]
 			}
 		]
@@ -110,13 +110,13 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"kirara"
+					"kirara", "thoma"
 				]
 			},
 			{
 				"usecase":"4pc",
 				"characters":[
-					"faru","dehya","zhong","layla","thoma"
+					"faru","dehya","zhong","layla"
 				]
 			}
 		]
