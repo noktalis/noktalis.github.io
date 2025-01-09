@@ -439,5 +439,13 @@
 		"goblet":["Pyro"],
 		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK"]
+	},
+	"cit":{
+		"name":"Citlali",
+		"img":"/images/genshin/icons/Citlali.png",
+		"sands":["ER","EM"],
+		"goblet":["EM"],
+		"circlet":["EM"],
+		"substats":["ER","EM"]
 	}
 }
