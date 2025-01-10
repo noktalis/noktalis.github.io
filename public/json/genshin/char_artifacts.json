@@ -117,7 +117,7 @@
 		"sands":["ER","HP"],
 		"goblet":["HP"],
 		"circlet":["HP","Crit Rate"],
-		"substats":["ER","HP","EM"]
+		"substats":["ER","HP"]
 	},
 	"arle":{
 		"name":"Arlecchino",
@@ -227,9 +227,9 @@
 		"name":"Zhongli",
 		"img":"/images/genshin/icons/Zhongli.png",
 		"sands":["HP"],
-		"goblet":["HP","Geo"],
-		"circlet":["Crit Rate"],
-		"substats":["HP","CRIT"]
+		"goblet":["HP"],
+		"circlet":["Crit Rate","HP"],
+		"substats":["HP","Crit Rate"]
 	},
 	"yunjin":{
 		"name":"Yunjin",
@@ -309,7 +309,7 @@
 		"sands":["HP"],
 		"goblet":["HP"],
 		"circlet":["HP", "Crit Rate"],
-		"substats":["HP","ER","Crit Rate"]
+		"substats":["HP","Crit Rate"]
 	},
 	"razor":{
 		"name":"Razor",
