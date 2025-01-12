@@ -38,7 +38,7 @@ export default function AKStickerGallery({packData}){
 						date={packData["en-date"] != null ? new Date(packData["en-date"]) : null}
 						src={packData["en-src"]}
 					/>
-					{ packData["cn-src"] ? null : <Weibo/>}
+					{/* { packData["cn-src"] ? null : <Weibo/>} */}
 					{ packData["tumblr-source1"] != null ? <TumblrArchive link1={packData["tumblr-source1"]} link2={packData["tumblr-source2"]}/> : <OtherSrc link={packData["src"]} text={packData["src-text"]} />}
 
 					{ packData["pack"] == "set1" ? <TumblrPart3 link3="https://arknights-archive.tumblr.com/post/726394540041371648/sticker-pack-1-33"/> : null}

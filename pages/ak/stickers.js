@@ -37,6 +37,8 @@ export default function Page(){
  * @returns 
  */
 function Content() {
+
+	// set arknights theme for page
 	let theme = useContext(ThemeContext);
 	let themeClass;
 
@@ -46,6 +48,7 @@ function Content() {
 			themeClass = style.ri;
 	}
 
+	// paginate sticker galleries
 	const [packs, setPacks] = useState([]);
 	const [pageNumber, setPageNumber] = useState(0);
 
@@ -72,11 +75,12 @@ function Content() {
 		.catch(console.error);
 	},[])
 
+	// page content
 	return (
 		<div>
 			<h1 style={{textAlign:"center"}}>Arknights Sticker Archive</h1>
 			<h4 style={{textAlign:"center"}}>Ordered by CN release date | Newest first</h4>
-			<p style={{textAlign:"center"}}>Shoutout to Xue for also translating all <br/>the Chinese text (among many other things)!</p>
+			<p style={{textAlign:"center"}}>Shoutout to Xue for also translating all <br/>the Chinese text and helping fetch sticker sheets & CN release dates from Weibo!</p>
 			<ReactPaginate
 				previousLabel={
 					<svg width="30px" height="30px" viewBox="0 -1 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
