@@ -421,7 +421,7 @@
 		"img":"/images/genshin/icons/Xilonen.png",
 		"sands":["ER","DEF"],
 		"goblet":["DEF"],
-		"circlet":["DEF","HB","Crit Rate"],
+		"circlet":["DEF","Crit Rate"],
 		"substats":["ER","Crit Rate","DEF"]
 	},
 	"mavuika":{
