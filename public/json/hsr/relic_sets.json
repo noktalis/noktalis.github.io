@@ -9,20 +9,13 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","huo","ruan","fx","galla",
-					"lynx","march","asta","bailu","guin"
+					"aven","huo","ruan","fx","galla"
 				]
 			},
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"bronya","tingyun","sparkle","pela"
-				]
-			},
-			{
-				"usecase":"4pc BIS",
-				"characters":[
-					"hanya"
+					"tingyun","sparkle","pela"
 				]
 			}
 		]
@@ -37,7 +30,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"bailu","lynx","huo","fx"
+					"huo","fx"
 				]
 			},
 			{
@@ -55,12 +48,8 @@
 		"desc4":"Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn.",
 		"useGroups":[
 			{
-				"usecase":"2pc",
-				"characters":["sampo","guin"]
-			},
-			{
 				"usecase":"4pc BIS",
-				"characters":["ratio","dan","aven","moze"]
+				"characters":["ratio","aven","moze"]
 			}
 		]
 	},
@@ -73,7 +62,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["galla","asta"]
+				"characters":["galla"]
 			},
 			{
 				"usecase":"4pc BIS",
@@ -115,16 +104,8 @@
 				"characters":["clara"]
 			},
 			{
-				"usecase":"2pc/4pc",
-				"characters":["guin"]
-			},
-			{
 				"usecase":"2pc BIS",
 				"characters":["robin"]
-			},
-			{
-				"usecase":"4pc BIS",
-				"characters":["sampo","luka"]
 			}
 		]
 	},
@@ -136,10 +117,6 @@
 		"desc2":"ATK increases by 12%.",
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
 		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":["guin"]
-			},
 			{
 				"usecase":"2pc BIS",
 				"characters":["robin"]
@@ -163,39 +140,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc/4pc",
-				"characters":["bailu","lynx","huo"]
-			}
-		]
-	},
-
-	"eagle":{
-		"id":"eagle",
-		"name":"Eagle of Twilight Line",
-		"icon":"/images/hsr/relics/eagle.png",
-		"desc2":"Increases Wind DMG by 10%.",
-		"desc4":"After the wearer uses Ultimate, their action is Advanced Forward by 25%.",
-		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":[]
-			},
-			{
-				"usecase":"4pc",
-				"characters":["pela"]
-			}
-		]
-	},
-
-	"knight":{
-		"id":"knight",
-		"name":"Knight of Purity Palace",
-		"icon":"/images/hsr/relics/knight.png",
-		"desc2":"Increases DEF by 15%.",
-		"desc4":"Increases the max DMG that can be absorbed by the shield created by the wearer by 20%.",
-		"useGroups":[
-			{
-				"usecase":"4pc BIS",
-				"characters":["march"]
+				"characters":["huo"]
 			}
 		]
 	},
@@ -210,7 +155,7 @@
 			{
 				"usecase":"2pc/4pc",
 				"characters":[
-					"guin","galla"
+					"galla"
 				]
 			},
 			{
@@ -274,13 +219,13 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx","bailu","huo","ruan","asta","pela","guin","hanya","galla"
+					"fx","huo","ruan","galla"
 				]
 			},
 			{
 				"usecase":"4pc BIS",
 				"characters":[
-					"sparkle","bronya","tingyun","sunday"
+					"sparkle","tingyun","sunday"
 				]
 			}
 		]
@@ -296,8 +241,8 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"march","guin","pela",
-					"sparkle","bailu","tingyun","lynx","huo","ruan"
+					
+					"tingyun","huo","ruan"
 				]
 			},
 			{
@@ -317,24 +262,12 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"luka","sampo","xueyi"
+					"xueyi"
 				]
 			}
 		]
 	},
 
-	"sprightly":{
-		"id":"sprightly",
-		"name":"Sprightly Vonwacq",
-		"icon":"/images/hsr/relics/sprightly.png",
-		"desc2":"Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle.",
-		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":["hanya","asta"]
-			}
-		]
-	},
 	"talia":{
 		"id":"talia",
 		"name":"Talia: Kingdom of Banditry",
@@ -343,7 +276,7 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["asta","ruan"]
+				"characters":["ruan"]
 			},
 			{
 				"usecase":"2pc BIS",
@@ -360,27 +293,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["blade","jingliu","yanqing","ratio","jingyuan","clara"]
+				"characters":["ratio","clara"]
 			},
 			{
 				"usecase":"2pc BIS",
 				"characters":["himeko","herta"]
-			}
-		]
-	},
-	"belobog":{
-		"id":"belobog",
-		"name":"Belobog of the Architects",
-		"icon":"/images/hsr/relics/belobog.png",
-		"desc2":"Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF.",
-		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":[]
-			},
-			{
-				"usecase":"2pc BIS",
-				"characters":["march"]
 			}
 		]
 	},
@@ -397,7 +314,7 @@
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["daniel","blade","jingliu","dan","march_hunt"]
+				"characters":["daniel","blade","jingliu","march_hunt"]
 			}
 		]
 	},
@@ -411,13 +328,13 @@
 				"usecase":"2pc",
 				"characters":[
 					"aven","robin",
-					"tingyun","pela","hanya",
-					"bailu","lynx","huo","ruan","fx"
+					"tingyun",
+					"huo","ruan","fx"
 				]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["sparkle","bronya"]
+				"characters":["sparkle"]
 			}
 		]
 	},
@@ -430,11 +347,11 @@
 		"useGroups":[
 			{
 				"usecase":"2pc",
-				"characters":["jingliu","dan","herta"]
+				"characters":["jingliu","herta"]
 			},
 			{
 				"usecase":"2pc BIS",
-				"characters":["yanqing","himeko","guin","sampo","luka"]
+				"characters":["yanqing","himeko"]
 			}
 		]
 	},
@@ -480,12 +397,6 @@
 		"desc2":"Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s).",
 		"useGroups":[
 			{
-				"usecase":"2pc",
-				"characters":[
-					"guin"
-				]
-			},
-			{
 				"usecase":"2pc BIS",
 				"characters":[
 					"galla"
@@ -517,14 +428,14 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"lynx","fx","bailu",
-					"huo","sparkle","asta","tingyun"
+					"fx",
+					"huo","tingyun"
 				]
 			},
 			{
 				"usecase":"2pc BIS",
 				"characters":[
-					"sunday"
+					"sunday","sparkle"
 				]
 			}
 		]
