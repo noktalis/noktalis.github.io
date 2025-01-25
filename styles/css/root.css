@@ -131,7 +131,14 @@
   --ri-sd-a-a: var(--ri-orange1);
   --ri-sd-scroll: rgba(50, 50, 50,0.5);
   --ri-sd-scroll-h: rgba(50, 50, 50,0.8);
-  --ri-pg-button: ;
+  --ri-button: var(--ri-gray5);
+  --ri-btn-txt: white;
+  --ri-btn-txt-h: var(--ri-yellow1);
+  --ri-btn-txt-a: var(--ri-orange1);
+  --ri-btn-disable: var(--ri-gray2);
+  --ri-btn-disable-txt: var(--ri-white1);
+  --ri-btn-sel: var(--ri-blue6);
+  --ri-btn-sel-h: var(--ri-blue5);
 }
 
 /*	Manual collapsible fold:

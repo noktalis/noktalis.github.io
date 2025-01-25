@@ -101,9 +101,14 @@
 	// --ri-bub-R-txt: 	var(--ri);
 
 
-	//Pagination
-	// TODO
-	--ri-pg-button: ;
-
+	// Button
+	--ri-button: var(--ri-gray5);
+	--ri-btn-txt: white;
+	--ri-btn-txt-h: var(--ri-yellow1);
+	--ri-btn-txt-a: var(--ri-orange1);
+	--ri-btn-disable: var(--ri-gray2);
+	--ri-btn-disable-txt: var(--ri-white1);
+	--ri-btn-sel: var(--ri-blue6);
+	--ri-btn-sel-h: var(--ri-blue5);
 
 }

@@ -1,0 +1,110 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts";
+
+// container (ul element) of "tabs" (li elements)
+.tabs {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	li {
+		cursor: pointer;
+		margin: 6px;
+		padding: 10px;
+	}
+}
+
+// 	.pagebutton {
+// 		cursor: pointer;
+// 		margin: 8px;
+// 		min-width: 30px;
+// 		padding: 10px 18px;
+// 	}
+// }
+
+// .prev, .next {
+// 	margin: 8px;
+// 	padding: 15px 5px 5px 5px;
+// }
+
+// /* Theming 
+// 	Applies to .container */
+
+/* Rhodes Island */
+.ri {
+	font-weight: bold;
+	font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
+	font-size: 30px;
+
+	li {
+		@include btn-colors(var(--ri-button),var(--ri-btn-txt),
+			var(--ri-button), var(--ri-btn-txt-h),
+			var(--ri-button), var(--ri-btn-txt-a));
+	}
+
+	.disabled {
+		cursor: default;
+		@include btn-colors(var(--ri-btn-disable),var(--ri-btn-disable-txt),
+			var(--ri-btn-disable),var(--ri-btn-disable-txt),
+			var(--ri-btn-disable),var(--ri-btn-disable-txt));
+	}
+
+	.selected {
+		@include btn-colors(var(--ri-btn-sel),var(--ri-btn-txt),
+			var(--ri-btn-sel-h), var(--ri-btn-txt-h),
+			var(--ri-btn-sel-h), var(--ri-btn-txt-a));
+	}
+
+// 	.pagebutton {
+// 		// actually the a element, li element is untouched
+// 		background-color: var(--ri-gray5);
+// 		color: var(--ri-sd)!important;
+// 		&:hover {
+// 			color: var(--ri-yellow1)!important;
+// 		}
+// 		&:active{
+// 			color: var(--ri-orange1)!important;
+// 		}
+
+// 		// not used above bc !important needed for intended design
+// 		// @include btn-colors(var(--ri-gray5),var(--ri-sd),
+// 		// 		var(--ri-gray5),var(--ri-yellow1),
+// 		// 		var(--ri-gray5),var(--ri-orange1));
+		
+		
+// 	}
+
+// 	.selected a {
+// 		@include btn-colors(var(--ri-blue6),var(--ri-sd),
+// 				var(--ri-blue5),var(--ri-yellow1),
+// 				var(--ri-blue5),var(--ri-orange1));
+// 	}
+
+// 	.prev, .next {
+// 		background-color: var(--ri-gray5);
+// 	}
+
+// 	.prev svg, .next svg {
+// 		stroke: var(--ri-sd);
+
+// 		&:hover { 
+// 			stroke: var(--ri-yellow1);
+// 		}
+// 		&:active {
+// 			stroke: var(--ri-orange1);
+// 		}
+// 	}
+
+// 	.disabledarrow a {
+// 		background-color: var(--ri-gray2);
+// 		svg {
+// 			stroke: var(--ri-white1);
+// 		}
+// 		&:hover svg, &:active svg {
+// 			stroke: var(--ri-white1);
+// 		}
+// 	}
+}

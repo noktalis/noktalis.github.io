@@ -174,72 +174,60 @@
   font-weight: lighter;
   font-style: italic;
 }
-.container {
+.tabs {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  list-style-type: none;
 }
-.container .pagebutton {
+.tabs li {
   cursor: pointer;
-  margin: 8px;
-  min-width: 30px;
-  padding: 10px 18px;
+  margin: 6px;
+  padding: 10px;
 }
 
-.prev, .next {
-  margin: 8px;
-  padding: 15px 5px 5px 5px;
-}
-
-/* Theming 
-	Applies to .container */
 /* Rhodes Island */
-.ri .pagebutton {
-  background-color: var(--ri-button);
-  color: var(--ri-btn-txt) !important;
+.ri {
   font-weight: bold;
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;
-  font-size: larger;
+  font-size: 30px;
 }
-.ri .pagebutton:hover {
-  color: var(--ri-btn-txt-h) !important;
-}
-.ri .pagebutton:active {
-  color: var(--ri-btn-txt-a) !important;
-}
-.ri .selected a {
-  background-color: var(--ri-blue6);
+.ri li {
+  background-color: var(--ri-button);
   color: var(--ri-btn-txt);
 }
-.ri .selected a:hover {
-  background-color: var(--ri-blue5);
+.ri li:hover {
+  background-color: var(--ri-button);
   color: var(--ri-btn-txt-h);
 }
-.ri .selected a:active {
-  background-color: var(--ri-blue5);
+.ri li:active {
+  background-color: var(--ri-button);
   color: var(--ri-btn-txt-a);
 }
-.ri .prev, .ri .next {
-  background-color: var(--ri-button);
+.ri .disabled {
+  cursor: default;
+  background-color: var(--ri-btn-disable);
+  color: var(--ri-btn-disable-txt);
 }
-.ri .prev svg, .ri .next svg {
-  stroke: var(--ri-btn-txt);
+.ri .disabled:hover {
+  background-color: var(--ri-btn-disable);
+  color: var(--ri-btn-disable-txt);
 }
-.ri .prev svg:hover, .ri .next svg:hover {
-  stroke: var(--ri-btn-txt-h);
+.ri .disabled:active {
+  background-color: var(--ri-btn-disable);
+  color: var(--ri-btn-disable-txt);
 }
-.ri .prev svg:active, .ri .next svg:active {
-  stroke: var(--ri-btn-txt-a);
+.ri .selected {
+  background-color: var(--ri-btn-sel);
+  color: var(--ri-btn-txt);
 }
-.ri .disabledarrow a {
-  background-color: var(--ri-gray2);
+.ri .selected:hover {
+  background-color: var(--ri-btn-sel-h);
+  color: var(--ri-btn-txt-h);
 }
-.ri .disabledarrow a svg {
-  stroke: var(--ri-white1);
-}
-.ri .disabledarrow a:hover svg, .ri .disabledarrow a:active svg {
-  stroke: var(--ri-white1);
+.ri .selected:active {
+  background-color: var(--ri-btn-sel-h);
+  color: var(--ri-btn-txt-a);
 }

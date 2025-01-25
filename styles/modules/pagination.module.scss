@@ -31,41 +31,43 @@
 
 	.pagebutton {
 		// actually the a element, li element is untouched
-		background-color: var(--ri-gray5);
-		color: var(--ri-sd)!important;
+		background-color: var(--ri-button);
+		color: var(--ri-btn-txt)!important;
 		&:hover {
-			color: var(--ri-yellow1)!important;
+			color: var(--ri-btn-txt-h)!important;
 		}
 		&:active{
-			color: var(--ri-orange1)!important;
+			color: var(--ri-btn-txt-a)!important;
 		}
 
-		// @include btn-colors(var(--ri-gray5),var(--ri-sd),
-		// 		var(--ri-gray5),var(--ri-yellow1),
-		// 		var(--ri-gray5),var(--ri-orange1));
+		// not used above bc !important needed for intended design
+		// @include btn-colors(var(--ri-button),var(--ri-btn-txt),
+		// 	var(--ri-button),var(--ri-btn-txt-h),
+		// 	var(--ri-button),var(--ri-btn-txt-a));
+		
 		font-weight: bold;
 		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
 		font-size: larger;
 	}
 
 	.selected a {
-		@include btn-colors(var(--ri-blue6),var(--ri-sd),
-				var(--ri-blue5),var(--ri-yellow1),
-				var(--ri-blue5),var(--ri-orange1));
+		@include btn-colors(var(--ri-blue6),var(--ri-btn-txt),
+				var(--ri-blue5),var(--ri-btn-txt-h),
+				var(--ri-blue5),var(--ri-btn-txt-a));
 	}
 
 	.prev, .next {
-		background-color: var(--ri-gray5);
+		background-color: var(--ri-button);
 	}
 
 	.prev svg, .next svg {
-		stroke: var(--ri-sd);
+		stroke: var(--ri-btn-txt);
 
 		&:hover { 
-			stroke: var(--ri-yellow1);
+			stroke: var(--ri-btn-txt-h);
 		}
 		&:active {
-			stroke: var(--ri-orange1);
+			stroke: var(--ri-btn-txt-a);
 		}
 	}
 
