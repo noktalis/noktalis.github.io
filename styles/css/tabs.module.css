@@ -175,59 +175,58 @@
   font-style: italic;
 }
 .tabs {
-  list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
-.tabs li {
+
+.tab {
   cursor: pointer;
-  margin: 6px;
+  margin: 1px;
   padding: 10px;
+  border-radius: 0;
+  border: 0;
 }
 
 /* Rhodes Island */
-.ri {
+.ri .tab {
   font-weight: bold;
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;
   font-size: 30px;
-}
-.ri li {
   background-color: var(--ri-button);
   color: var(--ri-btn-txt);
 }
-.ri li:hover {
+.ri .tab:hover {
   background-color: var(--ri-button);
   color: var(--ri-btn-txt-h);
 }
-.ri li:active {
+.ri .tab:active {
   background-color: var(--ri-button);
   color: var(--ri-btn-txt-a);
 }
-.ri .disabled {
+.ri .tab[data-selected] {
+  background-color: var(--ri-btn-sel);
+  color: var(--ri-btn-txt);
+}
+.ri .tab[data-selected]:hover {
+  background-color: var(--ri-btn-sel-h);
+  color: var(--ri-btn-txt-h);
+}
+.ri .tab[data-selected]:active {
+  background-color: var(--ri-btn-sel-h);
+  color: var(--ri-btn-txt-a);
+}
+.ri .tab[data-disabled] {
   cursor: default;
   background-color: var(--ri-btn-disable);
   color: var(--ri-btn-disable-txt);
 }
-.ri .disabled:hover {
+.ri .tab[data-disabled]:hover {
   background-color: var(--ri-btn-disable);
   color: var(--ri-btn-disable-txt);
 }
-.ri .disabled:active {
+.ri .tab[data-disabled]:active {
   background-color: var(--ri-btn-disable);
   color: var(--ri-btn-disable-txt);
-}
-.ri .selected {
-  background-color: var(--ri-btn-sel);
-  color: var(--ri-btn-txt);
-}
-.ri .selected:hover {
-  background-color: var(--ri-btn-sel-h);
-  color: var(--ri-btn-txt-h);
-}
-.ri .selected:active {
-  background-color: var(--ri-btn-sel-h);
-  color: var(--ri-btn-txt-a);
 }

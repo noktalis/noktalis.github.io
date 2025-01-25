@@ -3,18 +3,19 @@
 
 // container (ul element) of "tabs" (li elements)
 .tabs {
-	list-style-type: none;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	// justify-content: center;
 	align-items: center;
 	width: 100%;
+}
 
-	li {
-		cursor: pointer;
-		margin: 6px;
-		padding: 10px;
-	}
+.tab {
+	cursor: pointer;
+	margin: 1px;
+	padding: 10px;
+	border-radius: 0;
+	border: 0;
 }
 
 // 	.pagebutton {
@@ -35,27 +36,28 @@
 
 /* Rhodes Island */
 .ri {
-	font-weight: bold;
-	font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
-	font-size: 30px;
+	
+	.tab {
+		font-weight: bold;
+		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
+		font-size: 30px;
 
-	li {
 		@include btn-colors(var(--ri-button),var(--ri-btn-txt),
 			var(--ri-button), var(--ri-btn-txt-h),
 			var(--ri-button), var(--ri-btn-txt-a));
-	}
 
-	.disabled {
-		cursor: default;
-		@include btn-colors(var(--ri-btn-disable),var(--ri-btn-disable-txt),
-			var(--ri-btn-disable),var(--ri-btn-disable-txt),
-			var(--ri-btn-disable),var(--ri-btn-disable-txt));
-	}
+		&[data-selected] {
+			@include btn-colors(var(--ri-btn-sel),var(--ri-btn-txt),
+				var(--ri-btn-sel-h), var(--ri-btn-txt-h),
+				var(--ri-btn-sel-h), var(--ri-btn-txt-a));
+		}
 
-	.selected {
-		@include btn-colors(var(--ri-btn-sel),var(--ri-btn-txt),
-			var(--ri-btn-sel-h), var(--ri-btn-txt-h),
-			var(--ri-btn-sel-h), var(--ri-btn-txt-a));
+		&[data-disabled] {
+			cursor: default;
+			@include btn-colors(var(--ri-btn-disable),var(--ri-btn-disable-txt),
+				var(--ri-btn-disable),var(--ri-btn-disable-txt),
+				var(--ri-btn-disable),var(--ri-btn-disable-txt));
+		}
 	}
 
 // 	.pagebutton {

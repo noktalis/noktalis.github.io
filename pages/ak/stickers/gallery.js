@@ -3,11 +3,15 @@ import Layout from '@/components/pageFormat/layout';
 import { ThemeContext } from '@/components/pageFormat/ThemeContext';
 import { FandomContext } from '@/components/pageFormat/FandomContext';
 import React, { useState, useEffect, useContext } from 'react';
+
 import AKStickerGallery from '@/components/ak/stickergallery';
+import { ToTop } from '@/components/pageFormat/main';
+
 import ReactPaginate from 'react-paginate';
 import style from "@/styles/modules/pagination.module.scss";
+
+import { Tabs } from '@base-ui-components/react/tabs';
 import tabstyle from "@/styles/modules/tabs.module.scss";
-import { ToTop } from '@/components/pageFormat/main';
 
 //https://www.youtube.com/watch?v=HANSMtDy508
 
@@ -50,13 +54,15 @@ function Content() {
 	}
 
 	// set year of gallery display
-	const [year, setYear] = useState(0)		// 0: all, 1: 2019, 2: 2020, etc.
-	function updateYear(i){
-		// update css
+	function updateYear(value, event){		// 0: all, 1: 2019, 2: 2020, etc.
+		setPageNumber(0)					// forcePage under ReactPaginate syncs visual update
 
-		// change data
-		// setYear(i)
-		// console.log(year)
+		//update galleries
+		if (value == 0) {
+			setPacks(data)
+		} else {
+			setPacks(ydata[value-1])
+		}
 	}
 
 	// paginate sticker galleries
@@ -71,7 +77,7 @@ function Content() {
 
 	let display = packs.slice(itemsIndex, itemsIndex + itemsPerPage);
 
-	const changePage = ({selected}) => {
+	function changePage ({selected}) {
 		setPageNumber(selected);
 	}
 
@@ -102,17 +108,23 @@ function Content() {
 			<h1 style={{textAlign:"center"}}>Arknights Sticker Archive</h1>
 			<h4 style={{textAlign:"center"}}>Ordered by CN release date | Newest first</h4>
 
-			{/* <Tabs>
-				<Tab select={true}>All</Tab>
-				<Tab>2019</Tab>
-				<Tab>2020</Tab>
-				<Tab disable={true}>2021</Tab>
-				<Tab disable={true}>2022</Tab>
-				<Tab disable={true}>2023</Tab>
-				<Tab disable={true}>2024</Tab>
-				<Tab disable={true}>2025</Tab>
-			</Tabs> */}
-			
+			<Tabs.Root 
+				defaultValue={0} 
+				className={`${tabstyle.tabs} ${tabstyle.ri}`}
+				onValueChange={updateYear}>
+				<Tabs.List className={`${tabstyle.list}`}>
+					<Tabs.Tab value={0} className={`${tabstyle.tab}`}>All</Tabs.Tab>
+					<Tabs.Tab value={1} className={`${tabstyle.tab}`}>2019</Tabs.Tab>
+					<Tabs.Tab value={2} className={`${tabstyle.tab}`}>2020</Tabs.Tab>
+					<Tabs.Tab value={3} className={`${tabstyle.tab}`} disabled>2021</Tabs.Tab>
+					<Tabs.Tab value={4} className={`${tabstyle.tab}`} disabled>2022</Tabs.Tab>
+					<Tabs.Tab value={5} className={`${tabstyle.tab}`} disabled>2023</Tabs.Tab>
+					<Tabs.Tab value={6} className={`${tabstyle.tab}`} disabled>2024</Tabs.Tab>
+					<Tabs.Tab value={7} className={`${tabstyle.tab}`} disabled>2025</Tabs.Tab>
+					<Tabs.Indicator />
+				</Tabs.List>
+			</Tabs.Root>
+
 			<ReactPaginate
 				previousLabel={
 					<svg width="30px" height="30px" viewBox="0 -1 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,6 +146,7 @@ function Content() {
 				disabledClassName={style.disabledarrow}
 				style={{textAlign:"center"}}
 				renderOnZeroPageCount={null}
+				forcePage={pageNumber}
 			/>
 
 			{display.map((pack) => <AKStickerGallery packData={pack} key={pack["pack"]}></AKStickerGallery>)}
