@@ -55,6 +55,10 @@ function Content() {
 
 	// set year of gallery display
 	function updateYear(value, event){		// 0: all, 1: 2019, 2: 2020, etc.
+		if (value > 2) {					// prevents bug where clicking disabled tab updates values with undefined
+			return							// selected page is unselected tho
+		}
+
 		setPageNumber(0)					// forcePage under ReactPaginate syncs visual update
 
 		//update galleries
