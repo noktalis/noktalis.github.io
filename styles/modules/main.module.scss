@@ -50,6 +50,12 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
+	details {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
 }
 
 /* An image that may take up an entire section of the page */
@@ -190,6 +196,17 @@
 			fill: var(--ri-yellow1);
 		}
 		
+	}
+
+	details {
+		@include colors(var(--ri-gray5),var(--ri-white1));
+		
+		summary {
+			@include btn-colors(var(--ri-gray5),var(--ri-white1),var(--ri-gray5),var(--ri-yellow1),var(--ri-gray5),var(--ri-orange1));
+			font-family: RobotoCondensed;
+			font-size: 25px;
+			font-weight: bold;
+		}
 	}
 }
 
