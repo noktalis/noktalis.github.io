@@ -1,12 +1,18 @@
+/*	Container for the information and sticker sheet of a sticker pack. */
 .container {
   display: flex;
 }
+.container .info {
+  max-width: 85%;
+}
 
+/*	For the sticker sheet on the side */
 .sheet {
   width: 15%;
   margin-left: auto;
 }
 
+/*	For the actual display grid of sticker entries */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -18,6 +24,7 @@
   border-radius: 5px;
 }
 
+/*	Container for a sticker and its caption */
 .entry {
   background-color: rgba(50, 50, 50, 0.4);
 }
@@ -25,6 +32,7 @@
   width: 100%;
 }
 
+/*	Caption under a sticker for translation */
 .caption {
   color: white;
   padding: 5px;

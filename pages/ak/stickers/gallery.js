@@ -100,7 +100,7 @@ function Content() {
 			// console.log(y2020)
 			
 			setYData([y2019,y2020])
-			// console.log(data)
+			// console.log(obj)
 		}
 		fetchData()
 		.catch(console.error);
