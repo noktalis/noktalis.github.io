@@ -9,6 +9,7 @@
 
 	// Center content
 	text-align: center;
+	align-items: center;	// vertical centers in case of non-button
 
 	a {
 		cursor: default;
@@ -37,6 +38,7 @@
 	// Center content evenly
 	column-gap: 10px;
 	text-align: center;
+	align-items: center;	// vertical centers in case of non-button
 
 	padding-top: 10px;
 
