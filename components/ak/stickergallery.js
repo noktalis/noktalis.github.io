@@ -99,19 +99,6 @@ function StickerSheet({pack}){
 	);
 }
 
-/**
- * Component for a recurring paragraph that explains that the sticker pack's sheet and CN release date was retrieved from Weibo by Xue
- * @returns 
- */
-function Weibo(){
-	return(
-		<p>
-			Sticker sheet and CN release date retrieved from <a href="https://weibo.com/u/6441489862" target="_blank">
-			Arknights Choearth Weibo blog</a> by <span className={style.xue}>
-				<a href="https://sincerelyandyourstruly.neocities.org/" target="_blank">Xue</a></span>
-		</p>
-	);
-}
 
 /**
  * Component for a paragraph with links to the (arknights-archive) Tumblr source of stickers
