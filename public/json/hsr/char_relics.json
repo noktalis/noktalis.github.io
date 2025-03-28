@@ -264,4 +264,27 @@
 			"SPD","CDmg","EffRes","HP","DEF"
 		]
 	}
+	,
+	"rmc":{
+		"name":"Remembrance Trailblazer",
+		"img":"/images/hsr/icons/rmc.png",
+		"body":["CDmg"],
+		"feet":["SPD"],
+		"rope":["ER"],
+		"sphere":["HP","DEF"],
+		"substats":[
+			"SPD","CDmg","EffRes","HP","DEF"
+		]
+	},
+	"cas":{
+		"name":"Castorice",
+		"img":"/images/hsr/icons/castorice.png",
+		"body":["CRIT"],
+		"feet":["HP"],
+		"rope":["HP"],
+		"sphere":["Quantum","HP"],
+		"substats":[
+			"CRIT","HP"
+		]
+	}
 }
