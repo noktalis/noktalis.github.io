@@ -274,7 +274,8 @@
 		"sphere":["HP","DEF"],
 		"substats":[
 			"SPD","CDmg","EffRes","HP","DEF"
-		]
+		],
+		"note":"160+ SPD"
 	},
 	"cas":{
 		"name":"Castorice",
