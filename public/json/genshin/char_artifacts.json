@@ -3,7 +3,7 @@
 		"name":"Venti",
 		"img":"/images/genshin/icons/Venti.png",
 		"sands":["ATK"],
-		"goblet":["Anemo","ATK"],
+		"goblet":["Anemo"],
 		"circlet":["CRIT"],
 		"substats":["ER", "CRIT", "ATK", "EM"]
 	},
@@ -19,15 +19,15 @@
 		"name":"Faruzan",
 		"img":"/images/genshin/icons/Faruzan.png",
 		"sands":["ER","ATK"],
-		"goblet":["Anemo","ATK"],
-		"circlet":["CRIT","ATK"],
+		"goblet":["Anemo"],
+		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK"]
 	},
 	"xiao":{
 		"name":"Xiao",
 		"img":"/images/genshin/icons/Xiao.png",
 		"sands":["ATK"],
-		"goblet":["Anemo","ATK"],
+		"goblet":["Anemo"],
 		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK"]
 	},
@@ -35,7 +35,7 @@
 		"name":"Wanderer",
 		"img":"/images/genshin/icons/Wanderer.png",
 		"sands":["ATK"],
-		"goblet":["Anemo","ATK"],
+		"goblet":["Anemo"],
 		"circlet":["CRIT"],
 		"substats":["CRIT","ATK"]
 	},
@@ -51,7 +51,7 @@
 		"name":"Lynette",
 		"img":"/images/genshin/icons/Lynette.png",
 		"sands":["ER","ATK"],
-		"goblet":["Anemo","ATK"],
+		"goblet":["Anemo"],
 		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK"]
 	},
@@ -79,19 +79,11 @@
 		"circlet":["EM"],
 		"substats":["ER","EM"]
 	},
-	"xian":{
-		"name":"Xianyun",
-		"img":"/images/genshin/icons/Xianyun.png",
-		"sands":["ER","ATK"],
-		"goblet":["ATK"],
-		"circlet":["ATK"],
-		"substats":["ER","ATK","EM","CRIT"]
-	},
 	"lyy":{
 		"name":"Lyney",
 		"img":"/images/genshin/icons/Lyney.png",
 		"sands":["ATK"],
-		"goblet":["Pyro","ATK"],
+		"goblet":["Pyro"],
 		"circlet":["CRIT"],
 		"substats":["CRIT","ATK"]
 	},
@@ -107,7 +99,7 @@
 		"name":"Xiangling",
 		"img":"/images/genshin/icons/Xiangling.png",
 		"sands":["ER","ATK","EM"],
-		"goblet":["Pyro","ATK"],
+		"goblet":["Pyro"],
 		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK","EM"]
 	},
@@ -131,7 +123,7 @@
 		"name":"Yoimiya",
 		"img":"/images/genshin/icons/Yoimiya.png",
 		"sands":["ATK","EM"],
-		"goblet":["Pyro","ATK"],
+		"goblet":["Pyro"],
 		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK","EM"]
 	},
@@ -188,7 +180,7 @@
 		"img":"/images/genshin/icons/Ayaka.png",
 		"sands":["ATK"],
 		"goblet":["Cryo"],
-		"circlet":["Crit Damage"],
+		"circlet":["CRIT"],
 		"substats":["ER","CRIT","ATK"]
 	},
 	"fremi":{
@@ -203,7 +195,7 @@
 		"name":"Charlotte",
 		"img":"/images/genshin/icons/Charlotte.png",
 		"sands":["ER","ATK"],
-		"goblet":["ATK","Cryo"],
+		"goblet":["ATK"],
 		"circlet":["Crit Rate","HB"],
 		"substats":["ER","ATK","Crit Rate"]
 	},
@@ -355,7 +347,7 @@
 		"name":"Chiori",
 		"img":"/images/genshin/icons/Chiori.png",
 		"sands":["DEF"],
-		"goblet":["Geo","DEF"],
+		"goblet":["Geo"],
 		"circlet":["CRIT","DEF"],
 		"substats":["CRIT","DEF","ATK"]
 	},
@@ -375,22 +367,6 @@
 		"goblet":["HP"],
 		"circlet":["HB","HP","Crit Rate"],
 		"substats":["ER","HP","Crit Rate"]
-	},
-	"raiden":{
-		"name":"Raiden",
-		"img":"/images/genshin/icons/Raiden.png",
-		"sands":["ATK","ER","EM"],
-		"goblet":["Electro","ATK"],
-		"circlet":["CRIT"],
-		"substats":["ER","CRIT","ATK","EM"]
-	},
-	"yae":{
-		"name":"Yae Miko",
-		"img":"/images/genshin/icons/Yae.png",
-		"sands":["ATK","ER","EM"],
-		"goblet":["Electro"],
-		"circlet":["CRIT"],
-		"substats":["ER","CRIT","ATK","EM"]
 	},
 	"yelan":{
 		"name":"Yelan",

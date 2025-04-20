@@ -68,7 +68,7 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"venti","kazu","heizou","lyt","jean","sayu","suc","xian"
+					"venti","kazu","heizou","lyt","jean","sayu","suc"
 				]
 			}
 		]
@@ -334,12 +334,12 @@
 			{
 				"usecase":"4pc",
 				"characters":[
-					"venti","kazu","faru","xiao","wander","heizou","lyt","jean","sayu","suc","xian",
+					"venti","kazu","faru","xiao","wander","heizou","lyt","jean","sayu","suc",
 					"lyy","benny","xiang","thoma","arle","yoi","dehya","chev","mavuika","pmc",
 					"xq","childe","furi","yelan",
 					"diona","wrio","ayaka","fremi","char","kaeya","qiqi","layla","mika","cit",
 					"zhong","yunjin","chi","kachina","xilonen",
-					"cyno","fischl","kuki","beidou","dori","raiden","yae",
+					"cyno","fischl","kuki","beidou","dori",
 					"nahi","tigh","yao","kirara","kinich"
 				]
 			}
