@@ -69,7 +69,7 @@
 		"name":"Aventurine",
 		"img":"/images/hsr/icons/aven.png",
 		"body":["CRIT"],
-		"feet":["SPD","DEF"],
+		"feet":["SPD"],
 		"rope":["DEF"],
 		"sphere":["Imaginary","DEF"],
 		"substats":[
@@ -202,7 +202,7 @@
 		"name":"Xueyi",
 		"img":"/images/hsr/icons/xueyi.png",
 		"body":["CRIT"],
-		"feet":["SPD"],
+		"feet":["SPD","ATK"],
 		"rope":["Break"],
 		"sphere":["ATK","Quantum"],
 		"substats":[
@@ -286,6 +286,17 @@
 		"sphere":["Quantum","HP"],
 		"substats":[
 			"CRIT","HP"
+		]
+	},
+	"phai":{
+		"name":"Phainon",
+		"img":"/images/hsr/icons/phai.png",
+		"body":["CRIT"],
+		"feet":["SPD"],
+		"rope":["ATK"],
+		"sphere":["Physical"],
+		"substats":[
+			"ATK","CRIT","SPD"
 		]
 	}
 }

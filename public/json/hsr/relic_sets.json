@@ -9,7 +9,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"aven","huo","ruan","fx","galla","rmc"
+					"ruan","galla","rmc"
 				]
 			},
 			{
@@ -27,12 +27,6 @@
 		"desc2":"Increases Max HP by 12%.",
 		"desc4":"When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks.",
 		"useGroups":[
-			{
-				"usecase":"2pc",
-				"characters":[
-					"huo","fx"
-				]
-			},
 			{
 				"usecase":"4pc BIS",
 				"characters":["blade"]
@@ -106,25 +100,8 @@
 		"desc4":"The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
 		"useGroups":[
 			{
-				"usecase":"2pc BIS",
-				"characters":["robin"]
-			},
-			{
 				"usecase":"4pc BIS",
 				"characters":["daniel","march_hunt"]
-			}
-		]
-	},
-	"passerby":{
-		"id":"passerby",
-		"name":"Passerby of Wandering Cloud",
-		"icon":"/images/hsr/relics/passerby.png",
-		"desc2":"Increases Outgoing Healing by 10%.",
-		"desc4":"At the beginning of the battle, immediately recovers 1 Skill Point.",
-		"useGroups":[
-			{
-				"usecase":"2pc/4pc",
-				"characters":["huo"]
 			}
 		]
 	},
@@ -203,7 +180,7 @@
 			{
 				"usecase":"2pc",
 				"characters":[
-					"fx","huo","ruan","galla","rmc"
+					"ruan","galla","rmc"
 				]
 			},
 			{
@@ -226,6 +203,43 @@
 				"usecase":"4pc BIS",
 				"characters":[
 					"cas","clara","xueyi"
+				]
+			}
+		]
+	},
+
+	"captain":{
+		"id":"captain",
+		"name":"Wavestrider Captain",
+		"icon":"/images/hsr/relics/captain.png",
+		"desc2":"Increases CRIT DMG by 16%.",
+		"desc4":"When the wearer becomes the target of another ally target's ability, gains 1 stack of \"Help,\" stacking up to 2 time(s). If there are 2 stack(s) of \"Help\" when the wearer uses their Ultimate, consumes all \"Help\" to increase the wearer's ATK by 48% for 1 turn(s).",
+		"useGroups":[
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"phai"
+				]
+			}
+		]
+	},
+	"warrior":{
+		"id":"warrior",
+		"name":"Warrior Goddess of Sun and Thunder",
+		"icon":"/images/hsr/relics/warrior.png",
+		"desc2":"Increases SPD by 6%.",
+		"desc4":"When the wearer and their memosprite provide healing to ally targets aside from themselves, the wearer gains \"Gentle Rain,\" which can be triggered up to 1 time per turn, lasting for 2 turn(s). While the wearer has \"Gentle Rain,\" increases their SPD by 6% and all allies' CRIT DMG by 15%. This effect cannot be stacked.",
+		"useGroups":[
+			{
+				"usecase":"2pc/4pc",
+				"characters":[
+					"galla"
+				]
+			},
+			{
+				"usecase":"4pc BIS",
+				"characters":[
+					"huo","fx"
 				]
 			}
 		]
